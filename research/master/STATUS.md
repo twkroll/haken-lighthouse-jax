@@ -2,7 +2,7 @@
 
 Current Gate: CORE Mathematical Scope Gate 0.1 — MASTER oversight
 Status: FROZEN / WAIT
-Latest canonical file: `research/master/project_status.md` (v0.7)
+Latest canonical file: `research/master/project_status.md` (v0.8)
 Latest MASTER report: `research/master/reports/haken_lighthouse_jax_master_report_v0_2.md` (rendered as v0.2 and current PDF)
 Communication briefings: NON-CANONICAL / PRE-CORE under `research/master/briefings/`
 Dependencies: Governance Initialization 0.1 STABLE; CORE gate not yet executed
