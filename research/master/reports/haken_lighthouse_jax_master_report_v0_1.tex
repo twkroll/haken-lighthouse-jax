@@ -1,0 +1,375 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,margin=22mm,top=23mm,bottom=24mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,longtable,tabularx,array}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{ragged2e}
+
+\definecolor{navy}{HTML}{17365D}
+\definecolor{blue}{HTML}{2F5597}
+\definecolor{green}{HTML}{2E7D32}
+\definecolor{amber}{HTML}{A66A00}
+\definecolor{red}{HTML}{B3261E}
+\definecolor{purple}{HTML}{6A3D9A}
+\definecolor{graydark}{HTML}{4A4A4A}
+\definecolor{graylight}{HTML}{F2F4F7}
+\definecolor{bluelight}{HTML}{EAF1FB}
+\definecolor{greenlight}{HTML}{EAF5EA}
+\definecolor{amberlight}{HTML}{FFF5DD}
+\definecolor{redlight}{HTML}{FCEBEC}
+\definecolor{purplelight}{HTML}{F3ECF9}
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,pdftitle={Lighthouse-JAX Master Report v0.1},pdfauthor={Lighthouse-JAX MASTER}}
+\setlist[itemize]{leftmargin=5mm,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=6mm,itemsep=2pt,topsep=3pt}
+\renewcommand{\arraystretch}{1.18}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+
+\titleformat{\section}{\Large\bfseries\color{navy}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{blue}}{\thesubsection}{0.6em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small Lighthouse-JAX -- MASTER Report v0.1}
+\rhead{\small 04.09.2026}
+\cfoot{\small Seite \thepage\ von \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\newcommand{\status}[2]{\tcbox[on line,boxrule=0pt,arc=1.5pt,left=4pt,right=4pt,top=2pt,bottom=2pt,colback=#2!12,coltext=#2,fontupper=\bfseries\footnotesize]{#1}}
+\newcommand{\STABLE}{\status{STABLE}{green}}
+\newcommand{\OPEN}{\status{OPEN}{amber}}
+\newcommand{\WAIT}{\status{WAIT}{graydark}}
+\newcommand{\PROTECTED}{\status{PROTECTED}{purple}}
+\newcommand{\FROZEN}{\status{FROZEN}{blue}}
+\newcommand{\FAILED}{\status{FAILED}{red}}
+\newcommand{\ASSUMPTION}{\status{ASSUMPTION}{amber}}
+\newcommand{\CONJECTURE}{\status{CONJECTURE}{purple}}
+
+\newtcolorbox{summarybox}{colback=bluelight,colframe=blue,boxrule=0.7pt,arc=2pt}
+\newtcolorbox{warningbox}{colback=amberlight,colframe=amber,boxrule=0.7pt,arc=2pt}
+\newtcolorbox{successbox}{colback=greenlight,colframe=green,boxrule=0.7pt,arc=2pt}
+\newtcolorbox{stopbox}{colback=redlight,colframe=red,boxrule=0.9pt,arc=2pt}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{18mm}
+{\Huge\bfseries\color{navy} Lighthouse-JAX\par}
+\vspace{4mm}
+{\LARGE MASTER Project Report\par}
+\vspace{3mm}
+{\Large Version 0.1\par}
+\vspace{14mm}
+\begin{tcolorbox}[colback=graylight,colframe=navy,boxrule=0.8pt,arc=3pt]
+\textbf{Projekt:} Modern mathematical and computational reconstruction of Hermann Haken's Lighthouse model\\[2mm]
+\textbf{Repository:} \texttt{twkroll/haken-lighthouse-jax}\\[2mm]
+\textbf{Berichtsdatum:} 04.09.2026\\[2mm]
+\textbf{Kanonischer Projektstatus:} v0.2\\[2mm]
+\textbf{Aktiver wissenschaftlicher Gate:} CORE Mathematical Scope Gate 0.1
+\end{tcolorbox}
+\vfill
+\begin{summarybox}
+\textbf{Governance-Hinweis.} Dieser Bericht ist ein Snapshot des kanonischen Git-Zustands. Er erzeugt keine neue wissenschaftliche Theorie. Nicht eingefrorene Inhalte werden als \OPEN, \WAIT\ oder \PROTECTED\ gekennzeichnet.
+\end{summarybox}
+\vspace{10mm}
+{\small Erstellt durch 00 -- MASTER im Rahmen des Projekt-Governance-Protokolls.}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Executive Summary}
+
+\begin{summarybox}
+Das Projekt befindet sich nach abgeschlossener Governance-Initialisierung vor seinem ersten wissenschaftlichen Gate. Die Governance-Regeln sind \STABLE. Der mathematische Kern des Lighthouse-Modells ist dagegen noch \OPEN. Deshalb sind JAX-Implementierung, Parameterstudien, Anwendungsbenchmarks, Differentiable-Inference-Experimente, Literatur-Novelty-Positionierung und Manuskriptarbeit derzeit nicht autorisiert.
+\end{summarybox}
+
+Die zentrale nächste Aufgabe ist eindeutig: Im Chat \texttt{10 -- CORE -- Haupttheorie / mathematischer Kern} muss exakt \texttt{GO} ausgeführt werden. Der dort bereits eingefrorene Auftrag verlangt ausschließlich die mathematische Scope-Klärung des Basismodells und endet mit \textbf{STOP -- RETURN TO MASTER}.
+
+Der aktuelle Projektstand enthält noch keine wissenschaftlich eingefrorenen Resultate. Entsprechend gibt es noch keine STRONG-, WEAK-, NULL- oder FAIL-Ergebnisse, keine branch-abhängigen Claims und keinen Manuskript-Claim-Freeze. Der letzte stabile Rollback-Punkt ist \textbf{RB-001 Governance Initialization 0.1}.
+
+\section{Zentrale Forschungsfrage}
+
+Die kanonische Forschungsfrage lautet:
+
+\begin{quote}
+\textit{Can Hermann Haken's Lighthouse model be developed into a modern, scalable and differentiable framework for spiking-network dynamics that remains mathematically analyzable while supporting contemporary numerical simulation, inference and neuromorphic applications?}
+\end{quote}
+
+Das Projekt ist in vier geplante Ebenen gegliedert:
+\begin{enumerate}
+\item historischer mathematischer Kern,
+\item präzise mathematische Rekonstruktion,
+\item moderne Erweiterungen wie Graphen, Kontinuumsgrenzen, Delays, Rauschen, Plastizität und differenzierbare Approximationen,
+\item reproduzierbare, vektorisierte und accelerator-fähige JAX-Implementierung.
+\end{enumerate}
+
+Diese Ebenen sind derzeit eine Projektarchitektur, keine Aussage darüber, welche Erweiterungen später wissenschaftlich erfolgreich sein werden.
+
+\section{Aktueller Projektstatus}
+
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.19\textwidth} p{0.23\textwidth} X}
+\toprule
+Workstream & Status & Aktuelle Rolle \\
+\midrule
+00 MASTER & \FROZEN\ / \WAIT & Governance-Aufsicht; wartet auf CORE-Ergebnis \\
+10 CORE & \status{READY}{green} & Erster mathematischer Scope-Gate \\
+50 APP-1 Neuroscience & \PROTECTED\ / \WAIT & Reservierter Anwendungsbranch \\
+60 APP-2 Neuromorphic & \PROTECTED\ / \WAIT & Reservierter Anwendungsbranch \\
+70 APP-3 Diff. Inference & \PROTECTED\ / \WAIT & Reservierter Anwendungsbranch \\
+80 LIT & \WAIT & Literatur-Audit erst nach MASTER-Autorisierung \\
+90 MANUSCRIPT & \WAIT & Keine Claims/Figuren vor frozen Resultaten \\
+\bottomrule
+\end{tabularx}
+
+\subsection{Aktiver Blocker}
+
+Der kanonische mathematische Scope des Basismodells wurde noch nicht etabliert und eingefroren. In \texttt{research/core/STATUS.md} steht CORE weiterhin auf \texttt{READY}; eine Ergebnisdatei \texttt{research/core/mathematical\_scope\_gate\_0\_1.md} existiert noch nicht.
+
+\subsection{Freeze-Check}
+
+\begin{successbox}
+\textbf{Freeze-Check: OK.} Bis zum aktuellen Snapshot wurden keine Effect-Inspections, Parameter-Retunings, Objective-Wechsel, Anwendungs-Executions oder post-hoc Auswahlen dokumentiert. Der README-only Commit \texttt{948dedbc5294fbe864b940060ee6b2053020347f} wurde als nicht-wissenschaftliche Execution klassifiziert.
+\end{successbox}
+
+\section{Theoretische Grundlagen und mathematischer Freeze-Status}
+
+\subsection{Was bereits stabil ist}
+
+Stabil ist derzeit nicht eine konkrete Modellgleichung, sondern das Verfahren, wie diese Gleichung ausgewählt und eingefroren werden muss. Der wissenschaftliche Workflow ist formal:
+
+\[
+\text{Gate} \longrightarrow \text{Freeze} \longrightarrow \text{Execution} \longrightarrow \text{Result Freeze}.
+\]
+
+Für das aktuelle Projekt gilt damit:
+
+\[
+\text{CORE Mathematical Scope Gate 0.1}
+\longrightarrow
+\text{CORE Mathematical Freeze 0.1}
+\longrightarrow
+\text{spätere numerische Spezifikation}.
+\]
+
+\subsection{Was bewusst noch nicht kanonisch ist}
+
+\begin{warningbox}
+\textbf{Mathematische Modellgleichungen: \OPEN.} Das Projekt hat noch keine kanonische Gleichungsmenge, keine finalen Zustandsvariablen, keine eingefrorene Schwellenfunktion, keine eingefrorene Synapsenform und keine eingefrorene Delay-Konvention. Diese Inhalte werden absichtlich nicht aus früheren Chat-Antworten oder aus dem README rekonstruiert, weil Git die Single Source of Truth ist und der CORE-Gate noch nicht ausgeführt wurde.
+\end{warningbox}
+
+Formal ist die Menge der bereits wissenschaftlich eingefrorenen CORE-Aussagen zum Snapshot leer:
+
+\[
+\mathcal{R}_{\mathrm{CORE}}^{\mathrm{frozen}} = \varnothing.
+\]
+
+Dies bedeutet nicht, dass es keine bekannte Lighthouse-Theorie gibt; es bedeutet nur, dass innerhalb dieses Projekts noch keine solche Definition als kanonischer Freeze akzeptiert wurde.
+
+\subsection{Scope des nächsten CORE-Gates}
+
+Der autorisierte Gate muss unter anderem:
+\begin{itemize}
+\item primäre Haken-Formulierungen von späteren Reformulierungen unterscheiden,
+\item kanonische Notation für Zustand, Phasenentwicklung, Spike-Ereignisse, synaptische Aktivierung, Kopplung, Schwellen und Delays definieren,
+\item das minimale Basismodell für spätere numerische Reproduktion festlegen,
+\item zulässige Modellvarianten registrieren, ohne nach beobachteter Effektstärke zu selektieren,
+\item etablierte Aussagen, Projektannahmen, Conjectures und Open Questions trennen,
+\item analytische Validierungsziele wie Synchronisation, Phase Locking, Delay-Effekte, Wellen, Bumps, Stabilität und Kontinuumsgrenzen nur quellenbasiert dokumentieren.
+\end{itemize}
+
+\section{CORE-Ergebnisse}
+
+\begin{warningbox}
+\textbf{Status: OPEN / NONE YET.} Es existiert noch kein eingefrorenes CORE-Ergebnis. Daher werden in dieser Version weder Theoreme noch Propositionen, Modellparameter oder numerische Referenzresultate behauptet.
+\end{warningbox}
+
+Vorgesehene Ergebnisdatei des nächsten Gates: \texttt{research/core/mathematical\_scope\_gate\_0\_1.md}.
+
+\section{Anwendungsbranches}
+
+\subsection{APP-1 Computational Neuroscience}
+Status: \PROTECTED\ / \WAIT. Abhängigkeiten: CORE Mathematical Freeze und späteres MASTER-Anwendungsgate. Es existieren noch keine Kandidaten, Parameter, Objectives oder Resultate.
+
+\subsection{APP-2 Neuromorphic Computing}
+Status: \PROTECTED\ / \WAIT. Die bloße Projektidee einer späteren accelerator-/hardware-nahen Implementierung ist kein Anwendungsresultat.
+
+\subsection{APP-3 Differentiable Inference / Temporal Learning}
+Status: \PROTECTED\ / \WAIT. Differenzierbare Approximationen oder Lernexperimente sind derzeit nicht autorisiert; es gibt keine gefrorenen Losses, Datensätze oder Erfolgsmetriken.
+
+\section{Literaturpositionierung}
+
+Der Literaturbranch steht auf \WAIT. Ein gezielter Novelty-Audit ist erst nach MASTER-Autorisierung vorgesehen. Entsprechend sind Novelty-Stufen N0--N4 noch nicht vergeben.
+
+\subsection{Referenzkandidaten aus dem Repository-README}
+Die folgenden Quellen sind im README als Core References verzeichnet, wurden in diesem PDF-Snapshot aber nicht als vollständiger Literatur-Audit neu bewertet:
+\begin{enumerate}
+\item H. Haken, \textit{Quasi-discrete dynamics of a neural net: The Lighthouse model}, Discrete Dynamics in Nature and Society 4 (2000), 187--200. DOI: 10.1155/S1026022600000182.
+\item H. Haken, \textit{Phase Locking in the Lighthouse Model of a Neural Net with Several Delay Times}, Progress of Theoretical Physics Supplement 139 (2000), 96--111. DOI: 10.1143/PTPS.139.96.
+\item H. Haken, \textit{Brain Dynamics: Synchronization and Activity Patterns in Pulse-Coupled Neural Nets with Delays and Noise}, Springer (2002).
+\item S. Coombes, \textit{Revisiting the Haken Lighthouse model}, European Physical Journal Special Topics, version of record 2025, volume 235 (2026), 4571--4593. DOI: 10.1140/epjs/s11734-025-01841-3.
+\item S. Coombes, R. Thul, S. Ruschel, R. Nicks, \textit{Adaptive conduction delays and phase locking in spiking Haken Lighthouse networks}, arXiv:2606.21508 (2026).
+\end{enumerate}
+
+\begin{warningbox}
+Kein SAME-/CLOSE-/RELATED-Rating ist derzeit eingefroren. Aus der Existenz oder Abwesenheit einzelner Treffer wird keine Novelty-Aussage abgeleitet.
+\end{warningbox}
+
+\section{Stabile Resultate, Annahmen und offene Fragen}
+
+\subsection{STABLE}
+\begin{itemize}
+\item Governance-Prozess 0.1: \STABLE.
+\item Git-Repository \texttt{twkroll/haken-lighthouse-jax} als Single Source of Truth: \STABLE.
+\item Workstream-Struktur 00/10/50/60/70/80/90: \STABLE.
+\item Anwendungsbranches bleiben bis MASTER-Gate \PROTECTED.
+\end{itemize}
+
+\subsection{ASSUMPTION / Projektprämissen}
+\begin{itemize}
+\item Die Modernisierung soll mathematische Analysierbarkeit nicht ohne explizite Entscheidung zugunsten bloßer Rechenleistung aufgeben.
+\item JAX ist eine geplante Implementierungsrichtung, aber noch keine eingefrorene numerische Spezifikation.
+\end{itemize}
+
+\subsection{OPEN}
+\begin{itemize}
+\item kanonische Lighthouse-Modellgleichungen und Notation,
+\item zulässige Varianten und Exklusionen,
+\item numerisches Integrations-/Event-Konzept,
+\item Delay- und Synapsenrepräsentation,
+\item Differentiationsstrategie,
+\item konkrete Anwendungs-Candidates,
+\item Novelty-Klassifikation und Manuskriptclaim.
+\end{itemize}
+
+\subsection{WEAK / NULL / FAIL}
+Keine eingefrorenen Resultate vorhanden. Insbesondere werden negative oder schwache Resultate nicht vorweggenommen und später nicht aus dem Bericht ausgeblendet.
+
+\section{Branch-independent vs. branch-dependent}
+
+\textbf{Branch-independent:}
+\begin{itemize}
+\item Governance-Workflow und Anti-Cherry-Picking-Regeln,
+\item Git als kanonischer Zustands-/Prompt-/Freeze-Speicher,
+\item Reihenfolge des ersten CORE-Gates vor Implementierung und Anwendung.
+\end{itemize}
+
+\textbf{Branch-dependent:} derzeit keine wissenschaftlichen Resultate.
+
+\section{Decision \& Branch Log}
+
+\begin{longtable}{p{0.12\textwidth} p{0.17\textwidth} p{0.61\textwidth}}
+\toprule
+ID & Status & Entscheidung \\
+\midrule
+DEC-001 & \STABLE & Governance-Prompt als Projektverfahren übernommen. \\
+DEC-002 & \STABLE & Git-Repository ist Single Source of Truth. \\
+DEC-003 & \STABLE & Initiale Workstream-Struktur autorisiert. \\
+DEC-004 & \FROZEN & Application-Workstreams nur PROTECTED / WAIT bis explizites MASTER-Gate. \\
+DEC-005 & \status{ACTIVE}{blue} & Erster wissenschaftlicher Auftrag ist CORE Mathematical Scope Gate 0.1; keine Implementierung oder Anwendung davor. \\
+DEC-006 & \STABLE & MASTER Status Audit 0.2 bestätigt: CORE-Gate noch nicht ausgeführt; README-Commit ist kein Freeze-Verstoß. \\
+DEC-007 & \STABLE & MASTER PDF Snapshot v0.1 erzeugt; wissenschaftlicher Freeze-Zustand bleibt unverändert. \\
+\bottomrule
+\end{longtable}
+
+\section{Freeze-Status und Rollback-Punkte}
+
+\begin{tabularx}{\textwidth}{X p{0.25\textwidth}}
+\toprule
+Objekt & Zustand \\
+\midrule
+Governance rules 0.1 & \STABLE \\
+Scientific model definition & \OPEN \\
+Numerical specification & \OPEN \\
+Application candidates & \status{NOT AUTHORIZED}{red} \\
+Claims / novelty & \OPEN \\
+CORE Mathematical Scope Gate 0.1 & \status{READY}{green} \\
+\bottomrule
+\end{tabularx}
+
+\subsection{Rollback}
+\textbf{RB-001 Governance Initialization 0.1 -- STABLE.}
+
+Weitere Rollback-Punkte werden erst nach tatsächlichen wissenschaftlichen Freezes ergänzt; sie dürfen RB-001 nicht rückwirkend überschreiben.
+
+\section{Manuskriptstatus}
+
+Status: \WAIT. Kein Claim Freeze, kein Draft, keine Figur und kein Supplement sind autorisiert. Der Manuskriptchat darf später ausschließlich auf bereits freigegebenen/frozen Resultaten aufbauen, sofern MASTER nicht ausdrücklich neue Wissenschaft autorisiert.
+
+\section{Roadmap, Blocker und Abhängigkeiten}
+
+\begin{enumerate}
+\item \textbf{Jetzt:} CORE Mathematical Scope Gate 0.1 ausführen.
+\item Bei PASS: vorgeschlagenen CORE Mathematical Freeze 0.1 durch MASTER prüfen und gegebenenfalls autorisieren.
+\item Danach: numerische Spezifikation als eigener Gate/Freeze, bevor Implementierungsergebnisse inspiziert werden.
+\item Erst danach: kontrollierte JAX-Execution und Referenzvalidierung.
+\item Applications bleiben PROTECTED, bis der mathematische und numerische Kern stabil genug ist.
+\item Literatur-Novelty-Audit gezielt nach einem geeigneten Result Freeze oder nach expliziter MASTER-Entscheidung.
+\item Manuskript erst aus frozen Claims und Ergebnissen.
+\end{enumerate}
+
+\textbf{Aktiver Blocker:} fehlender CORE Mathematical Scope Gate 0.1.
+
+\textbf{Abhängigkeit:}
+\[
+\text{Applications / JAX / Literature / Manuscript}
+\quad \not\prec \quad
+\text{CORE Scope Gate 0.1}.
+\]
+Das Symbol \(\not\prec\) wird hier als Governance-Kurznotation verwendet: Diese Arbeitsstränge dürfen den CORE-Gate nicht zeitlich in der wissenschaftlichen Execution überholen.
+
+\section{Nächster globaler Schritt}
+
+\begin{stopbox}
+\textbf{Nächster Schritt:} Wechsle in \texttt{10 -- CORE -- Haupttheorie / mathematischer Kern} und schreibe dort exakt:
+
+\begin{center}
+\Large\texttt{GO}
+\end{center}
+
+Nach Abschluss und Git-Update: zurück zu \texttt{00 -- MASTER} und exakt \texttt{Status?}.
+
+\textbf{STOP -- AWAIT CORE GO}
+\end{stopbox}
+
+\section{Versionhistorie}
+
+\begin{tabularx}{\textwidth}{p{0.13\textwidth} p{0.18\textwidth} X}
+\toprule
+Version & Datum & Änderung \\
+\midrule
+v0.1 & 04.09.2026 & Erster kanonischer MASTER PDF Snapshot. Grundlage: Projektstatus v0.2, Branch-STATUS-Dateien, Decision \& Branch Log und Repository-README. Keine Änderung des wissenschaftlichen Freeze-Zustands. \\
+\bottomrule
+\end{tabularx}
+
+\section*{Kanonische Repository-Quellen für diesen Snapshot}
+\addcontentsline{toc}{section}{Kanonische Repository-Quellen}
+\begin{itemize}
+\item \texttt{research/master/project\_status.md} (v0.2)
+\item \texttt{research/master/STATUS.md}
+\item \texttt{research/master/decision\_branch\_log.md}
+\item \texttt{research/master/prompts/core\_mathematical\_scope\_gate\_0\_1.md}
+\item \texttt{research/core/STATUS.md}
+\item \texttt{research/app\_neuroscience/STATUS.md}
+\item \texttt{research/app\_neuromorphic/STATUS.md}
+\item \texttt{research/app\_diff\_inference/STATUS.md}
+\item \texttt{research/literature/STATUS.md}
+\item \texttt{research/manuscript/STATUS.md}
+\item \texttt{README.md}
+\end{itemize}
+
+\end{document}
