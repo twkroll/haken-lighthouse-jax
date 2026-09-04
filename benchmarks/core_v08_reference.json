@@ -1,0 +1,46 @@
+{
+  "schema_version": "core-v0.8",
+  "provenance": "docs/core/codimension_two_v0.8.md",
+  "ring_ns_threshold_codim2": {
+    "N": 3,
+    "alpha": 0.5,
+    "weights_by_displacement": [1.0, -7.21591135, 7.21591135],
+    "delays_by_displacement": [0.0, 2.0, 13.14117538],
+    "critical": {
+      "T": 17.69540826,
+      "p": -7.21591135,
+      "tau3": 13.14117538,
+      "Omega": 0.46104577,
+      "s_threshold": 4.38076296,
+      "mu_real": 0.8955877392,
+      "mu_imag": 0.4448849305,
+      "residual_norm": 1.2e-13
+    },
+    "threshold_contact": {
+      "psi": -1.0,
+      "psi_prime": 0.0,
+      "psi_second": 0.25,
+      "psi_firing": 0.832930173,
+      "event_velocity": 0.742560034
+    },
+    "locus_tangents": {
+      "dp_dtau3_ns": -2.26337357,
+      "dp_dtau3_threshold": -0.29189680,
+      "slope_difference": -1.97147677,
+      "acute_angle_deg": 49.8909
+    },
+    "dynamic": {
+      "radial_slope_d_abs_mu_dp": -0.01969526,
+      "angle_slope_d_arg_mu_dp": -0.07158686,
+      "ell1_L4": -14.50060663,
+      "ell1_L5": -14.50060668,
+      "classification_fixed_tau3": "supercritical_neimark_sacker_at_threshold_contact"
+    }
+  },
+  "negative_results": {
+    "two_cell_flip_plus_unit": {
+      "status": "not_verified",
+      "note": "Regular continuation around the v0.7 flip benchmark kept the nontrivial antisymmetric unit diagnostic E_-(1) strictly positive; no codimension-two label is assigned."
+    }
+  }
+}
