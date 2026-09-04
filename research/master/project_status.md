@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 0.8
+Version: 0.9
 Date: 2026-09-04
 
 ## Central research question
@@ -35,7 +35,7 @@ Governance Initialization 0.1 is complete and STABLE. MASTER PDF Snapshot v0.2 e
 
 ## Freeze check
 
-OK. `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` remains absent. No repository commits occurred after Status Audit 0.7 before this audit. No effect inspection, parameter tuning, objective change, application execution, post-hoc retuning, novelty positioning, manuscript claim freeze, or scientific execution occurred since the prior audit.
+OK. `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` remains absent. No repository commits occurred after Status Audit 0.8 before this audit. No effect inspection, parameter tuning, objective change, application execution, post-hoc retuning, novelty positioning, manuscript claim freeze, or scientific execution occurred since the prior audit.
 
 ## Branching check
 
