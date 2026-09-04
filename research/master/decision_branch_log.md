@@ -37,6 +37,11 @@ MASTER Status Audit 0.2 confirms that `CORE Mathematical Scope Gate 0.1` has not
 Status: STABLE
 Date: 2026-09-04
 
+## DEC-007
+MASTER PDF Snapshot v0.1 was generated from canonical project status v0.2 and the current branch-status files. Its canonical LaTeX source is stored at `research/master/reports/haken_lighthouse_jax_master_report_v0_1.tex`, with `research/master/reports/CURRENT.md` pointing to the current version. The report introduces no new scientific result and leaves all scientific freeze states unchanged.
+Status: STABLE
+Date: 2026-09-04
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
