@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 0.3
+Version: 0.4
 Date: 2026-09-04
 
 ## Central research question
@@ -9,7 +9,7 @@ Can Hermann Haken's Lighthouse model be developed into a modern, scalable and di
 
 ## Global status
 
-Governance Initialization 0.1 is complete and STABLE. MASTER PDF Snapshot v0.1 exists. No scientific result is frozen yet. The first scientific gate remains authorized but unexecuted in the Git single source of truth.
+Governance Initialization 0.1 is complete and STABLE. MASTER PDF Snapshot v0.2 exists. No scientific result is frozen yet. The first scientific gate remains authorized but unexecuted in the Git single source of truth.
 
 ## Workstreams
 
@@ -26,7 +26,7 @@ Governance Initialization 0.1 is complete and STABLE. MASTER PDF Snapshot v0.1 e
 ## Current freezes
 
 - Governance rules: STABLE 0.1
-- MASTER report snapshot: STABLE v0.1
+- MASTER report snapshot: STABLE v0.2
 - Scientific model definition: OPEN
 - Numerical specification: OPEN
 - Application candidates: NOT YET AUTHORIZED
@@ -34,16 +34,16 @@ Governance Initialization 0.1 is complete and STABLE. MASTER PDF Snapshot v0.1 e
 
 ## Freeze check
 
-OK. No effect inspection, parameter tuning, objective change, application execution, post-hoc retuning, or scientific branch execution has occurred since Status Audit 0.2. Commits after that audit are limited to MASTER report/source/status bookkeeping and do not alter scientific freeze state.
+OK. No effect inspection, parameter tuning, objective change, application execution, post-hoc retuning, or scientific branch execution has occurred since Status Audit 0.3. Commits after that audit are limited to MASTER report v0.2 source/pointer/status bookkeeping and do not alter scientific freeze state. No commits occurred after the MASTER report v0.2 status commit before this audit.
 
 ## Branching check
 
-No unauthorized scientific branch execution detected. Application branches remain PROTECTED / WAIT. Literature and manuscript remain WAIT. No new branch is justified before the CORE scope gate result.
+No unauthorized scientific branch execution detected. All application branches remain PROTECTED / WAIT. Literature and manuscript remain WAIT. No new branch is justified before the CORE scope gate result.
 
 ## Branch-independent results
 
 - Governance process 0.1: STABLE.
-- MASTER reporting process v0.1: STABLE administrative artifact; no scientific claim.
+- MASTER reporting process v0.2: STABLE administrative artifact; no scientific claim.
 
 ## Branch-dependent results
 
@@ -51,7 +51,7 @@ None.
 
 ## Active blocker
 
-The canonical mathematical scope of the baseline Lighthouse model has not yet been established and frozen. `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` does not yet exist.
+The canonical mathematical scope of the baseline Lighthouse model has not yet been established and frozen. `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` does not exist.
 
 ## Rollback points
 
