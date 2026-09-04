@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 0.6
+Version: 0.7
 Date: 2026-09-04
 
 ## Central research question
@@ -9,7 +9,7 @@ Can Hermann Haken's Lighthouse model be developed into a modern, scalable and di
 
 ## Global status
 
-Governance Initialization 0.1 is complete and STABLE. MASTER PDF Snapshot v0.2 exists. Two communication-only briefing PDFs have additionally been generated under MASTER and explicitly classified NON-CANONICAL / PRE-CORE. No scientific result is frozen yet. The first scientific gate remains authorized but unexecuted in the Git single source of truth.
+Governance Initialization 0.1 is complete and STABLE. MASTER PDF Snapshot v0.2 exists. Two communication-only briefing PDFs remain explicitly classified NON-CANONICAL / PRE-CORE. No scientific result is frozen yet. The first scientific gate remains authorized but unexecuted in the Git single source of truth.
 
 ## Workstreams
 
@@ -35,11 +35,11 @@ Governance Initialization 0.1 is complete and STABLE. MASTER PDF Snapshot v0.2 e
 
 ## Freeze check
 
-OK. `research/core/STATUS.md` remains READY and the expected result `research/core/mathematical_scope_gate_0_1.md` is absent. Since Status Audit 0.5, the only repository changes are the MASTER communication-briefing record and DEC-012. These do not constitute CORE execution, effect inspection, parameter tuning, objective change, application execution, post-hoc retuning, novelty positioning, or manuscript claim freeze.
+OK. `research/core/STATUS.md` remains READY and the expected result `research/core/mathematical_scope_gate_0_1.md` is absent. No repository commits occurred after Status Audit 0.6 before this audit. Therefore no effect inspection, parameter tuning, objective change, application execution, post-hoc retuning, novelty positioning, manuscript claim freeze, or other scientific execution occurred since the prior audit.
 
 ## Branching check
 
-No unauthorized scientific branch execution detected. APP-1, APP-2, and APP-3 remain PROTECTED / WAIT. LIT and MANUSCRIPT remain WAIT. The communication briefings did not open the MANUSCRIPT branch and do not justify a new scientific branch before the CORE scope gate result.
+No unauthorized scientific branch execution detected. Because Git is the single source of truth and there are no commits after Status Audit 0.6, APP-1, APP-2 and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. No new branch is justified before the CORE scope gate result.
 
 ## Branch-independent results
 
@@ -50,6 +50,10 @@ No unauthorized scientific branch execution detected. APP-1, APP-2, and APP-3 re
 ## Branch-dependent results
 
 None.
+
+## Result classifications
+
+No STRONG, WEAK, NULL, or FAIL scientific result exists yet.
 
 ## Active blocker
 
@@ -63,7 +67,7 @@ No scientific rollback point exists yet.
 
 ## Manuscript
 
-WAIT. No manuscript claim freeze, canonical draft, figure, or supplement is authorized. The previously generated pre-manuscript snapshot and colleague technical note are MASTER communication artifacts only and are not canonical MANUSCRIPT outputs.
+WAIT. No manuscript claim freeze, canonical draft, figure, or supplement is authorized. The pre-manuscript snapshot and colleague technical note remain MASTER communication artifacts only.
 
 ## Literature positioning
 
