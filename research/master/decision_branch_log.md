@@ -47,6 +47,11 @@ MASTER Status Audit 0.3 confirms that the CORE gate still has not been executed:
 Status: STABLE
 Date: 2026-09-04
 
+## DEC-009
+MASTER PDF Snapshot v0.2 was generated from canonical project status v0.3 and Decision Log through DEC-008. Canonical report source is stored at `research/master/reports/haken_lighthouse_jax_master_report_v0_2.md`; `research/master/reports/CURRENT.md` points to v0.2. The versioned and current PDFs are byte-identical with SHA-256 `556c401d6014a7c4bfd1bcee509183a3fe3cbaa8c558af108d6b109534402a20` and were visually verified after rendering 9 A4 pages. The report is administrative only and leaves the scientific freeze state unchanged.
+Status: STABLE
+Date: 2026-09-04
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
