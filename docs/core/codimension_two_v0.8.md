@@ -158,15 +158,12 @@ for `(T,p,Omega,tau_3,s_*)`.
 The reference solution is
 
 \[
-\boxed{
-T_*=17.69540826,
-}
+\boxed{T_*=17.69540826,}
 \tag{V812}
 \]
 
 \[
-\boxed{
-p_*=-7.21591135,}
+\boxed{p_*=-7.21591135,}
 \tag{V813}
 \]
 
@@ -327,7 +324,7 @@ the gauge-fixed event-history map gives
 
 The history-length discrepancy is about `5e-8`.
 
-The sign change relative to the v0.7 NS benchmark (`ell_1>0` there) is scientifically important: the nonlinear character of the oscillatory timing instability changes along the NS locus before/at the hybrid structural boundary. CORE does **not** infer a generalized-Hopf point from this observation alone; locating `ell_1=0` is a separate v0.9 target.
+The sign change relative to the v0.7 NS benchmark (`ell_1>0` there) is scientifically important: the nonlinear character of the oscillatory timing instability changes somewhere along the NS locus between those benchmark locations. CORE does **not** infer a generalized-Hopf point from this sign change alone; locating `ell_1=0` is a separate v0.9 target.
 
 Because
 
