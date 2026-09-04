@@ -32,6 +32,11 @@ The first scientific task is `CORE Mathematical Scope Gate 0.1`. No implementati
 Status: ACTIVE
 Date: 2026-09-04
 
+## DEC-006
+MASTER Status Audit 0.2 confirms that `CORE Mathematical Scope Gate 0.1` has not yet been executed in the Git single source of truth. `research/core/STATUS.md` remains READY and no gate result file exists. The later README-only commit `948dedbc5294fbe864b940060ee6b2053020347f` was inspected and does not constitute scientific execution or a freeze violation. No application, literature, or manuscript branch is authorized to proceed.
+Status: STABLE
+Date: 2026-09-04
+
 ## Rollback points
 
-- RB-001: Governance Initialization 0.1
+- RB-001: Governance Initialization 0.1 — STABLE
