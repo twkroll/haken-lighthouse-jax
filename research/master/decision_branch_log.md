@@ -62,6 +62,11 @@ MASTER Status Audit 0.5 reconfirms that `CORE Mathematical Scope Gate 0.1` remai
 Status: STABLE
 Date: 2026-09-04
 
+## DEC-012
+MASTER generated two communication-only PDF briefings at the user's request: a current pre-manuscript snapshot and a detailed colleague-facing technical derivation note. Both are explicitly NON-CANONICAL / PRE-CORE and are recorded under `research/master/briefings/README.md` with hashes and page counts. The detailed note uses source-derived Lighthouse equations and transparent elementary derivations, but it does not constitute a CORE Mathematical Freeze, scientific execution, a MANUSCRIPT Claim Freeze, or a novelty claim. `research/manuscript/STATUS.md` remains WAIT and the single authorized scientific next action remains `CORE Mathematical Scope Gate 0.1`.
+Status: STABLE
+Date: 2026-09-04
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
