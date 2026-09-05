@@ -1,465 +1,313 @@
-# CORE codimension-two atlas v0.8
+# CORE codimension-two atlas v0.8 — corrected reference
 
-## Purpose
+## Status and numerical erratum
 
-CORE v0.8 continues the verified v0.7 nonlinear bifurcation benchmarks in two parameters and adds the first codimension-two point.
+CORE v0.8 introduced the first hybrid codimension-two Lighthouse benchmark: a transverse intersection of a smooth Neimark--Sacker (NS) locus with a tangential response-threshold contact locus in a three-node ring.
 
-The main result is a **hybrid codimension-two intersection** between
+A v0.9 reproducibility audit found that the originally stored coordinates corresponded to a 48-point Gauss rule, while the committed v0.8 reference script imported the 32-point quadrature from v0.7. The original script therefore did **not** reproduce its own asserted coordinates. The audit also showed that the previously reported event-map value `ell1 ~= -14.5006` at the threshold contact is strongly quadrature/finite-difference sensitive and must not be treated as a certified normal-form coefficient.
 
-1. a smooth Neimark--Sacker (NS) locus of the synchronous `N=3` Lighthouse ring, and
-2. a tangential response-threshold contact locus.
+This document supersedes the original v0.8 numerical values. The hybrid codimension-two intersection itself is retained; its coordinates below are converged with 96/128-point Gauss quadrature. The nonlinear NS coefficient at the threshold boundary is deliberately left **uncertified**. The smooth generalized-NS/Chenciner calculation is moved to v0.9, away from the threshold boundary.
 
-The calculation deliberately distinguishes this from a smooth two-eigenmode codimension-two bifurcation: only one Floquet pair is critical. The second codimension comes from a hybrid/structural boundary of the orbit.
+Provenance classes follow the CORE convention: **[H]** historical Haken structure, **[C]** contemporary Lighthouse structure, **[P]** project derivation/reference calculation.
 
-The response and synapse are unchanged from v0.7:
+---
+
+# 1. Two-parameter ring family
+
+Use the synchronous `N=3` circulant ring
+
+\[
+w_d=[1,p,-p],
+\qquad
+\tau_d=[0,2,\tau_3],
+\tag{V81}
+\]
+
+with
 
 \[
 S(x)=\exp[-1/(x+1)^2]H(x+1),
 \qquad
 \eta(t)=\alpha^2te^{-\alpha t}H(t),
 \qquad \alpha=0.5.
-\]
-
-For this particular `S`, the threshold extension by zero is infinitely flat at `x=-1`; therefore the threshold contact is not a classical derivative discontinuity. It is nevertheless a structural activity-set boundary and remains a first-class CORE diagnostic.
-
----
-
-# 1. Two-parameter ring family
-
-Use a three-node circulant ring with displacement weights
-
-\[
-\boxed{w_d=[1,p,-p]}
-\tag{V81}
-\]
-
-and delays
-
-\[
-\boxed{\tau_d=[0,2,\tau_3].}
 \tag{V82}
 \]
 
-The row sum is exactly one for all `(p,tau_3)`.
-
-For the synchronous orbit define
+The row sum is one for all `(p,tau_3)`. Define
 
 \[
-\Psi(s;T,p,\tau_3)
-=
-R_T(s)+pR_T(s-2)-pR_T(s-\tau_3).
+\Psi(s)=R_T(s)+pR_T(s-2)-pR_T(s-\tau_3).
 \tag{V83}
 \]
 
-Existence requires
+Synchronous existence requires
 
 \[
-\boxed{
 F_{\rm sync}(T,p,\tau_3)
 =2\pi-\int_0^T S(\Psi(s))ds=0.
-}
 \tag{V84}
 \]
 
-The `q=1` Fourier characteristic equation is
+The `q=1` NS locus is defined by
 
 \[
-E_1(\mu;T,p,\tau_3)=0.
+F_{\rm sync}=0,
+\qquad
+E_1(e^{i\Omega};T,p,\tau_3)=0,
+\qquad 0<\Omega<\pi.
 \tag{V85}
 \]
 
-An NS point satisfies
+A tangential threshold contact is defined by
 
 \[
-\mu=e^{i\Omega},
-\qquad 0<\Omega<\pi,
+\Psi(s_*)=-1,
+\qquad
+\Psi'(s_*)=0,
+\qquad
+\Psi''(s_*)>0.
 \tag{V86}
+\]
+
+---
+
+# 2. Converged hybrid codimension-two point
+
+Solving the five equations
+
+\[
+F_{\rm sync}=0,
+\quad
+\Re E_1(e^{i\Omega})=0,
+\quad
+\Im E_1(e^{i\Omega})=0,
+\quad
+\Psi(s_*)+1=0,
+\quad
+\Psi'(s_*)=0
+\tag{V87}
+\]
+
+with 96- and 128-point Gauss rules gives the converged reference
+
+\[
+\boxed{T_*=17.6950650237,}
+\tag{V88}
+\]
+
+\[
+\boxed{p_*=-7.2156404007,}
+\tag{V89}
+\]
+
+\[
+\boxed{\tau_{3,*}=13.1402482105,}
+\tag{V810}
+\]
+
+\[
+\boxed{\Omega_*=0.4610342074,}
+\tag{V811}
+\]
+
+\[
+\boxed{s_*=4.3807078863.}
+\tag{V812}
+\]
+
+The corresponding critical multiplier is
+
+\[
+\boxed{
+\mu_*=0.89559288398+0.44487457352i,
+\qquad |\mu_*|=1.
+}
+\tag{V813}
+\]
+
+The 96- and 128-point coordinate differences are below approximately `1.4e-7`, while the 32-point rule is visibly unconverged at this threshold-sensitive point. Thus v0.8 adopts the 128-point coordinates above.
+
+---
+
+# 3. Threshold and event diagnostics
+
+At the converged point,
+
+\[
+\Psi(s_*)=-1,
+\qquad
+\Psi'(s_*)=0,
+\tag{V814}
 \]
 
 and
 
 \[
-\boxed{
-F_{\rm sync}=0,
-\quad
-\Re E_1(e^{i\Omega})=0,
-\quad
-\Im E_1(e^{i\Omega})=0.
-}
-\tag{V87}
-\]
-
----
-
-# 2. Threshold-contact locus
-
-The active response threshold is
-
-\[
-\Psi=-1.
-\]
-
-A tangential contact at phase `s_*` satisfies
-
-\[
-\boxed{
-\Psi(s_*)=-1,
-\qquad
-\partial_s\Psi(s_*)=0.
-}
-\tag{V88}
-\]
-
-To select a genuine local minimum require
-
-\[
-\boxed{
-\partial_s^2\Psi(s_*)>0.
-}
-\tag{V89}
-\]
-
-The threshold-contact locus in `(p,tau_3)` is obtained from
-
-\[
-F_{\rm sync}=0,
-\qquad
-\Psi(s_*)+1=0,
-\qquad
-\partial_s\Psi(s_*)=0.
-\tag{V810}
-\]
-
----
-
-# 3. First codimension-two point
-
-Solve the five equations
-
-\[
-F_{\rm sync}=0,
-\]
-
-\[
-\Re E_1(e^{i\Omega})=0,
-\qquad
-\Im E_1(e^{i\Omega})=0,
-\]
-
-\[
-\Psi(s_*)+1=0,
-\qquad
-\partial_s\Psi(s_*)=0
-\tag{V811}
-\]
-
-for `(T,p,Omega,tau_3,s_*)`.
-
-The reference solution is
-
-\[
-\boxed{T_*=17.69540826,}
-\tag{V812}
-\]
-
-\[
-\boxed{p_*=-7.21591135,}
-\tag{V813}
-\]
-
-\[
-\boxed{\tau_{3,*}=13.14117538,}
-\tag{V814}
-\]
-
-\[
-\boxed{\Omega_*=0.46104577,}
+\boxed{\Psi''(s_*)\approx0.24999998>0.}
 \tag{V815}
 \]
 
+Hence the contact is an isolated tangential minimum.
+
+At the firing section,
+
 \[
-\boxed{s_*=4.38076296.}
+\Psi(0)\approx0.8327593022,
 \tag{V816}
 \]
 
-The simultaneous residual norm is approximately
+so
 
 \[
-1.2\times10^{-13}.
+\boxed{\nu_*=S(\Psi(0))\approx0.7425188207>0.}
 \tag{V817}
 \]
 
-The critical multiplier is
+Spike-event transversality therefore remains regular. The second codimension is a response-threshold/activity-set boundary, not spike grazing.
+
+Because the zero extension of this particular response is infinitely flat at `x=-1`, the threshold contact is not a classical derivative discontinuity. It is nevertheless a structural boundary of the active response set and is kept as a hybrid/structural CORE diagnostic.
+
+---
+
+# 4. Transverse intersection of critical loci
+
+Using `tau_3` as local continuation parameter gives
 
 \[
 \boxed{
-\mu_*=e^{i\Omega_*}
-\approx
-0.8955877392+0.4448849305i.
+\frac{dp_{\rm NS}}{d\tau_3}\approx-2.27233144,
 }
 \tag{V818}
 \]
 
-At the threshold contact,
+and
 
 \[
-\Psi(s_*)+1\approx0,
-\qquad
-\Psi'(s_*)\approx0,
-\]
-
-and symmetric finite differences give
-
-\[
-\boxed{\Psi''(s_*)\approx0.25>0.}
+\boxed{
+\frac{dp_{\rm TH}}{d\tau_3}\approx-0.29182573.
+}
 \tag{V819}
 \]
 
-Thus the threshold contact is an isolated tangential minimum rather than an extended plateau.
-
-The firing-section input is
+Thus
 
 \[
-\Psi(0)\approx0.832930173,
-\]
-
-hence
-
-\[
-\boxed{\nu_*=S(\Psi(0))\approx0.742560034>0.}
+\boxed{
+\frac{dp_{\rm NS}}{d\tau_3}
+-
+\frac{dp_{\rm TH}}{d\tau_3}
+\approx-1.98050571\ne0.
+}
 \tag{V820}
 \]
 
-so spike-event transversality is still regular at the codimension-two point.
-
----
-
-# 4. Transversality of the two critical loci
-
-Continue each locus locally with `tau_3` as parameter.
-
-For the NS curve,
+The acute angle between the two parameter-plane tangents is approximately
 
 \[
-\boxed{
-\left.\frac{dp_{\rm NS}}{d\tau_3}\right|_*
-\approx-2.26337357.
-}
+\boxed{49.9782^\circ.}
 \tag{V821}
 \]
 
-For the threshold-contact curve,
-
-\[
-\boxed{
-\left.\frac{dp_{\rm TH}}{d\tau_3}\right|_*
-\approx-0.29189680.
-}
-\tag{V822}
-\]
-
-Their slope difference is
-
-\[
-\boxed{-1.97147677\ne0,}
-\tag{V823}
-\]
-
-and the acute angle between the parameter-plane tangents is approximately
-
-\[
-\boxed{49.89^\circ.}
-\tag{V824}
-\]
-
-Therefore the intersection is transverse and genuinely codimension two in the `(p,tau_3)` plane.
+The intersection is therefore transverse and genuinely codimension two in `(p,tau_3)`.
 
 ---
 
-# 5. NS dynamics at the hybrid intersection
+# 5. Linear NS transversality
 
-At fixed `tau_3=tau_{3,*}`, characteristic-root continuation in `p` gives
+At fixed `tau_3=tau_{3,*}`, independent characteristic-root continuation in `p` gives
 
 \[
 \boxed{
-\left.\frac{d|\mu|}{dp}\right|_*
-\approx-0.01969526,
+\frac{d|\mu|}{dp}\approx-0.019617079,
 }
-\tag{V825}
+\tag{V822}
 \]
 
 and
 
 \[
 \boxed{
-\left.\frac{d\arg\mu}{dp}\right|_*
-\approx-0.07158686.
+\frac{d\arg\mu}{dp}\approx-0.071526814.
 }
-\tag{V826}
+\tag{V823}
 \]
 
-Thus the NS pair crosses the unit circle transversely.
-
-Using the same physical Fourier-history normalization as v0.7,
-
-\[
-q^{(r)}=\mu_*^{-r}
-\begin{pmatrix}
-1 & e^{2\pi i/3} & e^{4\pi i/3}
-\end{pmatrix}^T,
-\tag{V827}
-\]
-
-the gauge-fixed event-history map gives
-
-\[
-\boxed{\ell_1(L=4)\approx-14.50060663,}
-\tag{V828}
-\]
-
-\[
-\boxed{\ell_1(L=5)\approx-14.50060668.}
-\tag{V829}
-\]
-
-The history-length discrepancy is about `5e-8`.
-
-The sign change relative to the v0.7 NS benchmark (`ell_1>0` there) is scientifically important: the nonlinear character of the oscillatory timing instability changes somewhere along the NS locus between those benchmark locations. CORE does **not** infer a generalized-Hopf point from this sign change alone; locating `ell_1=0` is a separate v0.9 target.
-
-Because
-
-\[
-\ell_1<0
-\]
-
-while `d|mu|/dp<0`, the local NS normal form at fixed `tau_3=tau_{3,*}` is supercritical under the v0.5/v0.7 coefficient convention.
+Hence the complex pair crosses the unit circle transversely.
 
 ---
 
-# 6. Local codimension-two interpretation
+# 6. Nonlinear coefficient at the threshold boundary — not certified
 
-Introduce parameter offsets
-
-\[
-\delta p=p-p_*,
-\qquad
-\delta\tau=\tau_3-\tau_{3,*}.
-\]
-
-A natural local description has two independent scalar unfolding coordinates:
-
-1. an NS radial distance
+The original v0.8 record reported
 
 \[
-\lambda_{\rm NS}
-=a_p\delta p+a_\tau\delta\tau+\cdots,
+\ell_1\approx-14.5006066.
 \]
 
-2. a threshold-distance coordinate
+The v0.9 audit showed that this value is tied to the legacy 48-point quadrature and is not stable under simultaneous quadrature refinement and finite-difference-step refinement of the threshold-contact event map. For example, moving from 48 to 64/96-point quadrature changes the computed cubic coefficient by order unity rather than by the benchmark tolerance.
 
-\[
-\lambda_{\rm TH}
-=b_p\delta p+b_\tau\delta\tau+\cdots.
-\]
-
-The slope inequality (V823) implies these two linear forms are independent.
-
-The critical complex timing amplitude `A` obeys locally
-
-\[
-A_{n+1}
-=e^{i\Omega_*}
-\left[
-(1+\lambda_{\rm NS})A_n
-+gA_n|A_n|^2+\cdots
-\right].
-\tag{V830}
-\]
-
-The threshold-contact surface is
-
-\[
-\lambda_{\rm TH}=0.
-\tag{V831}
-\]
-
-Thus v0.8 supplies the first explicit Lighthouse example where a synergetic order parameter becomes critical exactly on a structural boundary of the microscopic pulse itinerary.
-
----
-
-# 7. Negative result: no forced flip + unit codimension-two point
-
-The v0.7 two-cell flip family was continued in `(tau_c,w_hat)` around the verified flip point. Along the regular branch segment examined, the antisymmetric unit diagnostic `E_-(1)` remains strictly positive and does not cross zero.
-
-CORE therefore records **no verified flip+pitchfork codimension-two point** for that family. This negative result is intentional: codimension-two labels are not introduced from proximity or failed root searches.
-
----
-
-# 8. Benchmark contract B91--B104
-
-### B91 -- codimension-two residual
-Solve (V811); require the full residual norm `< 1e-9`.
-
-### B92 -- critical coordinates
-Recover `(T_*,p_*,tau_3*,Omega_*,s_*)` within documented tolerances.
-
-### B93 -- threshold value
-Verify `|Psi(s_*)+1| < 1e-8`.
-
-### B94 -- tangency
-Verify `|Psi'(s_*)| < 1e-8`.
-
-### B95 -- minimum curvature
-Verify `Psi''(s_*) > 0` and approximately `0.25`.
-
-### B96 -- event transversality
-Verify `nu_* > 0.7`.
-
-### B97 -- NS unit circle
-Verify `||mu_*|-1| < 1e-7` in the characteristic calculation.
-
-### B98 -- NS-locus slope
-Recover `dp_NS/dtau_3 approx -2.26337357`.
-
-### B99 -- threshold-locus slope
-Recover `dp_TH/dtau_3 approx -0.29189680`.
-
-### B100 -- codimension-two transversality
-Verify the slope difference has magnitude `> 1`.
-
-### B101 -- radial crossing
-Recover `d|mu|/dp approx -0.01969526` at fixed `tau_3=tau_3*`.
-
-### B102 -- event-map Lyapunov coefficient
-Recover `ell1 approx -14.5006066` in the physical Fourier-history normalization.
-
-### B103 -- history convergence
-Require `|ell1(L=4)-ell1(L=5)| < 1e-5`.
-
-### B104 -- negative flip/unit audit
-Do not label a two-cell flip+unit codimension-two point unless `E_-(-1)=0` and a nontrivial `E_-(1)=0` are both solved at the same regular synchronous orbit.
-
----
-
-# 9. v0.8 conclusions
-
-CORE now contains one verified example of each of the following:
-
-- unit-multiplier symmetry breaking;
-- flip / period doubling;
-- Neimark--Sacker instability;
-- a nonlinear finite-ring timing mode;
-- a hybrid codimension-two intersection.
-
-The new organizing picture is
+Therefore:
 
 \[
 \boxed{
-\text{critical timing mode}
-+\text{structural event boundary}
+\text{v0.8 does not certify }\ell_1
+\text{ or an NS criticality label at the threshold contact.}
+}
+\tag{V824}
+\]
+
+This does **not** invalidate the hybrid codimension-two intersection: its defining conditions are existence, unit-circle NS criticality, threshold contact, and transverse intersection of the two loci, all of which are independently converged above.
+
+The smooth nonlinear NS analysis is instead performed in v0.9 at a point where
+
+\[
+\min_s(\Psi(s)+1)>0,
+\]
+
+so the entire orbit remains uniformly away from the response threshold.
+
+---
+
+# 7. Negative result retained
+
+The regular two-cell flip family examined in v0.8 did not produce a verified simultaneous nontrivial `mu=-1` and `mu=+1` point. CORE therefore retains the negative result:
+
+- no flip+unit codimension-two label is assigned unless both conditions are solved on the same regular orbit;
+- failed or ill-conditioned searches are not promoted to bifurcation claims.
+
+---
+
+# 8. Corrected benchmark contract B91--B104
+
+- **B91**: solve (V87) with residual norm `<1e-9` using at least 96-point quadrature.
+- **B92**: reproduce the 128-point coordinates (V88)--(V812) within documented convergence tolerance.
+- **B93**: verify `|Psi(s_*)+1|<1e-8`.
+- **B94**: verify `|Psi'(s_*)|<1e-8`.
+- **B95**: verify `Psi''(s_*)>0` and approximately `0.25`.
+- **B96**: verify `nu_*>0.7`.
+- **B97**: verify `||mu_*|-1|<1e-8` in the characteristic calculation.
+- **B98**: recover `dp_NS/dtau_3 approx -2.27233144`.
+- **B99**: recover `dp_TH/dtau_3 approx -0.29182573`.
+- **B100**: verify the slope-difference magnitude exceeds one.
+- **B101**: recover `d|mu|/dp approx -0.019617079` at fixed `tau_3`.
+- **B102**: perform a quadrature convergence audit; do **not** certify the legacy `ell1` value.
+- **B103**: any future threshold-boundary nonlinear coefficient must include both quadrature and derivative-step convergence.
+- **B104**: do not label a two-cell flip+unit codimension-two point without simultaneous solved critical conditions.
+
+---
+
+# 9. v0.8 conclusion
+
+The corrected v0.8 result is
+
+\[
+\boxed{
+\text{smooth NS critical mode}
++
+\text{tangential response-threshold boundary}
 \Longrightarrow
-\text{hybrid synergetic codimension-two dynamics}.
+\text{transverse hybrid codimension-two intersection}.
 }
 \]
 
-The next mathematical target should not be another arbitrary special case. v0.9 should continue the NS cubic coefficient `ell_1` along the two-parameter NS locus and locate a genuine `ell_1=0` generalized-Hopf/Chenciner point if one exists, while separately continuing arrival-collision boundaries relevant to adaptive delays.
+The threshold-boundary cubic coefficient is intentionally not part of the certified result. v0.9 moves to a uniformly smooth part of the NS locus and computes the generalized-NS/Chenciner normal form through fifth order.
