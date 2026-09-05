@@ -1,0 +1,88 @@
+{
+  "schema_version": "core-v0.14",
+  "provenance": "docs/core/adaptive_event_engine_v0.14.md",
+  "model": {
+    "N": 3,
+    "alpha": 0.5,
+    "weights_by_displacement": [1.0, "p", "-p"],
+    "p_fixed": -3.267985407948901,
+    "short_edge": {"path_length": 1.0, "speed": 0.5, "delay": 2.0},
+    "long_edge": {"path_length": 1.0, "speed_state": "c(t)", "delay_if_frozen": "1/c"},
+    "response": "S(x)=exp[-1/(x+1)^2] H(x+1)",
+    "quadrature_order": 20
+  },
+  "event_semantics": {
+    "packet_state": "remaining distance rho",
+    "long_packet_flow": "rho_dot=-c(t)",
+    "next_event": "minimum of firing roots and packet-arrival roots",
+    "tie_policy": "advance once; apply additive arrival batch; then firing batch, zero-delay self jumps, packet emission",
+    "same_edge_fifo": true
+  },
+  "frozen_recovery": {
+    "tau3": 7.941411830425917,
+    "period_reference": 16.297496058505022,
+    "period_full_engine": 16.297496054831527,
+    "absolute_period_error": 3.6734952857386816e-09,
+    "relative_period_error": 2.2540243437099215e-10,
+    "synchronous_last_10_spike_spread_max": 0.0
+  },
+  "center_mode_preparation": {
+    "requested_seed": 0.001,
+    "relax_cycles_at_NS": 20,
+    "prepared_physical_q1_amplitude": 0.0010023850212674303
+  },
+  "slow_passage_no_feedback": {
+    "tau_FIC": 7.94140373739,
+    "A_FIC": 0.0660575,
+    "comparisons": [
+      {"epsilon": 0.001, "full_cycles_to_FIC": 150, "full_A_at_FIC": 0.0010023995717788586, "reduced_cycles_to_FIC": 150.02176927774963, "reduced_A_at_FIC": 0.0010024165123435024, "relative_amplitude_difference": -1.6899726246706153e-05},
+      {"epsilon": 0.0003, "full_cycles_to_FIC": 500, "full_A_at_FIC": 0.0010022654372318816, "reduced_cycles_to_FIC": 500.0725451102039, "reduced_A_at_FIC": 0.0010024899953070465, "relative_amplitude_difference": -0.0002240003154307145},
+      {"epsilon": 0.0001, "full_cycles_to_FIC": 1500, "full_A_at_FIC": 0.001002508438984924, "reduced_cycles_to_FIC": 1500.2176666073528, "reduced_A_at_FIC": 0.001002699976414574, "relative_amplitude_difference": -0.000191021675631248},
+      {"epsilon": 1e-05, "full_cycles_to_FIC": 15002, "full_A_at_FIC": 0.0010058608222463503, "reduced_cycles_to_FIC": 15002.176823099282, "reduced_A_at_FIC": 0.0010055390247934728, "relative_amplitude_difference": 0.00032002482742393424, "full_fraction_of_static_FIC_amplitude": 0.015227049498487685, "reference_mode": "separate --slow-passage-only check"}
+    ],
+    "direct_full_engine_epsilon_1e_6": {
+      "status": "not_run_as_default_v0.14_reference",
+      "reason": "v0.12 already certifies the reduced 1e-6 result and v0.13 shows the within-flight correction is asymptotically tiny; v0.14 directly checks the full queue down to 1e-5."
+    }
+  },
+  "activity_feedback_check": {
+    "epsilon": 0.0001,
+    "kappa": 2e-06,
+    "full_cycles_to_FIC": 1496,
+    "full_A_at_FIC": 0.0010027502580810417,
+    "reduced_cycles_to_FIC": 1496.3080138847185,
+    "reduced_A_at_FIC": 0.0010026991354429421,
+    "relative_amplitude_difference": 5.098502261798206e-05
+  },
+  "global_bistability": {
+    "construction": "small q=1 seed at frozen tau3=7.8 -> large timing-modulated state; then set tau3=8.0 and continue",
+    "tau_low": 7.8,
+    "tau_low_large_state": {"A_mean": 0.8236549539772645, "A_std": 0.067899049194926, "A_min": 0.7101815025200313, "A_max": 0.9006718986729548},
+    "coexistence_tau": 8.0,
+    "distance_above_local_NS": 0.05858816957408308,
+    "large_state_at_tau8": {"A_mean": 0.7181453200202882, "A_std": 0.04917740433409652, "A_min": 0.6443492736686078, "A_max": 0.785536438242287, "period_mean": 16.223012090039237, "period_std": 0.01461101168239618},
+    "synchrony_basin_at_tau8": {"seed": 0.001, "cycles": 2200, "last_200_A_mean": 2.1157124008355154e-06, "last_200_A_max": 2.7940546529335242e-06},
+    "history_dependent_coexistence": true,
+    "large_to_small_tail_mean_ratio": 339434.2821532292,
+    "smoothness_audit_large_tau8": {"cycles": 300, "psi_min": -0.5344786743868254, "psi_max": 0.5730224021219532, "threshold_margin": 0.4655213256131746, "max_active_packets": 6, "min_event_step": 0.00037847804148216646}
+  },
+  "upper_persistence_protocol": {
+    "status": "empirical_finite_time_bracket_not_bifurcation_classification",
+    "start_state": "large tau3=8.0 attractor",
+    "tau_keep": 8.0073,
+    "cycles_keep": 3000,
+    "keep_A_mean": 0.6848036879599563,
+    "keep_A_std": 0.04623735970870842,
+    "tau_lose": 8.0075,
+    "cycles_lose": 6000,
+    "lose_A_mean": 0.00017495126135288637,
+    "lose_A_max": 0.00035757009771129655,
+    "distance_from_NS_bracket": [0.06588816957408383, 0.06608816957408337]
+  },
+  "variational_scope": {
+    "generic_single_event_saltation": "documented",
+    "v013_arrival_sensitivity": "retained as unit test",
+    "simultaneous_no_feedback_batches": "commuting additive resets; value semantics and first-order order-independence documented",
+    "activity_feedback_ties": "global AD not certified because the held cycle statistic changes chart at cycle-completion ties"
+  }
+}
