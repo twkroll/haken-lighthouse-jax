@@ -1,0 +1,47 @@
+{
+  "schema_version": "core-v0.10",
+  "provenance": "docs/core/chenciner_unfolding_v0.10.md",
+  "critical_point": {
+    "T": 16.29213672114,
+    "p": -3.26248414452,
+    "tau3": 7.92140373739,
+    "Omega": 0.266095330801,
+    "L2": 0.021546133331
+  },
+  "linear_unfolding": {
+    "beta1": "abs(mu)-1",
+    "beta2": "L1",
+    "matrix_rows_beta1_beta2_cols_dp_dtau": [
+      [-0.18379443, -0.0505106793],
+      [0.08625, 0.0144058630]
+    ],
+    "determinant": 0.0017088287,
+    "dp_ns_dtau3": -0.27482160,
+    "d_beta2_dtau3_along_ns": -0.0092975000,
+    "beta2_partial_p_status": "finite_difference_estimate"
+  },
+  "radial_normal_form": {
+    "equation": "r_next-r = r*(beta1 + beta2*r^2 + L2*r^4)",
+    "circle_equation_in_u": "L2*u^2 + beta2*u + beta1 = 0, u=r^2",
+    "fold_condition": "beta2^2 - 4*L2*beta1 = 0 with beta2<0",
+    "fold_radius_squared": "-beta2/(2*L2)"
+  },
+  "physical_initializers": {
+    "ns_tangent_dp_per_dtau": -0.27482160,
+    "fic_quadratic_initializer_dp_per_dtau2": -0.00545721,
+    "fic_quadratic_initializer_certified": false
+  },
+  "example_two_circle_wedge": {
+    "beta1": 0.000001,
+    "beta2": -0.0005,
+    "r_inner": 0.04701677,
+    "r_outer": 0.14489804,
+    "inner_radial_stability": "stable",
+    "outer_radial_stability": "unstable"
+  },
+  "numerical_rule": {
+    "transient_simulation_alone_is_reference": false,
+    "required_invariant_circle_equation": "P(K(phi)) = K(phi+omega)",
+    "recommended_method": "Fourier collocation / parameterization method with phase condition and pseudo-arclength continuation"
+  }
+}
