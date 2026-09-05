@@ -1,0 +1,83 @@
+{
+  "schema_version": "core-v0.7",
+  "provenance": "docs/core/event_normal_forms_v0.7.md",
+  "response": {
+    "family": "exp_threshold",
+    "r": 1.0,
+    "h": -1.0
+  },
+  "alpha": 0.5,
+  "generic_flip_two_cell": {
+    "Gamma": 1.0,
+    "tau_self": 0.0,
+    "tau_cross": 2.0,
+    "continuation_parameter": "transverse_w_hat",
+    "critical": {
+      "w_hat": 10.508451441614785,
+      "T": 16.81736224376564,
+      "w_self": 5.754225720807392,
+      "w_cross": -4.754225720807392,
+      "Eminus_at_minus_one": 0.0,
+      "Eminus_at_plus_one": 0.7423135516929733,
+      "psi0": -0.005281435408072369,
+      "nu": 0.3639833534456731,
+      "psi_min": -0.2178579062616311,
+      "S_min": 0.19501775236345475
+    },
+    "dynamic": {
+      "Eminus_mu_at_minus_one": 0.35681648247742886,
+      "Eminus_parameter_derivative": 0.1054956580148758,
+      "mu_slope_per_w_hat": -0.29565802925471396,
+      "sigma": 0.29565802925471396
+    },
+    "period_two_branch": {
+      "A2_per_delta_w_hat": 0.5373148983166004,
+      "T_per_delta_w_hat": 0.11547636802333727,
+      "c_flip_from_branch": 0.5502509425683266
+    },
+    "direct_event_map": {
+      "history_L4_c_flip_h1e3": 0.5502495026506171,
+      "history_L5_c_flip_h1e3": 0.5502496452365979,
+      "classification": "generic_flip"
+    }
+  },
+  "pitchfork_v06_dynamic_mass_crosscheck": {
+    "T": 13.430690200286515,
+    "b": -0.02718724838,
+    "Eminus_mu_at_unit": 0.445594394,
+    "c_chi_from_mass_identity": 0.009085675059898407
+  },
+  "ring_N3_neimark_sacker": {
+    "N": 3,
+    "weight_by_displacement": [
+      1.0,
+      -2.6069763661290217,
+      2.6069763661290217
+    ],
+    "delay_by_displacement": [0.0, 2.0, 5.0],
+    "continuation_parameter": "p_in_[1,p,-p]",
+    "critical": {
+      "p": -2.6069763661290217,
+      "T": 15.565320495514536,
+      "fourier_sector": 1,
+      "mu": [0.9633192495734814, 0.2683579991361478],
+      "mu_abs": 0.999999996149586,
+      "Omega": 0.2716881027539223,
+      "psi0": 0.02660424733964099,
+      "nu": 0.3871891405609047,
+      "psi_min": -0.3450924615998433,
+      "S_min": 0.09714751310164116
+    },
+    "crossing": {
+      "d_abs_mu_dp": -0.10931725326124297,
+      "d_arg_mu_dp": -0.17390457447308272
+    },
+    "direct_event_map": {
+      "eigenvector_normalization": "q_history[r,i] = mu^(-r) * exp(2*pi*i*i/3)",
+      "ell1_L4_h2p5e3": 0.005163897107882624,
+      "ell1_L5_h2p5e3": 0.005163885701435347,
+      "predicted_abs_A2_per_delta_p": 21.169549220693206,
+      "classification": "subcritical_neimark_sacker"
+    }
+  }
+}

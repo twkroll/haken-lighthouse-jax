@@ -1,0 +1,65 @@
+{
+  "schema_version": "core-v0.8.1",
+  "provenance": "docs/core/codimension_two_v0.8.md",
+  "status": "corrected_by_v0.9_reproducibility_audit",
+  "ring_ns_threshold_codim2": {
+    "N": 3,
+    "alpha": 0.5,
+    "weights_by_displacement": [1.0, -7.21564040067306, 7.21564040067306],
+    "delays_by_displacement": [0.0, 2.0, 13.14024821048378],
+    "critical_128_gauss": {
+      "T": 17.69506502372353,
+      "p": -7.21564040067306,
+      "tau3": 13.14024821048378,
+      "Omega": 0.4610342074202,
+      "s_threshold": 4.38070788630572,
+      "mu_real": 0.8955928839788572,
+      "mu_imag": 0.4448745735220584
+    },
+    "quadrature_convergence": {
+      "96_gauss": {
+        "T": 17.69506507,
+        "p": -7.21564044,
+        "tau3": 13.14024834,
+        "Omega": 0.46103421,
+        "s_threshold": 4.38070789
+      },
+      "legacy_48_gauss": {
+        "T": 17.69540826,
+        "p": -7.21591135,
+        "tau3": 13.14117538,
+        "Omega": 0.46104577,
+        "s_threshold": 4.38076296,
+        "status": "superseded"
+      }
+    },
+    "threshold_contact": {
+      "psi": -1.0,
+      "psi_prime": 0.0,
+      "psi_second": 0.2499999763,
+      "psi_firing": 0.8327593022,
+      "event_velocity": 0.7425188207
+    },
+    "locus_tangents": {
+      "dp_dtau3_ns": -2.2723314390,
+      "dp_dtau3_threshold": -0.2918257331,
+      "slope_difference": -1.9805057060,
+      "acute_angle_deg": 49.97822272
+    },
+    "linear_dynamic": {
+      "radial_slope_d_abs_mu_dp": -0.0196170790,
+      "angle_slope_d_arg_mu_dp": -0.0715268140
+    },
+    "nonlinear_threshold_boundary": {
+      "status": "not_certified",
+      "legacy_ell1_48_gauss": -14.5006066,
+      "note": "The legacy cubic coefficient is strongly quadrature and finite-difference-step sensitive at the threshold-contact boundary. CORE v0.8.1 removes the NS criticality classification from the certified benchmark."
+    }
+  },
+  "negative_results": {
+    "two_cell_flip_plus_unit": {
+      "status": "not_verified",
+      "note": "Regular continuation around the v0.7 flip benchmark kept the nontrivial antisymmetric unit diagnostic E_-(1) strictly positive; no codimension-two label is assigned."
+    }
+  }
+}

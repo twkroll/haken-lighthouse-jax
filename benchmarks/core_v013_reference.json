@@ -1,0 +1,54 @@
+{
+  "schema_version": "core-v0.13",
+  "provenance": "docs/core/in_flight_delays_v0.13.md",
+  "literature_anchor": {
+    "citation": "Coombes, Thul, Ruschel, Nicks (2026), Adaptive conduction delays and phase locking in spiking Haken Lighthouse networks, arXiv:2606.21508",
+    "scope_note": "The paper motivates state-dependent conduction speeds with tau=d/c. CORE v0.13 adds an explicit project-level remaining-distance semantics for already emitted discrete spikes."
+  },
+  "canonical_packet_rule": {
+    "state": "remaining_distance_rho",
+    "initial_condition": "rho(s_emit)=ell_ij",
+    "flow": "drho/dt=-c_ij(t)",
+    "arrival": "first t>s_emit with rho(t)=0",
+    "equivalent_integral": "integral_s^a c_ij(u) du = ell_ij",
+    "speed_condition": "c_ij(t)>=c_min>0"
+  },
+  "arrival_sensitivity": {
+    "emission_time": "da/ds=c(s)/c(a)",
+    "general_variation": "delta a=[c(s)delta s-integral_s^a delta c(u)du]/c(a)"
+  },
+  "controlled_linear_ramp": {
+    "path_length": 1.0,
+    "tau_launch": 7.941411830425917,
+    "c_emit": 0.12592219385584585,
+    "fractional_speed_change_chi": 0.01,
+    "gamma": 0.00015856398905469225,
+    "delay_launch_frozen": 7.941411830425917,
+    "delay_inflight_path": 7.902096946944075,
+    "delay_instantaneous_current": 7.863547366887612,
+    "launch_minus_path": 0.039314883481841534,
+    "path_minus_current": 0.03854958005646303,
+    "emission_time_sensitivity": 0.9901475429766743
+  },
+  "v012_anchored_audit": {
+    "epsilon": 1e-6,
+    "T_NS": 16.297496058505022,
+    "tau_NS": 7.941411830425917,
+    "c_NS": 0.12592219385584585,
+    "c0": 0.1259231150089354,
+    "kappa": 2e-6,
+    "u_s": 0.0009,
+    "A_seed": 0.001,
+    "physical_speed_derivative_at_emission": 5.665734429804373e-14,
+    "inflight_delay_exponential_profile": 7.941411830411729,
+    "launch_frozen_minus_inflight": 1.4188e-11,
+    "frozen_NS_FIC_window": 8.093035916978408e-6,
+    "correction_over_window": 1.7531e-6,
+    "dynamic_skip_robust_to_inflight_semantics": true
+  },
+  "negative_results": {
+    "global_adaptive_attractor": "not_certified",
+    "full_packet_queue_network": "not_yet_implemented",
+    "paper_simulation_semantics": "not_inferred_from_the_state_dependent_DDE_formulation"
+  }
+}
