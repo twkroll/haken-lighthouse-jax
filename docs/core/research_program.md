@@ -231,31 +231,50 @@ A v1.0 CORE specification should contain:
 
 ---
 
-# Progress update through v0.22
+# Completed project-extension ladder v0.14--v0.23
 
-The v0.14 work package above has now been completed and extended substantially:
+## v0.14 -- full adaptive event engine -- COMPLETE
 
-- **v0.14**: full adaptive packet-queue event engine and direct dynamic-skip validation;
-- **v0.15**: global hybrid invariant-circle fold and genuine sync/large-circle hysteresis;
-- **v0.16**: fixed-capacity JAX queue and fixed-chart event tangents;
-- **v0.17**: sparse directed graph tensors, batching and N-scaling audits;
-- **v0.18**: first chart-aware inverse problem for `(p,tau3)`;
-- **v0.19**: trust-region / multi-chart optimization across event-order boundaries;
-- **v0.20**: gauge-fixed latent relative initial phase and sequential chart crossings;
-- **v0.21**: optimal spike-time observation design and controlled clock-offset nuisance parameter;
-- **v0.22**: minimal latent initial synaptic contrast and the first clear spike-time information limit.
+Packet-queue event dynamics recover the frozen orbit and reduced slow-passage benchmark, reproduce dynamic bifurcation skip, and reveal a global large timing-modulated attractor coexisting with synchrony.
 
-The v0.22 result changes the immediate priority. The full twelve-spike Jacobian remains formally rank six after adding `(xi_psi,xi_q)`, but develops a near-null phase/synapse direction with `sigma_min≈9.14e-4`. More spike times and overdetermination suppress observed nonlinear aliases, yet barely improve this differential weak direction.
+## v0.15 -- global hybrid invariant-circle fold -- COMPLETE
 
-## Immediate next target: v0.23
+The large attractor is classified as a quasiperiodic hybrid invariant circle. Stable and unstable normal return factors, square-root branch coalescence and ghost escape scaling identify a numerical nondegenerate fold of invariant circles near `tau3≈8.00731`.
 
-Do **not** simply extend the spike-only observation window. Introduce an observation or controlled intervention transverse to the v0.22 weak direction, for example:
+## v0.16 -- fixed-capacity JAX packet queue -- COMPLETE
 
-- one projected subthreshold `psi` measurement near the initial time;
-- one projected `q` measurement;
-- a small known input pulse followed by transient spike-time readout;
-- a mixed observation design with explicit measurement-noise scaling.
+Static packet arrays, event-root differentiation and one-sided fixed-chart tangent propagation reproduce the adaptive slow passage and global circle-fold stability geometry.
 
-The acceptance criterion is that the augmented observation model raises the weakest singular value of the six-dimensional v0.22 inverse problem by orders of magnitude while preserving physical event scheduling and chart-aware one-sided differentiation.
+## v0.17 -- sparse graph / batch scaling -- COMPLETE
 
-Only after this ambiguity is broken should CORE enlarge to the full two-dimensional q=1 synaptic contrast in both `psi0` and `q0`, missing/unlabelled spikes, or unknown topology.
+Topology is represented by static sparse directed edge tensors; N=3 specializes back to the v0.16 oracle and sparse synchronous tests scale through N=256 with deterministic batched semantics.
+
+## v0.18 -- chart-aware inverse problem -- COMPLETE
+
+Synthetic labelled spike times identify `(p,tau3)` locally. Fixed-chart JAX sensitivities agree with finite differences and event-order collisions are treated as gradient-stop / chart-rerecording surfaces.
+
+## v0.19 -- hybrid multi-chart optimizer -- COMPLETE
+
+A trust-region Gauss--Newton method predicts, brackets and physically crosses event-order boundaries, then continues with the newly recorded one-sided Jacobian.
+
+## v0.20 -- latent relative phase inference -- COMPLETE
+
+The unknown block expands to `(p,tau3,eta1,eta2)`. It remains full rank, while sequential optimization can encounter multiple distinct chart boundaries; a vector of event margins is required to predict the next active surface.
+
+## v0.21 -- optimal observation design -- COMPLETE
+
+Exhaustive E/D/A-optimal selection over four spike cycles shows that a few well-spaced spike times outperform dense early observation. A controlled unknown clock offset remains identifiable under the redesigned schedule.
+
+## v0.22 -- latent synaptic-state information limit -- COMPLETE
+
+Adding one q=1 latent direction in each of initial `psi` and `q` keeps the twelve-spike Jacobian formally rank six but creates a severe phase/synapse weak direction (`sigma_min≈9.14e-4`). Longer spike-only observation barely improves it. Overdetermination can remove observed nonlinear aliases without curing the local sloppiness.
+
+## v0.23 -- transverse subthreshold observation -- COMPLETE
+
+A single non-perturbing pre-event measurement
+
+`z_psi(t)=v^T psi(t)=exp(-alpha*t)*(xi_psi+t*xi_q)`
+
+is optimized at `t≈0.6989193`. The added rank-one information raises the weakest singular value from `9.14e-4` to `0.228772`, a `250.37x` gain, and exactly saturates the rank-one interlacing upper bound set by the old second-smallest singular value. The v0.22 finite weak displacement and nonlinear alias become strongly visible, and five/six spike plus sensor designs recover truth in all deterministic multistart tests.
+
+Next scientific target: replace direct synaptic-state readout by a small known input pulse and determine whether spike times alone can acquire the same transverse information through active experimental design.
