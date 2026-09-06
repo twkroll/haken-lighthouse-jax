@@ -91,5 +91,29 @@
     "specific_experimental_sensor_modelled": false,
     "input_pulse_intervention_modelled": false
   },
-  "benchmark_contract": "B378-B399"
+  "benchmark_contract": "B378-B399",
+  "contract_checks": {
+    "B378": "reproduce v0.22 spike-only weakest singular value",
+    "B379": "derive exact pre-event projected-psi measurement row",
+    "B380": "optimal measurement occurs strictly before first event",
+    "B381": "optimal time agrees with 0.698919300895",
+    "B382": "rank-one augmented sigma_min equals old sigma_5",
+    "B383": "raw information gain exceeds 250x",
+    "B384": "direct psi0 readout outperforms q0 readout",
+    "B385": "reference mixed-noise augmented full system retains interlacing saturation",
+    "B386": "100x gain survives sigma_z above 5.6e-4",
+    "B387": "200x gain survives sigma_z above 2.8e-4",
+    "B388": "E-optimal five-spike-plus-sensor design is fixed",
+    "B389": "E-optimal six-spike-plus-sensor design is fixed",
+    "B390": "six-spike-plus-sensor sigma_min exceeds 0.20",
+    "B391": "finite v0.22 weak displacement exceeds 25 sensor sigmas",
+    "B392": "v0.22 nonlinear alias exceeds 20 sensor sigmas",
+    "B393": "sensor does not change the event chart",
+    "B394": "five-spike-plus-sensor multistart returns truth 12/12",
+    "B395": "six-spike-plus-sensor multistart returns truth 12/12",
+    "B396": "mixed-noise Fisher covariance is finite and full rank",
+    "B397": "30-realization empirical/Fisher ratios lie in [0.70,1.20]",
+    "B398": "measurement is non-perturbing and pre-event",
+    "B399": "direct sensor model is not generalized to pulse intervention"
+  }
 }
