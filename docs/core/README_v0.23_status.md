@@ -28,6 +28,7 @@ Assets:
 - `benchmarks/core_v023_reference.json`
 - `reference/core_v023_transverse_observation.py`
 - `docs/core/README_v0.23_status.md`
+- additive update to `docs/core/research_program.md`
 - benchmark contract `B378-B399`
 
 Scientific rule:
