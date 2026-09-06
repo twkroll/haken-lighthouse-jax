@@ -106,20 +106,20 @@ m(\vartheta;C)=\min_j m_j(\vartheta;C),
 
 where \(m_j\) is the selected-event time minus its nearest competitor at event index \(j\), with positive sign inside the chart. With latent initial state, different event margins can become active along one optimization step. The gradient of the scalar minimum can therefore point away from the *next* boundary.
 
-v0.20 retains all event margins
+v0.20 therefore records the full event-margin family
 
 \[
 \mathbf m=(m_0,\ldots,m_{11})
 \]
 
-and for a proposed step \(s\) predicts each approaching surface by
+for boundary prediction. For a proposed step \(s\), each approaching surface has the linear estimate
 
 \[
 \alpha_j^{\rm lin}=-\frac{m_j}{\nabla m_j\cdot s},\qquad
 \nabla m_j\cdot s<0,
 \]
 
-then uses the smallest positive candidate. Exact physical crossing is still located by bracketing before rerecording the chart.
+and the smallest positive candidate predicts the next active boundary. The exact physical crossing used by the optimizer is still located by the scalar physical guard and bracketing before the chart is rerecorded; no linear predictor is treated as the crossing itself.
 
 This distinction is essential: at the second sequential crossing below, the scalar minimum margin is \(1.21\times10^{-4}\) but its directional derivative is positive, giving the meaningless scalar prediction \(\alpha\approx-2.90\times10^{-4}\). The event-vector predictor correctly selects event 9 and predicts the upcoming boundary.
 
@@ -207,7 +207,7 @@ Allowing latent initial state can therefore route the trust-region path around a
 
 For this benchmark, latent relative phase is not a source of structural non-identifiability. It modestly degrades parameter precision while remaining strongly observed by the first-cycle spike times. Its more important effect is geometric: it increases the dimension of parameter space in which event-order surfaces must be negotiated and can create multiple sequential chart crossings.
 
-CORE v0.20 therefore upgrades the chart guard from a single scalar margin to an event-indexed margin family. Scientific derivatives remain one-sided fixed-chart derivatives; exact crossing and chart rerecording remain physical event-scheduler operations.
+CORE v0.20 therefore augments the exact scalar physical chart guard with an event-indexed margin family for reliable boundary prediction. Scientific derivatives remain one-sided fixed-chart derivatives; exact crossing and chart rerecording remain physical event-scheduler operations.
 
 ## Benchmark contract B309–B328
 
