@@ -1,0 +1,135 @@
+{
+  "schema_version": "core-v0.25",
+  "provenance": "docs/core/full_q1_two_probe_v0.25.md",
+  "truth": {
+    "p": -3.267985407948901,
+    "tau3": 8.0,
+    "eta1": 0.0,
+    "eta2": 0.0,
+    "xi_psi1": 0.0,
+    "xi_psi2": 0.0,
+    "xi_q1": 0.0,
+    "xi_q2": 0.0
+  },
+  "q1_basis": {
+    "v1": [0.8164965809277261, -0.4082482904638631, -0.4082482904638631],
+    "v2": [0.0, 0.7071067811865475, -0.7071067811865475],
+    "definition": "psi0=psi_base+xi_psi1*v1+xi_psi2*v2; q0=q_base+xi_q1*v1+xi_q2*v2"
+  },
+  "trial_semantics": {
+    "shared_unknown_initial_state_across_trials": true,
+    "known_pulse_parameters": true,
+    "labelled_spikes": true,
+    "direct_synaptic_state_readout": false,
+    "pulse_family": "psi+=A*cos(beta)*d(gamma); q+=A*sin(beta)*d(gamma)",
+    "amplitude_budget": 0.1,
+    "earliest_pulse_time": 0.05,
+    "minimum_chart_margin": 0.06
+  },
+  "pulse1": {
+    "source": "CORE v0.24 reference",
+    "time": 0.05,
+    "amplitude": 0.1,
+    "beta": 0.55,
+    "gamma": -0.1,
+    "direction": [0.8124174989583542, -0.47680163537917125, -0.335615863579183],
+    "delta_psi": [0.06926058400122499, -0.040648508631881866, -0.028612075369343123],
+    "delta_q": [0.04246402512653189, -0.02492181255459456, -0.017542212571937332],
+    "truth_chart_min_margin": 0.06285674669370955,
+    "physical_events": 30,
+    "truth_spike_times": [7.84778792103875, 9.171821442290831, 8.706372182826524, 24.35278859363457, 25.653836779843047, 24.70053010862726, 40.831708432465454, 41.97264686450873, 40.768851685744565, 57.29587532779553, 58.249163655173874, 56.872418665483494],
+    "singular_values_8d": [13.755382384887914, 10.292321999084477, 2.7122968182036984, 0.5380682583240525, 0.2779290508713684, 0.13770493987868276, 0.07574933338680205, 0.0001862874192294771],
+    "sigma_min_8d": 0.0001862874192294771,
+    "condition_number_8d": 73839.56706138821,
+    "jax_vs_physically_rerecorded_fd_relative_error": 2.5467880902112644e-09
+  },
+  "pulse2": {
+    "rounded_reference": {
+      "time": 0.05,
+      "amplitude": 0.1,
+      "beta": 0.2,
+      "gamma": 3.02,
+      "direction": [-0.810468155362103, 0.49100136082539914, 0.3194667945367039],
+      "delta_psi": [-0.079431275147504, 0.04812140234195416, 0.031309872805549845],
+      "delta_q": [-0.016101516605649673, 0.009754691177464645, 0.006346825428185029],
+      "truth_chart_min_margin": 0.06334074092316122,
+      "physical_events": 30,
+      "truth_spike_times": [8.405459463037856, 8.812440452926593, 8.468800204040122, 24.850045735859165, 25.14591732048766, 24.710785680007568, 41.22534435253551, 41.42263508965125, 40.98807051805345, 57.59022936956068, 57.688525160639486, 57.273634017603776],
+      "singular_values_8d": [12.3711344, 11.2591015, 2.71852447, 0.287711249, 0.207246418, 0.128629433, 0.0658347129, 0.00016732680368966707],
+      "sigma_min_8d": 0.00016732680368966707,
+      "jax_vs_physically_rerecorded_fd_relative_error": 2.2309127298149627e-09
+    },
+    "refined_boundary": {
+      "time": 0.05,
+      "amplitude": 0.1,
+      "beta": 0.2,
+      "gamma": 3.0331068445422606,
+      "chart_margin": 0.06,
+      "stacked_sigma_min": 0.14696443913750748,
+      "rounded_reference_relative_objective_loss": 0.0007302153158413797
+    }
+  },
+  "single_and_replication_controls": {
+    "unforced_single_sigma_min": 3.244146953962584e-05,
+    "unforced_single_condition_number": 396849.45374177716,
+    "duplicate_pulse1_sigma_min": 0.00026345019477367915,
+    "unforced_plus_pulse1_sigma_min": 0.08741044,
+    "interpretation": "duplicate trials reduce noise but do not change the near-null sensitivity direction"
+  },
+  "two_probe_stack": {
+    "shape": [24, 8],
+    "rank": 8,
+    "singular_values": [18.405064358886772, 15.35791854094359, 3.8478943449954928, 0.7267333384181593, 0.41640326986184373, 0.24386250763879525, 0.19711482737174413, 0.14685712345316523],
+    "sigma_min": 0.14685712345316523,
+    "condition_number": 125.3263302869772,
+    "gain_vs_pulse1_single": 788.3362390256752,
+    "gain_vs_duplicate_pulse1": 557.4379004704288,
+    "pulse_state_space_inner_product": -0.9391537335258748,
+    "pulse_state_space_angle_degrees": 159.9099192351216,
+    "fisher_std_sigma_1e-4": [0.00012697, 0.00017923, 0.00022602, 0.0003895, 0.00045091, 0.00061515, 0.00021332, 0.00029713]
+  },
+  "e_opt8_global": {
+    "search_space": "all C(24,8) spike subsets",
+    "indices_global": [1, 5, 6, 7, 12, 16, 21, 23],
+    "pulse1_indices": [1, 5, 6, 7],
+    "pulse2_indices": [0, 4, 9, 11],
+    "singular_values": [10.78787024, 8.63565814, 2.23217431, 0.25995239, 0.18722277, 0.13346946, 0.09946623, 0.09368428828832258],
+    "sigma_min": 0.09368428828832258,
+    "fisher_std_sigma_1e-4": [0.00028889, 0.00043729, 0.00048482, 0.0008485, 0.0007029, 0.00089242, 0.00040135, 0.00068245]
+  },
+  "multistart_audit": {
+    "seed": 20260914,
+    "starts": 12,
+    "full24_truth_count": 12,
+    "full24_max_solution_distance": 4.3923004997600597e-13,
+    "e_opt8_truth_count": 12,
+    "e_opt8_max_solution_distance": 8.291369791003165e-13
+  },
+  "noise_audit": {
+    "sigma_t": 0.0001,
+    "realizations": 50,
+    "full24": {
+      "empirical_mean": [-3.26799476, 7.99998940, -1.88451359e-05, -2.58242567e-06, 1.06092611e-04, 4.49529991e-05, -4.76411851e-05, -1.38955343e-05],
+      "empirical_std": [0.00012077, 0.00017194, 0.00023939, 0.00043034, 0.00048198, 0.00062149, 0.00023017, 0.00030356],
+      "fisher_std": [0.00012697, 0.00017923, 0.00022602, 0.0003895, 0.00045091, 0.00061515, 0.00021332, 0.00029713],
+      "empirical_over_fisher": [0.95109401, 0.95935069, 1.05918035, 1.10486423, 1.06891683, 1.01031738, 1.07897936, 1.02164156]
+    },
+    "e_opt8": {
+      "empirical_mean": [-3.26793724, 8.00007996, 5.28804296e-05, 2.17624320e-04, 5.89599103e-05, 5.33778163e-05, -7.00929510e-05, -2.12528423e-04],
+      "empirical_std": [0.0002992, 0.00046957, 0.00057948, 0.00095078, 0.00065475, 0.00097349, 0.00043626, 0.00063358],
+      "fisher_std": [0.00028889, 0.00043729, 0.00048482, 0.0008485, 0.0007029, 0.00089242, 0.00040135, 0.00068245],
+      "empirical_over_fisher": [1.03566979, 1.07380609, 1.1952339, 1.1205489, 0.93149586, 1.09083906, 1.08698381, 0.92838557]
+    }
+  },
+  "scope": {
+    "same_latent_initial_state_reproducibly_prepared_across_trials": true,
+    "trial_specific_latent_state": false,
+    "pulse_calibration_uncertainty": false,
+    "known_topology": true,
+    "labelled_spikes": true,
+    "direct_synaptic_readout": false,
+    "full_real_q1_initial_psi_q_subspace": true,
+    "unknown_topology": false
+  },
+  "benchmark_contract": "B426-B451"
+}
