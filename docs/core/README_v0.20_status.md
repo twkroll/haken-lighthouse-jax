@@ -11,7 +11,7 @@ Key results:
 - latent phases increase marginal `p/tau3` uncertainty by only about 45%;
 - the first three spikes identify latent phase only, while delayed feedback is required to identify `p,tau3`;
 - one optimization path exhibits two distinct sequential chart crossings, first at event indices `0/1` and later at `9/10`;
-- a vector of event margins is required for robust boundary prediction; the scalar minimum-margin gradient can miss the next active surface;
+- the full event-margin vector predicts which boundary becomes active next; the exact physical crossing remains bracketed with the scalar chart guard before rerecording;
 - the two-boundary start `(-3.2,7.7,-0.07,-0.12)` converges in five iterations with exactly two physical chart rerecordings.
 
 Assets:
