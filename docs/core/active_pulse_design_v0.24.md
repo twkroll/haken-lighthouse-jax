@@ -80,17 +80,17 @@ A refined constrained search places the optimum on the amplitude, earliest-time,
 Its spatial direction is approximately
 
 \[
-d=(-0.1)\approx(0.81272116,-0.47428136,-0.33843981).
+d(-0.1)\approx(0.81241750,-0.47680164,-0.33561586).
 \]
 
 The resulting state kick is
 
 \[
-\Delta\psi\approx(0.06904,-0.04029,-0.02875),
+\Delta\psi\approx(0.06926058,-0.04064851,-0.02861208),
 \]
 
 \[
-\Delta q\approx(0.04247,-0.02479,-0.01769).
+\Delta q\approx(0.04246403,-0.02492181,-0.01754221).
 \]
 
 The physical truth-chart minimum margin is
