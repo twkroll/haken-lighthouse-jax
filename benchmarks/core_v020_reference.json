@@ -47,6 +47,7 @@
   },
   "event_margin_vector": {
     "formula": "alpha_j = -m_j/(grad m_j dot s) for negative directional derivative; take smallest positive candidate",
+    "role": "boundary prediction; exact physical crossing is still bracketed with the scalar minimum chart guard",
     "scalar_min_gradient_failure_second_crossing": {
       "minimum_margin": 0.00012106578215131947,
       "directional_derivative": 0.417567987627408,
