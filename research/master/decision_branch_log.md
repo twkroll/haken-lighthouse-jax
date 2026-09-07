@@ -43,7 +43,7 @@ Status: STABLE
 Date: 2026-09-04
 
 ## DEC-008
-MASTER Status Audit 0.3 confirms that the CORE gate still has not been executed: `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is absent. Commits since Status Audit 0.2 are restricted to the MASTER report, report pointer, decision log, and MASTER status bookkeeping. No scientific freeze violation, unauthorized branch execution, post-hoc retuning, or application/literature/manuscript execution is detected. The single authorized next scientific action remains `CORE Mathematical Scope Gate 0.1`.
+MASTER Status Audit 0.3 confirms that the CORE gate still has not been executed: `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is absent. Commits since Status Audit 0.2 are restricted to the MASTER report, report pointer, decision log, and MASTER status bookkeeping. No scientific freeze violation, unauthorized branch execution, post-hoc retuning, or application/literature/manuscript execution is detected. The single authorized scientific next action remains `CORE Mathematical Scope Gate 0.1`.
 Status: STABLE
 Date: 2026-09-04
 
@@ -53,7 +53,7 @@ Status: STABLE
 Date: 2026-09-04
 
 ## DEC-010
-MASTER Status Audit 0.4 confirms again that `CORE Mathematical Scope Gate 0.1` is still unexecuted: `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is absent. APP-1, APP-2, and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. No commits occurred after the MASTER report v0.2 bookkeeping commit before this audit. No freeze violation, unauthorized branching, retuning, result inspection, or scientific execution is detected. The single authorized next scientific action remains the existing CORE gate.
+MASTER Status Audit 0.4 confirms again that `CORE Mathematical Scope Gate 0.1` is still unexecuted: `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is absent. APP-1, APP-2, and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. No commits occurred after the MASTER report v0.2 bookkeeping commit before this audit. No freeze violation, unauthorized branching, retuning, result inspection, or scientific execution is detected. The single authorized scientific next action remains the existing CORE gate.
 Status: STABLE
 Date: 2026-09-04
 
@@ -142,6 +142,11 @@ Date: 2026-09-07
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-028
+`CORE v0.27 Hierarchical Repeated-Trial Execution Contract Canonicalization Gate 0.1` returns PASS at `research/core/v0_27_hierarchical_repeated_trial_execution_contract_canonicalization_gate_0_1.md`. MASTER accepts the contract as complete and establishes `CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1` / RB-014. The contract freezes before output the complete N=3 graph and affine weight/delay families, baseline constants, nominal preparation/gauge, truth and parameter boxes, hierarchical scale truth/box, R=16, H=4, known timing noise 0.02, MCAR missingness 0.20, exactly 32 immutable PCG64DXSM stochastic dataset streams, minimal-data and physical-failure rules, the Laplace-marginal inference objective, deterministic inner BFGS/outer bounded Powell policies, fixed starts/budgets/tolerances, physical rerecording/fixed-chart derivative rules, Hessian/logdet validity, information/uncertainty definitions, all finite scientific thresholds, and C2-27-01 through C2-27-08. At freeze time C2 and all scientific datasets remain unevaluated. The mandatory execution order is C2 first and science only if every C2 check passes; a C2 failure returns IMPLEMENTATION FAIL/BLOCKED before scientific RNG creation. If C2 passes, the frozen hierarchy is SCIENTIFIC FAIL / SCIENTIFIC CONDITIONAL / SCIENTIFIC PASS. Weak/null/fail/conditional outcomes are valid and may not be rescued by changing truth, design, seeds, solver, tolerances or thresholds. The single next scientific action is `CORE v0.27 Hierarchical Repeated-Trial Execution Gate 0.1`; no second branch, v0.28, active pulse/probe extension, application work, novelty positioning or manuscript claim work is authorized before its return.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -157,3 +162,4 @@ Date: 2026-09-07
 - RB-011: CORE Legacy Verification Sweep Freeze 0.1 — FROZEN / STABLE VERIFICATION AUDIT
 - RB-012: CORE Consolidated C1 Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 - RB-013: CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1 — FROZEN / STABLE NEW-SCIENCE SCOPE
+- RB-014: CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
