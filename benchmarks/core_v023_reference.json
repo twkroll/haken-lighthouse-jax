@@ -1,0 +1,119 @@
+{
+  "schema_version": "core-v0.23",
+  "provenance": "docs/core/transverse_observation_v0.23.md",
+  "truth": {
+    "p": -3.267985407948901,
+    "tau3": 8.0,
+    "eta1": 0.0,
+    "eta2": 0.0,
+    "xi_psi": 0.0,
+    "xi_q": 0.0
+  },
+  "latent_synaptic_mode": [0.8164965809277261, -0.4082482904638631, -0.4082482904638631],
+  "spike_only_full12": {
+    "sigma_min": 0.0009137484227978426,
+    "second_smallest_singular": 0.22877200492489214,
+    "condition_number": 11943.89992861377,
+    "weak_right_singular_vector": [-0.0004136503499338386, -0.0007066283199000029, -0.5482714311676711, 0.27420530916575925, 0.7863479906534645, -0.07659016487597305]
+  },
+  "transverse_measurement": {
+    "definition": "z_psi(t)=v^T psi(t)=exp(-alpha*t)*(xi_psi+t*xi_q) before first event",
+    "sensitivity_row": "g(t)=exp(-alpha*t)*(0,0,0,0,1,t)",
+    "optimal_time": 0.6989193008948172,
+    "first_spike": 8.152762890488507,
+    "preevent_safety_margin": 7.453843589593689,
+    "row_at_optimum": [0.0, 0.0, 0.0, 0.0, 0.705068970507824, 0.492786311949957],
+    "augmented_sigma_min": 0.22877200492489205,
+    "gain_vs_spike_only": 250.36651141285253,
+    "rank_one_interlacing_bound_saturated": true
+  },
+  "sensor_comparison_unit_weight": {
+    "psi0_sigma_min": 0.19817510197489493,
+    "psi0_gain": 216.8814709065048,
+    "q0_sigma_min": 0.026085565763161237,
+    "q0_gain": 28.547864064475,
+    "timed_psi_sigma_min": 0.22877200492489205,
+    "timed_psi_gain": 250.36651141285253
+  },
+  "mixed_noise_reference": {
+    "spike_time_sigma": 0.0001,
+    "projected_psi_sigma": 0.0002,
+    "relative_row_weight_sigma_t_over_sigma_z": 0.5,
+    "full12_plus_sensor_singular_values_in_timing_units": [10.918641010295978, 7.457568929151986, 2.716386675129053, 0.332142395859877, 0.257979574811119, 0.228772004924892],
+    "full12_plus_sensor_fisher_std": [0.000172366175392, 0.000249799300158, 0.000331067314172, 0.00016192227523, 0.000359785543824, 0.00027606447416],
+    "sensor_sigma_for_100x_gain": 0.0005654218627756909,
+    "sensor_sigma_for_200x_gain": 0.0002825854281120102
+  },
+  "joint_design": {
+    "e_opt5_spikes_plus_sensor": {
+      "indices": [0, 2, 9, 10, 11],
+      "singular_values_in_timing_units": [7.61017556173235, 4.370250945186533, 2.119435390297258, 0.259051107098107, 0.218505766362554, 0.175067476992202]
+    },
+    "e_opt6_spikes_plus_sensor": {
+      "indices": [0, 2, 3, 9, 10, 11],
+      "singular_values_in_timing_units": [8.862536637370848, 4.390316584360363, 2.145277033785128, 0.259500547025361, 0.224128262870027, 0.200974241368662],
+      "fisher_std": [0.000246445919201, 0.000370009625108, 0.000355932825758, 0.000181926254502, 0.000375369204708, 0.000315658642678]
+    }
+  },
+  "weak_direction_rejection": {
+    "v022_weak_displacement_amplitude": 0.01,
+    "measurement_shift": 0.005166869833500644,
+    "measurement_shift_in_reference_sigma": 25.834349167503216
+  },
+  "nonlinear_alias_rejection": {
+    "v022_alias_solution": [-3.267999605293241, 7.999965530031933, -0.004377403087449034, 0.002189830412793823, 0.006090917284445635, -0.0005068021586924667],
+    "measurement_shift": 0.004044771612522057,
+    "measurement_shift_in_reference_sigma": 20.223858062610287,
+    "same_event_chart_as_truth": true
+  },
+  "multistart_audit": {
+    "seed": 20260906,
+    "starts": 12,
+    "e_opt5_plus_sensor_truth_count": 12,
+    "e_opt6_plus_sensor_truth_count": 12,
+    "max_solution_distance": "<4e-14"
+  },
+  "noise_audit": {
+    "seed": 20260908,
+    "realizations": 30,
+    "design_indices": [0, 2, 3, 9, 10, 11],
+    "empirical_mean": [-3.267967742114921, 8.000037077292699, 0.00005409674750143826, -0.00003885168506158053, -0.000009632839953004343, -0.00002515133667072594],
+    "empirical_std": [0.000218563832151, 0.000350836391626, 0.000326467568322, 0.000166247741544, 0.000358660619701, 0.000280282280764],
+    "fisher_std": [0.000246445919201, 0.000370009625108, 0.000355932825758, 0.000181926254502, 0.000375369204708, 0.000315658642678],
+    "empirical_over_fisher": [0.886863263389941, 0.948181798037047, 0.917216802431242, 0.913819404456604, 0.955487597817338, 0.887928422888481]
+  },
+  "hybrid_scope": {
+    "measurement_occurs_before_first_event": true,
+    "measurement_perturbs_state": false,
+    "event_chart_changed_by_measurement": false,
+    "packet_queue_changed_by_measurement": false,
+    "chart_aware_derivatives_inherited_from_v022": true,
+    "specific_experimental_sensor_modelled": false,
+    "input_pulse_intervention_modelled": false
+  },
+  "benchmark_contract": "B378-B399",
+  "contract_checks": {
+    "B378": "reproduce v0.22 spike-only weakest singular value",
+    "B379": "derive exact pre-event projected-psi measurement row",
+    "B380": "optimal measurement occurs strictly before first event",
+    "B381": "optimal time agrees with 0.698919300895",
+    "B382": "rank-one augmented sigma_min equals old sigma_5",
+    "B383": "raw information gain exceeds 250x",
+    "B384": "direct psi0 readout outperforms q0 readout",
+    "B385": "reference mixed-noise augmented full system retains interlacing saturation",
+    "B386": "100x gain survives sigma_z above 5.6e-4",
+    "B387": "200x gain survives sigma_z above 2.8e-4",
+    "B388": "E-optimal five-spike-plus-sensor design is fixed",
+    "B389": "E-optimal six-spike-plus-sensor design is fixed",
+    "B390": "six-spike-plus-sensor sigma_min exceeds 0.20",
+    "B391": "finite v0.22 weak displacement exceeds 25 sensor sigmas",
+    "B392": "v0.22 nonlinear alias exceeds 20 sensor sigmas",
+    "B393": "sensor does not change the event chart",
+    "B394": "five-spike-plus-sensor multistart returns truth 12/12",
+    "B395": "six-spike-plus-sensor multistart returns truth 12/12",
+    "B396": "mixed-noise Fisher covariance is finite and full rank",
+    "B397": "30-realization empirical/Fisher ratios lie in [0.70,1.20]",
+    "B398": "measurement is non-perturbing and pre-event",
+    "B399": "direct sensor model is not generalized to pulse intervention"
+  }
+}

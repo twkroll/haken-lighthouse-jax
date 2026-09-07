@@ -1,0 +1,54 @@
+{
+  "schema_version": "core-v0.9",
+  "provenance": "docs/core/chenciner_v0.9.md",
+  "ring_chenciner": {
+    "N": 3,
+    "alpha": 0.5,
+    "weights_family": [1.0, "p", "-p"],
+    "delays_family": [0.0, 2.0, "tau3"],
+    "critical": {
+      "T": 16.29213672114,
+      "p": -3.26248414452,
+      "tau3": 7.92140373739,
+      "Omega": 0.266095330801,
+      "mu_real": 0.964805044716,
+      "mu_imag": 0.262966206367,
+      "characteristic_residual_max": 5e-16
+    },
+    "smoothness": {
+      "psi_min": -0.45167232,
+      "threshold_margin_min_psi_plus_1": 0.54832768,
+      "psi_max": 0.50082721,
+      "event_velocity": 0.43494412,
+      "arrival_order": [0.0, 2.0, 7.92140373739, 16.29213672114]
+    },
+    "normal_form": {
+      "normalization": "physical q=1 Fourier-history mode; left/right pairing p* q = 1",
+      "b1_real_abs_upper": 5e-13,
+      "b1_imag": -0.04254970545,
+      "b2_real": 0.020640894614,
+      "b2_imag": 0.003792391324,
+      "L1": 0.0,
+      "L2": 0.021546133331,
+      "L2_history_L4": 0.0215461333307,
+      "L2_history_L5": 0.0215461333315,
+      "classification": "nondegenerate_chenciner_generalized_neimark_sacker"
+    },
+    "unfolding": {
+      "beta1_definition": "abs(mu)-1",
+      "beta2_definition": "L1",
+      "partial_abs_mu_partial_p": -0.18379443,
+      "dp_ns_dtau3": -0.27482160,
+      "dL1_dtau3_along_ns": -0.0092975000,
+      "parameter_jacobian_determinant": 0.00170883,
+      "min_strong_resonance_distance_k1_to_k6": 0.26531
+    },
+    "derived_local_unfolding_v1": {
+      "partial_beta1_partial_tau3": -0.0505106793,
+      "partial_L1_partial_p_estimate": 0.08625,
+      "partial_L1_partial_tau3_estimate": 0.0144058630,
+      "fold_of_invariant_circles_quadratic_coefficient_dp_vs_dtau2": -0.00545721,
+      "note": "The L1 partial derivatives are finite-difference estimates used for the first local unfolding atlas; the certified invariant quantities remain the NS-tangent derivative and nonzero parameter Jacobian above."
+    }
+  }
+}

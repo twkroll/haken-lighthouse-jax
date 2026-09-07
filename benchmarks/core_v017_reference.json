@@ -1,0 +1,63 @@
+{
+  "schema_version": "core-v0.17",
+  "provenance": "docs/core/graph_batch_scaling_v0.17.md",
+  "graph_schema": {
+    "edge_arrays": ["source", "target", "weight", "length", "mode", "fixed_speed"],
+    "packet_arrays": ["active", "edge_id", "rho"],
+    "discrete_topology_arrays": ["source", "target", "mode", "edge_id"],
+    "continuous_edge_arrays": ["weight", "length", "fixed_speed"]
+  },
+  "n3_specialization": {
+    "N": 3,
+    "E": 9,
+    "queue_capacity": 12,
+    "frozen_period": 16.29749605483085,
+    "independent_T_reference": 16.297496058505022,
+    "max_active_packets": 6,
+    "prepared_center_A": 0.0010023850245501774,
+    "epsilon_1e-5": {
+      "cycles_to_fic": 15002,
+      "event_steps": 135022,
+      "A_at_fic": 0.0010058631750129,
+      "A_over_static_fic": 0.015227085115436014
+    }
+  },
+  "queue_capacity": {
+    "N3_Q5_overflow": true,
+    "N3_Q6_overflow": false,
+    "scaling_policy": "Qmax=4N",
+    "synchronous_observed_max": "2N"
+  },
+  "invariance": {
+    "edge_permutation_max_physical_error": 0.0,
+    "shared_graph_vmap_vs_single_max_error": 6.821210263296962e-13,
+    "batched_graph_parameters_vs_single_max_error": 0.0
+  },
+  "fixed_chart_graph_parameter_derivative": {
+    "quantity": "dq_target_plus/dw_edge",
+    "value": 0.25,
+    "analytic": "alpha^2",
+    "alpha": 0.5
+  },
+  "sparse_ring_scaling": {
+    "edge_count": "3N",
+    "queue_capacity": "4N",
+    "table": [
+      {"N": 3, "E": 9, "Qmax": 12, "period": 16.297496054830827, "max_active": 6, "overflow": false},
+      {"N": 8, "E": 24, "Qmax": 32, "period": 16.297496054830845, "max_active": 16, "overflow": false},
+      {"N": 16, "E": 48, "Qmax": 64, "period": 16.297496054830845, "max_active": 32, "overflow": false},
+      {"N": 32, "E": 96, "Qmax": 128, "period": 16.297496054830845, "max_active": 64, "overflow": false},
+      {"N": 64, "E": 192, "Qmax": 256, "period": 16.297496054830845, "max_active": 128, "overflow": false},
+      {"N": 128, "E": 384, "Qmax": 512, "period": 16.297496054830845, "max_active": 256, "overflow": false},
+      {"N": 256, "E": 768, "Qmax": 1024, "period": 16.297496054830845, "max_active": 512, "overflow": false}
+    ]
+  },
+  "scope": {
+    "accelerator_scaling_certified": false,
+    "cpu_wall_clock_is_benchmark_contract": false,
+    "fixed_chart_continuous_parameter_gradients_supported": true,
+    "topology_gradients_supported": false,
+    "event_order_switch_gradients_supported": false
+  },
+  "benchmark_contract": "B247-B268"
+}

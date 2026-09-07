@@ -1,0 +1,76 @@
+{
+  "schema_version": "core-v0.6",
+  "provenance": "docs/core/numerical_atlas_v0.6.md",
+  "linear_fig3_audit": {
+    "Gamma": 1.0,
+    "gamma": 3.141592653589793,
+    "Theta": -1.0,
+    "tau": 0.0,
+    "transverse_w_hat": 2.0,
+    "period_T": 3.141592653589793,
+    "alpha_2": {
+      "r": 0.0018674427317079893,
+      "P0": 0.02355487006563863,
+      "nu": 1.0739998067544725,
+      "mu_nontrivial": [0.1409982290992954, 0.00002473323515115286]
+    },
+    "alpha_5": {
+      "r": 1.5070172753900654e-7,
+      "P0": 1.1836089570433862e-5,
+      "nu": 1.0000371841720417,
+      "mu_nontrivial": [0.00007466665573660435, 3.041653661757237e-10]
+    }
+  },
+  "nonlinear_two_cell_pitchfork": {
+    "response": {
+      "family": "exp_threshold",
+      "r": 1.0,
+      "h": -1.0
+    },
+    "alpha": 0.5,
+    "w_self": 1.0,
+    "w_cross": 1.0,
+    "tau_self": 0.0,
+    "continuation_parameter": "tau_cross",
+    "critical": {
+      "T": 13.43069020,
+      "tau_cross": 6.71534510,
+      "chi": 0.0,
+      "nu": 0.41254621,
+      "psi_min": 0.062744,
+      "psi_max": 0.215113
+    },
+    "existence_derivatives": {
+      "Fplus_T": -0.3745575465,
+      "Fplus_p": 0.0,
+      "Fplus_chichi": 0.73964113,
+      "Fminus_chip": 0.05507097235,
+      "Fminus_chiT": -0.02753548616
+    },
+    "reduction": {
+      "c_T": 0.98735313,
+      "a": 0.05507097235,
+      "b": -0.02718724838,
+      "chi2_per_delta_p": 2.02561773,
+      "T_per_delta_p": 2.0
+    },
+    "dynamic": {
+      "Eminus_mu_at_unit": 0.445594394,
+      "mu_slope_per_p": -0.01840410,
+      "c_chi": 0.00908568,
+      "classification": "subcritical_exchange_pitchfork"
+    },
+    "branch_checks": [
+      {
+        "delta_p": 0.0001,
+        "T": 13.43089020,
+        "abs_chi": 0.01423174
+      },
+      {
+        "delta_p": 0.01,
+        "T": 13.45069020,
+        "abs_chi": 0.1417599
+      }
+    ]
+  }
+}
