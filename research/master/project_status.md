@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 1.9
+Version: 2.0
 Date: 2026-09-07
 
 ## Central research question
@@ -9,46 +9,38 @@ Can Hermann Haken's Lighthouse model be developed into a modern, scalable and di
 
 ## Global status
 
-The verification-first transition is complete.
-
-Canonical command rule remains:
+The verification-first transition remains complete under command protocol v0.2:
 
 `Reconstruct state, not frozen science.`
 
-`CORE Legacy Verification Sweep 0.1` has completed with
+The recovered legacy corpus v0.4–v0.26 is frozen as a governed classification in RB-011, and its strongest explicitly proved C1 material is frozen in RB-012. No exploratory C3 numerical effect was promoted by that process.
 
-`PASS — FULL V0.4–V0.26 LEGACY CORPUS CLASSIFIED; NO LEGACY C3 EFFECT PROMOTED`.
+The first genuinely new CORE scope beyond the recovered corpus has now passed:
 
-MASTER accepts the sweep as the canonical governed classification of the frozen legacy recovery corpus and establishes `CORE Legacy Verification Sweep Freeze 0.1` / RB-011.
+`CORE v0.27 Hierarchical Repeated-Trial Scope & Preregistration Gate 0.1`
 
-The sweep identifies a small set of mathematically closed C1 claims that were independently derived/verified inside the governed sweep. To avoid an unnecessary second derivation gate, MASTER directly reviews and freezes those claims as `CORE Consolidated C1 Theory Freeze 0.1` / RB-012.
+Result:
 
-RB-012 freezes only:
+`PASS — NARROW HIERARCHICAL REPEATED-TRIAL TARGET PREREGISTERED IN SCOPE; NO V0.27 NUMERICAL EXECUTION`.
 
-1. in-flight packet unique arrival/FIFO/sensitivity mathematics under positive continuous speed;
-2. pre-event projected alpha observation formula and rank-one information bound;
-3. duplicate-trial `sqrt(2)` singular-value scaling;
-4. nuisance-profile sensitivity/Fisher proposition `R=(I-P_N)J_s`;
-5. fixed-time `(A,beta,gamma)` pulse self-calibration ambiguity under the explicitly stated free-state/regular-chart assumptions.
+MASTER accepts this result and establishes `CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1` / RB-013.
 
-No optimized sensor/pulse/subset, legacy information-gain value, bifurcation location, global invariant object, implementation-performance claim or v0.26 numerical uncertainty is promoted.
+RB-013 freezes the scientific target and preregistration structure only. It does not freeze any numerical truth, effect size, recovery performance or v0.27 result.
 
-The legacy corpus through v0.26 is now sufficiently classified that the project may open genuinely new CORE science without serially replaying every old version. MASTER therefore authorizes `CORE v0.27 Hierarchical Repeated-Trial Scope & Preregistration Gate 0.1` as the single next scientific action.
-
-This gate defines the first new hierarchical repeated-trial target and preregisters its model/identifiability/observation structure. It does not execute v0.27 numerically.
+The single next scientific action is `CORE v0.27 Hierarchical Repeated-Trial Execution Contract Canonicalization Gate 0.1`, whose purpose is to freeze every numerical design constant, stochastic seed, solver rule, C2 implementation validation, tolerance and PASS/FAIL threshold before any effect-bearing v0.27 output is generated.
 
 ## Command protocol
 
-- `GO`: execute only the current READY `Next instruction`, reusing FROZEN/STABLE premises.
-- `RESUME`: preferred for a new/replacement chat; reconstruct Git state and execute the current READY instruction without redundant re-derivation.
-- `VERIFY-LEGACY`: completed for the current v0.4–v0.26 legacy sweep; no new sweep is active.
+- `GO`: execute only the current READY Next instruction and reuse FROZEN/STABLE premises.
+- `RESUME`: preferred for a new/replacement chat; reconstruct Git and execute the READY instruction without redundant re-derivation.
+- `VERIFY-LEGACY`: no active sweep; the v0.4–v0.26 sweep is complete and frozen as RB-011.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | oversight; awaiting v0.27 scope/preregistration result |
-| 10 CORE | READY | execute v0.27 Hierarchical Repeated-Trial Scope & Preregistration Gate 0.1 only |
+| 00 MASTER | FROZEN / WAIT | oversight; awaiting v0.27 execution-contract canonicalization result |
+| 10 CORE | READY | execute v0.27 Hierarchical Repeated-Trial Execution Contract Canonicalization Gate 0.1 only |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | reserved application branch |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | reserved application branch |
 | 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | reserved application branch |
@@ -58,7 +50,7 @@ This gate defines the first new hierarchical repeated-trial target and preregist
 ## Current freezes
 
 - Governance / command protocol v0.2: STABLE ADMINISTRATIVE
-- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v1.9
+- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v2.0
 - RB-002 CORE Legacy Recovery Input Snapshot 0.1: STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
 - RB-003 CORE Recovery Classification 0.1: STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
 - RB-004 CORE Mathematical Freeze 0.1: FROZEN / STABLE SCIENTIFIC BASELINE
@@ -70,66 +62,106 @@ This gate defines the first new hierarchical repeated-trial target and preregist
 - RB-010 CORE v0.4 Floquet Theory Freeze 0.1: FROZEN / STABLE SCIENTIFIC THEORY
 - RB-011 CORE Legacy Verification Sweep Freeze 0.1: FROZEN / STABLE VERIFICATION AUDIT
 - RB-012 CORE Consolidated C1 Theory Freeze 0.1: FROZEN / STABLE SCIENTIFIC THEORY
+- RB-013 CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1: FROZEN / STABLE NEW-SCIENCE SCOPE
 
-## Legacy sweep disposition
+## Frozen v0.27 first target
 
-### Already canonical
+The first target is passive hierarchical recovery of two shared network parameters from repeated independently prepared N=3 Lighthouse trials.
 
-v0.4 spike-time Floquet/symmetry theory is covered by RB-010.
+### Shared block
 
-### C1 material now promoted through RB-012
+`theta_s=(p,tau_3)` with known topology and fixed affine weight/delay families whose complete numerical matrices must be frozen by the next contract.
 
-- v0.13 in-flight arrival/FIFO/sensitivity theory;
-- v0.23 pre-event projected alpha observation and rank-one bound;
-- v0.25 duplicate-trial information scaling;
-- v0.26 nuisance profiling and fixed-time `(A,beta,gamma)` self-calibration ambiguity.
+### Trial-specific preparation
 
-### C2 implementation/replay material
+Each trial has six gauge-fixed zero-mean q=1 preparation coordinates:
 
-Substantial deterministic machinery remains available in v0.6–v0.20, especially event maps, invariant-circle methods, packet queues, sparse graph/batch handling and chart-aware inference. Static consistency is not a production validation. A consolidated replay contract can be opened later if required by the selected new-science execution path.
+`z_r=(eta_r,xi_psi,r,xi_q,r) in R^6`.
 
-### C3 effect-bearing material
+The nominal preparation mean is known/fixed in this first branch.
 
-Actual Lighthouse bifurcation/global-object effects v0.6–v0.15 and optimized/effect-selected inference/design findings v0.21–v0.26 remain exploratory C3. They require fresh preregistration before confirmatory use.
+### Hierarchical law
 
-This includes the legacy ~250x, ~87x, ~788x and ~557x information-gain results and all optimized pulse/sensor/subset choices.
+`z_r | lambda ~ iid N(0,Sigma_z(lambda))`,
 
-### Rejected/deferred examples
+with three isotropic preparation scales for phase, psi and q. The population-level unknown block is
 
-- the legacy interpretation of smooth baseline threshold contact as automatically hybrid/nonsmooth is rejected;
-- the apparent legacy v0.6 `B`-sign conflict is resolved as a residual-convention issue; RB-007 remains canonical;
-- full spike-time/full-hybrid Floquet spectral equivalence remains open;
-- rigorous higher regularity across moving arrival configurations remains open;
-- v0.27 was not part of the legacy sweep and has no inherited result status.
+`vartheta=(p,tau_3,lambda_phi,lambda_psi,lambda_q)`.
 
-## New-science boundary: v0.27
+Unknown population means, covariance anisotropy/cross-covariance and non-Gaussian laws are deferred.
 
-The first new target is a hierarchical repeated-trial extension of the inference problem.
+### Observation model
 
-The authorized scope/preregistration gate must define one narrow first model with:
+Labelled spike-time observations have known Gaussian timing-noise scale and an observed iid MCAR missing-slot mask with known missingness probability. A missing timestamp does not remove the physical spike from the latent trajectory.
 
-- shared scientific parameters;
-- trial-specific latent preparation;
-- a finite-dimensional hierarchical preparation law;
-- labelled spike-time observations with one minimal imperfection model;
-- calibration treatment consistent with RB-012;
-- one primary inference/profile/marginalization route;
-- precise structural/local identifiability questions;
-- a synthetic-validation skeleton;
-- finite success/failure observables;
-- a complete pre-output anti-cherry-picking freeze list;
-- only the C2 implementation dependencies truly required for later execution.
+Unlabelled spikes, unknown topology and unknown global observation clock are deferred.
 
-Legacy C3 numerical scales may appear only as non-binding historical context and may not determine acceptance criteria.
+### Intervention
+
+No active pulse or direct subthreshold sensor is allowed in the first v0.27 execution. Legacy optimized v0.24/v0.25 designs remain C3 and are not imported.
+
+### Primary inference route
+
+Laplace-approximated marginal maximum likelihood is the fixed primary route. It may not be replaced post hoc by EM, VI, MCMC or another objective within this branch if it fails.
+
+### Primary scientific questions
+
+1. Does conservative free-nuisance shared information have rank two under the preregistered design?
+2. Is the five-dimensional hierarchical local information/Hessian full rank and numerically regular?
+3. Are shared scientific directions distinguishable from the three preparation-scale directions through the corresponding Schur/profile block?
+4. Does observed missingness keep information/admissibility failure within the predeclared success rule?
+
+No global-identifiability claim is part of this first scope.
+
+## Mandatory next execution-contract freeze list
+
+Before any v0.27 scientific output, the next contract must freeze:
+
+- complete physical graph matrices/topology and baseline constants;
+- nominal initial state and gauge;
+- truth and compact parameter/hyperparameter domains;
+- preparation-scale truth;
+- trial count R and horizon H;
+- timing-noise scale and missingness probability;
+- stochastic replicate count and immutable seeds;
+- minimal-data/admissibility rules;
+- trial-mode and outer optimization algorithms, initializations, derivative methods, stopping tolerances and budgets;
+- event-chart/rerecording rules;
+- numerical rank and conditioning thresholds;
+- uncertainty construction and coverage target;
+- all finite scientific success/failure thresholds;
+- a deterministic C2 implementation validation sub-contract for the exact path required by v0.27.
+
+None may be selected using v0.27 output or favorable legacy C3 effect sizes.
+
+## Required C2 path
+
+Only the minimal implementation path is required before effect-bearing execution:
+
+1. physical fixed-delay alpha event scheduler and labelled events;
+2. fixed-chart derivatives with respect to `(p,tau_3,z)`;
+3. chart-validity sentinel plus physical rerecording;
+4. hierarchical Gaussian penalty, trial-mode Hessian/logdet, mask selection and outer five-parameter Laplace objective.
+
+Legacy v0.18–v0.20 code is C2 candidate material only until validated under a frozen contract.
+
+## Legacy disposition remains unchanged
+
+- Actual Lighthouse bifurcation/global-object effects v0.6–v0.15 remain C3 unless freshly preregistered.
+- Optimized/effect-selected inference/design findings v0.21–v0.26 remain C3.
+- Legacy ~250x, ~87x, ~788x and ~557x gains remain non-confirmatory historical results.
+- Full spike-time/full-hybrid Floquet spectral equivalence and rigorous higher regularity across moving arrival configurations remain open.
 
 ## Active blocker
 
-No legacy micro-gate blocker remains.
+The only blocker is completion of the v0.27 execution-contract canonicalization gate.
 
-The sole blocker is completion of the new v0.27 scope/preregistration gate. Until it returns:
+Until that contract returns and MASTER freezes it:
 
-- no v0.27 numerical execution;
-- no parameter tuning or new effect search;
+- no v0.27 dataset generation;
+- no v0.27 scientific simulation/inference;
+- no search for favorable truth, R, H, noise or missingness;
+- no post-output tolerance or solver changes;
 - no legacy C3 promotion;
 - no application execution;
 - no independent novelty positioning;
@@ -149,14 +181,15 @@ The sole blocker is completion of the new v0.27 scope/preregistration gate. Unti
 10. RB-010 CORE v0.4 Floquet Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 11. RB-011 CORE Legacy Verification Sweep Freeze 0.1 — FROZEN / STABLE VERIFICATION AUDIT
 12. RB-012 CORE Consolidated C1 Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
+13. RB-013 CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1 — FROZEN / STABLE NEW-SCIENCE SCOPE
 
 ## Manuscript
 
-WAIT. No downstream C3 legacy numerical claim has been promoted to manuscript evidence.
+WAIT. No v0.27 scientific result exists yet and no downstream C3 legacy effect is manuscript evidence.
 
 ## Literature positioning
 
-WAIT. Independent novelty positioning remains unauthorized. The v0.27 gate may mark novelty questions but may not resolve them.
+WAIT. Independent novelty positioning remains unauthorized. The new v0.27 scope is a project research target, not a novelty claim.
 
 ## Next global step
 
@@ -170,10 +203,10 @@ For a new/replacement CORE chat, execute:
 
 Current prompt:
 
-`research/master/prompts/core_v0_27_hierarchical_repeated_trial_scope_preregistration_gate_0_1.md`
+`research/master/prompts/core_v0_27_hierarchical_repeated_trial_execution_contract_canonicalization_gate_0_1.md`
 
-The gate returns once, after defining the new v0.27 first target and proposed later execution contract. It must not execute v0.27 numerically.
+This next gate freezes the complete execution contract only. It must not generate scientific v0.27 output.
 
 ## STOP
 
-STOP — AWAIT CORE V0.27 HIERARCHICAL REPEATED-TRIAL SCOPE & PREREGISTRATION
+STOP — AWAIT CORE V0.27 HIERARCHICAL REPEATED-TRIAL EXECUTION CONTRACT CANONICALIZATION
