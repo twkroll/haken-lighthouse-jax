@@ -58,7 +58,7 @@ Status: STABLE
 Date: 2026-09-04
 
 ## DEC-011
-MASTER Status Audit 0.5 reconfirms that `CORE Mathematical Scope Gate 0.1` remains unexecuted. `research/core/STATUS.md` is still READY and `research/core/mathematical_scope_gate_0_1.md` is absent. Direct branch checks confirm APP-1, APP-2 and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. No repository commits occurred after Status Audit 0.4 before this audit. No freeze violation, unauthorized branching, effect inspection, retuning, scientific execution, or result manipulation is detected. The single authorized next scientific action remains `CORE Mathematical Scope Gate 0.1`.
+MASTER Status Audit 0.5 reconfirms that `CORE Mathematical Scope Gate 0.1` remains unexecuted. `research/core/STATUS.md` is still READY and `research/core/mathematical_scope_gate_0_1.md` is absent. Direct branch checks confirm APP-1, APP-2 and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. No repository commits occurred after Status Audit 0.4 before this audit. No freeze violation, unauthorized branching, effect inspection, retuning, scientific execution, or result manipulation is detected. The single authorized scientific next action remains `CORE Mathematical Scope Gate 0.1`.
 Status: STABLE
 Date: 2026-09-04
 
@@ -127,6 +127,11 @@ Date: 2026-09-07
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-025
+`CORE v0.4 Floquet Theory Canonicalization Gate 0.1` returns PASS at `research/core/v0_4_floquet_theory_canonicalization_gate_0_1.md`. MASTER accepts the narrow independently re-derived spike-time Floquet/symmetry layer, including the regular spike-time recurrence, proved periodic row-sum cancellation, nonlinear characteristic operator `M(mu)=(mu-1)D_nu-H(mu)`, alpha lag-series convergence qualification, exact neutral global time-shift mode, derivative-comb representation, multiplier/exponent convention, normalized simple-root sensitivity, event-index relabelling covariance, and two-cell/Fourier/cluster symmetry reductions conditional on symmetry of the full delayed locked-state characteristic operator. MASTER retains the gate's repairs: source-aligned diagonal cancellation is proved rather than silently dropped; meromorphic alpha continuation is distinguished from the convergent lag series; weights alone do not justify Fourier reduction; and no complete full-hybrid-spectrum equivalence is asserted. MASTER establishes `CORE v0.4 Floquet Theory Freeze 0.1` / RB-010. No B23–B40 output, actual Lighthouse multiplier/root/stability boundary, v0.5 normal form, or downstream numerical effect is promoted. To eliminate unnecessary serial rediscovery of the already-existing legacy corpus, MASTER adopts `research/master/command_protocol_v0_2.md` and amends `PROJECT_GOVERNANCE.md` with the frozen-work reuse rule `Reconstruct state, not frozen science`, plus commands `RESUME` and `VERIFY-LEGACY`. MASTER authorizes exactly one consolidated next scientific action: `CORE Legacy Verification Sweep 0.1`, covering legacy v0.4–v0.26 in one CORE session without returning to MASTER between versions. The sweep may audit, classify, mathematically cross-check and faithfully exact-replay committed deterministic artifacts where closure permits, but it may not promote exploratory C3 effects without preregistered rerun, tune after effect inspection, invent missing replay artifacts, or start v0.27.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -138,3 +143,4 @@ Date: 2026-09-07
 - RB-007: CORE v0.3 Continuation Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 - RB-008: CORE v0.3 Continuation Validation Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 - RB-009: CORE v0.3 Continuation Validation Result Freeze 0.1 — FROZEN / STABLE RESULT
+- RB-010: CORE v0.4 Floquet Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
