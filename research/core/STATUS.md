@@ -1,8 +1,8 @@
 # CORE STATUS
 
-Current Gate: CORE Mathematical Scope Canonicalization Gate 0.1
-Status: RETURN TO MASTER
-Latest canonical file: `research/core/mathematical_scope_canonicalization_gate_0_1.md` — gate PASS; proposed baseline and C1 derivations complete, but `CORE Mathematical Freeze 0.1` is not yet authorized or frozen
-Dependencies: Governance Initialization 0.1 STABLE; RB-002 CORE Legacy Recovery Input Snapshot 0.1; RB-003 CORE Recovery Classification 0.1 STABLE; recovery report PASS; mathematical scope canonicalization gate PASS
-Next instruction: none in CORE — MASTER must review the gate and decide whether to authorize `CORE Mathematical Freeze 0.1` or request repair
-STOP boundary: STOP — RETURN TO MASTER; no benchmark replay, no v0.3+ scientific execution, no implementation, no active experiment design, no v0.27, and no further theory task until MASTER authorization
+Current Gate: CORE v0.2 Benchmark Contract Canonicalization Gate 0.1
+Status: READY
+Latest canonical file: `research/core/mathematical_freeze_0_1.md` — `CORE Mathematical Freeze 0.1` FROZEN / STABLE (RB-004)
+Dependencies: Governance Initialization 0.1 STABLE; RB-002 legacy recovery input; RB-003 recovery classification; RB-004 CORE Mathematical Freeze 0.1
+Next instruction: `research/master/prompts/core_v0_2_benchmark_contract_canonicalization_gate_0_1.md`
+STOP boundary: after `research/core/v0_2_benchmark_contract_canonicalization_gate_0_1.md` and STATUS update to RETURN TO MASTER/BLOCKED, return to MASTER; no benchmark execution, no v0.3+ science, no implementation, no active experiment design, and no v0.27
