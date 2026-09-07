@@ -92,7 +92,13 @@ MASTER repository-wide recovery audit discovers the previously unintegrated bran
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-018
+`CORE Recovery & Canonicalization Gate 0.1` returns PASS at `research/core/recovery_canonicalization_gate_0_1.md`. PASS means the legacy branch through v0.26 has been sufficiently reconstructed and classified for MASTER decision-making; it does not validate, reproduce, promote, merge, or freeze any legacy scientific result. The recovery establishes that the original Scope Gate was substantially satisfied in mathematical content by recovered v0.1–v0.2 foundational material but was not completed as a governed gate. Required repairs are precise primary-source/equation mapping, one explicit baseline assumptions table, a formal variant registry, explicit exclusions, a formal gate decision/proposed freeze package, and independent checks of C1-eligible derivations. MASTER accepts the recovery classification as stable administrative/audit evidence and establishes RB-003. MASTER does not authorize replay, active-design rerun, v0.27, or downstream legacy continuation at this point. The single next scientific action is `CORE Mathematical Scope Canonicalization Gate 0.1`, which must reconstruct the missing governed Scope Gate deliverable from C1-eligible v0.1–v0.2 material with primary-source verification and independent mathematical checking. v0.3–v0.26 remain recovery evidence only.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
 - RB-002: CORE Legacy Recovery Input Snapshot 0.1 at `287eae8a86560b78ed94f30a2786243714c33ac0` — STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
+- RB-003: CORE Recovery Classification 0.1 — STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
