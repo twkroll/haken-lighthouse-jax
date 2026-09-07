@@ -112,6 +112,11 @@ Date: 2026-09-07
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-022
+`CORE v0.3 Continuation Theory Canonicalization Gate 0.1` returns PASS at `research/core/v0_3_continuation_theory_canonicalization_gate_0_1.md`. MASTER accepts the independently re-derived normalized phase-coordinate map, fixed-domain branch operator, phase Jacobian, fixed-physical-delay period derivative, parameter derivative, gauge structure, pseudo-arclength algebra as a method definition, event/admissibility qualifications, existence-vs-stability-vs-hybrid taxonomy, and exchange-symmetric two-cell block structure with corrected negative antisymmetric coefficient `B`. MASTER also accepts the gate's two explicit repairs to legacy v0.3: threshold contact is not automatically nonsmooth for the frozen smooth baseline response C2, and alpha-arrival collisions are not automatically existence-Jacobian singularities. Conditional fold theory is frozen only under stated local `C^2` assumptions; unconditional higher-derivative/pitchfork applicability is not promoted. MASTER establishes `CORE v0.3 Continuation Theory Freeze 0.1` / RB-007. No numerical continuation, actual Lighthouse fold/pitchfork result, B11–B22 output, v0.4 stability result or downstream effect is promoted. The single next scientific action is `CORE v0.3 Continuation Validation Contract Canonicalization Gate 0.1`, which must pre-specify finite cases, derivative conventions, chart conditions, tolerances and PASS/FAIL rules before any v0.3 validation execution.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -120,3 +125,4 @@ Date: 2026-09-07
 - RB-004: CORE Mathematical Freeze 0.1 — FROZEN / STABLE SCIENTIFIC BASELINE
 - RB-005: CORE Benchmark Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 - RB-006: CORE v0.2 Benchmark Result Freeze 0.1 — FROZEN / STABLE RESULT
+- RB-007: CORE v0.3 Continuation Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
