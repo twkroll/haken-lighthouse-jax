@@ -87,6 +87,12 @@ MASTER Status Audit 0.9 confirms no scientific or branch-state change since Stat
 Status: STABLE
 Date: 2026-09-04
 
+## DEC-017
+MASTER repository-wide recovery audit discovers the previously unintegrated branch `core/theory-v0.1`. At discovery its head is `287eae8a86560b78ed94f30a2786243714c33ac0` with message `CORE v0.26: document trial nuisance and calibration theory`; its merge base with `main` is `948dedbc5294fbe864b940060ee6b2053020347f`, and it is 133 commits ahead / 34 commits behind `main`. The branch contains extensive CORE work through v0.26, including mathematical analysis, numerical continuation/bifurcation work, inference, active experiment design, JAX/reference code, and benchmarks. However, on that same branch `research/core/STATUS.md` still says `CORE Mathematical Scope Gate 0.1 / READY`, while its MASTER status still waits for that gate and forbids downstream implementation/scientific execution. Therefore the branch cannot be silently merged or treated as a canonical result lineage. Previous audit statements of 'no unauthorized scientific branch execution detected' are henceforth understood as conclusions about the audited canonical `main` state, not a complete repository-wide historical finding. MASTER freezes the exact legacy head only as administrative recovery input in `research/master/core_legacy_recovery_snapshot_0_1.md`, establishes RB-002, PARKS direct execution of the original Scope Gate pending recovery, and authorizes `CORE Recovery & Canonicalization Gate 0.1`. Recovery may inventory, source-audit, classify, and exactly replay committed artifacts without tuning or new scientific design. No v0.27, direct merge, legacy continuation, application execution, novelty claim, or scientific freeze is authorized until recovery returns to MASTER.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
+- RB-002: CORE Legacy Recovery Input Snapshot 0.1 at `287eae8a86560b78ed94f30a2786243714c33ac0` — STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
