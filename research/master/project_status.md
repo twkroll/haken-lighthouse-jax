@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.0
+Version: 2.1
 Date: 2026-09-07
 
 ## Central research question
@@ -9,29 +9,29 @@ Can Hermann Haken's Lighthouse model be developed into a modern, scalable and di
 
 ## Global status
 
-The verification-first transition remains complete under command protocol v0.2:
+The verification-first command rule remains:
 
 `Reconstruct state, not frozen science.`
 
-The recovered legacy corpus v0.4–v0.26 is frozen as a governed classification in RB-011, and its strongest explicitly proved C1 material is frozen in RB-012. No exploratory C3 numerical effect was promoted by that process.
+The recovered legacy corpus v0.4–v0.26 remains classified/frozen in RB-011; its strongest independently verified C1 mathematics remains frozen in RB-012. No legacy C3 numerical effect has been promoted.
 
-The first genuinely new CORE scope beyond the recovered corpus has now passed:
+The first genuinely new v0.27 scope is frozen in RB-013. The subsequent pre-execution contract canonicalization has now returned:
 
-`CORE v0.27 Hierarchical Repeated-Trial Scope & Preregistration Gate 0.1`
+`PASS — COMPLETE PRE-EXECUTION CONTRACT FIXED; NO V0.27 SCIENTIFIC DATASET OR INFERENCE EXECUTED`.
 
-Result:
+MASTER accepts the contract and establishes `CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1` / RB-014.
 
-`PASS — NARROW HIERARCHICAL REPEATED-TRIAL TARGET PREREGISTERED IN SCOPE; NO V0.27 NUMERICAL EXECUTION`.
+At RB-014 freeze time:
 
-MASTER accepts this result and establishes `CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1` / RB-013.
+- C2-27-01 through C2-27-08 are UNEVALUATED;
+- all 32 stochastic scientific datasets are UNGENERATED / UNEVALUATED;
+- no v0.27 scientific effect result exists.
 
-RB-013 freezes the scientific target and preregistration structure only. It does not freeze any numerical truth, effect size, recovery performance or v0.27 result.
-
-The single next scientific action is `CORE v0.27 Hierarchical Repeated-Trial Execution Contract Canonicalization Gate 0.1`, whose purpose is to freeze every numerical design constant, stochastic seed, solver rule, C2 implementation validation, tolerance and PASS/FAIL threshold before any effect-bearing v0.27 output is generated.
+The single next scientific action is now `CORE v0.27 Hierarchical Repeated-Trial Execution Gate 0.1`.
 
 ## Command protocol
 
-- `GO`: execute only the current READY Next instruction and reuse FROZEN/STABLE premises.
+- `GO`: execute only the current READY `Next instruction` and reuse FROZEN/STABLE premises.
 - `RESUME`: preferred for a new/replacement chat; reconstruct Git and execute the READY instruction without redundant re-derivation.
 - `VERIFY-LEGACY`: no active sweep; the v0.4–v0.26 sweep is complete and frozen as RB-011.
 
@@ -39,8 +39,8 @@ The single next scientific action is `CORE v0.27 Hierarchical Repeated-Trial Exe
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | oversight; awaiting v0.27 execution-contract canonicalization result |
-| 10 CORE | READY | execute v0.27 Hierarchical Repeated-Trial Execution Contract Canonicalization Gate 0.1 only |
+| 00 MASTER | FROZEN / WAIT | oversight; awaiting v0.27 execution result |
+| 10 CORE | READY | execute v0.27 Hierarchical Repeated-Trial Execution Gate 0.1 only |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | reserved application branch |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | reserved application branch |
 | 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | reserved application branch |
@@ -50,7 +50,7 @@ The single next scientific action is `CORE v0.27 Hierarchical Repeated-Trial Exe
 ## Current freezes
 
 - Governance / command protocol v0.2: STABLE ADMINISTRATIVE
-- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v2.0
+- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v2.1
 - RB-002 CORE Legacy Recovery Input Snapshot 0.1: STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
 - RB-003 CORE Recovery Classification 0.1: STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
 - RB-004 CORE Mathematical Freeze 0.1: FROZEN / STABLE SCIENTIFIC BASELINE
@@ -63,87 +63,58 @@ The single next scientific action is `CORE v0.27 Hierarchical Repeated-Trial Exe
 - RB-011 CORE Legacy Verification Sweep Freeze 0.1: FROZEN / STABLE VERIFICATION AUDIT
 - RB-012 CORE Consolidated C1 Theory Freeze 0.1: FROZEN / STABLE SCIENTIFIC THEORY
 - RB-013 CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1: FROZEN / STABLE NEW-SCIENCE SCOPE
+- RB-014 CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1: FROZEN / STABLE PRE-EXECUTION CONTRACT
 
-## Frozen v0.27 first target
+## Frozen v0.27 target
 
-The first target is passive hierarchical recovery of two shared network parameters from repeated independently prepared N=3 Lighthouse trials.
+The first v0.27 target remains passive hierarchical recovery from repeated independently prepared N=3 trials.
 
-### Shared block
-
-`theta_s=(p,tau_3)` with known topology and fixed affine weight/delay families whose complete numerical matrices must be frozen by the next contract.
-
-### Trial-specific preparation
-
-Each trial has six gauge-fixed zero-mean q=1 preparation coordinates:
-
-`z_r=(eta_r,xi_psi,r,xi_q,r) in R^6`.
-
-The nominal preparation mean is known/fixed in this first branch.
-
-### Hierarchical law
-
-`z_r | lambda ~ iid N(0,Sigma_z(lambda))`,
-
-with three isotropic preparation scales for phase, psi and q. The population-level unknown block is
+Population unknowns:
 
 `vartheta=(p,tau_3,lambda_phi,lambda_psi,lambda_q)`.
 
-Unknown population means, covariance anisotropy/cross-covariance and non-Gaussian laws are deferred.
+Trial preparation is six-dimensional, gauge-fixed in the zero-mean q=1 phase/alpha subspaces. The hierarchy is zero-mean Gaussian with three isotropic preparation scales. Observations are labelled spike times with known Gaussian timing noise and observed MCAR missing labelled slots. No active pulse is used.
 
-### Observation model
+Primary inference is Laplace-approximated marginal maximum likelihood; it cannot be replaced post hoc within this branch.
 
-Labelled spike-time observations have known Gaussian timing-noise scale and an observed iid MCAR missing-slot mask with known missingness probability. A missing timestamp does not remove the physical spike from the latent trajectory.
+## RB-014 frozen execution design
 
-Unlabelled spikes, unknown topology and unknown global observation clock are deferred.
+The contract fixes before output, among other items:
 
-### Intervention
+- complete N=3 directed-cycle graph and all affine weight/delay matrices;
+- `alpha=1`, `r=1`, `h=-1`, nominal preparation and gauge;
+- truth `p*=0.05`, `tau_3*=0.90` and shared parameter box;
+- `sigma_phi*=sigma_psi*=sigma_q*=0.05` and frozen log-scale box;
+- `R=16` trials per dataset;
+- `H=4`, hence 12 candidate labelled timestamps per trial;
+- known timing-noise SD `sigma_t=0.02`;
+- MCAR missingness `pi_miss=0.20`;
+- exactly 32 stochastic dataset replicates with immutable PCG64DXSM seed mapping;
+- minimal-data, physical-timeout and event-budget rules;
+- exact inner BFGS trial-mode and bounded scaled Powell outer optimization policy;
+- fixed starts, no warm-start/multistart, fixed budgets and tolerances;
+- physical rerecording before fixed-chart differentiation at each new parameter point;
+- exact Hessian/logdet validity rules without jitter/clipping;
+- information, Schur/profile, uncertainty and coverage definitions;
+- all recovery, identifiability, coverage, failure and usable-fit thresholds;
+- the overall decision hierarchy.
 
-No active pulse or direct subthreshold sensor is allowed in the first v0.27 execution. Legacy optimized v0.24/v0.25 designs remain C3 and are not imported.
+## Mandatory C2-first boundary
 
-### Primary inference route
+C2-27-01 through C2-27-08 must execute in order before any RNG object for the 32 scientific datasets is created.
 
-Laplace-approximated marginal maximum likelihood is the fixed primary route. It may not be replaced post hoc by EM, VI, MCMC or another objective within this branch if it fails.
+If any C2 check fails, the execution gate returns `IMPLEMENTATION FAIL / BLOCKED` and no scientific dataset may be generated.
 
-### Primary scientific questions
+If C2 passes, the 32 frozen datasets are generated exactly once and retained even when awkward or failed.
 
-1. Does conservative free-nuisance shared information have rank two under the preregistered design?
-2. Is the five-dimensional hierarchical local information/Hessian full rank and numerically regular?
-3. Are shared scientific directions distinguishable from the three preparation-scale directions through the corresponding Schur/profile block?
-4. Does observed missingness keep information/admissibility failure within the predeclared success rule?
+## Frozen execution decision hierarchy
 
-No global-identifiability claim is part of this first scope.
+1. `IMPLEMENTATION FAIL / BLOCKED` — any mandatory C2 test fails; science does not run.
+2. `SCIENTIFIC FAIL` — C2 passes but any hard identifiability/failure/usable-fit criterion fails.
+3. `SCIENTIFIC CONDITIONAL` — hard structural criteria pass but at least one recovery-error or coverage criterion fails.
+4. `SCIENTIFIC PASS` — every frozen criterion passes.
 
-## Mandatory next execution-contract freeze list
-
-Before any v0.27 scientific output, the next contract must freeze:
-
-- complete physical graph matrices/topology and baseline constants;
-- nominal initial state and gauge;
-- truth and compact parameter/hyperparameter domains;
-- preparation-scale truth;
-- trial count R and horizon H;
-- timing-noise scale and missingness probability;
-- stochastic replicate count and immutable seeds;
-- minimal-data/admissibility rules;
-- trial-mode and outer optimization algorithms, initializations, derivative methods, stopping tolerances and budgets;
-- event-chart/rerecording rules;
-- numerical rank and conditioning thresholds;
-- uncertainty construction and coverage target;
-- all finite scientific success/failure thresholds;
-- a deterministic C2 implementation validation sub-contract for the exact path required by v0.27.
-
-None may be selected using v0.27 output or favorable legacy C3 effect sizes.
-
-## Required C2 path
-
-Only the minimal implementation path is required before effect-bearing execution:
-
-1. physical fixed-delay alpha event scheduler and labelled events;
-2. fixed-chart derivatives with respect to `(p,tau_3,z)`;
-3. chart-validity sentinel plus physical rerecording;
-4. hierarchical Gaussian penalty, trial-mode Hessian/logdet, mask selection and outer five-parameter Laplace objective.
-
-Legacy v0.18–v0.20 code is C2 candidate material only until validated under a frozen contract.
+A weak/null/fail/conditional result is final for this preregistered branch. No truth, R, H, noise, missingness, solver, start, tolerance, seed, metric or threshold may be changed to rescue it.
 
 ## Legacy disposition remains unchanged
 
@@ -154,14 +125,13 @@ Legacy v0.18–v0.20 code is C2 candidate material only until validated under a 
 
 ## Active blocker
 
-The only blocker is completion of the v0.27 execution-contract canonicalization gate.
+The only active blocker is the governed first v0.27 execution.
 
-Until that contract returns and MASTER freezes it:
+Until it returns:
 
-- no v0.27 dataset generation;
-- no v0.27 scientific simulation/inference;
-- no search for favorable truth, R, H, noise or missingness;
-- no post-output tolerance or solver changes;
+- no post-output redesign or tuning;
+- no second v0.27 branch or v0.28;
+- no active-pulse/probe extension;
 - no legacy C3 promotion;
 - no application execution;
 - no independent novelty positioning;
@@ -182,14 +152,15 @@ Until that contract returns and MASTER freezes it:
 11. RB-011 CORE Legacy Verification Sweep Freeze 0.1 — FROZEN / STABLE VERIFICATION AUDIT
 12. RB-012 CORE Consolidated C1 Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 13. RB-013 CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1 — FROZEN / STABLE NEW-SCIENCE SCOPE
+14. RB-014 CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 
 ## Manuscript
 
-WAIT. No v0.27 scientific result exists yet and no downstream C3 legacy effect is manuscript evidence.
+WAIT. No v0.27 scientific result exists yet.
 
 ## Literature positioning
 
-WAIT. Independent novelty positioning remains unauthorized. The new v0.27 scope is a project research target, not a novelty claim.
+WAIT. Independent novelty positioning remains unauthorized.
 
 ## Next global step
 
@@ -203,10 +174,10 @@ For a new/replacement CORE chat, execute:
 
 Current prompt:
 
-`research/master/prompts/core_v0_27_hierarchical_repeated_trial_execution_contract_canonicalization_gate_0_1.md`
+`research/master/prompts/core_v0_27_hierarchical_repeated_trial_execution_gate_0_1.md`
 
-This next gate freezes the complete execution contract only. It must not generate scientific v0.27 output.
+The execution gate must stop after one governed result and return to MASTER.
 
 ## STOP
 
-STOP — AWAIT CORE V0.27 HIERARCHICAL REPEATED-TRIAL EXECUTION CONTRACT CANONICALIZATION
+STOP — AWAIT CORE V0.27 HIERARCHICAL REPEATED-TRIAL EXECUTION RESULT
