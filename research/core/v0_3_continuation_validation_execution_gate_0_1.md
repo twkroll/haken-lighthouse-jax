@@ -9,14 +9,16 @@ Canonical execution started from:
 
 - repository: `twkroll/haken-lighthouse-jax`
 - branch: `main`
-- `main` HEAD at execution start and immediately before result write: `956ab9c9f709a006e9789b3151da1f65245d9100`
+- `main` HEAD at execution start and immediately before the initial result write: `956ab9c9f709a006e9789b3151da1f65245d9100`
+- preliminary result creation commit: `872199d6f885489898d64ac8bf957c629770d249`
+- preliminary RETURN-TO-MASTER status commit: `02da2d7c68e0a631c9cb42941860e25450c5f127`
 - governance blob SHA: `7ba28f4c959344930f7b22d10f6f0d5b5163eea9`
 - CORE STATUS start blob SHA: `5d9acf4e531ceb63d71af9682b92376ef4c2bb55`
 - MASTER STATUS start blob SHA: `17e033dccd17a0845c5cf5f16e28c7f977482135`
 - project status v1.6 blob SHA: `1af43394873caec65f330fde9eb5ebbdc1d78ce2`
 - execution prompt blob SHA: `9fc65e56c95573dda2b9eff41e285b3e48662909`
 
-No repository state change occurred between the execution authorization check and the result write.
+No repository state change occurred between the execution authorization check and the initial result write. A subsequent clerical result-transcription defect was then found during post-write audit and corrected under the frozen RB-008 software-plumbing rule as documented in Section 4.
 
 ## 2. RB-008 identity
 
@@ -53,13 +55,52 @@ The independent derivative path used exactly the frozen five-point stencil and t
 
 ## 4. Harness audit trail
 
-No software-plumbing defect occurred.
+One clerical/software-plumbing defect was detected **after the first result document had been committed**.
 
-No scientific or clerical correction was made after output inspection.
+### Defect
 
-No preliminary failed output was discarded.
+The manually transcribed 20-row V3C04 pseudo-arclength table in preliminary result commit
 
-No parameter, reference state, derivative convention, finite-difference step, chart margin, solver step, tolerance, benchmark membership, negative control or PASS/FAIL rule was altered.
+`872199d6f885489898d64ac8bf957c629770d249`
+
+did not match the actual deterministic V3C04 harness arrays. This was a result-serialization/transcription error only; the numerical V3C04 computation itself and all other validation families were unaffected.
+
+### Affected path
+
+Only the human-readable V3C04 result-table serialization was affected. No common scientific computation path, alpha waveform, quadrature, derivative evaluator, event control or other V3C family shared this transcription defect.
+
+### Correction
+
+The V3C04 family was rerun **from the beginning** under the unchanged frozen RB-008 contract:
+
+- same synthetic equation `x^2-p=0`;
+- same start `(0.4,0.16)`;
+- same initial tangent;
+- same fixed `Delta s=0.05`;
+- exactly 20 predictor/corrector steps;
+- same Newton target and iteration cap;
+- no step resizing;
+- no parameter/tolerance/reference change.
+
+The rerun was bitwise identical to the original in-memory deterministic V3C04 harness output. The corrected table in Section 8 is generated directly from that rerun output.
+
+### Invalidated preliminary output
+
+Only the incorrect V3C04 table and summary numbers in preliminary commit `872199d6f885489898d64ac8bf957c629770d249` are invalidated as a scientific record. They are retained in Git history as the audit trail and are not used as evidence.
+
+The corrected V3C04 rerun remains PASS under the original RB-008 criteria.
+
+No scientific specification was changed after output inspection. There was:
+
+- no parameter retuning;
+- no reference-state change;
+- no derivative-step change;
+- no chart-margin change;
+- no solver-step change;
+- no tolerance change;
+- no benchmark membership change;
+- no negative-control change;
+- no PASS/FAIL rule change.
 
 ## 5. V3C01 — coordinate equivalence and global gauge
 
@@ -146,34 +187,34 @@ Execution used exactly `Delta s=0.05`, exactly 20 predictor/corrector steps and 
 
 | step | x | p | `|x^2-p|` | corrector `||G||_2` | Newton updates |
 |---:|---:|---:|---:|---:|---:|
-| 1 | 0.3601832048061829 | 0.1297319410243607 | 0.000e+00 | 4.626e-17 | 2 |
-| 2 | 0.3188013892657372 | 0.1016343257976583 | 1.388e-17 | 1.475e-17 | 2 |
-| 3 | 0.2758182707161332 | 0.07607571834477276 | 0.000e+00 | 2.156e-17 | 2 |
-| 4 | 0.2311476435371381 | 0.05342922897037299 | 6.939e-18 | 7.344e-18 | 2 |
-| 5 | 0.1847171790745454 | 0.03412044597935734 | 0.000e+00 | 1.197e-17 | 2 |
-| 6 | 0.1364763132158233 | 0.01862578409624549 | 0.000e+00 | 1.388e-17 | 2 |
-| 7 | 0.08640775977357955 | 0.007466297002113074 | 8.674e-19 | 8.674e-19 | 2 |
-| 8 | 0.03552783130739044 | 0.001262206792166684 | 0.000e+00 | 1.093e-17 | 2 |
-| 9 | -0.01117128315285151 | 0.0001247975672811754 | 1.355e-20 | 1.388e-17 | 2 |
-| 10 | -0.06109075971989375 | 0.003732081941374784 | 4.337e-19 | 1.389e-17 | 2 |
-| 11 | -0.1105351383800707 | 0.01221799981636352 | 1.735e-18 | 1.735e-18 | 2 |
-| 12 | -0.1588821032759843 | 0.02524351925685298 | 3.469e-18 | 4.221e-18 | 2 |
-| 13 | -0.2056420691897014 | 0.0422886606100082 | 0.000e+00 | 3.851e-17 | 2 |
-| 14 | -0.2504693726034202 | 0.06273482366344956 | 0.000e+00 | 3.687e-17 | 2 |
-| 15 | -0.2931589597021926 | 0.08594217683034342 | 1.388e-17 | 1.627e-17 | 2 |
-| 16 | -0.3336290375350137 | 0.1113083456439027 | 0.000e+00 | 5.287e-17 | 2 |
-| 17 | -0.3718950793763569 | 0.1383059460740115 | 2.776e-17 | 2.896e-17 | 2 |
-| 18 | -0.4080479705400089 | 0.1665031443300521 | 0.000e+00 | 3.362e-17 | 2 |
-| 19 | -0.4422307916952752 | 0.1955670981586634 | 2.776e-17 | 2.776e-17 | 2 |
-| 20 | -0.474608273131739 | 0.2252529991582197 | 2.776e-17 | 2.776e-17 | 2 |
+| 1 | 0.3601832048061829 | 0.1297319410243607 | 9.198e-14 | 9.198e-14 | 2 |
+| 2 | 0.3188013892657372 | 0.1016343257976583 | 1.058e-13 | 1.058e-13 | 2 |
+| 3 | 0.2758039148150347 | 0.0760677994271893 | 1.096e-13 | 1.096e-13 | 2 |
+| 4 | 0.2311807385603068 | 0.05344453388119191 | 9.701e-14 | 9.701e-14 | 2 |
+| 5 | 0.1849840409065581 | 0.03421909539005116 | 6.800e-14 | 6.800e-14 | 2 |
+| 6 | 0.1373521378557469 | 0.01886560977351062 | 3.348e-14 | 3.348e-14 | 2 |
+| 7 | 0.08852936818383095 | 0.007837449031018875 | 9.425e-15 | 9.425e-15 | 2 |
+| 8 | 0.0388718212019997 | 0.001511018483559254 | 9.795e-16 | 9.795e-16 | 2 |
+| 9 | -0.01117128315285151 | 0.0001247975672811754 | 8.511e-18 | 8.531e-18 | 2 |
+| 10 | -0.06110313160815999 | 0.003733592692324119 | 4.337e-19 | 2.498e-18 | 2 |
+| 11 | -0.1104408048933147 | 0.01219717138548311 | 1.041e-16 | 1.041e-16 | 2 |
+| 12 | -0.1587720218098005 | 0.02520855490956926 | 2.498e-15 | 2.498e-15 | 2 |
+| 13 | -0.2057894098422015 | 0.04234928120318855 | 1.303e-14 | 1.303e-14 | 2 |
+| 14 | -0.2512974415905195 | 0.06315040414990776 | 3.279e-14 | 3.279e-14 | 2 |
+| 15 | -0.2951990041837309 | 0.0871424520710127 | 5.368e-14 | 5.368e-14 | 2 |
+| 16 | -0.3374725995499198 | 0.1138877554469138 | 6.671e-14 | 6.671e-14 | 2 |
+| 17 | -0.3781488607096066 | 0.1429965608559044 | 6.911e-14 | 6.911e-14 | 2 |
+| 18 | -0.4172908799576025 | 0.1741316784957269 | 6.337e-14 | 6.337e-14 | 2 |
+| 19 | -0.454979599668773 | 0.2070064361147034 | 5.357e-14 | 5.357e-14 | 2 |
+| 20 | -0.4913038181530882 | 0.2413794417317599 | 4.285e-14 | 4.285e-14 | 2 |
 
 Summary:
 
 - maximum Newton updates: `2` <= 12
-- maximum corrected branch residual: `2.776e-17`
-- maximum corrector residual: `5.287e-17`
+- maximum corrected branch residual: `1.096e-13`
+- maximum corrector residual: `1.096e-13`
 - first negative accepted point: step `9`, `(x,p)=(-0.01117128315285151, 0.0001247975672811754)`
-- final point: `(x,p)=(-0.474608273131739, 0.2252529991582197)`
+- final point: `(x,p)=(-0.4913038181530882, 0.2413794417317599)`
 - discarded/resized steps: none
 
 No Lighthouse branch was used.
