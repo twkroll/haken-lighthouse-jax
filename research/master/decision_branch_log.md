@@ -53,7 +53,7 @@ Status: STABLE
 Date: 2026-09-04
 
 ## DEC-010
-MASTER Status Audit 0.4 confirms again that `CORE Mathematical Scope Gate 0.1` is still unexecuted: `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is absent. APP-1, APP-2, and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. No commits occurred after the MASTER report v0.2 bookkeeping commit before this audit. No freeze violation, unauthorized branching, retuning, result inspection, or scientific execution is detected. The single authorized next scientific action remains the existing CORE gate.
+MASTER Status Audit 0.4 confirms again that `CORE Mathematical Scope Gate 0.1` is still unexecuted: `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is absent. APP-1, APP-2, and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. No commits occurred after the MASTER report v0.2 bookkeeping commit before this audit. No freeze violation, unauthorized branching, retuning, result inspection, or scientific execution is detected. The single authorized scientific next action remains the existing CORE gate.
 Status: STABLE
 Date: 2026-09-04
 
@@ -132,6 +132,11 @@ Date: 2026-09-07
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-026
+`CORE Legacy Verification Sweep 0.1` returns PASS at `research/core/legacy_verification_sweep_0_1.md`: the full frozen legacy corpus v0.4–v0.26 is classified against RB-004–RB-010 and no legacy C3 effect is promoted. MASTER establishes `CORE Legacy Verification Sweep Freeze 0.1` / RB-011 as the stable governed audit classification. The sweep confirms that actual Lighthouse bifurcation/global-object effects v0.6–v0.15 and optimized/effect-selected inference/design findings v0.21–v0.26 remain C3 and require fresh preregistration for confirmatory use; implementation claims remain C2/replay work where not separately frozen; superseded/contradicted material remains C4/C5/deferred. The sweep also independently derives/verifies a narrow closed C1 package. To avoid redundant re-derivation, MASTER directly reviews and freezes that package as `CORE Consolidated C1 Theory Freeze 0.1` / RB-012: in-flight unique-arrival/FIFO/sensitivity mathematics; pre-event projected alpha observation plus rank-one information bound; duplicate-trial sqrt(2) singular-value scaling; nuisance-profile sensitivity/Fisher proposition; and fixed-time `(A,beta,gamma)` pulse self-calibration ambiguity under explicit free-state/regular-chart assumptions. No optimized pulse/sensor/subset, legacy gain value, bifurcation/global-object effect, implementation-performance result or v0.26 numerical uncertainty is promoted. With the legacy corpus now classified and the required v0.26 mathematical premises frozen, MASTER opens the first genuinely new scientific layer: `CORE v0.27 Hierarchical Repeated-Trial Scope & Preregistration Gate 0.1`. This gate must define one narrow hierarchical preparation/observation/inference target and its anti-cherry-picking execution skeleton without numerical v0.27 execution and without using legacy C3 effects as established premises.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -144,3 +149,5 @@ Date: 2026-09-07
 - RB-008: CORE v0.3 Continuation Validation Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 - RB-009: CORE v0.3 Continuation Validation Result Freeze 0.1 — FROZEN / STABLE RESULT
 - RB-010: CORE v0.4 Floquet Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
+- RB-011: CORE Legacy Verification Sweep Freeze 0.1 — FROZEN / STABLE VERIFICATION AUDIT
+- RB-012: CORE Consolidated C1 Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
