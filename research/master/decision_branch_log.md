@@ -152,6 +152,11 @@ Date: 2026-09-07
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-030
+`CORE v0.27b Inference Failure Mechanism & Follow-up Preregistration Gate 0.1` returns PASS at `research/core/v0_27b_inference_failure_mechanism_followup_preregistration_gate_0_1.md`. MASTER accepts the governed diagnosis while preserving RB-015 unchanged as SCIENTIFIC FAIL and establishes `CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1` / RB-016. The frozen diagnostic classification is that the dominant observed mechanism is inner BFGS/Strong-Wolfe globalization plus quasi-Newton stagnation rather than event-chart invalidity: all 96 exposed failure directions admit valid same-itinerary probes; 95/96 admit Armijo descent; only 12/96 fixed dyadic probes meet Armijo and Strong-Wolfe simultaneously; 82/96 failures meet the preregistered stagnation criterion; gradient checks do not support a wrong fixed-chart gradient as dominant; and 11/12 stratified local Hessians are positive definite. Candidate comparisons remain POST-HOC / DEVELOPMENT evidence only. Exactly one follow-up route is frozen in scope: `v0.27c Whitened Trust-Region Laplace Route`, using whitened random effects and deterministic trust-region nonlinear least squares with physical rerecording and invalid-step radius contraction inside the otherwise inherited RB-014 hierarchy. The old `2701xxx` datasets remain development-only. A disjoint `2711xxx` 32-replicate seed namespace is reserved but remains UNGENERATED / UNEVALUATED. The single next scientific action is `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1`, which must freeze exact trust-region radius/acceptance/update rules, convergence criteria, budgets, failure handling, TR-27C-01 through TR-27C-07 deterministic validation tolerances, inherited scientific thresholds and the disjoint seed mapping before any confirmatory RNG creation. No confirmatory v0.27c execution, RB-015 relabelling, v0.28, active sensing, applications, novelty positioning or manuscript claim work is authorized before return.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -169,3 +174,4 @@ Date: 2026-09-07
 - RB-013: CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1 — FROZEN / STABLE NEW-SCIENCE SCOPE
 - RB-014: CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 - RB-015: CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1 — FROZEN / STABLE SCIENTIFIC RESULT — FAIL
+- RB-016: CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1 — FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
