@@ -53,7 +53,7 @@ Status: STABLE
 Date: 2026-09-04
 
 ## DEC-010
-MASTER Status Audit 0.4 confirms again that `CORE Mathematical Scope Gate 0.1` is still unexecuted: `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is absent. APP-1, APP-2, and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. No commits occurred after the MASTER report v0.2 bookkeeping commit before this audit. No freeze violation, unauthorized branching, retuning, result inspection, or scientific execution is detected. The single authorized scientific next action remains the existing CORE gate.
+MASTER Status Audit 0.4 confirms again that `CORE Mathematical Scope Gate 0.1` is still unexecuted: `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is absent. APP-1, APP-2, and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. No commits occurred after the MASTER report v0.2 bookkeeping commit before this audit. No freeze violation, unauthorized branching, retuning, result inspection, or scientific execution is detected. The single authorized next scientific action remains the existing CORE gate.
 Status: STABLE
 Date: 2026-09-04
 
@@ -137,6 +137,11 @@ Date: 2026-09-07
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-027
+`CORE v0.27 Hierarchical Repeated-Trial Scope & Preregistration Gate 0.1` returns PASS at `research/core/v0_27_hierarchical_repeated_trial_scope_preregistration_gate_0_1.md`. MASTER accepts the first new-science target as sufficiently narrow and preregistered in structure: passive repeated N=3 trials; shared block `(p,tau_3)`; six-dimensional gauge-fixed q=1 trial preparation; zero-mean Gaussian three-scale hierarchical law; labelled spike-time Gaussian noise; observed MCAR missing labelled slots; no active pulse; and Laplace-approximated marginal maximum likelihood as the fixed primary inference route. The gate also separates conservative free-nuisance shared-parameter information from five-dimensional hierarchical information and predeclares the required scientific metric families, C2 implementation dependencies and anti-cherry-picking freeze list. No v0.27 numerical output was generated. MASTER establishes `CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1` / RB-013. The single next scientific action is `CORE v0.27 Hierarchical Repeated-Trial Execution Contract Canonicalization Gate 0.1`, which must freeze all physical constants, truth values, parameter boxes, preparation scales, trial/horizon/noise/missingness design, immutable seeds, solver/derivative/chart rules, C2 implementation-validation cases, tolerances, budgets and finite PASS/FAIL thresholds before any effect-bearing output. No v0.27 dataset generation or scientific simulation/inference is authorized in that contract gate.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -151,3 +156,4 @@ Date: 2026-09-07
 - RB-010: CORE v0.4 Floquet Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 - RB-011: CORE Legacy Verification Sweep Freeze 0.1 — FROZEN / STABLE VERIFICATION AUDIT
 - RB-012: CORE Consolidated C1 Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
+- RB-013: CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1 — FROZEN / STABLE NEW-SCIENCE SCOPE
