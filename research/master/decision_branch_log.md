@@ -97,8 +97,14 @@ Date: 2026-09-07
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-019
+`CORE Mathematical Scope Canonicalization Gate 0.1` returns PASS at `research/core/mathematical_scope_canonicalization_gate_0_1.md`. MASTER reviews the source map, baseline equations C1–C11, assumptions A1–A13, formal variant registry, exclusions and independently re-derived elementary identities D1–D18 and finds no blocker to a narrow mathematical baseline freeze. MASTER therefore establishes `CORE Mathematical Freeze 0.1` in `research/core/mathematical_freeze_0_1.md` and rollback point RB-004. RB-004 freezes baseline definitions and elementary C1 derivations only; no v0.3–v0.26 numerical, implementation, inference or active-design claim is promoted. Inspection of the frozen legacy tree confirms that v0.2 has `docs/core/derivations_v0.2.md` and `docs/core/benchmark_contract_v0.2.md` but no standalone v0.2 reference script or benchmark JSON. MASTER therefore does not authorize a misleading exact replay. The single next scientific action is `CORE v0.2 Benchmark Contract Canonicalization Gate 0.1`, which must pre-specify benchmark inputs, observables, tolerances and pass/fail rules before any execution.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
 - RB-002: CORE Legacy Recovery Input Snapshot 0.1 at `287eae8a86560b78ed94f30a2786243714c33ac0` — STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
 - RB-003: CORE Recovery Classification 0.1 — STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
+- RB-004: CORE Mathematical Freeze 0.1 — FROZEN / STABLE SCIENTIFIC BASELINE
