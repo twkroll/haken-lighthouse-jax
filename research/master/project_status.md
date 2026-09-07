@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 1.1
+Version: 1.2
 Date: 2026-09-07
 
 ## Central research question
@@ -9,141 +9,138 @@ Can Hermann Haken's Lighthouse model be developed into a modern, scalable and di
 
 ## Global status
 
-Governance Initialization 0.1 remains STABLE. `CORE Recovery & Canonicalization Gate 0.1` has completed with PASS. The recovery result reconstructs and classifies the frozen legacy CORE working state through v0.26 sufficiently for MASTER decision-making, but explicitly promotes or freezes no legacy scientific result.
+Governance Initialization 0.1 remains STABLE. `CORE Recovery & Canonicalization Gate 0.1` and `CORE Mathematical Scope Canonicalization Gate 0.1` have both completed with PASS.
 
-MASTER accepts the recovery classification as an administrative/audit result and establishes `RB-003 CORE Recovery Classification 0.1 — STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE`.
+MASTER has reviewed the mathematical scope canonicalization result and authorizes `CORE Mathematical Freeze 0.1` as `RB-004`. The freeze is recorded in `research/core/mathematical_freeze_0_1.md` and is anchored to source artifact blob `d34ba1129dfca892e76342f3c2d66b6b493535dd` created at commit `8d2fcb3f1cb020e4e6b3388ad05987f8c6bf3be2`.
 
-The recovery report finds that the original `CORE Mathematical Scope Gate 0.1` was satisfied in substantial mathematical content by recovered foundational v0.1–v0.2 material, but not completed as a governed gate. Required repairs include precise primary-source/equation mapping, a single assumptions table, formal variant registry, explicit exclusions, a formal gate decision and a proposed freeze package.
+The freeze is intentionally narrow: baseline definitions, source/provenance distinctions, assumptions, variant registry, fixed-delay/event semantics and elementary C1 derivations D1–D18 only. No legacy v0.3–v0.26 numerical, implementation, inference or active-design result is frozen.
 
-Therefore MASTER authorizes exactly one next scientific action: `CORE Mathematical Scope Canonicalization Gate 0.1`. This gate reconstructs the original scope deliverable from C1-eligible v0.1–v0.2 material with primary-source verification and independent mathematical checks. It does not replay or validate downstream v0.3–v0.26 numerical science.
+MASTER also finds that the frozen legacy recovery snapshot contains `docs/core/derivations_v0.2.md` and `docs/core/benchmark_contract_v0.2.md`, but no standalone v0.2 reference script or v0.2 benchmark JSON. Therefore the next step is not an execution/replay. The single authorized next scientific action is `CORE v0.2 Benchmark Contract Canonicalization Gate 0.1`, which must pre-specify the first validation contract before any benchmark execution.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | oversight; awaiting mathematical scope canonicalization result |
-| 10 CORE | READY | execute Mathematical Scope Canonicalization Gate 0.1 only |
+| 00 MASTER | FROZEN / WAIT | oversight; awaiting v0.2 benchmark-contract canonicalization result |
+| 10 CORE | READY | execute v0.2 Benchmark Contract Canonicalization Gate 0.1 only |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | reserved application branch |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | reserved application branch |
 | 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | reserved application branch |
-| 80 LIT | WAIT | no independent novelty positioning; source verification only inside authorized CORE gate |
-| 90 MANUSCRIPT | WAIT | no manuscript claims before frozen scientific results |
+| 80 LIT | WAIT | CORE source verification complete for Freeze 0.1; no independent novelty positioning yet |
+| 90 MANUSCRIPT | WAIT | no manuscript claims before later result/claim freezes |
 
 ## Current freezes
 
 - Governance rules: STABLE 0.1
-- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v1.1
+- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v1.2
 - Communication briefings: NON-CANONICAL / PRE-CORE
 - RB-002 CORE Legacy Recovery Input Snapshot 0.1: STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
 - RB-003 CORE Recovery Classification 0.1: STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
-- Scientific model definition: OPEN
-- CORE Mathematical Freeze 0.1: NOT YET AUTHORIZED
-- Legacy CORE v0.2–v0.26 scientific claims: NON-CANONICAL / NOT FROZEN
+- RB-004 CORE Mathematical Freeze 0.1: FROZEN / STABLE SCIENTIFIC BASELINE
+- Legacy CORE v0.3–v0.26 scientific claims: NON-CANONICAL / NOT FROZEN
 - Application candidates: NOT YET AUTHORIZED
 - Claims / novelty: OPEN
 
-## Recovery result
+## CORE Mathematical Freeze 0.1
 
-Canonical recovery report:
+Canonical freeze file:
 
-`research/core/recovery_canonicalization_gate_0_1.md`
+`research/core/mathematical_freeze_0_1.md`
 
-Gate decision: PASS, meaning recovery/classification is sufficient for MASTER decision-making only.
+Frozen content includes:
 
-Key findings:
+1. source map S1–S6, with S6 registry-only;
+2. baseline equations C1–C11;
+3. lifted-phase first-hitting event convention and no-reset-below-threshold baseline choice;
+4. normalized alpha kernel and exact `(a,q)` state-space equivalence;
+5. fixed edge-delay semantics;
+6. assumptions A1–A13;
+7. variant registry V-R0 through V-P1;
+8. independently re-derived elementary identities D1–D18;
+9. analytical validation targets;
+10. explicit exclusions.
 
-1. The legacy scientific version ladder runs from v0.1 through v0.26.
-2. The branch governance/status chain did not advance beyond the original Scope Gate READY state.
-3. Original Scope Gate content is substantially present but requires formal/source repair before canonical acceptance.
-4. C1-directly-recoverable candidates include baseline notation/event/kernel material and selected elementary v0.2 derivations after line-by-line mathematical audit.
-5. v0.3–v0.5 theory is mixed C1/C2 and deferred beyond the current gate.
-6. v0.6–v0.15 numerical discoveries require preregistered reruns if used as frozen scientific evidence.
-7. v0.16–v0.17 implementation/reference claims are replay-verifiable only after model semantics are frozen.
-8. v0.18–v0.20 implementation mechanics may be replay-verifiable, but scientific performance claims require preregistered confirmation.
-9. v0.21–v0.26 late observation/inference/active-design results are exploratory or partially traceable and require preregistered reruns for confirmatory use.
-10. v0.24 final active-pulse numerical result is C3; superseded prototypes are C4.
-11. v0.25 optimized two-probe numerical result is C3.
-12. v0.26 nuisance-projection algebra is a C1 mathematical candidate, while its numerical nuisance/calibration results are C3 with replay gaps.
-13. The former hierarchical v0.27 direction remains an OPEN QUESTION only.
-
-## Scope Gate disposition
-
-The original `CORE Mathematical Scope Gate 0.1` is no longer to be re-executed blindly from scratch. Its missing governed deliverable will be reconstructed through:
-
-`CORE Mathematical Scope Canonicalization Gate 0.1`
-
-Prompt:
-
-`research/master/prompts/core_mathematical_scope_canonicalization_gate_0_1.md`
-
-This gate may use recovered v0.1–v0.2 foundational material as input, but must independently repair source provenance and verify retained C1 derivations.
+This is the first scientific rollback point in the project. Any future baseline change requires a new MASTER-authorized gate and versioned freeze.
 
 ## Branch-independent results
 
 - Governance process 0.1: STABLE.
-- MASTER reporting process v0.2: STABLE administrative artifact; no scientific claim.
-- Communication briefings v0.1: NON-CANONICAL / PRE-CORE.
-- RB-002 legacy recovery input identity/provenance: STABLE administrative artifact.
-- RB-003 recovery classification result: STABLE administrative/audit artifact.
+- MASTER reporting process v0.2: STABLE administrative artifact.
+- RB-002 recovery provenance: STABLE administrative artifact.
+- RB-003 recovery classification: STABLE administrative/audit artifact.
+- RB-004 mathematical baseline: STABLE scientific freeze.
 
 ## Branch-dependent scientific results
 
-No legacy branch result is yet canonical scientific evidence.
+No downstream legacy numerical result is canonical scientific evidence yet.
 
-Recovered material is classified C1–C5 for later adjudication. The current gate addresses only the narrow C1-eligible mathematical baseline layer required to restore the original Scope Gate and prepare a possible `CORE Mathematical Freeze 0.1`.
+The legacy branch remains read-only recovery evidence. Its v0.3–v0.26 artifacts retain the C1–C5 recovery classifications but have not been merged or promoted.
 
 ## Result classifications
 
-No STRONG, WEAK, NULL, FAIL or scientific result freeze is assigned to legacy numerical claims.
+Frozen mathematical statements in RB-004 retain the epistemic labels established in `research/core/mathematical_scope_canonicalization_gate_0_1.md`, including LEMMA / PROVED and PROPOSITION / PROVED for the elementary D1–D18 derivations.
 
-No branch-local COMPLETE / VERIFIED / CERTIFIED label is accepted as a canonical result label.
+No STRONG, WEAK, NULL or FAIL classification is assigned to any legacy numerical result.
+
+## Benchmark-contract disposition
+
+Legacy recovery inspection confirms:
+
+- `docs/core/derivations_v0.2.md` exists;
+- `docs/core/benchmark_contract_v0.2.md` exists;
+- no standalone `reference/core_v02...` script exists at recovery HEAD;
+- no `benchmarks/core_v02...` JSON exists at recovery HEAD;
+- executable reference assets begin only at later versions.
+
+Therefore MASTER authorizes contract canonicalization before execution. The current gate may use the two legacy v0.2 documents only as historical candidate input and must define all benchmark inputs, observables, tolerances and pass/fail rules before any benchmark is run.
 
 ## Active blocker
 
-The canonical mathematical baseline, exact source provenance and formal Scope Gate package have not yet been reconstructed and frozen.
+A governed validation contract has not yet been frozen. Until this is completed:
 
-Until this is resolved:
-
-- no legacy replay,
-- no numerical validation rerun,
-- no active hybrid experiment redesign,
-- no v0.27,
-- no implementation continuation,
-- no application work,
-- no manuscript/novelty claim freeze.
+- no benchmark execution;
+- no legacy v0.3+ replay/rerun;
+- no implementation continuation;
+- no active hybrid experiment design;
+- no v0.27;
+- no application execution;
+- no novelty or manuscript claim freeze.
 
 ## Rollback points
 
 1. RB-001 Governance Initialization 0.1 — STABLE
 2. RB-002 CORE Legacy Recovery Input Snapshot 0.1 at `287eae8a86560b78ed94f30a2786243714c33ac0` — STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
 3. RB-003 CORE Recovery Classification 0.1 — STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
+4. RB-004 CORE Mathematical Freeze 0.1 — FROZEN / STABLE SCIENTIFIC BASELINE
 
 ## Manuscript
 
-WAIT. No legacy scientific result is available for manuscript claim freeze. Existing communication briefings remain NON-CANONICAL / PRE-CORE.
+WAIT. RB-004 establishes a mathematical baseline but does not authorize manuscript claims based on legacy numerical results. Existing communication briefings remain NON-CANONICAL / PRE-CORE.
 
 ## Literature positioning
 
-WAIT. Precise primary-source verification is authorized only as a component of the current CORE Mathematical Scope Canonicalization Gate. Independent novelty positioning remains unauthorized.
+WAIT. Primary-source verification needed for the mathematical freeze has been completed inside CORE. Independent novelty positioning remains unauthorized until MASTER opens LIT.
 
 ## Cross-branch integration
 
-The recovery classification has been integrated administratively. Scientific integration now proceeds narrowly through source-audited mathematical canonicalization, not branch merge.
+The foundational mathematical layer has now been integrated scientifically through RB-004 without merging `core/theory-v0.1`.
 
-`core/theory-v0.1` remains read-only recovery evidence. No wholesale merge is authorized.
+Further integration must proceed gate-by-gate. The immediate next layer is the pre-execution benchmark contract, not a wholesale replay or merge.
 
 ## Next global step
 
-Execute `CORE Mathematical Scope Canonicalization Gate 0.1` in `10 – CORE – Haupttheorie / mathematischer Kern` by issuing exactly:
+Execute `CORE v0.2 Benchmark Contract Canonicalization Gate 0.1` in `10 – CORE – Haupttheorie / mathematischer Kern` by issuing exactly:
 
 `GO`
 
-The gate must reconstruct the missing governed Scope Gate deliverable from C1-eligible v0.1–v0.2 material, repair exact source provenance, independently verify retained elementary derivations, and propose `CORE Mathematical Freeze 0.1` contents if PASS.
+Prompt:
 
-Do not replay or rerun v0.3–v0.26, do not execute active experiment design, and do not begin v0.27.
+`research/master/prompts/core_v0_2_benchmark_contract_canonicalization_gate_0_1.md`
 
-After CORE creates `research/core/mathematical_scope_canonicalization_gate_0_1.md`, updates `research/core/STATUS.md`, and stops, return to MASTER and issue `Status?`.
+This gate must not execute benchmarks. It only produces a fully pre-specified benchmark contract suitable for a later MASTER freeze.
+
+After CORE creates `research/core/v0_2_benchmark_contract_canonicalization_gate_0_1.md`, updates `research/core/STATUS.md`, and stops, return to MASTER and issue `Status?`.
 
 ## STOP
 
-STOP — AWAIT CORE MATHEMATICAL SCOPE CANONICALIZATION GO
+STOP — AWAIT CORE V0.2 BENCHMARK CONTRACT CANONICALIZATION GO
