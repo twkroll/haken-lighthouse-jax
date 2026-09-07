@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.2
+Version: 2.3
 Date: 2026-09-07
 
 ## Central research question
@@ -15,70 +15,120 @@ The verification-first command rule remains:
 
 The recovered legacy corpus v0.4–v0.26 remains classified in RB-011 and its strongest independently verified C1 mathematics remains frozen in RB-012. No legacy C3 numerical effect has been promoted.
 
-The first genuinely new v0.27 branch is now complete through governed execution.
+The first genuinely new v0.27 branch remains frozen as a valid negative result:
 
-Frozen scope: RB-013.
-Frozen execution contract: RB-014.
-Frozen execution result: RB-015.
+- scope: RB-013;
+- execution contract: RB-014;
+- result: RB-015 — `SCIENTIFIC FAIL`.
 
-Overall v0.27 result:
+RB-015 is immutable and is not rescued or relabelled by later method development.
+
+The governed failure-mechanism/follow-up preregistration gate has now returned:
+
+`PASS — FAILURE MECHANISM SUFFICIENTLY DIAGNOSED; ONE FOLLOW-UP ROUTE PREREGISTERED IN SCOPE`.
+
+MASTER accepts that result and establishes `CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1` / RB-016.
+
+The single next scientific action is `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1`.
+
+No confirmatory v0.27c dataset may be generated in that contract gate.
+
+## Frozen RB-015 result remains
 
 `SCIENTIFIC FAIL — C2 PASS; CONSERVATIVE SHARED INFORMATION PASS; FROZEN LAPLACE INFERENCE HAS NO FINITE INITIAL OUTER START ON ANY OF 32 DATASETS`.
 
-MASTER accepts the result exactly as returned and establishes `CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1` / RB-015.
+Frozen facts remain:
 
-The SCIENTIFIC FAIL is final for the RB-014 preregistered branch and may not be rescued or relabelled by later method development.
+- C2-27-01 through C2-27-08 PASS;
+- `INSUFFICIENT_MASK=0/32`;
+- truth physical/chart invalid `=0/32`;
+- conservative nuisance-profiled shared information rank-two/regular `32/32`;
+- 96 frozen outer starts attempted;
+- finite complete initial Laplace objectives `0/96`;
+- `OUTER_OPT_FAIL=32/32`;
+- usable fits `0/32`;
+- valid five-parameter uncertainty intervals `0/32`.
 
-## Frozen v0.27 execution findings
+## Frozen v0.27b failure diagnosis
 
-### Implementation validation
+The 32 RB-015 datasets and optimization traces are observed and were used only as POST-HOC / DEVELOPMENT evidence.
 
-C2-27-01 through C2-27-08 all PASS with required negative controls. The failure is therefore not classified as IMPLEMENTATION FAIL/BLOCKED.
+The dominant diagnosed numerical mechanism is:
 
-### Data/admissibility
+`inner BFGS / Strong-Wolfe globalization + quasi-Newton stagnation, not event-chart invalidity`.
 
-All 32 immutable datasets were generated only after C2 PASS.
+Key governed development findings:
 
-- `INSUFFICIENT_MASK = 0/32`;
-- truth physical/chart invalid = `0/32`;
-- minimum mask-rich trials in any dataset = `15/16`;
-- no seed or dataset was replaced.
+- all 96 exposed failed directions admit valid same-itinerary dyadic probes;
+- Armijo points exist for 95/96 directions, while simultaneous Armijo + Strong-Wolfe appears on 12/96 fixed probes;
+- 82/96 failures meet the preregistered quasi-Newton-stagnation diagnostic;
+- stratified AD/FD checks do not support incorrect fixed-chart gradients as the dominant mechanism;
+- 11/12 stratified local Hessians are positive definite;
+- Armijo-only BFGS and whitened Strong-Wolfe BFGS do not solve the problem reliably on the exposed subset;
+- a whitened trust-region nonlinear-least-squares DEVELOPMENT prototype gives finite termination on 94/96 exposed failed trials, with two invalid-step cases exposing the need for explicit physical/chart-invalid proposal rejection and radius contraction.
 
-### Conservative shared information
+The `94/96` count is development evidence only and may not be reused as a confirmatory success threshold.
 
-The nuisance-profiled two-parameter audit is positive:
+## Frozen v0.27c follow-up scope
 
-- rank-two/regular fraction = `32/32 = 1.000`;
-- condition numbers range from `348731` to `712596`, below the frozen `1e8` threshold.
+Exactly one follow-up route is permitted:
 
-This positive result must be retained with the inference failure and does not imply global identifiability.
+`v0.27c Whitened Trust-Region Laplace Route`.
 
-### Frozen Laplace inference failure
+The statistical/scientific model remains the RB-014 hierarchy. For each trial:
 
-For 32 datasets x 3 frozen outer starts:
+`u=S(lambda)^(-1)z`, `z=S(lambda)u`,
 
-- starts attempted = `96`;
-- finite complete initial Laplace objectives = `0/96`;
-- every start contains at least one trial-mode `INNER_MODE_FAIL` from the frozen 20-trial strong-Wolfe line-search limit;
-- `OUTER_OPT_FAIL = 32/32`;
-- usable fits = `0/32`;
-- valid five-parameter uncertainty intervals = `0/32`.
+and the trial mode is posed as
 
-The hard failure criteria therefore select `SCIENTIFIC FAIL`, not `SCIENTIFIC CONDITIONAL`.
+`min_u 0.5 || [M(y-F(theta_s,S u))/sigma_t ; u] ||^2`.
 
-No extra starts, warm starts, relaxed line search, trust region, ridge, alternative optimizer, EM/VI/MCMC route, seed replacement or data replacement was used.
+The solver class is deterministic trust-region Gauss-Newton / nonlinear least squares with exact current-chart JAX Jacobians and physical rerecording at every proposal. Physically invalid, colliding, nontransverse or derivative-chart-invalid proposals must be rejected by trust-radius contraction/retry; stale event tokens may never be accepted.
 
-## Interpretation boundary
+The following remain inherited unchanged unless MASTER separately authorizes a prospective change before confirmatory output:
 
-RB-015 does not prove that the hierarchical scientific model is globally non-identifiable or that another preregistered inference algorithm would fail.
+- N=3 physical graph/model and truth;
+- shared/hyperparameter boxes and hierarchical Gaussian family;
+- `R=16`, `H=4`;
+- timing noise `0.02` and MCAR missingness `0.20`;
+- outer bounded-Powell class and the three inherited starts;
+- RB-014 scientific recovery, identifiability, coverage, failure and usable-fit thresholds;
+- no active pulse/probe and no EM/VI/MCMC alternative.
 
-It proves only that the exact RB-014 Laplace-marginal inference implementation/optimization route fails its preregistered scientific branch criteria on the immutable dataset set.
+## Confirmatory data boundary
 
-## Data-use boundary after failure
+The RB-015 `2701xxx` seed namespace is permanently DEVELOPMENT ONLY for the v0.27c method selected after observing it.
 
-The 32 RB-015 datasets and optimization traces are now observed and may be used only as development/diagnostic evidence in a separately authorized method-development gate.
+The v0.27c confirmatory namespace is reserved but remains UNGENERATED / UNEVALUATED:
 
-If a redesigned inference method is selected using these data, confirmatory evaluation must use a new MASTER-frozen execution contract and a disjoint, previously ungenerated seed namespace. The RB-015 datasets cannot be reused as a fresh confirmatory test set.
+- `seed_z^c(d)=2711000+3d`;
+- `seed_noise^c(d)=2711001+3d`;
+- `seed_mask^c(d)=2711002+3d`;
+- `d=0,...,31`.
+
+No `2711xxx` RNG object was created or inspected in v0.27b.
+
+## Mandatory v0.27c pre-execution contract
+
+Before any confirmatory RNG creation, the current gate must freeze:
+
+- exact trust-region step algorithm;
+- initial/minimum/maximum radius;
+- predicted/actual reduction definitions;
+- acceptance-ratio thresholds;
+- radius contraction/expansion factors and update logic;
+- invalid-proposal retry handling;
+- whitened stationarity/convergence thresholds;
+- iteration/evaluation/contraction budgets;
+- final Hessian/logdet coordinate semantics;
+- trial failure and outer-point failure semantics;
+- deterministic TR-27C-01 through TR-27C-07 fixtures, tolerances and negative controls;
+- complete finite outer-start assembly rule;
+- inherited RB-014 scientific thresholds;
+- disjoint `2711xxx` seed mapping;
+- environment and change-control rules.
+
+All TR-27C checks must later PASS before confirmatory RNG creation.
 
 ## Command protocol
 
@@ -90,8 +140,8 @@ If a redesigned inference method is selected using these data, confirmatory eval
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | oversight; awaiting v0.27b failure-mechanism/follow-up preregistration result |
-| 10 CORE | READY | execute v0.27b Inference Failure Mechanism & Follow-up Preregistration Gate 0.1 only |
+| 00 MASTER | FROZEN / WAIT | oversight; awaiting v0.27c execution-contract canonicalization result |
+| 10 CORE | READY | execute v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1 only |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | reserved application branch |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | reserved application branch |
 | 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | reserved application branch |
@@ -101,7 +151,7 @@ If a redesigned inference method is selected using these data, confirmatory eval
 ## Current freezes
 
 - Governance / command protocol v0.2: STABLE ADMINISTRATIVE
-- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v2.2
+- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v2.3
 - RB-002 CORE Legacy Recovery Input Snapshot 0.1: STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
 - RB-003 CORE Recovery Classification 0.1: STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
 - RB-004 CORE Mathematical Freeze 0.1: FROZEN / STABLE SCIENTIFIC BASELINE
@@ -116,21 +166,15 @@ If a redesigned inference method is selected using these data, confirmatory eval
 - RB-013 CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1: FROZEN / STABLE NEW-SCIENCE SCOPE
 - RB-014 CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1: FROZEN / STABLE PRE-EXECUTION CONTRACT
 - RB-015 CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1: FROZEN / STABLE SCIENTIFIC RESULT — FAIL
-
-## Next scientific question
-
-The next branch is not a rescue execution. It is a controlled failure-mechanism and method-development/preregistration gate.
-
-It may diagnose why the frozen inner BFGS/strong-Wolfe route universally failed, using RB-015 data only as explicitly POST-HOC / DEVELOPMENT evidence. It must select at most one follow-up inference route and, if one is defensible, preregister a later confirmatory strategy with a disjoint new seed namespace.
-
-No redesigned confirmatory performance may be claimed in that diagnostic gate.
+- RB-016 CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1: FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
 
 ## Active blocker
 
-The sole active blocker is completion of `CORE v0.27b Inference Failure Mechanism & Follow-up Preregistration Gate 0.1`.
+The sole active blocker is completion of `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1`.
 
 Until return:
 
+- no `2711xxx` RNG creation;
 - no redesigned confirmatory execution;
 - no relabelling of RB-015;
 - no v0.28 effect-bearing work;
@@ -157,10 +201,11 @@ Until return:
 13. RB-013 CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1 — FROZEN / STABLE NEW-SCIENCE SCOPE
 14. RB-014 CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 15. RB-015 CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1 — FROZEN / STABLE SCIENTIFIC RESULT — FAIL
+16. RB-016 CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1 — FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
 
 ## Manuscript
 
-WAIT. RB-015 is a valid negative result, but no manuscript claim freeze is authorized.
+WAIT. RB-015 remains a valid negative result, but no manuscript claim freeze is authorized.
 
 ## Literature positioning
 
@@ -178,10 +223,10 @@ For a new/replacement CORE chat, execute:
 
 Current prompt:
 
-`research/master/prompts/core_v0_27b_inference_failure_mechanism_followup_preregistration_gate_0_1.md`
+`research/master/prompts/core_v0_27c_whitened_trust_region_laplace_execution_contract_canonicalization_gate_0_1.md`
 
-The gate returns once after diagnosis/preregistration and must not self-authorize confirmatory re-execution.
+This gate freezes the v0.27c execution contract only. It must not create confirmatory RNG or execute redesigned confirmatory science.
 
 ## STOP
 
-STOP — AWAIT CORE V0.27B INFERENCE FAILURE MECHANISM & FOLLOW-UP PREREGISTRATION
+STOP — AWAIT CORE V0.27C WHITENED TRUST-REGION LAPLACE EXECUTION CONTRACT CANONICALIZATION
