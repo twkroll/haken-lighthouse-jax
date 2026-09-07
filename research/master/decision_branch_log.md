@@ -68,7 +68,7 @@ Status: STABLE
 Date: 2026-09-04
 
 ## DEC-013
-MASTER Status Audit 0.6 confirms that the communication-only briefings created under DEC-012 did not alter any scientific freeze or branch authorization. `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is still absent. APP-1, APP-2 and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. The only commits since Status Audit 0.5 before this audit are `c25b2e5631f206096fc51730498a3c956f6d73de` and `b3c4a5bbea68a936ac6d20f83cbd5a4257521c9d`, both limited to documenting the non-canonical briefings. No effect inspection, retuning, unauthorized scientific execution, manuscript claim freeze, or novelty positioning is detected. The single authorized next scientific action remains `CORE Mathematical Scope Gate 0.1`.
+MASTER Status Audit 0.6 confirms that the communication-only briefings created under DEC-012 did not alter any scientific freeze or branch authorization. `research/core/STATUS.md` remains READY and `research/core/mathematical_scope_gate_0_1.md` is still absent. APP-1, APP-2 and APP-3 remain PROTECTED / WAIT; LIT and MANUSCRIPT remain WAIT. The only commits since Status Audit 0.5 before this audit are `c25b2e5631f206096fc51730498a3c956f6d73de` and `b3c4a5bbea68a936ac6d20f83cbd5a4257521c9d`, both limited to documenting the non-canonical briefings. No effect inspection, retuning, unauthorized scientific execution, manuscript claim freeze, or novelty positioning is detected. The single authorized scientific next action remains `CORE Mathematical Scope Gate 0.1`.
 Status: STABLE
 Date: 2026-09-04
 
@@ -102,9 +102,15 @@ Date: 2026-09-07
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-020
+`CORE v0.2 Benchmark Contract Canonicalization Gate 0.1` returns PASS at `research/core/v0_2_benchmark_contract_canonicalization_gate_0_1.md`. MASTER reviews BC01–BC10 and finds the contract suitable for pre-execution freeze: all benchmark membership, fixed parameter/test sets, histories, observables, references, horizons, grids/resolutions, permitted method classes, quadrature stopping tolerances, acceptance tolerances, admissibility/transversality rules, negative controls, and pass/fail criteria are specified before execution. Symbolic and numerical checks are explicitly separated; legacy B5–B7 and B9–B10 plus open-ended sweeps and implementation-specific tolerances remain deferred. No benchmark has been executed and PASS of the contract gate is not a benchmark PASS. MASTER establishes `CORE Benchmark Contract Freeze 0.1` in `research/core/benchmark_contract_freeze_0_1.md` as RB-005. The single next scientific action is `CORE v0.2 Benchmark Execution Gate 0.1`, which must execute BC01–BC10 exactly under RB-005 without changing scientific specification after observing results. Any scientifically valid failure must be preserved and returned to MASTER.
+Status: STABLE
+Date: 2026-09-07
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
 - RB-002: CORE Legacy Recovery Input Snapshot 0.1 at `287eae8a86560b78ed94f30a2786243714c33ac0` — STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
 - RB-003: CORE Recovery Classification 0.1 — STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
 - RB-004: CORE Mathematical Freeze 0.1 — FROZEN / STABLE SCIENTIFIC BASELINE
+- RB-005: CORE Benchmark Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
