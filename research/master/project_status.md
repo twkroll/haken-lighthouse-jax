@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 1.3
+Version: 1.4
 Date: 2026-09-07
 
 ## Central research question
@@ -9,22 +9,24 @@ Can Hermann Haken's Lighthouse model be developed into a modern, scalable and di
 
 ## Global status
 
-Governance Initialization 0.1 remains STABLE. `CORE Recovery & Canonicalization Gate 0.1`, `CORE Mathematical Scope Canonicalization Gate 0.1`, and `CORE v0.2 Benchmark Contract Canonicalization Gate 0.1` have completed with PASS.
+Governance Initialization 0.1 remains STABLE. Recovery, mathematical-scope canonicalization, v0.2 benchmark-contract canonicalization and governed v0.2 benchmark execution have all completed.
 
-MASTER previously established `CORE Mathematical Freeze 0.1` as RB-004. MASTER has now reviewed the pre-execution BC01–BC10 benchmark contract and establishes `CORE Benchmark Contract Freeze 0.1` as RB-005 in `research/core/benchmark_contract_freeze_0_1.md`.
+MASTER reviews `research/core/v0_2_benchmark_execution_gate_0_1.md` and accepts its overall PASS. Every required BC01–BC10 benchmark, fixed subcase and required negative control passed under the frozen pre-execution contract RB-005. The documented root-harness correction is accepted as a software-plumbing correction because it changed no frozen scientific specification and the aborted output was not used as evidence.
 
-RB-005 freezes the execution conventions, all BC01–BC10 benchmark definitions, finite parameter/test sets, histories, horizons, grids/resolutions, method classes, quadrature stopping tolerances, observables, references, acceptance tolerances, pass/fail rules, admissibility/transversality rules, negative controls, and deferred-item boundary before any benchmark output is observed.
+MASTER therefore establishes `CORE v0.2 Benchmark Result Freeze 0.1` as RB-006 in `research/core/v0_2_benchmark_result_freeze_0_1.md`.
 
-No benchmark has yet passed or failed under governed execution. BC01–BC10 remain UNEVALUATED. No legacy v0.3–v0.26 scientific result is promoted by the contract freeze.
+RB-006 validates only the first governed analytical benchmark layer against RB-004 under RB-005. It does not promote any legacy v0.3–v0.26 numerical, implementation, inference or active-design result.
 
-MASTER authorizes exactly one next scientific action: `CORE v0.2 Benchmark Execution Gate 0.1`, which must execute BC01–BC10 exactly under RB-005 without tuning or contract modification.
+Recovery classifies v0.3–v0.5 theory contracts C1/C2 by claim and requires dedicated verification before promotion. The legacy v0.3 continuation material contains mathematically separable claims about normalized phase-locked coordinates, branch Jacobians, gauge structure and the distinction among existence, stability and hybrid singularities, alongside later numerical continuation/bifurcation contracts.
+
+MASTER therefore authorizes exactly one next scientific action: `CORE v0.3 Continuation Theory Canonicalization Gate 0.1`. It is mathematical claim-audit only. It must not run numerical continuation, B11+ benchmarks, bifurcation searches or v0.4+ work.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | oversight; awaiting governed BC01–BC10 execution result |
-| 10 CORE | READY | execute v0.2 Benchmark Execution Gate 0.1 only |
+| 00 MASTER | FROZEN / WAIT | oversight; awaiting v0.3 continuation-theory canonicalization result |
+| 10 CORE | READY | execute v0.3 Continuation Theory Canonicalization Gate 0.1 only |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | reserved application branch |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | reserved application branch |
 | 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | reserved application branch |
@@ -34,44 +36,32 @@ MASTER authorizes exactly one next scientific action: `CORE v0.2 Benchmark Execu
 ## Current freezes
 
 - Governance rules: STABLE 0.1
-- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v1.3
+- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v1.4
 - Communication briefings: NON-CANONICAL / PRE-CORE
 - RB-002 CORE Legacy Recovery Input Snapshot 0.1: STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
 - RB-003 CORE Recovery Classification 0.1: STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
 - RB-004 CORE Mathematical Freeze 0.1: FROZEN / STABLE SCIENTIFIC BASELINE
 - RB-005 CORE Benchmark Contract Freeze 0.1: FROZEN / STABLE PRE-EXECUTION CONTRACT
-- Legacy CORE v0.3–v0.26 scientific claims: NON-CANONICAL / NOT FROZEN
+- RB-006 CORE v0.2 Benchmark Result Freeze 0.1: FROZEN / STABLE RESULT
+- Legacy CORE v0.3–v0.26 scientific claims: NON-CANONICAL / NOT FROZEN except material separately promoted through governed gates
 - Application candidates: NOT YET AUTHORIZED
 - Claims / novelty: OPEN
 
-## CORE Mathematical Freeze 0.1
+## RB-006 — governed v0.2 validation result
 
-Canonical freeze file:
+Canonical result-freeze file:
 
-`research/core/mathematical_freeze_0_1.md`
+`research/core/v0_2_benchmark_result_freeze_0_1.md`
 
-RB-004 freezes source map S1–S6, baseline equations C1–C11, event/delay semantics, assumptions A1–A13, variant registry, elementary identities D1–D18, analytical validation targets and explicit exclusions. Any change requires a new MASTER-authorized gate and versioned freeze.
+Frozen execution artifact:
 
-## CORE Benchmark Contract Freeze 0.1
+`research/core/v0_2_benchmark_execution_gate_0_1.md`
 
-Canonical freeze file:
+Result:
 
-`research/core/benchmark_contract_freeze_0_1.md`
+`PASS — BC01–BC10 ALL PASS UNDER RB-005`
 
-Frozen source artifact:
-
-`research/core/v0_2_benchmark_contract_canonicalization_gate_0_1.md`
-
-RB-005 freezes:
-
-1. Section 4 execution conventions;
-2. BC01–BC10 in Section 5;
-3. E0/N1/N2/L0 tolerance classes;
-4. symbolic-versus-numerical separation;
-5. admissibility/transversality rules;
-6. DFR-01 through DFR-07 deferred boundary.
-
-Freeze semantics are strictly pre-execution: BC01–BC10 are not classified as PASS merely because the contract gate passed.
+The suite includes all required fixed cases and negative controls. No scientifically valid benchmark failure occurred and no frozen acceptance criterion was loosened or replaced.
 
 ## Branch-independent results
 
@@ -81,32 +71,39 @@ Freeze semantics are strictly pre-execution: BC01–BC10 are not classified as P
 - RB-003 recovery classification: STABLE administrative/audit artifact.
 - RB-004 mathematical baseline: STABLE scientific freeze.
 - RB-005 benchmark contract: STABLE pre-execution scientific contract.
+- RB-006 governed v0.2 analytical validation: STABLE scientific result freeze.
 
 ## Branch-dependent scientific results
 
-No downstream legacy numerical result is canonical scientific evidence yet.
+No legacy v0.3–v0.26 downstream numerical result is canonical scientific evidence yet.
 
-No governed benchmark execution result exists yet. The legacy branch remains read-only recovery evidence; v0.3–v0.26 artifacts retain recovery classifications only.
+The legacy branch remains read-only recovery evidence. Its v0.3–v0.26 artifacts retain C1–C5 recovery classifications unless separately audited and promoted through a governed gate.
 
 ## Result classifications
 
-Frozen mathematical statements in RB-004 retain their epistemic labels, including LEMMA / PROVED and PROPOSITION / PROVED for D1–D18.
+- RB-004 mathematical statements retain their epistemic labels, including PROVED elementary identities D1–D18.
+- RB-006: governed analytical validation PASS.
+- No STRONG, WEAK, NULL or FAIL classification is assigned to any downstream legacy numerical effect result.
 
-BC01–BC10: UNEVALUATED under RB-005.
+## v0.3 disposition
 
-No STRONG, WEAK, NULL or FAIL classification is assigned to any legacy numerical result.
+Recovery classifies v0.3–v0.5 theory contracts as C1/C2 by claim, not automatically canonical. The first v0.3 gate is therefore restricted to mathematical canonicalization of:
 
-## Benchmark execution boundary
+- normalized phase-locked coordinates and their relation to dimensional offsets;
+- global phase/time-translation gauge;
+- branch equations in fixed normalized coordinates;
+- exact branch Jacobian and period derivative under smooth-chart assumptions;
+- chart-boundary conditions;
+- formal distinction among existence singularities, dynamical stability changes and hybrid/event singularities.
 
-The next gate must execute every required BC01–BC10 benchmark, subcase and negative control exactly as frozen. It may not change parameters, histories, grids, method classes, quadrature tolerances, acceptance tolerances, observables, references or pass/fail rules after observing output.
-
-A scientifically valid benchmark failure is a valid result and must be preserved. Clerical/software-plumbing defects in a minimal validation harness may be corrected only with a documented audit trail and without changing RB-005.
+Legacy v0.3 numerical continuation, fold/pitchfork locations, B11+ benchmark execution and other effect-bearing numerical claims remain excluded.
 
 ## Active blocker
 
-The frozen validation contract has not yet been executed. Until the governed execution returns:
+The recoverable v0.3 continuation theory has not yet been independently canonicalized. Until that gate returns:
 
-- no v0.3+ legacy replay/rerun;
+- no v0.3 numerical continuation or B11+ execution;
+- no v0.4+ recovery execution;
 - no production implementation continuation;
 - no active hybrid experiment design;
 - no v0.27;
@@ -121,10 +118,11 @@ The frozen validation contract has not yet been executed. Until the governed exe
 3. RB-003 CORE Recovery Classification 0.1 — STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
 4. RB-004 CORE Mathematical Freeze 0.1 — FROZEN / STABLE SCIENTIFIC BASELINE
 5. RB-005 CORE Benchmark Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
+6. RB-006 CORE v0.2 Benchmark Result Freeze 0.1 — FROZEN / STABLE RESULT
 
 ## Manuscript
 
-WAIT. Mathematical and benchmark-contract freezes do not authorize manuscript claims based on legacy numerical results. Existing communication briefings remain NON-CANONICAL / PRE-CORE.
+WAIT. RB-006 adds a governed validation result but does not authorize manuscript claims based on downstream legacy numerical results. Existing communication briefings remain NON-CANONICAL / PRE-CORE.
 
 ## Literature positioning
 
@@ -132,24 +130,24 @@ WAIT. Independent novelty positioning remains unauthorized until MASTER explicit
 
 ## Cross-branch integration
 
-The mathematical baseline and its first validation contract are now integrated on `main` without merging `core/theory-v0.1`.
+The baseline and first governed analytical validation layer are now integrated on `main` without merging `core/theory-v0.1`.
 
-Further recovery remains gate-by-gate. No v0.3+ material is integrated by RB-005.
+Further integration proceeds claim-by-claim and gate-by-gate. v0.3 theory is the next layer; v0.3 numerical continuation is not yet authorized.
 
 ## Next global step
 
-Execute `CORE v0.2 Benchmark Execution Gate 0.1` in `10 – CORE – Haupttheorie / mathematischer Kern` by issuing exactly:
+Execute `CORE v0.3 Continuation Theory Canonicalization Gate 0.1` in `10 – CORE – Haupttheorie / mathematischer Kern` by issuing exactly:
 
 `GO`
 
 Prompt:
 
-`research/master/prompts/core_v0_2_benchmark_execution_gate_0_1.md`
+`research/master/prompts/core_v0_3_continuation_theory_canonicalization_gate_0_1.md`
 
-The gate must execute BC01–BC10 exactly under RB-005 and return PASS, FAIL or CONDITIONAL to MASTER. It may not start a second gate.
+The gate must audit and re-derive the mathematical v0.3 continuation claims only and return PASS, FAIL or CONDITIONAL to MASTER. It may not execute numerical continuation or start a second gate.
 
-After CORE creates `research/core/v0_2_benchmark_execution_gate_0_1.md`, updates `research/core/STATUS.md`, and stops, return to MASTER and issue `Status?`.
+After CORE creates `research/core/v0_3_continuation_theory_canonicalization_gate_0_1.md`, updates `research/core/STATUS.md`, and stops, return to MASTER and issue `Status?`.
 
 ## STOP
 
-STOP — AWAIT CORE V0.2 BENCHMARK EXECUTION GO
+STOP — AWAIT CORE V0.3 CONTINUATION THEORY CANONICALIZATION GO
