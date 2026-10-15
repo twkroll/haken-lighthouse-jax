@@ -7,28 +7,28 @@ Status: PASS — FIRST-HIT / EVENT-CHART THEORY ESTABLISHED WITH EXPLICIT MARGIN
 
 This gate executes the MASTER-authorized prompt
 
-\`research/master/prompts/core_event_chart_first_hit_theory_gate_0_1.md\`.
+`research/master/prompts/core_event_chart_first_hit_theory_gate_0_1.md`.
 
 Canonical identity at gate start:
 
-- repository: \`twkroll/haken-lighthouse-jax\`
-- canonical branch: \`main\`
-- \`main\` HEAD at gate start: \`d0c65c2d7347e43396067654a369a1c5bef0ba8f\`
-- CORE STATUS blob: \`21c7e238afd02426453fbd6ebda75953d4434c74\`
-- MASTER prompt blob: \`efa6cb96baab90bcd2ebdb18ddc2df57c78c64c8\`
-- MASTER STATUS blob: \`fbdf9afa2889cd3ce9427f039e451b32a20982f5\`
-- MASTER project-status blob: \`5eb16673efa89a3a2e7b3bff39f8955351ba1508\`
-- MASTER decision-log blob: \`9947d10e4a1fd8158bc75abbcf668410c9bb7d45\`
-- RB-004 Mathematical Freeze blob: \`d84a2f8c23b0bb0d6be4867a42a6fea235232f20\`
-- RB-007 Continuation Theory Freeze blob: \`9ba55b855b3257d11e9fc741ea19a0e2deacc329\`
-- RB-010 Floquet Theory Freeze blob: \`21c2d9a77ff1d2f17fe6068b43b2d004538cf257\`
-- RB-012 Consolidated C1 Theory Freeze blob: \`e371e0cc8b645eb23cbb683d2ed8997ccb9dc62f\`
-- RB-019 Numerical Engineering Freeze blob: \`68c674e50772620960b5e52092b9f6cd606d8f42\`
-- RB-020 v0.27c Execution Contract Freeze blob: \`b2015acc18da13755f078187895f274418751460\`
+- repository: `twkroll/haken-lighthouse-jax`
+- canonical branch: `main`
+- `main` HEAD at gate start: `d0c65c2d7347e43396067654a369a1c5bef0ba8f`
+- CORE STATUS blob: `21c7e238afd02426453fbd6ebda75953d4434c74`
+- MASTER prompt blob: `efa6cb96baab90bcd2ebdb18ddc2df57c78c64c8`
+- MASTER STATUS blob: `fbdf9afa2889cd3ce9427f039e451b32a20982f5`
+- MASTER project-status blob: `5eb16673efa89a3a2e7b3bff39f8955351ba1508`
+- MASTER decision-log blob: `9947d10e4a1fd8158bc75abbcf668410c9bb7d45`
+- RB-004 Mathematical Freeze blob: `d84a2f8c23b0bb0d6be4867a42a6fea235232f20`
+- RB-007 Continuation Theory Freeze blob: `9ba55b855b3257d11e9fc741ea19a0e2deacc329`
+- RB-010 Floquet Theory Freeze blob: `21c2d9a77ff1d2f17fe6068b43b2d004538cf257`
+- RB-012 Consolidated C1 Theory Freeze blob: `e371e0cc8b645eb23cbb683d2ed8997ccb9dc62f`
+- RB-019 Numerical Engineering Freeze blob: `68c674e50772620960b5e52092b9f6cd606d8f42`
+- RB-020 v0.27c Execution Contract Freeze blob: `b2015acc18da13755f078187895f274418751460`
 
-RB-015 remains immutable \`SCIENTIFIC FAIL\`.
+RB-015 remains immutable `SCIENTIFIC FAIL`.
 
-This is a THEORY gate. No TR-27C check, \`2711xxx\` RNG object, v0.27c confirmatory execution, APP-3 training, scaling benchmark, effect-bearing v0.28 experiment, novelty positioning, or manuscript claim is produced here.
+This is a THEORY gate. No TR-27C check, `2711xxx` RNG object, v0.27c confirmatory execution, APP-3 training, scaling benchmark, effect-bearing v0.28 experiment, novelty positioning, or manuscript claim is produced here.
 
 ### Claim/provenance convention
 
@@ -969,7 +969,7 @@ Required conditions include:
 - physical rerecording identifies the current event sequence;
 - every derivative is evaluated on that same certified sequence;
 - event-time dependence is represented by differentiable root/implicit formulas or an equivalent correct custom derivative;
-- no derivative is taken through a discrete \`argmin\`, stale event token, silently reordered collision, or a branch chosen from a different parameter point.
+- no derivative is taken through a discrete `argmin`, stale event token, silently reordered collision, or a branch chosen from a different parameter point.
 
 Ordinary AD of a scheduler containing discrete event-selection logic is **not** justified merely because a mathematical derivative exists.
 
@@ -1079,7 +1079,7 @@ Mathematics requires
 
 for the standard spike-time IFT.
 
-The RB-019 threshold \`1e-10\` is a conservative engineering margin. The number \`1e-10\` is not mathematically distinguished and is not a theorem.
+The RB-019 threshold `1e-10` is a conservative engineering margin. The number `1e-10` is not mathematically distinguished and is not a theorem.
 
 ## 23. Collision tolerance
 
@@ -1087,7 +1087,7 @@ The RB-019 threshold \`1e-10\` is a conservative engineering margin. The number 
 
 Ordinary chart theory requires nonzero event separation.
 
-RB-019's finite collision tolerance \`1e-8\` is an engineering decision for finite precision. It is not equivalent to the mathematical condition \(\delta_{\rm sep}>0\), and it is not retroactively promoted to a theorem.
+RB-019's finite collision tolerance `1e-8` is an engineering decision for finite precision. It is not equivalent to the mathematical condition \(\delta_{\rm sep}>0\), and it is not retroactively promoted to a theorem.
 
 ## 24. Tape certification
 
@@ -1096,7 +1096,7 @@ RB-019's finite collision tolerance \`1e-8\` is an engineering decision for fini
 
 A tape satisfying finite-horizon first-hit completeness, transversality, event separation and boundary conditions is a valid local chart.
 
-RB-019's \`NUMENG_PULSE_AWARE_REFERENCE_V1\` certification can therefore be interpreted as finite evidence that those requirements were checked inside its audited numerical envelope.
+RB-019's `NUMENG_PULSE_AWARE_REFERENCE_V1` certification can therefore be interpreted as finite evidence that those requirements were checked inside its audited numerical envelope.
 
 It is not proof of global first-hit correctness outside that envelope.
 
@@ -1111,11 +1111,11 @@ Failure to certify does **not** imply that the physical trajectory is singular o
 
 Thus
 
-\`UNCERTIFIED\`
+`UNCERTIFIED`
 
 and
 
-\`MATHEMATICALLY INVALID\`
+`MATHEMATICALLY INVALID`
 
 must remain distinct states.
 
@@ -1259,7 +1259,7 @@ Required future checks:
 
 - computed omitted-tail enclosure satisfies (9.5);
 - a no-hit/hit decision is accepted only when the residual phase margin exceeds the certified tail error;
-- otherwise return \`UNCERTIFIED\`.
+- otherwise return `UNCERTIFIED`.
 
 ## 32. TH-FH-06 — structural zero-weight edge
 
@@ -1325,7 +1325,7 @@ A later MASTER-authorized numerical theory-validation gate should, at minimum, t
 8. spike-time derivative (13.1) against independently rerecorded finite differences;
 9. arrival derivative (14.1) against independently rerecorded finite differences;
 10. fail-closed behavior on TH-FH-01 through TH-FH-08;
-11. explicit distinction between \`UNCERTIFIED\` and \`PHYSICALLY INVALID\`;
+11. explicit distinction between `UNCERTIFIED` and `PHYSICALLY INVALID`;
 12. stale-tape rejection after an itinerary change.
 
 No tolerance or fixture should be selected from later output.
@@ -1376,7 +1376,7 @@ Fixed-chart AD is valid only after the chart map represented by the code is show
 
 **Label:** GOVERNANCE NON-RESULT.
 
-TR-27C-01 through TR-27C-07 remain UNEVALUATED. The \`2711xxx\` streams remain UNGENERATED / UNEVALUATED.
+TR-27C-01 through TR-27C-07 remain UNEVALUATED. The `2711xxx` streams remain UNGENERATED / UNEVALUATED.
 
 RB-015 remains SCIENTIFIC FAIL.
 
@@ -1408,7 +1408,7 @@ No global numerical first-hit correctness theorem is claimed.
 
 If MASTER accepts this gate, establish
 
-\`CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1\`
+`CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1`
 
 freezing only:
 
