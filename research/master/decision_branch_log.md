@@ -177,6 +177,11 @@ Date: 2026-10-15
 Status: STABLE
 Date: 2026-10-15
 
+## DEC-035
+Following establishment of RB-019 Numerical Engineering Freeze 0.1 and RB-020 CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1, the user reprioritizes the project toward Numerics + Theory rather than immediate AI/application work. MASTER therefore parks the previously activated `APP-3 AI Learning Scope & Benchmark Preregistration Gate 0.1`; APP-3 returns to `PROTECTED / WAIT` without any APP-3 execution, training, benchmark or held-out inspection having occurred. The APP-3 prompt is retained for later reactivation. MASTER opens exactly one new scientific/theoretical action, `CORE Event-Chart Regularity & Certified First-Hit Theory Gate 0.1`, aimed at sufficient first-hit completeness conditions, response/tail bounds, event-chart regularity, local event-time differentiability and the mathematical interpretation/limits of RB-019 certification. In parallel, under the existing Parallel Engineering Policy, MASTER opens `NUM-ENG Robustness, Scaling & Differentiable Kernel Gate 0.2` on `engineering/numerics-v0.1`, restricted to predetermined deterministic stress testing, local engineering scaling/work metrics, JAX/gradient QA and acceleration classification against the RB-019 physical authority. All NUM-ENG outputs remain DEVELOPMENT EVIDENCE / ENGINEERING METRICS and cannot create scientific speedup/scaling claims. The parked CORE v0.27c execution remains unauthorized: TR-27C-01…07 stay UNEVALUATED and `2711xxx` remains UNGENERATED / UNEVALUATED. RB-015 remains immutable SCIENTIFIC FAIL.
+Status: STABLE
+Date: 2026-10-15
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
