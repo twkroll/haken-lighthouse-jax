@@ -8,6 +8,7 @@ Governance command protocol: `research/master/command_protocol_v0_2.md`.
 
 - `00 – MASTER – Projektplan & Status`
 - `10 – CORE – Haupttheorie / mathematischer Kern`
+- `20 – NUM-ENG – Numerical Engineering`
 - `50 – APP-1 – Computational Neuroscience`
 - `60 – APP-2 – Neuromorphic Computing`
 - `70 – APP-3 – Differentiable Inference / Temporal Learning`
@@ -15,6 +16,10 @@ Governance command protocol: `research/master/command_protocol_v0_2.md`.
 - `90 – MANUSCRIPT – Manuskript & Figuren`
 
 Additional workstreams require explicit MASTER authorization.
+
+Current parallel-engineering authority: `research/master/parallel_engineering_policy_v0_1.md`.
+
+A MASTER-authorized non-effect-bearing engineering/audit lane may run in parallel with the single controlled scientific lane only when it is branch-isolated, uses no protected confirmatory data, changes no frozen scientific target/result, and produces DEVELOPMENT EVIDENCE only. Application experiment execution still requires its own explicit MASTER gate.
 
 ## Core workflow
 
