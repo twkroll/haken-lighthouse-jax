@@ -167,6 +167,11 @@ Date: 2026-10-15
 Status: STABLE
 Date: 2026-10-15
 
+## DEC-033
+`NUM-ENG Reference/Rerecord Repair & Controlled Integration Gate 0.1` returns `PASS — ENGINEERING ONLY` on `engineering/numerics-v0.1`. MASTER reviews the returned gate artifact, frozen pre-repair contract and source integration commit `aa8b4ac234a1c1960a5829fc3d24982e8002105d`, and establishes `NUM-ENG Numerical Engineering Freeze 0.1` / RB-019 as a narrowly scoped stable engineering baseline. The repaired dense/sparse physical first-hit authority, fail-closed physical-certification semantics, high-level chart/JAX tape guards, conditional fixed-chart replay after certified rerecording, structural-zero support, exact alpha-state propagation and the complete provenance/test bundle are accepted only within the finite audited envelope. The repaired baseline passes the original 180 RB-017 tests plus 14 new RRI repair cases, for 194/194 PASS under the captured environment. The frozen narrow-pulse regression now finds the missing regular first hit at approximately 0.5050005053634212 within the prospectively fixed tolerance. Historical accelerated schedulers remain development comparators rather than independent physical authorities; global first-hit correctness, interval-arithmetic rigor, general speedup/scaling claims and AI-performance claims remain deferred. Executable software remains on the isolated engineering branch and is not merged to `main`. All pre-existing timing, scaling, optimizer and learning-smoke outputs remain DEVELOPMENT EVIDENCE. RB-015 remains immutable SCIENTIFIC FAIL and `2711xxx` remains protected. The engineering prerequisite for the prepared APP-3 AI Scope & Benchmark Preregistration Gate is now satisfied, but APP-3 remains PROTECTED / WAIT because the CORE v0.27c Execution Contract Canonicalization Gate is still READY and has not returned. The single currently authorized project action is therefore completion of CORE v0.27c contract canonicalization.
+Status: STABLE
+Date: 2026-10-15
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -187,3 +192,4 @@ Date: 2026-10-15
 - RB-016: CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1 — FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
 - RB-017: Numerical Engineering v0.10 Intake Snapshot 0.1 — STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
 - RB-018: NUM-ENG Numerical Engineering Audit Freeze 0.1 — FROZEN / STABLE ENGINEERING AUDIT — CONDITIONAL / BLOCKED
+- RB-019: NUM-ENG Numerical Engineering Freeze 0.1 — FROZEN / STABLE ENGINEERING BASELINE
