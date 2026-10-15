@@ -162,6 +162,11 @@ MASTER reviews the user's local `Lighthouse_Numerik_Starter_v0_10(1).zip` reques
 Status: STABLE
 Date: 2026-10-15
 
+## DEC-032
+`NUM-ENG Numerical Engineering Gate 0.1` returns `CONDITIONAL / BLOCKED — NOT PASS` on development branch `engineering/numerics-v0.1` at `research/numerical_engineering/numerical_engineering_gate_0_1.md`. MASTER accepts the audit as a valid governed engineering result and establishes `NUM-ENG Numerical Engineering Audit Freeze 0.1` / RB-018. The audit independently reproduces all 11 supplied pytest modules and all 180/180 cases with clean module exits, plus an aggregate 180/180 clean run, and generates a complete 137-file original-byte manifest while preserving the obsolete 33-line manifest as defective provenance evidence. The gate is nevertheless not freeze-ready because a deterministic narrow-alpha first-hit fixture exposes a fail-closed reference defect: the original sparse physical rerecord path can omit a true first hit while reporting `chart_valid=True`, and the derivative/JAX wrapper can accept the incomplete event tape. Two pulse-aware physical references and an independently segmented SciPy quadrature/root solve agree on the missing hit. MASTER classifies this as an engineering reference/rerecord defect, not a change to RB-004 mathematics and not a scientific result. No executable source is promoted to a canonical engineering baseline. MASTER authorizes exactly one follow-up engineering action, `NUM-ENG Reference/Rerecord Repair & Controlled Integration Gate 0.1`, on the existing `engineering/numerics-v0.1` branch. It must freeze a pulse-aware physical first-hit reference contract, repair fail-closed tape/chart/JAX authority, add the frozen regression and negative controls, rerun the original 180 tests plus the repair suite, produce a repaired-source manifest, and integrate only reviewed ENGINEERING-APPROVED source. CORE v0.27c remains independently READY and may proceed in parallel. APP-3 remains PROTECTED / WAIT until the NUM-ENG repair returns PASS and MASTER accepts an engineering baseline, and until the CORE v0.27c contract also returns. RB-015 remains immutable SCIENTIFIC FAIL and `2711xxx` remains forbidden to NUM-ENG/APP-3.
+Status: STABLE
+Date: 2026-10-15
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -181,3 +186,4 @@ Date: 2026-10-15
 - RB-015: CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1 — FROZEN / STABLE SCIENTIFIC RESULT — FAIL
 - RB-016: CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1 — FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
 - RB-017: Numerical Engineering v0.10 Intake Snapshot 0.1 — STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
+- RB-018: NUM-ENG Numerical Engineering Audit Freeze 0.1 — FROZEN / STABLE ENGINEERING AUDIT — CONDITIONAL / BLOCKED
