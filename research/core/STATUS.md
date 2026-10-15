@@ -1,8 +1,9 @@
 # CORE STATUS
 
-Current Gate: CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1
-Status: RETURN TO MASTER
-Latest canonical file: `research/core/v0_27c_whitened_trust_region_laplace_execution_contract_canonicalization_gate_0_1.md` — gate PASS; complete pre-execution whitened dogleg trust-region Gauss-Newton contract fixed, including radius/ratio/update rules, invalid-step contraction, stationarity/budgets, exact Hessian/logdet authority, outer non-finite semantics, TR-27C-01–TR-27C-07 deterministic validation suite, inherited RB-014 scientific thresholds, and disjoint `2711xxx` seed mapping; TR suite UNEVALUATED and confirmatory seeds UNGENERATED / UNEVALUATED
-Dependencies: Governance command protocol v0.2 STABLE; RB-002 legacy recovery input; RB-003 recovery classification; RB-004 CORE Mathematical Freeze 0.1; RB-005 CORE Benchmark Contract Freeze 0.1; RB-006 CORE v0.2 Benchmark Result Freeze 0.1; RB-007 CORE v0.3 Continuation Theory Freeze 0.1; RB-008 CORE v0.3 Continuation Validation Contract Freeze 0.1; RB-009 CORE v0.3 Continuation Validation Result Freeze 0.1; RB-010 CORE v0.4 Floquet Theory Freeze 0.1; RB-011 Legacy Verification Sweep Freeze 0.1; RB-012 Consolidated C1 Theory Freeze 0.1; RB-013 v0.27 Scope Freeze; RB-014 v0.27 Execution Contract Freeze; RB-015 v0.27 Result Freeze — SCIENTIFIC FAIL; RB-016 v0.27b diagnosis/follow-up scope freeze; RB-019 NUM-ENG engineering baseline acknowledged but not silently imported into the CORE execution path; v0.27c execution-contract canonicalization PASS
-Next instruction: none in CORE — MASTER must review the v0.27c pre-execution contract and decide whether to establish `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1` and authorize a separate execution gate
-STOP boundary: STOP — RETURN TO MASTER; RB-015 remains SCIENTIFIC FAIL; no TR-27C execution, no `2711xxx` RNG creation, no confirmatory v0.27c execution, no solver-family search, no v0.28, no active pulse/probe extension, no applications, no novelty positioning, and no manuscript claim freeze until MASTER authorization
+Current Gate: none
+Status: FROZEN / WAIT
+Latest canonical file: `research/core/v0_27c_whitened_trust_region_laplace_execution_contract_freeze_0_1.md` — RB-020 FROZEN / STABLE PRE-EXECUTION CONTRACT
+Dependencies: Governance command protocol v0.2 STABLE; RB-004 through RB-016 scientific lineage; RB-019 NUM-ENG stable engineering baseline; RB-020 v0.27c execution-contract freeze
+Scientific state: RB-015 remains immutable SCIENTIFIC FAIL; RB-016 follow-up scope frozen; v0.27c contract frozen but not executed; TR-27C-01…07 UNEVALUATED; `2711xxx` UNGENERATED / UNEVALUATED
+Next instruction: none until MASTER authorizes a separate v0.27c execution gate
+STOP boundary: no TR-27C execution, no `2711xxx` RNG creation, no confirmatory v0.27c execution, no solver-family search, no v0.28, no active pulse/probe extension, no novelty positioning, and no manuscript claim freeze without MASTER authorization
