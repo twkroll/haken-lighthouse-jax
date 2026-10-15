@@ -2,22 +2,22 @@
 
 ## Administrative state
 
-PREPARED ONLY — NOT YET OPEN / NOT EXECUTABLE.
+ACTIVATED / READY — SCOPE & PREREGISTRATION ONLY.
 
-APP-3 remains `PROTECTED / WAIT` until MASTER explicitly changes its STATUS to READY after required dependencies return.
+MASTER has reviewed and satisfied the required dependencies: RB-019 Numerical Engineering Freeze 0.1 and RB-020 CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1. APP-3 is READY for this preregistration gate only.
 
 ## Purpose
 
 Define one controlled prospective research program testing whether a Lighthouse-network variant can function as a useful AI/temporal-learning method. This gate is scope and preregistration only. It must not train models or inspect new held-out performance.
 
-## Required dependencies before activation
+## Activated dependencies
 
-MASTER must first review:
+MASTER has reviewed and frozen:
 
-1. the returned `NUM-ENG Numerical Engineering Gate 0.1` result and any authorized engineering baseline/freeze;
-2. the returned `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1` result.
+1. `NUM-ENG Numerical Engineering Freeze 0.1` / RB-019 — stable finite engineering baseline;
+2. `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1` / RB-020 — stable pre-execution contract.
 
-RB-015 remains SCIENTIFIC FAIL and is not an AI baseline.
+RB-015 remains SCIENTIFIC FAIL and is not an AI baseline. RB-019 may be used only as the finite engineering dependency described by its freeze; it does not supply AI-performance evidence.
 
 ## Required architecture definition
 
