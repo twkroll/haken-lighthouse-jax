@@ -1,0 +1,76 @@
+{
+  "schema_version": "core-v0.15",
+  "provenance": "docs/core/global_invariant_circle_fold_v0.15.md",
+  "model_slice": {
+    "N": 3,
+    "p_fixed": -3.267985407948901,
+    "tau_reference": 8.0
+  },
+  "large_invariant_circle": {
+    "classification": "quasiperiodic hybrid invariant circle",
+    "mean_amplitude_at_tau8": 0.7181453200202882,
+    "rotation_number": 0.0385142956218183,
+    "nearest_rational_denominator_le_50": "1/26",
+    "rotation_minus_1_over_26": 5.275716027983851e-05,
+    "recurrence_rms": {
+      "26": 0.006298346383219713,
+      "52": 0.012596556533228253,
+      "104": 0.025192053912917577
+    },
+    "fourier_rotation_fit": {
+      "harmonics": 10,
+      "rms": 0.00023750306235774808,
+      "leading_c1_abs": 0.7161579099407992
+    },
+    "arrival_order_switching": {
+      "short_margin_min": -0.31152993330033496,
+      "short_margin_max": 4.703420753940009
+    }
+  },
+  "stable_normal_return_multiplier": {
+    "definition": "phase-conditioned transverse multiplier over one full rotation of the q=1 circle, estimated directly from the full packet-queue map",
+    "table": [
+      {"tau3": 8.004, "mu": 0.7843122830695624},
+      {"tau3": 8.006, "mu": 0.864993683765859},
+      {"tau3": 8.007, "mu": 0.9358154754108635},
+      {"tau3": 8.0072, "mu": 0.9612338114815638},
+      {"tau3": 8.00725, "mu": 0.9717922535166069}
+    ],
+    "deltaA_convergence_tau8p0072": {
+      "2e-6": 0.9612781198182618,
+      "4e-6": 0.9612338114815638,
+      "8e-6": 0.9612275231487233
+    }
+  },
+  "unstable_edge_circle": {
+    "tau3": 8.0072,
+    "edge_bracket_radial_impulses": [-0.00809, -0.00809125],
+    "shadow_mean_amplitude": 0.6773833705884221,
+    "mu_rotation_geometric": 1.0400409851593622,
+    "mu_rotation_median_alt": 1.0385470892172681,
+    "stable_reciprocal": 1.0403296139351208
+  },
+  "fold_location": {
+    "multiplier_fit_all5": {
+      "K": 3.74365935,
+      "tau_fold": 8.00730554,
+      "rms": 0.0006373359020688741
+    },
+    "multiplier_fit_near3": {
+      "K": 3.648309702936406,
+      "tau_fold": 8.007310727816458,
+      "rms": 0.0002626165971493531
+    },
+    "escape_ghost_fit": {
+      "tau_fold": 8.00731041,
+      "scaling": "N_escape=N0+C/sqrt(tau-tau_fold)"
+    },
+    "certified_reference": 8.00731,
+    "interpretation": "numerically nondegenerate hybrid saddle-node/fold of invariant circles"
+  },
+  "scope": {
+    "smooth_fixed_itinerary_map_valid_globally": false,
+    "reason": "the large circle crosses a short-arrival ordering surface",
+    "exact_saltation_jacobian_through_all_order_switches": "future fixed-capacity JAX queue task"
+  }
+}

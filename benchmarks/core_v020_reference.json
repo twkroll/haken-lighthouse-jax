@@ -1,0 +1,99 @@
+{
+  "schema_version": "core-v0.20",
+  "provenance": "docs/core/latent_state_inference_v0.20.md",
+  "truth": {
+    "p": -3.267985407948901,
+    "tau3": 8.0,
+    "eta1": 0.0,
+    "eta2": 0.0
+  },
+  "latent_phase_basis": [[1.0, 0.0], [0.0, 1.0], [-1.0, -1.0]],
+  "observations": {
+    "labelled_spike_times": [8.152762890488507, 8.566089299061751, 8.964878908823215, 24.62568933324277, 24.69860496608047, 25.36630107670213]
+  },
+  "local_identifiability": {
+    "jacobian": [
+      [0.0, 0.0, -2.26983787, 0.0],
+      [0.0, 0.0, 2.32222406, 2.32222406],
+      [0.0, 0.0, 8.04195333e-09, -2.368927],
+      [-0.37611718627951896, 0.32080596607315304, -2.57178765, -1.1248726],
+      [-0.2422300227273027, 0.3280063904746441, 1.62862546, 2.90965799],
+      [-0.488577847155691, 0.25857153645409736, 0.905291242, -1.74959201]
+    ],
+    "singular_values": [5.81134164, 3.26704426, 0.82982598, 0.10170598],
+    "condition_number": 57.13864463987283,
+    "jax_vs_central_fd_relative_error": 1.2425615839141046e-09,
+    "prefix_ranks_3_4_5_6": [2, 3, 4, 4],
+    "first5_smallest_singular": 0.0499612171034605,
+    "weakest_right_singular_vector": [-0.62490183, -0.78018237, -0.0124317, 0.02566363],
+    "first_cycle_parameter_columns_zero": true,
+    "first_cycle_latent_rank": 2
+  },
+  "noise_audit": {
+    "spike_time_sigma": 0.0001,
+    "fisher_std": [0.000621570498, 0.000770789675, 2.84601032e-05, 3.48214659e-05],
+    "parameter_std_inflation_vs_v018": [1.45285777, 1.43230855],
+    "p_tau_correlation": 0.96897112,
+    "monte_carlo_realizations": 20,
+    "empirical_mean": [-3.26790806, 8.00010559, 2.80816619e-06, -2.38508362e-06],
+    "empirical_std": [0.000564607233, 0.000648323271, 2.13300223e-05, 3.03620965e-05]
+  },
+  "optimizer_recovery": {
+    "regular": {"start": [-3.5, 8.2, 0.05, -0.04], "iterations": 4, "boundary_hits": 0, "chart_switches": 0},
+    "one_cross": {"start": [-3.0, 7.7, -0.08, 0.06], "iterations": 5, "boundary_hits": 1, "chart_switches": 1},
+    "two_cross": {"start": [-3.2, 7.7, -0.07, -0.12], "iterations": 5, "boundary_hits": 2, "chart_switches": 2, "final_objective": 1.4199496293978212e-28, "max_parameter_error": "<6e-12"},
+    "same_parameter_start_zero_latent": {"start": [-4.0, 8.0, 0.0, 0.0], "iterations": 5, "boundary_hits": 1, "chart_switches": 1},
+    "same_parameter_start_routed_latent": {"start": [-4.0, 8.0, 0.03, -0.02], "iterations": 5, "boundary_hits": 0, "chart_switches": 0}
+  },
+  "event_margin_vector": {
+    "formula": "alpha_j = -m_j/(grad m_j dot s) for negative directional derivative; take smallest positive candidate",
+    "role": "boundary prediction; exact physical crossing is still bracketed with the scalar minimum chart guard",
+    "scalar_min_gradient_failure_second_crossing": {
+      "minimum_margin": 0.00012106578215131947,
+      "directional_derivative": 0.417567987627408,
+      "alpha_scalar": -0.00028993070766561094
+    }
+  },
+  "sequential_crossings": [
+    {
+      "crossing": 1,
+      "predicted_event_index": 0,
+      "alpha_prediction": 0.30256790935668143,
+      "alpha_exact": 0.3018585064088434,
+      "prediction_relative_error": 0.0023501174648933895,
+      "changed_event_indices": [0, 1],
+      "boundary_point": [-3.216774, 7.79317931, -0.04791134, -0.08417732],
+      "safe_point": [-3.21676844, 7.79314844, -0.04791866, -0.08418919],
+      "safe_margin": 6.05327520819543e-05,
+      "cross_point": [-3.21678511, 7.79324104, -0.0478967, -0.08415359],
+      "objectives": [0.33179263203944703, 0.16149891359209614, 0.16135951258791628],
+      "pre_jax_fd_relative_error": 1.7061225820616486e-09,
+      "post_jax_fd_relative_error": 1.2577782326784873e-09
+    },
+    {
+      "crossing": 2,
+      "predicted_event_index": 9,
+      "alpha_prediction": 0.8667909817285783,
+      "alpha_exact": 0.8549833924538692,
+      "prediction_relative_error": 0.01381031418729706,
+      "changed_event_indices": [9, 10],
+      "boundary_point": [-3.25824383, 7.97006234, -0.00547185456, -0.0126959546],
+      "safe_point": [-3.25823898, 7.97004166, -0.00547681662, -0.0127043124],
+      "safe_margin": 5.3799867706594284e-05,
+      "cross_point": [-3.25825353, 7.9701037, -0.00546193042, -0.012679239],
+      "objectives": [0.16135951258791537, 0.0032285698791745484, 0.0032148025431208214],
+      "pre_jax_fd_relative_error": 1.5035515171954683e-09,
+      "post_jax_fd_relative_error": 8.653860342001093e-10
+    }
+  ],
+  "scope": {
+    "known_topology": true,
+    "known_initial_psi_q": true,
+    "latent_relative_initial_phase_inferred": true,
+    "latent_initial_psi_q_inferred": false,
+    "unknown_clock_offset_inferred": false,
+    "unlabelled_spikes_supported": false,
+    "simultaneous_multisurface_collision_certified": false
+  },
+  "benchmark_contract": "B309-B328"
+}

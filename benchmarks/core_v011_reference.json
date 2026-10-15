@@ -1,0 +1,71 @@
+{
+  "schema_version": "core-v0.11",
+  "provenance": "docs/core/invariant_circles_v0.11.md",
+  "family": {
+    "N": 3,
+    "alpha": 0.5,
+    "weights_by_displacement": [1.0, "p", "-p"],
+    "delays_by_displacement": [0.0, 2.0, "tau3"],
+    "history_length": 4
+  },
+  "chenciner_reference": {
+    "tau3": 7.92140373739,
+    "T": 16.29213672114,
+    "p": -3.26248414452,
+    "Omega": 0.266095330801,
+    "L2": 0.021546133331,
+    "dL1_dtau_on_NS": -0.0092975,
+    "d_abs_mu_dp": -0.18379443
+  },
+  "circle_test_plane": {
+    "delta_tau3": 0.02,
+    "tau3": 7.94140373739,
+    "NS": {
+      "T": 16.29749389161298,
+      "p": -3.26798318225628,
+      "Omega": 0.26566907110085
+    },
+    "branch_points": [
+      {"A": 0.003, "T": 16.297493894277835, "p": -3.2679831907823336, "omega": 0.2656686925728281, "delta_p": -8.52605408497e-9},
+      {"A": 0.006, "T": 16.297493902821014, "p": -3.2679832181927604, "omega": 0.2656675578704931, "delta_p": -3.59364809022e-8},
+      {"A": 0.009, "T": 16.297493916941058, "p": -3.2679832634963060, "omega": 0.2656656666159935, "delta_p": -8.12400267058e-8},
+      {"A": 0.012, "T": 16.297493936461260, "p": -3.2679833261260460, "omega": 0.2656630186837619, "delta_p": -1.43869766323e-7},
+      {"A": 0.015, "T": 16.297493961133515, "p": -3.2679834052859147, "omega": 0.2656596138978083, "delta_p": -2.23029635205e-7}
+    ],
+    "critical_residual_a_0p012": {
+      "dense_max": 2.31e-14,
+      "fourier_n1_norm": 6.30e-16,
+      "left_projected_abs": 1.58e-16
+    },
+    "quadratic_scaling": {
+      "c2_exact": -0.00100847923835,
+      "c4_exact": 0.07499553762,
+      "c2_normal_form": -0.0010117281573766954,
+      "relative_c2_error": 0.00321126
+    },
+    "asymptotic_audit": [
+      {"delta_tau3": 0.02, "relative_leading_coefficient_error": 0.0032},
+      {"delta_tau3": 0.05, "relative_leading_coefficient_error": 0.016},
+      {"delta_tau3": 0.20, "relative_leading_coefficient_error": 0.08}
+    ]
+  },
+  "fold_of_invariant_circles": {
+    "A_exact": 0.0660575,
+    "T_exact": 16.297494585315,
+    "p_exact": -3.267985407948901,
+    "omega_exact": 0.26548519956913,
+    "delta_p_exact": -2.225692621316e-6,
+    "dp_dA": 2.7e-10,
+    "d2p_dA2": 0.00408,
+    "A_normal_form": 0.06568987296649076,
+    "delta_p_normal_form": -2.1828841395119243e-6,
+    "relative_amplitude_error": 0.00560,
+    "relative_parameter_error": 0.01961,
+    "spectral_refinement": {
+      "M5_vs_M7_p_difference": 1.1e-14,
+      "M7_collocation_points": 22,
+      "M7_rms_residual": 2.54e-13,
+      "M7_max_residual": 7.25e-13
+    }
+  }
+}

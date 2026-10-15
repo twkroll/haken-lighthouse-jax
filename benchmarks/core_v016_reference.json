@@ -1,0 +1,74 @@
+{
+  "schema_version": "core-v0.16",
+  "provenance": "docs/core/jax_packet_queue_v0.16.md",
+  "model_slice": {
+    "N": 3,
+    "p_fixed": -3.267985407948901,
+    "alpha": 0.5,
+    "queue_capacity": 12,
+    "observed_active_packet_max_inherited_v014": 6
+  },
+  "frozen_recovery": {
+    "tau_ns": 7.941411830425917,
+    "T_reference": 16.297496058505022,
+    "T_jax": 16.297496054830845,
+    "absolute_error": 3.6741774067650113e-09
+  },
+  "dynamic_skip_epsilon_1e-5": {
+    "center_seed_A": 0.0010023850245501774,
+    "cycles_to_fic": 15002,
+    "tau_at_crossing": 7.941403737235198,
+    "A_jax": 0.0010058508009897237,
+    "A_imperative_v014": 0.00100586082225,
+    "relative_jax_minus_imperative": -9.962869668024942e-06,
+    "A_over_static_fic": 0.015226897793433352
+  },
+  "event_chart_derivatives": {
+    "firing_chart_relative_jvp_vs_fd": 9.960550725156839e-10,
+    "firing_dt_dphi_jax": -2.288917537509386,
+    "firing_dt_dphi_endpoint_formula": -2.288917546306807,
+    "arrival_chart_relative_jvp_vs_fd": 1.5887213873763216e-10,
+    "arrival_dt_drho": 8.0,
+    "arrival_dt_dc": -47.87198569561542
+  },
+  "stable_global_circle_multipliers": {
+    "definition": "phase-conditioned normal return over one full q=1 circle rotation, evaluated with the fixed-capacity JAX packet engine",
+    "table": [
+      {"tau3": 8.004, "mu_v015": 0.7843122830695624, "mu_jax": 0.7852515201224747},
+      {"tau3": 8.006, "mu_v015": 0.864993683765859, "mu_jax": 0.8672758438422411},
+      {"tau3": 8.007, "mu_v015": 0.9358154754108635, "mu_jax": 0.935740621572364},
+      {"tau3": 8.0072, "mu_v015": 0.9612338114815638, "mu_jax": 0.9612512912808343},
+      {"tau3": 8.00725, "mu_v015": 0.9717922535166069, "mu_jax": 0.9711148445411683}
+    ],
+    "max_absolute_difference": 0.002282160076382156
+  },
+  "jax_fold_fit": {
+    "all_five": {
+      "K": 3.712821272076187,
+      "tau_fold": 8.007308388388164,
+      "rms": 0.0010061086714664475
+    },
+    "near_three": {
+      "K": 3.6307003884143563,
+      "tau_fold": 8.007313482578484,
+      "rms": 5.0033747297950836e-05
+    },
+    "v015_near_three_tau_fold": 8.007310727816458,
+    "v015_escape_ghost_tau_fold": 8.00731041
+  },
+  "unstable_edge_circle": {
+    "tau3": 8.0072,
+    "phase_specific_radial_bracket": [-0.00965882568359375, -0.00965859375],
+    "bracket_width": 2.319335937507605e-07,
+    "mu_jax_geometric_early_sections": 1.038312176501172,
+    "mu_v015": 1.0400409851593622,
+    "stable_mu_jax": 0.9612512912808343
+  },
+  "scope": {
+    "globally_smooth_through_event_order_switches": false,
+    "fixed_chart_tangents_certified": true,
+    "generic_simultaneous_multisurface_saltation_certified": false,
+    "cycle_held_activity_feedback_full_tangent_certified": false
+  },
+  "benchmark_contract": "B225-B246"
+}

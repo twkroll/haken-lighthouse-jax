@@ -1,0 +1,73 @@
+{
+  "schema_version": "core-v0.19",
+  "provenance": "docs/core/hybrid_multichart_optimizer_v0.19.md",
+  "truth": {
+    "p": -3.267985407948901,
+    "tau3": 8.0
+  },
+  "chart_representation": {
+    "events": 12,
+    "token_fields": ["kind", "index", "root_guess", "slot0", "slot1"],
+    "fixed_shape_shared_compiled_kernel": true
+  },
+  "cross_chart_start": {
+    "theta0": [-4.0, 8.0],
+    "objective0": 0.03500849360234459,
+    "margin0": 0.03133095974702904,
+    "trust_limited_gauss_newton_step": [0.55, -0.22766929],
+    "naive_candidate_margin": -0.04552791793330435,
+    "margin_gradient": [-0.14806738, -0.02037183],
+    "alpha_linear_prediction": 0.4079604094567599,
+    "alpha_exact_boundary": 0.4067616722632621,
+    "alpha_prediction_relative_error": 0.002947025925102251,
+    "boundary_point": [-3.77628108, 7.90739286],
+    "safe_point": [-3.77633608, 7.90741563],
+    "safe_margin": 7.709651949738827e-06,
+    "cross_point": [-3.77617108, 7.90734732],
+    "old_last_firing_order": [2, 0, 1],
+    "new_last_firing_order": [0, 2, 1],
+    "old_objective": 0.035008493602346334,
+    "safe_objective": 0.01667444961918725,
+    "cross_objective": 0.016661238267933223
+  },
+  "one_sided_jacobian_audit": {
+    "pre_cross_jax_vs_fd_relative_error": 9.162924282958453e-09,
+    "post_cross_jax_vs_fd_relative_error": 4.841138938535351e-09
+  },
+  "optimizer_recovery": {
+    "crossing_start": {
+      "start": [-4.0, 8.0],
+      "iterations": 5,
+      "boundary_hits": 1,
+      "chart_switches": 1,
+      "final_objective": 2.0510383535746307e-29,
+      "final_parameter_error": "<5e-12"
+    },
+    "additional_crossing_starts": [
+      {"start": [-4.1, 7.8], "iterations": 6, "boundary_hits": 1, "chart_switches": 1},
+      {"start": [-3.95, 8.25], "iterations": 5, "boundary_hits": 1, "chart_switches": 1}
+    ],
+    "regular_same_chart_start": {
+      "start": [-3.5, 8.2],
+      "iterations": 4,
+      "boundary_hits": 0,
+      "chart_switches": 0,
+      "final_parameter_error": "<5e-12"
+    }
+  },
+  "policy": {
+    "differentiate_through_event_argmin": false,
+    "use_one_sided_fixed_chart_jacobians": true,
+    "locate_margin_zero_before_crossing": true,
+    "rerecord_physical_chart_after_crossing": true,
+    "require_physical_objective_descent_for_crossing": true
+  },
+  "scope": {
+    "known_topology": true,
+    "known_initial_hybrid_state": true,
+    "latent_initial_state_inferred": false,
+    "multiple_close_chart_collisions_certified": false,
+    "simultaneous_multisurface_derivative_certified": false
+  },
+  "benchmark_contract": "B289-B308"
+}

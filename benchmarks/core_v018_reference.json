@@ -1,0 +1,73 @@
+{
+  "schema_version": "core-v0.18",
+  "provenance": "docs/core/inverse_problem_v0.18.md",
+  "truth": {
+    "p": -3.267985407948901,
+    "tau3": 8.0
+  },
+  "known_initial_state": {
+    "psi": [-0.207423841618632, -0.207423841618632, -0.207423841618632],
+    "q": [0.780899408476725, 0.780899408476725, 0.780899408476725],
+    "phi": [1.838519273976891, 1.488519273976891, 1.658519273976891],
+    "queue_empty": true
+  },
+  "labelled_spike_times": [
+    8.152762890488507,
+    8.566089299061751,
+    8.964878908823215,
+    24.62568933324277,
+    24.69860496608047,
+    25.36630107670213
+  ],
+  "local_identifiability": {
+    "jacobian": [
+      [0.0, 0.0],
+      [0.0, 0.0],
+      [0.0, 0.0],
+      [-0.37611718627951896, 0.32080596607315304],
+      [-0.2422300227273027, 0.3280063904746441],
+      [-0.488577847155691, 0.25857153645409736]
+    ],
+    "singular_values": [0.833299961466247, 0.147725787192011],
+    "condition_number": 5.640856463219534,
+    "jax_vs_central_fd_relative_error": 3.758246585431468e-09
+  },
+  "noiseless_recovery": {
+    "starts": [[-3.0, 7.7], [-3.5, 8.2], [-2.9, 8.15]],
+    "function_evaluations_each": 5,
+    "max_parameter_error": "<5e-12"
+  },
+  "noise_audit": {
+    "spike_time_sigma": 0.0001,
+    "linear_predicted_std": {
+      "p": 0.000427826116721,
+      "tau3": 0.000538144994604
+    },
+    "monte_carlo_realizations": 20,
+    "empirical_mean": {
+      "p": -3.267937029013076,
+      "tau3": 8.000069626492031
+    },
+    "empirical_std": {
+      "p": 0.000493373748929,
+      "tau3": 0.000568116085893
+    }
+  },
+  "chart_guard": {
+    "tau3_slice": 8.0,
+    "first_collision_p": -3.787130443848716,
+    "collision_type": "firing-order tie: neuron 0 vs neuron 2",
+    "margin_at_p_minus3p7870": 1.90357851597156e-05,
+    "margin_at_p_minus3p7872": -1.0150495030281093e-05,
+    "policy": "if min chart margin <= 0, invalidate fixed-chart gradient and rerecord the physical event chart"
+  },
+  "scope": {
+    "known_topology": true,
+    "known_initial_hybrid_state": true,
+    "continuous_parameters_inferred": ["p", "tau3"],
+    "latent_initial_state_inferred": false,
+    "topology_gradients_supported": false,
+    "cross_chart_gradient_supported": false
+  },
+  "benchmark_contract": "B269-B288"
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "core-v0.12",
+  "provenance": "docs/core/adaptive_delays_v0.12.md",
+  "literature_anchor": {
+    "citation": "Coombes, Thul, Ruschel, Nicks (2026), Adaptive conduction delays and phase locking in spiking Haken Lighthouse networks, arXiv:2606.21508",
+    "project_rule_note": "The speed-plasticity law used here is a CORE reduced benchmark inspired by the slow conduction-speed plasticity framework; it is not claimed to duplicate the paper's microscopic activity functional."
+  },
+  "frozen_exact_skeleton": {
+    "p_fixed": -3.267985407948901,
+    "fic": {
+      "tau3": 7.94140373739,
+      "A": 0.0660575
+    },
+    "ns": {
+      "T": 16.297496058505022,
+      "tau3": 7.941411830425917,
+      "Omega": 0.265668898005473,
+      "d_abs_mu_minus_1_d_tau3": -0.050533543527464524
+    },
+    "window_tau": 8.093035916978408e-6,
+    "L2": 0.021546133331,
+    "beta1_at_fic": 4.089697827799622e-7,
+    "beta2_effective": -0.00018774149747061435,
+    "A_fic_calibrated": 0.06600555231496376,
+    "A_fic_calibrated_relative_error": 0.0007864010148165852
+  },
+  "plasticity_benchmark": {
+    "path_length": 1.0,
+    "tau_equals_inverse_c": true,
+    "tau_target": 7.94135373739,
+    "c0": 0.1259231150089354,
+    "activity_proxy": "H(u)=u/(u+u_s)",
+    "u_s": 0.0009,
+    "kappa_activity": 2e-6,
+    "A_seed_at_NS": 0.001,
+    "escape_amplitude": 0.1,
+    "sweep_factor_vtau_over_epsilon_at_NS": 5.8093460882731984e-5,
+    "activity_speedup_factor_at_FIC": 2.7999486833389406
+  },
+  "slow_passage": {
+    "linear_optimistic_capture_epsilon": 6.797934056396011e-9,
+    "tracking_definition": "A(tau_FIC)=0.9*A_FIC_exact",
+    "epsilon90_no_activity_feedback": 1.730294701067518e-9,
+    "epsilon90_activity_feedback": 5.826404266846937e-10,
+    "feedback_requires_slower_factor": 2.969749071116238,
+    "test_epsilon": 1e-6,
+    "at_FIC_no_feedback": {
+      "cycle_count_from_NS": 150021.7683792007,
+      "A": 0.001031913842342647,
+      "fraction_of_static_FIC_amplitude": 0.015621448606585814
+    },
+    "at_FIC_activity_feedback": {
+      "cycle_count_from_NS": 149624.07840001583,
+      "A": 0.0010318249394029343,
+      "fraction_of_static_FIC_amplitude": 0.015620102619914504
+    },
+    "dynamic_skip": true
+  },
+  "post_FIC_escape_test_epsilon_1e_6": {
+    "no_feedback": {
+      "cycles_after_FIC_to_A_0p1": 2399396.109883509,
+      "tau_at_A_0p1": 7.9413582760017025
+    },
+    "activity_feedback": {
+      "cycles_after_FIC_to_A_0p1": 2164616.704581086,
+      "tau_at_A_0p1": 7.941322898981832
+    },
+    "escape_lag_reduction_fraction": 0.09784937315490672
+  },
+  "negative_results": {
+    "local_sync_circle_hysteresis": {
+      "status": "not_present_in_local_quintic_chart",
+      "reason": "Stable synchrony occurs for beta1<0, while the stable small invariant circle occurs for beta1>0 inside the NS-FIC wedge; the two stable objects do not coexist locally."
+    },
+    "global_switch_destination": {
+      "status": "not_certified",
+      "reason": "The local chart is terminated at A=0.1. A broader state-dependent-delay event model is required to identify the destination attractor and any genuine hysteresis."
+    }
+  }
+}
