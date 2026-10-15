@@ -172,6 +172,11 @@ Date: 2026-10-15
 Status: STABLE
 Date: 2026-10-15
 
+## DEC-034
+`CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1` returns PASS at `research/core/v0_27c_whitened_trust_region_laplace_execution_contract_canonicalization_gate_0_1.md`. MASTER accepts the complete pre-execution contract and establishes `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1` / RB-020. The freeze fixes the deterministic whitened dogleg trust-region Gauss-Newton route, all trust-radius/acceptance/update constants, invalid-step contraction, stationarity and operation budgets, no-ridge/no-rescue rules, exact final Hessian/logdet authority, bounded-Powell outer semantics, TR-27C-01 through TR-27C-07 including positive tolerances and negative controls, the disjoint `2711xxx` seed mapping, the inherited RB-014 scientific criteria and the prospective finite-initial-start criterion. At freeze time TR-27C-01 through TR-27C-07 remain UNEVALUATED and every `2711xxx` stream remains UNGENERATED / UNEVALUATED. RB-015 remains immutable SCIENTIFIC FAIL. RB-020 does not self-authorize v0.27c execution and does not silently import the RB-019 engineering branch into CORE. Because RB-019 Numerical Engineering Freeze 0.1 and RB-020 are now both established, MASTER declares the two prerequisites for `APP-3 AI Learning Scope & Benchmark Preregistration Gate 0.1` satisfied and changes APP-3 from PROTECTED / WAIT to READY. To retain one controlled scientific/application next action, CORE v0.27c execution is parked after its contract freeze and APP-3 scope/preregistration becomes the single active next action. This APP-3 gate may define architecture, trainable weights/delays, task/baseline suite, train/validation/test and seed discipline, budgets, metrics, negative controls, ablations and a later execution contract, but may not train models, execute benchmarks, inspect held-out test performance or promote local learning-smoke evidence.
+Status: STABLE
+Date: 2026-10-15
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -193,3 +198,4 @@ Date: 2026-10-15
 - RB-017: Numerical Engineering v0.10 Intake Snapshot 0.1 — STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
 - RB-018: NUM-ENG Numerical Engineering Audit Freeze 0.1 — FROZEN / STABLE ENGINEERING AUDIT — CONDITIONAL / BLOCKED
 - RB-019: NUM-ENG Numerical Engineering Freeze 0.1 — FROZEN / STABLE ENGINEERING BASELINE
+- RB-020: CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
