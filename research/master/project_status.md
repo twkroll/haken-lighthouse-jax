@@ -32,13 +32,9 @@ MASTER establishes:
 
 `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1` / RB-020.
 
-CORE status is now:
-
-`FROZEN / WAIT`.
-
 RB-020 fixes the deterministic whitened dogleg trust-region Gauss-Newton route, trust-radius/ratio/update rules, invalid-step contraction, stationarity and operation budgets, exact final Hessian/logdet authority, bounded-Powell outer semantics, TR-27C-01 through TR-27C-07, the disjoint `2711xxx` seed mapping and the inherited scientific decision hierarchy.
 
-RB-020 does not execute validation or confirmatory science. A future v0.27c execution requires a separate MASTER authorization.
+The v0.27c execution remains parked. CORE is now `READY` only for the separate `CORE Event-Chart Regularity & Certified First-Hit Theory Gate 0.1`. No TR-27C validation or confirmatory science is authorized.
 
 ## NUM-ENG
 
@@ -60,47 +56,23 @@ Finite QA:
 
 The baseline includes pulse-aware physical first-hit authority, fail-closed physical certification and high-level JAX/chart guards. Global first-hit correctness, interval-arithmetic rigor, general speedup/scaling and AI-performance claims remain deferred.
 
-NUM-ENG has no active gate.
+NUM-ENG is now `READY` for `NUM-ENG Robustness, Scaling & Differentiable Kernel Gate 0.2`, restricted to deterministic engineering stress testing, local scaling/work metrics, JAX/gradient QA and acceleration classification.
 
 ## APP-3 AI / temporal-learning lane
 
-Both activation prerequisites are now satisfied:
+RB-019 and RB-020 remain sufficient technical prerequisites for the previously prepared AI scope gate, but MASTER has changed sequencing in response to the user's current priority.
 
-1. RB-019 Numerical Engineering Freeze 0.1 — SATISFIED;
-2. RB-020 CORE v0.27c Execution Contract Freeze 0.1 — SATISFIED.
+APP-3 is therefore:
 
-MASTER activates:
+`PROTECTED / WAIT`.
 
-`APP-3 AI Learning Scope & Benchmark Preregistration Gate 0.1`.
+The prompt
 
-Status:
+`research/master/prompts/app3_ai_learning_scope_benchmark_preregistration_gate_0_1.md`
 
-`READY`.
+is retained but explicitly PARKED / NOT EXECUTABLE.
 
-The activated prompt is:
-
-`research/master/prompts/app3_ai_learning_scope_benchmark_preregistration_gate_0_1.md`.
-
-This gate is scope/preregistration only. It must define prospectively:
-
-- the Lighthouse AI input/output architecture;
-- which weights, delays, readout parameters and/or states are trainable;
-- model-variant registry relative to RB-004;
-- finite learning-task suite;
-- RNN/GRU, reservoir/ESN, LIF-SNN/LIF-reservoir and simple control baselines;
-- train/validation/test separation;
-- APP-3 seed namespaces disjoint from `2701xxx` and `2711xxx`;
-- optimizer and hyperparameter-search budgets;
-- parameter-count and compute budgets;
-- chart/gradient failure semantics;
-- held-out metrics;
-- negative controls and Lighthouse-specific ablations;
-- explicit FAIL / TECHNICALLY TRAINABLE / COMPETITIVE / DISTINCTIVE-LIGHTHOUSE outcome hierarchy;
-- a proposed later execution contract.
-
-No model training, benchmark execution or held-out test inspection is authorized in this gate.
-
-The old Numerik v0.9/v0.10 learning smoke tests remain DEVELOPMENT EVIDENCE only and cannot determine final APP-3 thresholds or count as confirmatory replicates.
+No APP-3 scope execution, training, benchmark or held-out test inspection has occurred.
 
 ## Scientific sequencing decision
 
