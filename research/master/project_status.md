@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.6
+Version: 2.7
 Date: 2026-10-15
 
 ## Central research question
@@ -13,120 +13,115 @@ Canonical rule:
 
 `Reconstruct state, not frozen science.`
 
-The scientific freeze chain RB-004 through RB-016 remains unchanged. In particular:
+The frozen scientific/engineering chain now extends through RB-020.
+
+Key preserved boundaries:
 
 - RB-015 remains immutable `SCIENTIFIC FAIL`;
-- RB-016 freezes only the governed diagnosis and the single v0.27c trust-region follow-up scope;
-- reserved `2711xxx` v0.27c confirmatory seeds remain UNGENERATED / UNEVALUATED.
+- RB-019 is the accepted finite Numerical Engineering baseline;
+- RB-020 freezes the complete v0.27c Whitened Trust-Region Laplace pre-execution contract;
+- TR-27C-01 through TR-27C-07 remain UNEVALUATED;
+- every reserved `2711xxx` confirmatory stream remains UNGENERATED / UNEVALUATED;
+- no AI training or held-out benchmark has been executed.
 
-MASTER has additionally authorized `Parallel Engineering Policy 0.1`, which permits a branch-isolated, non-effect-bearing engineering/audit lane to run in parallel with the controlled CORE lane while producing DEVELOPMENT EVIDENCE only.
+## CORE
 
-## Current CORE scientific lane
+`CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1` returned PASS.
 
-`CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1`
+MASTER establishes:
 
-Status: READY.
+`CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1` / RB-020.
 
-This remains the only currently authorized CORE scientific/pre-execution action.
+CORE status is now:
 
-It may freeze trust-region algorithm constants, TR-27C-01 through TR-27C-07, budgets, failure semantics and the disjoint seed mapping. It may not create `2711xxx` RNG objects or run redesigned confirmatory science.
+`FROZEN / WAIT`.
 
-## Current NUM-ENG engineering lane
+RB-020 fixes the deterministic whitened dogleg trust-region Gauss-Newton route, trust-radius/ratio/update rules, invalid-step contraction, stationarity and operation budgets, exact final Hessian/logdet authority, bounded-Powell outer semantics, TR-27C-01 through TR-27C-07, the disjoint `2711xxx` seed mapping and the inherited scientific decision hierarchy.
 
-MASTER establishes the additional workstream:
+RB-020 does not execute validation or confirmatory science. A future v0.27c execution requires a separate MASTER authorization.
 
-`20 – NUM-ENG – Numerical Engineering`.
+## NUM-ENG
 
-Returned gate:
+`NUM-ENG Numerical Engineering Freeze 0.1` / RB-019 remains:
 
-`NUM-ENG Numerical Engineering Gate 0.1`
+`FROZEN / STABLE ENGINEERING BASELINE`.
 
-Result: `CONDITIONAL / BLOCKED — NOT PASS`.
+Accepted development source:
 
-MASTER froze that audit as RB-018. The subsequent `NUM-ENG Reference/Rerecord Repair & Controlled Integration Gate 0.1` has now returned `PASS — ENGINEERING ONLY` and MASTER establishes `NUM-ENG Numerical Engineering Freeze 0.1` / RB-019.
+- branch: `engineering/numerics-v0.1`;
+- source integration commit: `aa8b4ac234a1c1960a5829fc3d24982e8002105d`;
+- subtree: `software/numerical_engineering/reference_repair_v0_1/`.
 
-NUM-ENG status is now `FROZEN / WAIT`.
+Finite QA:
 
-Development branch:
+- original 180/180 tests PASS;
+- 14/14 RRI repair tests PASS;
+- aggregate 194/194 PASS under the captured environment.
 
-`engineering/numerics-v0.1`.
+The baseline includes pulse-aware physical first-hit authority, fail-closed physical certification and high-level JAX/chart guards. Global first-hit correctness, interval-arithmetic rigor, general speedup/scaling and AI-performance claims remain deferred.
 
-Its exact frozen intake is RB-017 / `Numerical Engineering v0.10 Intake Snapshot 0.1`.
+NUM-ENG has no active gate.
 
-### Frozen intake identity
+## APP-3 AI / temporal-learning lane
 
-Uploaded package SHA-256:
+Both activation prerequisites are now satisfied:
 
-`e21202362fc9ead75a3e5d92736d38002eb75d4e4ec5b4dd1cfb3c0a7c88db53`.
+1. RB-019 Numerical Engineering Freeze 0.1 — SATISFIED;
+2. RB-020 CORE v0.27c Execution Contract Freeze 0.1 — SATISFIED.
 
-Archive inventory:
-
-- 137 files;
-- 47 Python files;
-- 11 pytest modules;
-- archive CRC/integrity PASS.
-
-The local package reports 180 split-module tests PASS and contains reference/JAX/sparse/first-hit/chart/gradient/scaling work plus a deterministic learning smoke test. Every such output remains DEVELOPMENT EVIDENCE.
-
-### Returned NUM-ENG audit
-
-The returned audit independently reproduces all supplied deterministic tests:
-
-- 11/11 modules;
-- 180/180 test cases;
-- clean exit code 0 for every module;
-- aggregate 180/180 PASS with clean exit.
-
-It also produces a complete 137-file original-byte manifest while preserving the obsolete 33-line manifest as defective provenance input.
-
-The audit is nevertheless BLOCKED because it discovered a deterministic first-hit completeness defect in the physical sparse/reference path. In the frozen narrow-pulse fixture, the affected reference path returns 0 spikes and `chart_valid=True`, while two pulse-aware references and an independently segmented SciPy quadrature/root solve agree on one first hit near `0.505000505363421`.
-
-The derivative/JAX wrapper can accept that incomplete tape. Therefore the current physical rerecording authority is not sufficiently fail-closed for a Numerical Engineering Freeze.
-
-RB-018 freezes the negative audit. RB-019 now accepts a narrow stable engineering baseline by reference to the isolated development-branch source commit `aa8b4ac234a1c1960a5829fc3d24982e8002105d`. The repaired baseline passes the original 180 tests plus 14 new RRI repair tests, for 194/194 PASS under the captured environment. The executable subtree remains on `engineering/numerics-v0.1`; no executable source is merged to `main`.
-
-## APP-3 AI lane
-
-A versioned prompt now exists for:
+MASTER activates:
 
 `APP-3 AI Learning Scope & Benchmark Preregistration Gate 0.1`.
 
-APP-3 remains:
+Status:
 
-`PROTECTED / WAIT`.
+`READY`.
 
-The prompt is PREPARED ONLY and cannot execute until both:
+The activated prompt is:
 
-1. RB-019 Numerical Engineering Freeze 0.1 is established — SATISFIED; and
-2. CORE v0.27c Execution Contract Canonicalization Gate has returned and MASTER has reviewed it — STILL OPEN.
+`research/master/prompts/app3_ai_learning_scope_benchmark_preregistration_gate_0_1.md`.
 
-MASTER must then explicitly change APP-3 to READY.
+This gate is scope/preregistration only. It must define prospectively:
 
-The future gate is preregistration only: architecture, input/output interface, trainable weights/delays, task suite, RNN/GRU/reservoir/LIF-SNN baselines, train/validation/test split, independent seed namespaces, compute/training budgets, failure semantics, metrics, ablations and success hierarchy. It may not run AI performance experiments.
+- the Lighthouse AI input/output architecture;
+- which weights, delays, readout parameters and/or states are trainable;
+- model-variant registry relative to RB-004;
+- finite learning-task suite;
+- RNN/GRU, reservoir/ESN, LIF-SNN/LIF-reservoir and simple control baselines;
+- train/validation/test separation;
+- APP-3 seed namespaces disjoint from `2701xxx` and `2711xxx`;
+- optimizer and hyperparameter-search budgets;
+- parameter-count and compute budgets;
+- chart/gradient failure semantics;
+- held-out metrics;
+- negative controls and Lighthouse-specific ablations;
+- explicit FAIL / TECHNICALLY TRAINABLE / COMPETITIVE / DISTINCTIVE-LIGHTHOUSE outcome hierarchy;
+- a proposed later execution contract.
 
-Existing local learning/performance smoke tests may never be retroactively reclassified as confirmatory results.
+No model training, benchmark execution or held-out test inspection is authorized in this gate.
 
-## Parallelism decision
+The old Numerik v0.9/v0.10 learning smoke tests remain DEVELOPMENT EVIDENCE only and cannot determine final APP-3 thresholds or count as confirmatory replicates.
 
-CORE does **not** need to finish before NUM-ENG begins.
+## Scientific sequencing decision
 
-The two currently executable actions are independent:
+To keep one controlled scientific/application next action at a time:
 
-- CORE v0.27c contract work: scientific/pre-execution, no confirmatory RNG;
-- NUM-ENG: no active gate; RB-019 is frozen as the accepted finite engineering baseline.
+- CORE v0.27c execution is parked after RB-020;
+- NUM-ENG is frozen after RB-019;
+- APP-3 scope/preregistration is now the single active project action.
 
-APP-3 is not executable in parallel at this stage.
+After APP-3 returns to MASTER, MASTER will decide the next branch: an APP-3 execution-contract gate, the parked CORE v0.27c execution gate, or another explicitly governed step. No scientific execution is implied by this sequencing.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | oversight of CORE + NUM-ENG returns |
-| 10 CORE | READY | v0.27c trust-region execution-contract canonicalization only |
+| 00 MASTER | FROZEN / WAIT | APP-3 preregistration oversight |
+| 10 CORE | FROZEN / WAIT | RB-020 contract frozen; execution parked |
 | 20 NUM-ENG | FROZEN / WAIT | RB-019 stable engineering baseline |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | unchanged |
-| 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | unchanged; later electronic/neuromorphic branch |
-| 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | AI preregistration prompt prepared, not open |
+| 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | later electronic/neuromorphic branch |
+| 70 APP-3 Differentiable Inference / Temporal Learning | READY | AI scope & benchmark preregistration |
 | 80 LIT | WAIT | no independent novelty positioning |
 | 90 MANUSCRIPT | WAIT | no manuscript claim freeze |
 
@@ -151,50 +146,34 @@ APP-3 is not executable in parallel at this stage.
 17. RB-017 Numerical Engineering v0.10 Intake Snapshot 0.1 — STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
 18. RB-018 NUM-ENG Numerical Engineering Audit Freeze 0.1 — FROZEN / STABLE ENGINEERING AUDIT — CONDITIONAL / BLOCKED
 19. RB-019 NUM-ENG Numerical Engineering Freeze 0.1 — FROZEN / STABLE ENGINEERING BASELINE
+20. RB-020 CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 
-## Exact next-step order
+## Exact next step
 
-### Parallel step A — CORE
-
-In `10 – CORE – Haupttheorie / mathematischer Kern`:
+In the existing APP-3 chat:
 
 `GO`
 
-For a new CORE chat:
+In a new/replacement APP-3 chat:
 
 `RESUME`.
 
 Execute only:
 
-`research/master/prompts/core_v0_27c_whitened_trust_region_laplace_execution_contract_canonicalization_gate_0_1.md`.
-
-### NUM-ENG
-
-No NUM-ENG action is currently authorized. RB-019 is the accepted stable engineering baseline.
-
-### Return
-
-When either gate returns, go to MASTER and issue:
-
-`Status?`
-
-MASTER integrates each returned result without changing the other active lane.
-
-### APP-3
-
-RB-019 now satisfies the engineering prerequisite. MASTER may activate the already prepared APP-3 scope/preregistration gate only after the still-open CORE v0.27c contract has returned and been reviewed:
-
 `research/master/prompts/app3_ai_learning_scope_benchmark_preregistration_gate_0_1.md`.
 
-No APP-3 experiment execution is currently authorized.
+After the preregistration deliverable and APP-3 STATUS return, go to MASTER and issue:
+
+`Status?`
 
 ## Global STOP boundaries
 
 Until explicit later authorization:
 
-- no `2711xxx` RNG creation outside the governed CORE path;
-- no confirmatory AI training/performance run;
-- no retroactive promotion of local smoke tests;
+- no APP-3 model training or benchmark execution;
+- no held-out APP-3 test inspection;
+- no `2711xxx` RNG creation outside a later governed CORE execution gate;
+- no TR-27C execution;
 - no RB-015 relabelling;
 - no v0.28 effect-bearing science;
 - no APP-1/APP-2 execution;
