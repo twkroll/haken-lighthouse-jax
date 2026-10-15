@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.4
+Version: 2.5
 Date: 2026-10-15
 
 ## Central research question
@@ -37,9 +37,15 @@ MASTER establishes the additional workstream:
 
 `20 – NUM-ENG – Numerical Engineering`.
 
-Current gate:
+Returned gate:
 
 `NUM-ENG Numerical Engineering Gate 0.1`
+
+Result: `CONDITIONAL / BLOCKED — NOT PASS`.
+
+MASTER freezes that audit as RB-018 and opens:
+
+`NUM-ENG Reference/Rerecord Repair & Controlled Integration Gate 0.1`
 
 Status: READY.
 
@@ -64,21 +70,22 @@ Archive inventory:
 
 The local package reports 180 split-module tests PASS and contains reference/JAX/sparse/first-hit/chart/gradient/scaling work plus a deterministic learning smoke test. Every such output remains DEVELOPMENT EVIDENCE.
 
-### MASTER intake audit
+### Returned NUM-ENG audit
 
-Independent MASTER checks found:
+The returned audit independently reproduces all supplied deterministic tests:
 
-- no source/test text use of protected `2701xxx` or `2711xxx` namespaces;
-- exact package environment is available in the audit runtime;
-- 37 tests independently reproduced with clean exit here:
-  - reference 6;
-  - multineuron history 9;
-  - structural graph 8;
-  - sparse 14;
-- further JAX-heavy modules were not certified by this MASTER audit because the current runner/transport path timed out before a trustworthy exit record was obtained; complete 180-case clean reproduction remains a NUM-ENG task;
-- `FILE_SHA256_MANIFEST.txt` contains 33 entries; 31 match and two archived files do not match their listed hashes: `README.md` and `lighthouse_dev/sparse_replay.py`.
+- 11/11 modules;
+- 180/180 test cases;
+- clean exit code 0 for every module;
+- aggregate 180/180 PASS with clean exit.
 
-The manifest issue is a packaging/provenance repair requirement, not a scientific failure.
+It also produces a complete 137-file original-byte manifest while preserving the obsolete 33-line manifest as defective provenance input.
+
+The audit is nevertheless BLOCKED because it discovered a deterministic first-hit completeness defect in the physical sparse/reference path. In the frozen narrow-pulse fixture, the affected reference path returns 0 spikes and `chart_valid=True`, while two pulse-aware references and an independently segmented SciPy quadrature/root solve agree on one first hit near `0.505000505363421`.
+
+The derivative/JAX wrapper can accept that incomplete tape. Therefore the current physical rerecording authority is not sufficiently fail-closed for a Numerical Engineering Freeze.
+
+RB-018 freezes this engineering audit. No executable source is promoted to a canonical engineering baseline yet.
 
 ## APP-3 AI lane
 
@@ -92,7 +99,7 @@ APP-3 remains:
 
 The prompt is PREPARED ONLY and cannot execute until both:
 
-1. NUM-ENG Gate 0.1 has returned and MASTER has reviewed the engineering baseline; and
+1. the NUM-ENG repair/integration gate has returned PASS and MASTER has established an accepted engineering baseline/freeze; and
 2. CORE v0.27c Execution Contract Canonicalization Gate has returned and MASTER has reviewed it.
 
 MASTER must then explicitly change APP-3 to READY.
@@ -108,7 +115,7 @@ CORE does **not** need to finish before NUM-ENG begins.
 The two currently executable actions are independent:
 
 - CORE v0.27c contract work: scientific/pre-execution, no confirmatory RNG;
-- NUM-ENG 0.1: software audit/integration only, DEVELOPMENT EVIDENCE.
+- NUM-ENG repair/integration: first-hit reference and fail-closed chart/JAX repair only, DEVELOPMENT EVIDENCE.
 
 APP-3 is not executable in parallel at this stage.
 
@@ -118,7 +125,7 @@ APP-3 is not executable in parallel at this stage.
 |---|---|---|
 | 00 MASTER | FROZEN / WAIT | oversight of CORE + NUM-ENG returns |
 | 10 CORE | READY | v0.27c trust-region execution-contract canonicalization only |
-| 20 NUM-ENG | READY | v0.1-v0.10 audit/reproduction/controlled integration |
+| 20 NUM-ENG | READY | reference/rerecord repair + controlled integration |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | unchanged |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | unchanged; later electronic/neuromorphic branch |
 | 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | AI preregistration prompt prepared, not open |
@@ -144,6 +151,7 @@ APP-3 is not executable in parallel at this stage.
 15. RB-015 CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1 — FROZEN / STABLE SCIENTIFIC RESULT — FAIL
 16. RB-016 CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1 — FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
 17. RB-017 Numerical Engineering v0.10 Intake Snapshot 0.1 — STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
+18. RB-018 NUM-ENG Numerical Engineering Audit Freeze 0.1 — FROZEN / STABLE ENGINEERING AUDIT — CONDITIONAL / BLOCKED
 
 ## Exact next-step order
 
@@ -163,19 +171,19 @@ Execute only:
 
 ### Parallel step B — NUM-ENG
 
-In a new `20 – NUM-ENG – Numerical Engineering` chat, with the exact RB-017 ZIP available:
+In the existing NUM-ENG chat:
 
-`RESUME`
+`GO`
 
-or, if already reconstructed and READY:
+For a new/replacement NUM-ENG chat:
 
-`GO`.
+`RESUME`.
 
 Execute only:
 
-`research/master/prompts/numerical_engineering_gate_0_1.md`.
+`research/master/prompts/numerical_engineering_reference_rerecord_repair_integration_gate_0_1.md`.
 
-Steps A and B may proceed in either order or in parallel because B is explicitly non-effect-bearing engineering.
+This repair gate may change only the affected physical/reference and chart/JAX guard engineering path under the frozen repair contract; it remains non-effect-bearing DEVELOPMENT EVIDENCE.
 
 ### Return
 
@@ -187,7 +195,7 @@ MASTER integrates each returned result without changing the other active lane.
 
 ### APP-3
 
-Only after both CORE v0.27c contract and NUM-ENG 0.1 have returned and been reviewed may MASTER activate the already prepared:
+Only after both CORE v0.27c contract and the NUM-ENG repair/integration gate have returned and MASTER has accepted an engineering baseline may MASTER activate the already prepared:
 
 `research/master/prompts/app3_ai_learning_scope_benchmark_preregistration_gate_0_1.md`.
 
