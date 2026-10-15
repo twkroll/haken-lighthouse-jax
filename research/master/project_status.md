@@ -1,190 +1,131 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.3
-Date: 2026-09-07
+Version: 2.4
+Date: 2026-10-15
 
 ## Central research question
 
-Can Hermann Haken's Lighthouse model be developed into a modern, scalable and differentiable framework for spiking-network dynamics that remains mathematically analyzable while supporting contemporary numerical simulation, inference and neuromorphic applications?
+Can Hermann Haken's Lighthouse model be developed into a modern, scalable and differentiable framework for spiking-network dynamics that remains mathematically analyzable while supporting contemporary numerical simulation, inference, AI/temporal learning and later neuromorphic implementation?
 
-## Global status
+## Governance state
 
-The verification-first command rule remains:
+Canonical rule:
 
 `Reconstruct state, not frozen science.`
 
-The recovered legacy corpus v0.4–v0.26 remains classified in RB-011 and its strongest independently verified C1 mathematics remains frozen in RB-012. No legacy C3 numerical effect has been promoted.
+The scientific freeze chain RB-004 through RB-016 remains unchanged. In particular:
 
-The first genuinely new v0.27 branch remains frozen as a valid negative result:
+- RB-015 remains immutable `SCIENTIFIC FAIL`;
+- RB-016 freezes only the governed diagnosis and the single v0.27c trust-region follow-up scope;
+- reserved `2711xxx` v0.27c confirmatory seeds remain UNGENERATED / UNEVALUATED.
 
-- scope: RB-013;
-- execution contract: RB-014;
-- result: RB-015 — `SCIENTIFIC FAIL`.
+MASTER has additionally authorized `Parallel Engineering Policy 0.1`, which permits a branch-isolated, non-effect-bearing engineering/audit lane to run in parallel with the controlled CORE lane while producing DEVELOPMENT EVIDENCE only.
 
-RB-015 is immutable and is not rescued or relabelled by later method development.
+## Current CORE scientific lane
 
-The governed failure-mechanism/follow-up preregistration gate has now returned:
+`CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1`
 
-`PASS — FAILURE MECHANISM SUFFICIENTLY DIAGNOSED; ONE FOLLOW-UP ROUTE PREREGISTERED IN SCOPE`.
+Status: READY.
 
-MASTER accepts that result and establishes `CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1` / RB-016.
+This remains the only currently authorized CORE scientific/pre-execution action.
 
-The single next scientific action is `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1`.
+It may freeze trust-region algorithm constants, TR-27C-01 through TR-27C-07, budgets, failure semantics and the disjoint seed mapping. It may not create `2711xxx` RNG objects or run redesigned confirmatory science.
 
-No confirmatory v0.27c dataset may be generated in that contract gate.
+## Current NUM-ENG engineering lane
 
-## Frozen RB-015 result remains
+MASTER establishes the additional workstream:
 
-`SCIENTIFIC FAIL — C2 PASS; CONSERVATIVE SHARED INFORMATION PASS; FROZEN LAPLACE INFERENCE HAS NO FINITE INITIAL OUTER START ON ANY OF 32 DATASETS`.
+`20 – NUM-ENG – Numerical Engineering`.
 
-Frozen facts remain:
+Current gate:
 
-- C2-27-01 through C2-27-08 PASS;
-- `INSUFFICIENT_MASK=0/32`;
-- truth physical/chart invalid `=0/32`;
-- conservative nuisance-profiled shared information rank-two/regular `32/32`;
-- 96 frozen outer starts attempted;
-- finite complete initial Laplace objectives `0/96`;
-- `OUTER_OPT_FAIL=32/32`;
-- usable fits `0/32`;
-- valid five-parameter uncertainty intervals `0/32`.
+`NUM-ENG Numerical Engineering Gate 0.1`
 
-## Frozen v0.27b failure diagnosis
+Status: READY.
 
-The 32 RB-015 datasets and optimization traces are observed and were used only as POST-HOC / DEVELOPMENT evidence.
+Development branch:
 
-The dominant diagnosed numerical mechanism is:
+`engineering/numerics-v0.1`.
 
-`inner BFGS / Strong-Wolfe globalization + quasi-Newton stagnation, not event-chart invalidity`.
+Its exact frozen intake is RB-017 / `Numerical Engineering v0.10 Intake Snapshot 0.1`.
 
-Key governed development findings:
+### Frozen intake identity
 
-- all 96 exposed failed directions admit valid same-itinerary dyadic probes;
-- Armijo points exist for 95/96 directions, while simultaneous Armijo + Strong-Wolfe appears on 12/96 fixed probes;
-- 82/96 failures meet the preregistered quasi-Newton-stagnation diagnostic;
-- stratified AD/FD checks do not support incorrect fixed-chart gradients as the dominant mechanism;
-- 11/12 stratified local Hessians are positive definite;
-- Armijo-only BFGS and whitened Strong-Wolfe BFGS do not solve the problem reliably on the exposed subset;
-- a whitened trust-region nonlinear-least-squares DEVELOPMENT prototype gives finite termination on 94/96 exposed failed trials, with two invalid-step cases exposing the need for explicit physical/chart-invalid proposal rejection and radius contraction.
+Uploaded package SHA-256:
 
-The `94/96` count is development evidence only and may not be reused as a confirmatory success threshold.
+`e21202362fc9ead75a3e5d92736d38002eb75d4e4ec5b4dd1cfb3c0a7c88db53`.
 
-## Frozen v0.27c follow-up scope
+Archive inventory:
 
-Exactly one follow-up route is permitted:
+- 137 files;
+- 47 Python files;
+- 11 pytest modules;
+- archive CRC/integrity PASS.
 
-`v0.27c Whitened Trust-Region Laplace Route`.
+The local package reports 180 split-module tests PASS and contains reference/JAX/sparse/first-hit/chart/gradient/scaling work plus a deterministic learning smoke test. Every such output remains DEVELOPMENT EVIDENCE.
 
-The statistical/scientific model remains the RB-014 hierarchy. For each trial:
+### MASTER intake audit
 
-`u=S(lambda)^(-1)z`, `z=S(lambda)u`,
+Independent MASTER checks found:
 
-and the trial mode is posed as
+- no source/test text use of protected `2701xxx` or `2711xxx` namespaces;
+- exact package environment is available in the audit runtime;
+- 37 tests independently reproduced with clean exit here:
+  - reference 6;
+  - multineuron history 9;
+  - structural graph 8;
+  - sparse 14;
+- further JAX-heavy modules were not certified by this MASTER audit because the current runner/transport path timed out before a trustworthy exit record was obtained; complete 180-case clean reproduction remains a NUM-ENG task;
+- `FILE_SHA256_MANIFEST.txt` contains 33 entries; 31 match and two archived files do not match their listed hashes: `README.md` and `lighthouse_dev/sparse_replay.py`.
 
-`min_u 0.5 || [M(y-F(theta_s,S u))/sigma_t ; u] ||^2`.
+The manifest issue is a packaging/provenance repair requirement, not a scientific failure.
 
-The solver class is deterministic trust-region Gauss-Newton / nonlinear least squares with exact current-chart JAX Jacobians and physical rerecording at every proposal. Physically invalid, colliding, nontransverse or derivative-chart-invalid proposals must be rejected by trust-radius contraction/retry; stale event tokens may never be accepted.
+## APP-3 AI lane
 
-The following remain inherited unchanged unless MASTER separately authorizes a prospective change before confirmatory output:
+A versioned prompt now exists for:
 
-- N=3 physical graph/model and truth;
-- shared/hyperparameter boxes and hierarchical Gaussian family;
-- `R=16`, `H=4`;
-- timing noise `0.02` and MCAR missingness `0.20`;
-- outer bounded-Powell class and the three inherited starts;
-- RB-014 scientific recovery, identifiability, coverage, failure and usable-fit thresholds;
-- no active pulse/probe and no EM/VI/MCMC alternative.
+`APP-3 AI Learning Scope & Benchmark Preregistration Gate 0.1`.
 
-## Confirmatory data boundary
+APP-3 remains:
 
-The RB-015 `2701xxx` seed namespace is permanently DEVELOPMENT ONLY for the v0.27c method selected after observing it.
+`PROTECTED / WAIT`.
 
-The v0.27c confirmatory namespace is reserved but remains UNGENERATED / UNEVALUATED:
+The prompt is PREPARED ONLY and cannot execute until both:
 
-- `seed_z^c(d)=2711000+3d`;
-- `seed_noise^c(d)=2711001+3d`;
-- `seed_mask^c(d)=2711002+3d`;
-- `d=0,...,31`.
+1. NUM-ENG Gate 0.1 has returned and MASTER has reviewed the engineering baseline; and
+2. CORE v0.27c Execution Contract Canonicalization Gate has returned and MASTER has reviewed it.
 
-No `2711xxx` RNG object was created or inspected in v0.27b.
+MASTER must then explicitly change APP-3 to READY.
 
-## Mandatory v0.27c pre-execution contract
+The future gate is preregistration only: architecture, input/output interface, trainable weights/delays, task suite, RNN/GRU/reservoir/LIF-SNN baselines, train/validation/test split, independent seed namespaces, compute/training budgets, failure semantics, metrics, ablations and success hierarchy. It may not run AI performance experiments.
 
-Before any confirmatory RNG creation, the current gate must freeze:
+Existing local learning/performance smoke tests may never be retroactively reclassified as confirmatory results.
 
-- exact trust-region step algorithm;
-- initial/minimum/maximum radius;
-- predicted/actual reduction definitions;
-- acceptance-ratio thresholds;
-- radius contraction/expansion factors and update logic;
-- invalid-proposal retry handling;
-- whitened stationarity/convergence thresholds;
-- iteration/evaluation/contraction budgets;
-- final Hessian/logdet coordinate semantics;
-- trial failure and outer-point failure semantics;
-- deterministic TR-27C-01 through TR-27C-07 fixtures, tolerances and negative controls;
-- complete finite outer-start assembly rule;
-- inherited RB-014 scientific thresholds;
-- disjoint `2711xxx` seed mapping;
-- environment and change-control rules.
+## Parallelism decision
 
-All TR-27C checks must later PASS before confirmatory RNG creation.
+CORE does **not** need to finish before NUM-ENG begins.
 
-## Command protocol
+The two currently executable actions are independent:
 
-- `GO`: execute only the current READY Next instruction and reuse FROZEN/STABLE premises.
-- `RESUME`: preferred for a new/replacement chat; reconstruct Git state and execute the current READY instruction without redundant re-derivation.
-- `VERIFY-LEGACY`: no active sweep; the legacy sweep is complete and frozen as RB-011.
+- CORE v0.27c contract work: scientific/pre-execution, no confirmatory RNG;
+- NUM-ENG 0.1: software audit/integration only, DEVELOPMENT EVIDENCE.
+
+APP-3 is not executable in parallel at this stage.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | oversight; awaiting v0.27c execution-contract canonicalization result |
-| 10 CORE | READY | execute v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1 only |
-| 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | reserved application branch |
-| 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | reserved application branch |
-| 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | reserved application branch |
-| 80 LIT | WAIT | no independent novelty positioning yet |
-| 90 MANUSCRIPT | WAIT | no manuscript claims before later result/claim freezes |
+| 00 MASTER | FROZEN / WAIT | oversight of CORE + NUM-ENG returns |
+| 10 CORE | READY | v0.27c trust-region execution-contract canonicalization only |
+| 20 NUM-ENG | READY | v0.1-v0.10 audit/reproduction/controlled integration |
+| 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | unchanged |
+| 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | unchanged; later electronic/neuromorphic branch |
+| 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | AI preregistration prompt prepared, not open |
+| 80 LIT | WAIT | no independent novelty positioning |
+| 90 MANUSCRIPT | WAIT | no manuscript claim freeze |
 
-## Current freezes
-
-- Governance / command protocol v0.2: STABLE ADMINISTRATIVE
-- MASTER report snapshot: STABLE v0.2 administrative artifact; administratively behind project status v2.3
-- RB-002 CORE Legacy Recovery Input Snapshot 0.1: STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
-- RB-003 CORE Recovery Classification 0.1: STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
-- RB-004 CORE Mathematical Freeze 0.1: FROZEN / STABLE SCIENTIFIC BASELINE
-- RB-005 CORE Benchmark Contract Freeze 0.1: FROZEN / STABLE PRE-EXECUTION CONTRACT
-- RB-006 CORE v0.2 Benchmark Result Freeze 0.1: FROZEN / STABLE RESULT
-- RB-007 CORE v0.3 Continuation Theory Freeze 0.1: FROZEN / STABLE SCIENTIFIC THEORY
-- RB-008 CORE v0.3 Continuation Validation Contract Freeze 0.1: FROZEN / STABLE PRE-EXECUTION CONTRACT
-- RB-009 CORE v0.3 Continuation Validation Result Freeze 0.1: FROZEN / STABLE RESULT
-- RB-010 CORE v0.4 Floquet Theory Freeze 0.1: FROZEN / STABLE SCIENTIFIC THEORY
-- RB-011 CORE Legacy Verification Sweep Freeze 0.1: FROZEN / STABLE VERIFICATION AUDIT
-- RB-012 CORE Consolidated C1 Theory Freeze 0.1: FROZEN / STABLE SCIENTIFIC THEORY
-- RB-013 CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1: FROZEN / STABLE NEW-SCIENCE SCOPE
-- RB-014 CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1: FROZEN / STABLE PRE-EXECUTION CONTRACT
-- RB-015 CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1: FROZEN / STABLE SCIENTIFIC RESULT — FAIL
-- RB-016 CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1: FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
-
-## Active blocker
-
-The sole active blocker is completion of `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1`.
-
-Until return:
-
-- no `2711xxx` RNG creation;
-- no redesigned confirmatory execution;
-- no relabelling of RB-015;
-- no v0.28 effect-bearing work;
-- no active pulse/probe extension;
-- no legacy C3 promotion;
-- no application execution;
-- no independent novelty positioning;
-- no manuscript claim freeze.
-
-## Rollback points
+## Current rollback points
 
 1. RB-001 Governance Initialization 0.1 — STABLE
 2. RB-002 CORE Legacy Recovery Input Snapshot 0.1 — STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
@@ -202,31 +143,65 @@ Until return:
 14. RB-014 CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 15. RB-015 CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1 — FROZEN / STABLE SCIENTIFIC RESULT — FAIL
 16. RB-016 CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1 — FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
+17. RB-017 Numerical Engineering v0.10 Intake Snapshot 0.1 — STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
 
-## Manuscript
+## Exact next-step order
 
-WAIT. RB-015 remains a valid negative result, but no manuscript claim freeze is authorized.
+### Parallel step A — CORE
 
-## Literature positioning
-
-WAIT. Independent novelty positioning remains unauthorized.
-
-## Next global step
-
-In `10 – CORE – Haupttheorie / mathematischer Kern`, execute:
+In `10 – CORE – Haupttheorie / mathematischer Kern`:
 
 `GO`
 
-For a new/replacement CORE chat, execute:
+For a new CORE chat:
+
+`RESUME`.
+
+Execute only:
+
+`research/master/prompts/core_v0_27c_whitened_trust_region_laplace_execution_contract_canonicalization_gate_0_1.md`.
+
+### Parallel step B — NUM-ENG
+
+In a new `20 – NUM-ENG – Numerical Engineering` chat, with the exact RB-017 ZIP available:
 
 `RESUME`
 
-Current prompt:
+or, if already reconstructed and READY:
 
-`research/master/prompts/core_v0_27c_whitened_trust_region_laplace_execution_contract_canonicalization_gate_0_1.md`
+`GO`.
 
-This gate freezes the v0.27c execution contract only. It must not create confirmatory RNG or execute redesigned confirmatory science.
+Execute only:
 
-## STOP
+`research/master/prompts/numerical_engineering_gate_0_1.md`.
 
-STOP — AWAIT CORE V0.27C WHITENED TRUST-REGION LAPLACE EXECUTION CONTRACT CANONICALIZATION
+Steps A and B may proceed in either order or in parallel because B is explicitly non-effect-bearing engineering.
+
+### Return
+
+When either gate returns, go to MASTER and issue:
+
+`Status?`
+
+MASTER integrates each returned result without changing the other active lane.
+
+### APP-3
+
+Only after both CORE v0.27c contract and NUM-ENG 0.1 have returned and been reviewed may MASTER activate the already prepared:
+
+`research/master/prompts/app3_ai_learning_scope_benchmark_preregistration_gate_0_1.md`.
+
+No APP-3 experiment execution is currently authorized.
+
+## Global STOP boundaries
+
+Until explicit later authorization:
+
+- no `2711xxx` RNG creation outside the governed CORE path;
+- no confirmatory AI training/performance run;
+- no retroactive promotion of local smoke tests;
+- no RB-015 relabelling;
+- no v0.28 effect-bearing science;
+- no APP-1/APP-2 execution;
+- no novelty positioning;
+- no manuscript claim freeze.
