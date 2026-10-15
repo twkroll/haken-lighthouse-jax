@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.5
+Version: 2.6
 Date: 2026-10-15
 
 ## Central research question
@@ -43,11 +43,9 @@ Returned gate:
 
 Result: `CONDITIONAL / BLOCKED — NOT PASS`.
 
-MASTER freezes that audit as RB-018 and opens:
+MASTER froze that audit as RB-018. The subsequent `NUM-ENG Reference/Rerecord Repair & Controlled Integration Gate 0.1` has now returned `PASS — ENGINEERING ONLY` and MASTER establishes `NUM-ENG Numerical Engineering Freeze 0.1` / RB-019.
 
-`NUM-ENG Reference/Rerecord Repair & Controlled Integration Gate 0.1`
-
-Status: READY.
+NUM-ENG status is now `FROZEN / WAIT`.
 
 Development branch:
 
@@ -85,7 +83,7 @@ The audit is nevertheless BLOCKED because it discovered a deterministic first-hi
 
 The derivative/JAX wrapper can accept that incomplete tape. Therefore the current physical rerecording authority is not sufficiently fail-closed for a Numerical Engineering Freeze.
 
-RB-018 freezes this engineering audit. No executable source is promoted to a canonical engineering baseline yet.
+RB-018 freezes the negative audit. RB-019 now accepts a narrow stable engineering baseline by reference to the isolated development-branch source commit `aa8b4ac234a1c1960a5829fc3d24982e8002105d`. The repaired baseline passes the original 180 tests plus 14 new RRI repair tests, for 194/194 PASS under the captured environment. The executable subtree remains on `engineering/numerics-v0.1`; no executable source is merged to `main`.
 
 ## APP-3 AI lane
 
@@ -99,8 +97,8 @@ APP-3 remains:
 
 The prompt is PREPARED ONLY and cannot execute until both:
 
-1. the NUM-ENG repair/integration gate has returned PASS and MASTER has established an accepted engineering baseline/freeze; and
-2. CORE v0.27c Execution Contract Canonicalization Gate has returned and MASTER has reviewed it.
+1. RB-019 Numerical Engineering Freeze 0.1 is established — SATISFIED; and
+2. CORE v0.27c Execution Contract Canonicalization Gate has returned and MASTER has reviewed it — STILL OPEN.
 
 MASTER must then explicitly change APP-3 to READY.
 
@@ -115,7 +113,7 @@ CORE does **not** need to finish before NUM-ENG begins.
 The two currently executable actions are independent:
 
 - CORE v0.27c contract work: scientific/pre-execution, no confirmatory RNG;
-- NUM-ENG repair/integration: first-hit reference and fail-closed chart/JAX repair only, DEVELOPMENT EVIDENCE.
+- NUM-ENG: no active gate; RB-019 is frozen as the accepted finite engineering baseline.
 
 APP-3 is not executable in parallel at this stage.
 
@@ -125,7 +123,7 @@ APP-3 is not executable in parallel at this stage.
 |---|---|---|
 | 00 MASTER | FROZEN / WAIT | oversight of CORE + NUM-ENG returns |
 | 10 CORE | READY | v0.27c trust-region execution-contract canonicalization only |
-| 20 NUM-ENG | READY | reference/rerecord repair + controlled integration |
+| 20 NUM-ENG | FROZEN / WAIT | RB-019 stable engineering baseline |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | unchanged |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | unchanged; later electronic/neuromorphic branch |
 | 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | AI preregistration prompt prepared, not open |
@@ -152,6 +150,7 @@ APP-3 is not executable in parallel at this stage.
 16. RB-016 CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1 — FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
 17. RB-017 Numerical Engineering v0.10 Intake Snapshot 0.1 — STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
 18. RB-018 NUM-ENG Numerical Engineering Audit Freeze 0.1 — FROZEN / STABLE ENGINEERING AUDIT — CONDITIONAL / BLOCKED
+19. RB-019 NUM-ENG Numerical Engineering Freeze 0.1 — FROZEN / STABLE ENGINEERING BASELINE
 
 ## Exact next-step order
 
@@ -169,21 +168,9 @@ Execute only:
 
 `research/master/prompts/core_v0_27c_whitened_trust_region_laplace_execution_contract_canonicalization_gate_0_1.md`.
 
-### Parallel step B — NUM-ENG
+### NUM-ENG
 
-In the existing NUM-ENG chat:
-
-`GO`
-
-For a new/replacement NUM-ENG chat:
-
-`RESUME`.
-
-Execute only:
-
-`research/master/prompts/numerical_engineering_reference_rerecord_repair_integration_gate_0_1.md`.
-
-This repair gate may change only the affected physical/reference and chart/JAX guard engineering path under the frozen repair contract; it remains non-effect-bearing DEVELOPMENT EVIDENCE.
+No NUM-ENG action is currently authorized. RB-019 is the accepted stable engineering baseline.
 
 ### Return
 
@@ -195,7 +182,7 @@ MASTER integrates each returned result without changing the other active lane.
 
 ### APP-3
 
-Only after both CORE v0.27c contract and the NUM-ENG repair/integration gate have returned and MASTER has accepted an engineering baseline may MASTER activate the already prepared:
+RB-019 now satisfies the engineering prerequisite. MASTER may activate the already prepared APP-3 scope/preregistration gate only after the still-open CORE v0.27c contract has returned and been reviewed:
 
 `research/master/prompts/app3_ai_learning_scope_benchmark_preregistration_gate_0_1.md`.
 
