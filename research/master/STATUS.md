@@ -1,16 +1,18 @@
 # MASTER STATUS
 
-Current Gate: CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1 — MASTER oversight
+Current Gate: parallel oversight — CORE v0.27c Execution Contract Canonicalization + NUM-ENG Numerical Engineering Gate 0.1
 Status: FROZEN / WAIT
-Latest canonical file: `research/master/project_status.md` (v2.3)
-Latest MASTER report: `research/master/reports/haken_lighthouse_jax_master_report_v0_2.md` (rendered as v0.2 and current PDF; administratively behind project status v2.3)
-Command protocol: `research/master/command_protocol_v0_2.md` — STABLE; frozen-work reuse / `RESUME` / `VERIFY-LEGACY`
-Legacy verification: `research/core/legacy_verification_sweep_freeze_0_1.md` — RB-011 FROZEN / STABLE VERIFICATION AUDIT
-Consolidated C1 theory: `research/core/consolidated_c1_theory_freeze_0_1.md` — RB-012 FROZEN / STABLE SCIENTIFIC THEORY
-v0.27 scope: `research/core/v0_27_hierarchical_repeated_trial_scope_freeze_0_1.md` — RB-013 FROZEN / STABLE NEW-SCIENCE SCOPE
-v0.27 execution contract: `research/core/v0_27_hierarchical_repeated_trial_execution_contract_freeze_0_1.md` — RB-014 FROZEN / STABLE PRE-EXECUTION CONTRACT
-v0.27 result: `research/core/v0_27_hierarchical_repeated_trial_result_freeze_0_1.md` — RB-015 FROZEN / STABLE SCIENTIFIC RESULT — FAIL
-v0.27b diagnosis/follow-up scope: `research/core/v0_27b_inference_failure_mechanism_followup_scope_freeze_0_1.md` — RB-016 FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE; dominant BFGS/Strong-Wolfe stagnation diagnosis; exactly one v0.27c route authorized in scope; `2711xxx` confirmatory seeds UNGENERATED
-Dependencies: Governance command protocol v0.2 STABLE; RB-004 through RB-016 as applicable; RB-015 SCIENTIFIC FAIL frozen and immutable; observed RB-015 data development-only for method selection
-Next instruction: switch to `10 – CORE – Haupttheorie / mathematischer Kern` and issue exactly `GO` to execute `research/master/prompts/core_v0_27c_whitened_trust_region_laplace_execution_contract_canonicalization_gate_0_1.md`; in a new/replacement CORE chat issue `RESUME` instead
-STOP boundary: MASTER waits for the v0.27c execution-contract canonicalization result; no `2711xxx` RNG creation, no redesigned confirmatory execution, no relabelling of RB-015, no v0.28 effect-bearing work, no active pulse/probe extension, no application work, no independent novelty positioning, and no manuscript claim freeze before return
+Latest canonical file: `research/master/project_status.md` (v2.4)
+Latest MASTER report: `research/master/reports/haken_lighthouse_jax_master_report_v0_2.md` (administratively behind project status v2.4)
+Command protocol: `research/master/command_protocol_v0_2.md` — STABLE
+Parallel engineering policy: `research/master/parallel_engineering_policy_v0_1.md` — STABLE / MASTER-AUTHORIZED
+Numerical intake: `research/master/numerical_engineering_v0_10_intake_snapshot_0_1.md` — RB-017 STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
+CORE scientific state: RB-015 SCIENTIFIC FAIL remains immutable; RB-016 v0.27b diagnosis/follow-up scope frozen; v0.27c contract gate remains READY; `2711xxx` UNGENERATED / UNEVALUATED
+NUM-ENG state: `research/numerical_engineering/STATUS.md` — READY on development branch `engineering/numerics-v0.1`
+APP-3 state: PREPARED prompt exists but APP-3 remains PROTECTED / WAIT until returned NUM-ENG + returned CORE v0.27c contract + explicit MASTER activation
+Dependencies: Governance command protocol v0.2; Parallel Engineering Policy 0.1; RB-004 through RB-017 as applicable
+Next authorized actions:
+1. CORE: execute `research/master/prompts/core_v0_27c_whitened_trust_region_laplace_execution_contract_canonicalization_gate_0_1.md` with `GO`/`RESUME`.
+2. NUM-ENG: execute `research/master/prompts/numerical_engineering_gate_0_1.md` with `GO`/`RESUME` on `engineering/numerics-v0.1`, using the exact RB-017 ZIP.
+These two actions may proceed in parallel.
+STOP boundary: APP-3 remains non-executable; no `2711xxx` RNG creation by NUM-ENG/APP-3; no confirmatory AI experiment; no RB-015 relabelling; no v0.28 effect-bearing work; no APP-1/APP-2 execution; no novelty positioning; no manuscript claim freeze
