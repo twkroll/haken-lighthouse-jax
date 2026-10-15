@@ -2,9 +2,9 @@
 
 ## Administrative state
 
-ACTIVATED / READY — SCOPE & PREREGISTRATION ONLY.
+PARKED / NOT EXECUTABLE — SCOPE PROMPT RETAINED.
 
-MASTER has reviewed and satisfied the required dependencies: RB-019 Numerical Engineering Freeze 0.1 and RB-020 CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1. APP-3 is READY for this preregistration gate only.
+MASTER has reviewed and satisfied the technical dependencies RB-019 and RB-020, but later changed sequencing to prioritize Numerics + Theory. APP-3 remains PROTECTED / WAIT until explicit reactivation.
 
 ## Purpose
 
