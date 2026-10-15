@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.7
+Version: 2.8
 Date: 2026-10-15
 
 ## Central research question
@@ -104,24 +104,29 @@ The old Numerik v0.9/v0.10 learning smoke tests remain DEVELOPMENT EVIDENCE only
 
 ## Scientific sequencing decision
 
-To keep one controlled scientific/application next action at a time:
+User priority is now Numerics + Theory.
 
-- CORE v0.27c execution is parked after RB-020;
-- NUM-ENG is frozen after RB-019;
-- APP-3 scope/preregistration is now the single active project action.
+MASTER therefore parks APP-3 and opens two parallel, non-conflicting lanes:
 
-After APP-3 returns to MASTER, MASTER will decide the next branch: an APP-3 execution-contract gate, the parked CORE v0.27c execution gate, or another explicitly governed step. No scientific execution is implied by this sequencing.
+- scientific/theoretical lane: `CORE Event-Chart Regularity & Certified First-Hit Theory Gate 0.1`;
+- engineering lane: `NUM-ENG Robustness, Scaling & Differentiable Kernel Gate 0.2`.
+
+The engineering lane remains non-effect-bearing DEVELOPMENT EVIDENCE / ENGINEERING METRICS under the Parallel Engineering Policy. The CORE lane is the single active scientific/theoretical action.
+
+CORE v0.27c execution remains parked after RB-020; no TR-27C or `2711xxx` execution is authorized.
+
+APP-3 remains technically prepared but is now explicitly `PROTECTED / WAIT` until MASTER later reactivates it.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | APP-3 preregistration oversight |
-| 10 CORE | FROZEN / WAIT | RB-020 contract frozen; execution parked |
-| 20 NUM-ENG | FROZEN / WAIT | RB-019 stable engineering baseline |
+| 00 MASTER | FROZEN / WAIT | CORE theory + NUM-ENG 0.2 oversight |
+| 10 CORE | READY | Event-chart / first-hit theory |
+| 20 NUM-ENG | READY | Robustness, scaling, differentiable-kernel engineering |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | unchanged |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | later electronic/neuromorphic branch |
-| 70 APP-3 Differentiable Inference / Temporal Learning | READY | AI scope & benchmark preregistration |
+| 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | AI prompt parked |
 | 80 LIT | WAIT | no independent novelty positioning |
 | 90 MANUSCRIPT | WAIT | no manuscript claim freeze |
 
@@ -148,21 +153,43 @@ After APP-3 returns to MASTER, MASTER will decide the next branch: an APP-3 exec
 19. RB-019 NUM-ENG Numerical Engineering Freeze 0.1 — FROZEN / STABLE ENGINEERING BASELINE
 20. RB-020 CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 
-## Exact next step
+## Exact next steps
 
-In the existing APP-3 chat:
+### CORE theory
+
+In the existing CORE chat:
 
 `GO`
 
-In a new/replacement APP-3 chat:
+In a new/replacement CORE chat:
 
-`RESUME`.
+`RESUME`
 
 Execute only:
 
-`research/master/prompts/app3_ai_learning_scope_benchmark_preregistration_gate_0_1.md`.
+`research/master/prompts/core_event_chart_first_hit_theory_gate_0_1.md`.
 
-After the preregistration deliverable and APP-3 STATUS return, go to MASTER and issue:
+### NUM-ENG
+
+In the existing NUM-ENG chat:
+
+`GO`
+
+In a new/replacement NUM-ENG chat:
+
+`RESUME`
+
+Execute only:
+
+`research/master/prompts/numerical_engineering_robustness_scaling_differentiable_kernel_gate_0_2.md`.
+
+These two gates may proceed in parallel because NUM-ENG remains non-effect-bearing engineering.
+
+### APP-3
+
+No APP-3 action is currently authorized.
+
+After either active gate returns, go to MASTER and issue:
 
 `Status?`
 
@@ -170,7 +197,7 @@ After the preregistration deliverable and APP-3 STATUS return, go to MASTER and 
 
 Until explicit later authorization:
 
-- no APP-3 model training or benchmark execution;
+- no APP-3 scope execution, model training or benchmark execution;
 - no held-out APP-3 test inspection;
 - no `2711xxx` RNG creation outside a later governed CORE execution gate;
 - no TR-27C execution;
