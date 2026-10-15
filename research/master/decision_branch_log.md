@@ -157,6 +157,11 @@ Date: 2026-09-07
 Status: STABLE
 Date: 2026-09-07
 
+## DEC-031
+MASTER reviews the user's local `Lighthouse_Numerik_Starter_v0_10(1).zip` request against current Git/Governance. The canonical scientific lane remains `CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1`; RB-015 remains immutable SCIENTIFIC FAIL and reserved `2711xxx` confirmatory data remain UNGENERATED / UNEVALUATED. MASTER determines that CORE need not finish before a strictly non-effect-bearing engineering audit begins, provided branch/seed/result isolation is explicit. MASTER therefore authorizes `Parallel Engineering Policy 0.1`, creates the additional workstream `20 – NUM-ENG – Numerical Engineering`, and authorizes `NUM-ENG Numerical Engineering Gate 0.1` on branch `engineering/numerics-v0.1`. MASTER freezes the exact supplied v0.10 package only as administrative/development input in `Numerical Engineering v0.10 Intake Snapshot 0.1` / RB-017, SHA-256 `e21202362fc9ead75a3e5d92736d38002eb75d4e4ec5b4dd1cfb3c0a7c88db53`. Intake checks confirm archive integrity, 137 files / 47 Python files / 11 test modules, no detected source/test use of protected 2701xxx/2711xxx namespaces, and independent clean reproduction of 37 tests in the MASTER audit; complete 180-case clean reproduction remains a NUM-ENG task. The package's 33-entry SHA manifest has two mismatches (`README.md`, `lighthouse_dev/sparse_replay.py`) and is classified as a packaging/provenance repair requirement, not a scientific fail. All local numerical, timing, gradient, scalability, and learning-smoke outputs remain DEVELOPMENT EVIDENCE. MASTER also prepares but does not open `APP-3 AI Learning Scope & Benchmark Preregistration Gate 0.1`; APP-3 remains PROTECTED / WAIT until NUM-ENG 0.1 and the CORE v0.27c contract gate both return and MASTER explicitly activates APP-3. No scientific AI experiment is authorized.
+Status: STABLE
+Date: 2026-10-15
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -175,3 +180,4 @@ Date: 2026-09-07
 - RB-014: CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 - RB-015: CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1 — FROZEN / STABLE SCIENTIFIC RESULT — FAIL
 - RB-016: CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1 — FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
+- RB-017: Numerical Engineering v0.10 Intake Snapshot 0.1 — STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
