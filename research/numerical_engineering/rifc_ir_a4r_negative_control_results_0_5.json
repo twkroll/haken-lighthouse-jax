@@ -1,0 +1,24 @@
+{
+  "status": "IR-A4-R NOT ESTABLISHED / SOURCE RATE COUNTEREXAMPLE",
+  "contract_commit": "20d9ae3c5973b5226387c5f679c9ae03c1e58973",
+  "source_sha256": "0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539",
+  "mpfr_version": "4.2.2",
+  "exp_input": "-10000",
+  "rigorous_exact_bound": "0<exp(-10000)<2^-10000<2^-2048",
+  "precision_bits": [
+    128,
+    256,
+    512,
+    2048,
+    4096
+  ],
+  "output_every_precision": [
+    "0",
+    "2^-2048"
+  ],
+  "baseline_tests": "26 passed, exit 0",
+  "replayed_certificates": "6 positive proofs verified, no physical rerecord",
+  "Q7": "NOT EXECUTED: Q5 analytical prerequisite fails",
+  "Q8": "NOT EXECUTED: Q5 analytical prerequisite fails",
+  "classification": "FINITE SOUNDNESS PRESERVED; EVENTUAL CERTIFICATION NOT JUSTIFIED"
+}
