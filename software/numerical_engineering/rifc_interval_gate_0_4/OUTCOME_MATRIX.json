@@ -1,0 +1,216 @@
+{
+  "IR_A4_R": "NOT ESTABLISHED",
+  "backend": "GNU MPFR 4.2.2 correctly directed; finite soundness only",
+  "certificate_shas": [
+    {
+      "bytes": 447,
+      "class": "CERTIFIED_NO_HIT",
+      "path": "S01_strict_no_hit.json",
+      "sha256": "936ee5a75bfa3d9be0bfefa755511edcef990d0fb35ec80195f366f72bbef76b"
+    },
+    {
+      "bytes": 1129,
+      "class": "CERTIFIED_REGULAR_HIT",
+      "path": "S02_regular_hit.json",
+      "sha256": "fab4938f7d7766f05769a9010eb0da7860baa34a7e5624d2e8ac5283fae5adb7"
+    },
+    {
+      "bytes": 6667,
+      "class": "CERTIFIED_REGULAR_HIT",
+      "path": "S03_narrow_pulse_hit.json",
+      "sha256": "1df37a13e1cf804728219d7ed7cce46edea9fd737602ba9e3b4d4df28864894a"
+    },
+    {
+      "bytes": 176,
+      "class": "CERTIFIED_EVENT_ORDER",
+      "path": "S10_strict_event_order.json",
+      "sha256": "439716179aa5a9a85282c574d4c0bf273d72ef80f7979041cc57d65b70125fda"
+    },
+    {
+      "bytes": 247,
+      "class": "CERTIFIED_STRUCTURAL_ARRIVAL",
+      "path": "S13_zero_weight_arrival.json",
+      "sha256": "cd99c615d9520c49305533bb361ea3ab35409a150616896338d412405e79b443"
+    },
+    {
+      "bytes": 260,
+      "class": "CERTIFIED_STRUCTURAL_ARRIVAL",
+      "path": "S13_cross_zero_weight_arrival.json",
+      "sha256": "94d58784aed075148bdb91005035e0e149775e002a4f6bf97dd8834ef60f5de8"
+    }
+  ],
+  "disclaimer": "Fixed-fixture engineering validation, not global theorem or scientific performance evidence.",
+  "full_parameter_chart": "NOT CLAIMED",
+  "gate": "NUM-ENG 0.4",
+  "rows": [
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "MPFR directed primitive enclosure",
+      "family": "RI-01",
+      "notes": "exact Fraction arithmetic checks",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "MPFR directed exponential",
+      "family": "RI-02",
+      "notes": "independent mpmath 200-digit inclusion",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "DEFERRED",
+      "description": "IR-A4-R uniform whole-expression rate",
+      "family": "RI-03",
+      "notes": "independently justified B_K N 2^-p not supplied; no eventual certification claim",
+      "status": "DEFERRED"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "alpha-state propagator",
+      "family": "RI-04",
+      "notes": "alpha=1/1000 and exact time grid",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "threshold-safe response enclosure",
+      "family": "RI-05",
+      "notes": "below/at/straddle/above threshold",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "dyadic Darboux gain",
+      "family": "RI-06",
+      "notes": "independent high precision integrals on broad and narrow regimes",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "strict no-hit",
+      "family": "RI-07",
+      "notes": "S01 pass; zero phase-gap control strictly negative",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "unique regular first hit",
+      "family": "RI-08",
+      "notes": "S02 and S03 strict prefix and positive lower transversality",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "topology-fixed structural zero",
+      "family": "RI-09",
+      "notes": "arrival preserved and identity jump at weight zero",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "event ordering and boundary",
+      "family": "RI-10",
+      "notes": "strict order positive; collision/boundary invalid; overlap inconclusive",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "fail-closed taxonomy",
+      "family": "RI-11",
+      "notes": "seven negative outcomes explicitly tested",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "serialized proof replay and tamper refusal",
+      "family": "RI-12",
+      "notes": "six positive certificates, independent rerun without physical simulation",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "DEFERRED",
+      "description": "eventual-certification refinement study",
+      "family": "RI-13",
+      "notes": "only optional fixed finite refinement exercise; not IR-A4-R",
+      "status": "DEFERRED"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "finite Nmax budget exhaustion",
+      "family": "RI-14",
+      "notes": "S05 resource exhausted, not no-hit",
+      "status": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "narrow alpha first-hit",
+      "family": "TH-FH-01",
+      "notes": "finite segment bracket [1/200,1/100]",
+      "status": "CERTIFIED_REGULAR_HIT"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "subthreshold noncrossing",
+      "family": "TH-FH-02",
+      "notes": "input remains below threshold",
+      "status": "CERTIFIED_NO_HIT"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "nearly tangent response",
+      "family": "TH-FH-03",
+      "notes": "pointwise low transverse margin negative control; no full tangent first-hit claim",
+      "status": "STRICT_MARGIN_ABSENT"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "spike/arrival collision",
+      "family": "TH-FH-04",
+      "notes": "exact tie rejects; strict opposite orders certified",
+      "status": "ORDINARY_CHART_INVALID"
+    },
+    {
+      "classification": "DEFERRED",
+      "description": "omitted-history tail",
+      "family": "TH-FH-05",
+      "notes": "finite two-pulse tail inequality checked; infinite locally finite non-summable history unsupported",
+      "status": "DEFERRED"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "topology-fixed weight zero",
+      "family": "TH-FH-06",
+      "notes": "zero arrival retained and weight crossing zero supported",
+      "status": "CERTIFIED_STRUCTURAL_ARRIVAL"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "horizon boundary",
+      "family": "TH-FH-07",
+      "notes": "exact horizon and initial boundary rejected",
+      "status": "ORDINARY_CHART_INVALID"
+    },
+    {
+      "classification": "THEORY-CONSISTENT ENGINEERING VALIDATION",
+      "description": "commuting simultaneous arrivals",
+      "family": "TH-FH-08",
+      "notes": "physical jumps commute but ordinary total-order chart invalid",
+      "status": "ORDINARY_CHART_INVALID"
+    }
+  ],
+  "schema": "NUMENG_RIFC_GATE04_RI_OUTCOMES_V1",
+  "tests": {
+    "compatibility": {
+      "exit_code": 0,
+      "pass": 28
+    },
+    "new_repeated": {
+      "exit_codes": [
+        0,
+        0
+      ],
+      "pass": 26,
+      "runs": 2
+    }
+  }
+}
