@@ -1,0 +1,229 @@
+{
+  "status": "PASS — finite deterministic post-proof consistency (not scientific)",
+  "gate": "NUM-ENG 0.7",
+  "proof_scope": "RIFC_infty K01-K06 only",
+  "source_sha256": "a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202",
+  "mpfr": "4.2.2",
+  "gmp": "6.3.0",
+  "B_K": "2^65536",
+  "p_n": "128+8n",
+  "max_operations": "1024*2^n+1024",
+  "levels": [
+    0,
+    2,
+    4,
+    6,
+    8
+  ],
+  "case_results": [
+    {
+      "name": "K01",
+      "n": 0,
+      "p": 128,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K01",
+      "n": 2,
+      "p": 144,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K01",
+      "n": 4,
+      "p": 160,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K01",
+      "n": 6,
+      "p": 176,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K01",
+      "n": 8,
+      "p": 192,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K02",
+      "n": 0,
+      "p": 128,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K02",
+      "n": 2,
+      "p": 144,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K02",
+      "n": 4,
+      "p": 160,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K02",
+      "n": 6,
+      "p": 176,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K02",
+      "n": 8,
+      "p": 192,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K03",
+      "n": 0,
+      "p": 128,
+      "classification": "CERTIFIED_REGULAR_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K03",
+      "n": 2,
+      "p": 144,
+      "classification": "CERTIFIED_REGULAR_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K03",
+      "n": 4,
+      "p": 160,
+      "classification": "CERTIFIED_REGULAR_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K03",
+      "n": 6,
+      "p": 176,
+      "classification": "CERTIFIED_REGULAR_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K03",
+      "n": 8,
+      "p": 192,
+      "classification": "CERTIFIED_REGULAR_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K04",
+      "n": 0,
+      "p": 128,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K04",
+      "n": 2,
+      "p": 144,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K04",
+      "n": 4,
+      "p": 160,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K04",
+      "n": 6,
+      "p": 176,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K04",
+      "n": 8,
+      "p": 192,
+      "classification": "CERTIFIED_NO_HIT",
+      "status": "PASS",
+      "audit": "certified base tape plus interval gain/prefix invariants"
+    },
+    {
+      "name": "K05",
+      "n": 0,
+      "p": 128,
+      "classification": "PASS_BRANCHES_4",
+      "status": "PASS",
+      "audit": "threshold-safe branch invariants"
+    },
+    {
+      "name": "K05",
+      "n": 2,
+      "p": 144,
+      "classification": "PASS_BRANCHES_4",
+      "status": "PASS",
+      "audit": "threshold-safe branch invariants"
+    },
+    {
+      "name": "K05",
+      "n": 4,
+      "p": 160,
+      "classification": "PASS_BRANCHES_4",
+      "status": "PASS",
+      "audit": "threshold-safe branch invariants"
+    },
+    {
+      "name": "K05",
+      "n": 6,
+      "p": 176,
+      "classification": "PASS_BRANCHES_4",
+      "status": "PASS",
+      "audit": "threshold-safe branch invariants"
+    },
+    {
+      "name": "K05",
+      "n": 8,
+      "p": 192,
+      "classification": "PASS_BRANCHES_4",
+      "status": "PASS",
+      "audit": "threshold-safe branch invariants"
+    },
+    {
+      "name": "K06",
+      "n": 0,
+      "classification": "CERTIFIED_STRUCTURAL_ARRIVAL / ORDINARY_CHART_INVALID collision / RESOURCE_EXHAUSTED",
+      "status": "PASS"
+    }
+  ],
+  "process_note": "Initial monolithic Python validation exceeded process walltime after completing K01 and K02 levels 0..6; the unchanged, prospectively fixed values were rerun in 26 isolated clean processes; 26/26 passed.",
+  "no_sources_modified": true,
+  "post_proof": true
+}
