@@ -1,11 +1,7 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.11
+Version: 2.12
 Date: 2026-10-16
-
-## Central research question
-
-Can Hermann Haken's Lighthouse model be developed into a modern, scalable and differentiable framework for spiking-network dynamics that remains mathematically analyzable while supporting contemporary numerical simulation, inference, AI/temporal learning and later neuromorphic implementation?
 
 ## Governance state
 
@@ -13,122 +9,134 @@ Canonical rule:
 
 `Reconstruct state, not frozen science.`
 
-The frozen chain now extends through RB-023.
+The frozen chain remains through RB-023.
 
 Preserved boundaries:
 
 - RB-015 remains immutable `SCIENTIFIC FAIL`;
-- RB-019 and RB-021 are the accepted finite Numerical Engineering baselines;
-- RB-020 freezes the v0.27c trust-region pre-execution contract, but TR-27C-01…07 remain UNEVALUATED and `2711xxx` remains UNGENERATED / UNEVALUATED;
-- RB-022 freezes repaired first-hit/event-chart theory;
-- RB-023 freezes bounded finite theory-consistency engineering validation;
+- RB-019/RB-021 remain the finite Numerical Engineering baselines;
+- RB-020 remains a frozen but unexecuted v0.27c pre-execution contract;
+- RB-022 remains frozen first-hit/event-chart theory;
+- RB-023 remains frozen finite theory-consistency engineering validation;
 - APP-3 remains PARKED / PROTECTED / WAIT.
 
-## RB-023 — theory-derived numerical validation
+## Returned rigorous-interval theory candidate
 
-`NUM-ENG Theory-Derived First-Hit Certification Validation Gate 0.3` returned:
+`CORE Rigorous Enclosure & Interval First-Hit Certification Theory Gate 0.1` returned candidate PASS and produced:
 
-`PASS — THEORY-CONSISTENT ENGINEERING VALIDATION (finite, non-formal)`.
+`research/core/rigorous_enclosure_interval_first_hit_theory_gate_0_1.md`.
 
-MASTER establishes:
+The candidate establishes a substantial constructive theory layer:
 
-`NUM-ENG Theory-Derived Certification Validation Freeze 0.3` / RB-023.
+- finite outward-valid interval semantics;
+- directed-rounding and certified-transcendental proof obligations;
+- interval alpha-state propagation;
+- threshold-safe response enclosures;
+- dyadic interval Darboux phase-gain enclosures;
+- strict no-hit and regular-hit certificates;
+- transversality and event-order certificates;
+- structural-zero interval semantics;
+- fail-closed certification taxonomy;
+- one constructive algorithm `RIFC-0.1`;
+- conditional chart-radius analysis;
+- explicit open problems.
 
-The finite pre-execution contract was committed before outputs at:
+No numerical execution occurred.
 
-`7a488ed6777d206313c512f437216b05b8e5eb6e`.
+## MASTER freeze review
 
-All TV-01…TV-11 families pass under the frozen contract, including:
+MASTER does **not** yet establish the proposed rigorous-interval theory freeze.
 
-- exact alpha-state propagation;
-- analytic arrival-free extrema;
-- strict no-hit and regular first-hit certificate cases;
-- response derivative bounds;
-- alpha-tail mass and omitted-history phase bounds;
-- regular-chart perturbation persistence;
-- event-time derivatives;
-- repaired structural-zero semantics;
-- TH-FH-01…TH-FH-08;
-- stale-tape / itinerary-change fail-closed controls.
+Two proof-closure issues must be repaired first.
 
-Important finite observations include:
+### A. precision/convergence assumption mismatch
 
-- narrow-pulse physical vs independent segmented first-hit difference approximately `2.22e-16`;
-- finite omitted-history phase discrepancy `0.023643397381274` under theorem-derived upper bound `0.0325178946640312`;
-- maximum tested AD-vs-physically-rerecorded FD discrepancies below approximately `6.1e-10`;
-- fixed-chart JAX vs certified physical spike-time residual approximately `9.59e-14`;
-- structural-zero historical arrival delay derivative approximately `0.99999999999989`.
+Section 18 bounds accumulated arithmetic overestimation by
 
-The result is finite float64 theory-consistency validation only.
+[
+C 2^n 2^{-p_n}
+]
 
-It does **not** establish outward-rounded interval inclusion, global first-hit correctness, formal machine-verifiable certification, universal chart radii, universal scaling/speedup or AI performance.
+with (p_n=128+8n).
 
-A fresh rerun of the broader prior 250-case aggregate exceeded the external execution-time limit and did not produce a trustworthy final PASS/FAIL record. This is recorded as `NOT REPEATED IN GATE 0.3`; RB-021's independently frozen 250/250 result remains unchanged.
+But the current IR-A4 states only that primitive interval overestimation tends to zero with precision.
 
-NUM-ENG is now `FROZEN / WAIT`.
+That qualitative assumption alone does not imply the explicit (O(2^{-p})) rate used in the proof.
 
-## CORE next theory layer
+Therefore either:
 
-The main remaining theory gap is now explicit:
+- IR-A4 must be strengthened to a uniform bounded-domain rate sufficient for the fixed precision schedule; or
+- the precision schedule must be replaced by a deterministic schedule derived from an explicit primitive-error bound.
 
-RB-022 proves first-hit/no-hit certification under convergent outward-valid enclosures and strict margins, while RB-023 validates only finite float64 consistency.
+Until that is closed, the eventual-enclosure convergence / finite strict-margin certification proof is not freeze-ready as written.
 
-MASTER therefore opens:
+### B. chart-radius overclaim
 
-`CORE Rigorous Enclosure & Interval First-Hit Certification Theory Gate 0.1`.
+Section 28 proves preservation of positive margins for already indexed event functions under neighborhood-wide derivative bounds.
+
+That alone does not exclude insertion of a previously absent spike/event between existing events.
+
+Therefore the conclusion that the **same complete ordinary event chart** is preserved requires an additional rigorous no-new-event completeness hypothesis on all inter-event segments, or the theorem must be weakened to indexed-event margin preservation only.
+
+The report itself already recognizes circularity risk in obtaining neighborhood-wide derivative bounds; MASTER requires the theorem statement to become explicitly non-circular before freeze.
+
+## Current CORE action
+
+MASTER opens exactly one narrow repair:
+
+`CORE Rigorous Interval Theory Proof-Closure Repair Gate 0.1`.
 
 Status:
 
 `READY`.
 
-This gate must develop one constructive rigorous enclosure framework covering:
+Prompt:
 
-- outward-valid interval representation and rounding assumptions;
-- interval alpha propagation;
-- rigorous response enclosures including threshold-straddling intervals;
-- rigorous accumulated phase-gain enclosure;
-- finite termination under strict margins;
-- certified transversality;
-- event-order and horizon-boundary certification;
-- structural-zero interval semantics;
-- a conservative chart-radius lower bound or an explicit non-result;
-- a fail-closed certification taxonomy;
-- one finite deterministic algorithm specification suitable for a later NUM-ENG implementation gate.
+`research/master/prompts/core_rigorous_interval_theory_proof_closure_repair_gate_0_1.md`.
 
-No numerical execution is allowed in this CORE gate.
+The repair may modify only the arithmetic-convergence assumptions/proof and chart-radius/no-new-event claim plus logically dependent references.
+
+The original candidate remains audit history.
+
+## NUM-ENG
+
+RB-023 remains:
+
+`FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT`.
+
+No active NUM-ENG gate.
+
+No interval implementation is authorized until the CORE proof-closure repair returns and MASTER decides whether to freeze the rigorous interval theory.
 
 ## CORE v0.27c
 
-RB-020 remains frozen and its execution remains parked.
+RB-020 remains frozen and execution parked.
 
 - TR-27C-01…07: UNEVALUATED.
 - `2711xxx`: UNGENERATED / UNEVALUATED.
-- no confirmatory v0.27c result exists.
 
 ## APP-3
 
-APP-3 remains `PROTECTED / WAIT`.
-
-Its AI scope prompt is retained but PARKED / NOT EXECUTABLE under the current Numerics + Theory priority.
+APP-3 remains PARKED / PROTECTED / WAIT.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | CORE rigorous interval theory oversight |
-| 10 CORE | READY | rigorous enclosure / interval first-hit certification theory |
-| 20 NUM-ENG | FROZEN / WAIT | RB-023 bounded theory-validation freeze |
-| 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | unchanged |
-| 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | later electronics/neuromorphics |
-| 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | AI prompt parked |
-| 80 LIT | WAIT | no independent novelty positioning |
-| 90 MANUSCRIPT | WAIT | no manuscript claim freeze |
+| 00 MASTER | FROZEN / WAIT | CORE proof-closure repair oversight |
+| 10 CORE | READY | rigorous interval theory proof closure |
+| 20 NUM-ENG | FROZEN / WAIT | RB-023 |
+| 50 APP-1 | PROTECTED / WAIT | unchanged |
+| 60 APP-2 | PROTECTED / WAIT | later electronics/neuromorphics |
+| 70 APP-3 | PROTECTED / WAIT | AI parked |
+| 80 LIT | WAIT | — |
+| 90 MANUSCRIPT | WAIT | — |
 
 ## Current rollback points
 
-RB-001 through RB-022 remain unchanged.
+RB-001 through RB-023 remain unchanged.
 
-23. RB-023 NUM-ENG Theory-Derived Certification Validation Freeze 0.3 — FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT
+No RB-024 is established yet.
 
 ## Exact next step
 
@@ -144,29 +152,25 @@ In a new/replacement CORE chat:
 
 Execute only:
 
-`research/master/prompts/core_rigorous_enclosure_interval_first_hit_theory_gate_0_1.md`.
+`research/master/prompts/core_rigorous_interval_theory_proof_closure_repair_gate_0_1.md`.
 
 ### NUM-ENG
 
-No NUM-ENG action is currently authorized. RB-023 is frozen.
+No NUM-ENG action is currently authorized.
 
 ### APP-3
 
 No APP-3 action is currently authorized.
 
-When CORE returns, go to MASTER and issue:
-
-`Status?`
+After CORE returns, issue `Status?` in MASTER.
 
 ## Global STOP boundaries
 
-Until explicit later authorization:
-
-- no numerical execution in the CORE interval-theory gate;
+- no interval numerical implementation yet;
 - no TR-27C execution;
-- no `2711xxx` RNG creation;
+- no `2711xxx` RNG;
 - no v0.27c confirmatory execution;
-- no APP-3 scope/training/benchmark execution;
+- no APP-3 execution;
 - no RB-015 relabelling;
 - no v0.28 effect-bearing science;
 - no APP-1/APP-2 execution;
