@@ -7,32 +7,32 @@ Status: PASS — STRUCTURAL-ZERO / EVENT-CHART SEMANTICS REPAIRED; ORIGINAL CAND
 
 This gate executes:
 
-\`research/master/prompts/core_event_chart_first_hit_theory_semantic_repair_gate_0_1.md\`.
+`research/master/prompts/core_event_chart_first_hit_theory_semantic_repair_gate_0_1.md`.
 
 Canonical identity at gate start:
 
-- repository: \`twkroll/haken-lighthouse-jax\`
-- branch: \`main\`
-- \`main\` HEAD: \`53b02ca612dd1ab9b493e6bac84288b76b4ae01b\`
-- CORE STATUS blob: \`549847b08592859f92aed7a041778a5aae8b565d\`
-- MASTER STATUS blob: \`ca10af1072be839ffc39a19d5ff38b8ebb2edc53\`
-- MASTER project-status blob: \`fdd8b9818d24363ece057feee5c466d4dbf1ad6a\`
-- MASTER decision-log blob: \`0f5e6c4abff1df4de7030723ae797c49bc982f6d\`
-- repair prompt blob: \`[resolved from canonical file at gate execution]\`
-- returned candidate theory blob: \`a889d19d0679f61f75750db1cf8c51669857ade4\`
-- RB-019 Numerical Engineering Freeze blob: \`68c674e50772620960b5e52092b9f6cd606d8f42\`
-- RB-021 Numerical Engineering Freeze 0.2 blob: \`88cac66ae5dbeb4f5ca9d006fcca2d2c4c792b0b\`
+- repository: `twkroll/haken-lighthouse-jax`
+- branch: `main`
+- `main` HEAD: `53b02ca612dd1ab9b493e6bac84288b76b4ae01b`
+- CORE STATUS blob: `549847b08592859f92aed7a041778a5aae8b565d`
+- MASTER STATUS blob: `ca10af1072be839ffc39a19d5ff38b8ebb2edc53`
+- MASTER project-status blob: `fdd8b9818d24363ece057feee5c466d4dbf1ad6a`
+- MASTER decision-log blob: `0f5e6c4abff1df4de7030723ae797c49bc982f6d`
+- repair prompt blob: `cb83c1f04b45bd4109811255bc0763daf82c038b`
+- returned candidate theory blob: `a889d19d0679f61f75750db1cf8c51669857ade4`
+- RB-019 Numerical Engineering Freeze blob: `68c674e50772620960b5e52092b9f6cd606d8f42`
+- RB-021 Numerical Engineering Freeze 0.2 blob: `88cac66ae5dbeb4f5ca9d006fcca2d2c4c792b0b`
 - RB-020 v0.27c contract remains frozen and parked.
 
-RB-015 remains immutable \`SCIENTIFIC FAIL\`.
+RB-015 remains immutable `SCIENTIFIC FAIL`.
 
 This is a **narrow semantic repair**. The original returned candidate
 
-\`research/core/event_chart_first_hit_theory_gate_0_1.md\`
+`research/core/event_chart_first_hit_theory_gate_0_1.md`
 
 is not overwritten and remains audit history.
 
-No numerical validation, TR-27C execution, \`2711xxx\` RNG creation, APP-3 execution, scaling experiment, effect-bearing v0.28 work, novelty positioning, or manuscript claim work occurred.
+No numerical validation, TR-27C execution, `2711xxx` RNG creation, APP-3 execution, scaling experiment, effect-bearing v0.28 work, novelty positioning, or manuscript claim work occurred.
 
 ---
 
@@ -586,12 +586,12 @@ This restores consistency between the theory layer and RB-019/RB-021 without cha
 
 MASTER may now establish
 
-\`CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1\`
+`CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1`
 
 by freezing:
 
 1. the returned candidate  
-   \`research/core/event_chart_first_hit_theory_gate_0_1.md\`,
+   `research/core/event_chart_first_hit_theory_gate_0_1.md`,
 2. this semantic repair artifact as a mandatory superseding correction for EC-A4, Section 12.3, Section 16's zero-weight interpretation, Section 20, and TH-FH-06.
 
 The freeze should state explicitly that the original conflicting structural-zero sentences remain audit history and are superseded by this repair.
