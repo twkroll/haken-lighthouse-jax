@@ -217,6 +217,11 @@ Date: 2026-10-16
 Status: STABLE
 Date: 2026-10-16
 
+## DEC-043
+`NUM-ENG MPFR Exact-Dyadic Serialization Repair & IR-A4-R Requalification Gate 0.6` returns the bounded result `SERIALIZATION REPAIR VALIDATED / FINITE SOUNDNESS PRESERVED / IR-A4-R NOT ESTABLISHED`. MASTER verifies that the complete Gate-0.6 contract was committed before source modification or validation outputs at `779c8f05256406c5684d4dec35ae123a418027fb`. RB-025 remains byte-identical and historically authoritative for finite certificate soundness; RB-026 remains the correct old-source Gate-0.5 IR-A4-R no-go. Gate 0.6 creates a separate versioned source `rifc_mpfr_v0_2.py` using exact MPFR/GMP dyadic export through significand/exponent extraction, removing the old precision-independent (2^{-2048}) serialization floor without introducing ordinary floating-point conversion or inward approximation. Finite regression reports 19/19 new tests, 26/26 Gate-0.4 tests on repaired source, 26/26 on unchanged RB-025 source, 71/71 combined RIFC tests, 28/28 compatibility tests, and successful replay of old and new positive certificate artifacts. MASTER therefore establishes `NUM-ENG RIFC Exact-Dyadic Serialization Repair Freeze 0.6` / RB-027 as a bounded stable engineering repair baseline. IR-A4-R remains NOT ESTABLISHED because Gate 0.6 does not prove a complete source-wide finite (B_K) for the whole positive-certificate expression graph and the executable source remains finitely resource-capped ((p<=8192), `nmax<=16`), so it cannot itself be identified with the unbounded RB-024 refinement family. Q6/Q7 rate/eventual-certification trials are correctly withheld. MASTER next opens exactly one analytical numerical-engineering action: `NUM-ENG RIFC Source-Graph Arithmetic Propagation & Idealized IR-A4-R Qualification Gate 0.7`. Gate 0.7 may not modify source. It must prospectively define an idealized unbounded-precision arithmetic family with the same positive-certificate graph and exact-dyadic semantics, prove finite executable-source correspondence within resource limits, and then prove or refute an explicit whole-expression bound (E_{arith}(n)<=B_KN_n2^{-p_n}) with (N_n<=a2^n+b) under (p_n=128+8n). Even if the idealized-family theorem passes, finite production runs remain resource bounded and may return RESOURCE_EXHAUSTED / UNCERTIFIED. Full sequential multi-event/NNE-A work remains outside Gate 0.7. All prior scientific freezes remain unchanged. RB-015 remains immutable SCIENTIFIC FAIL; RB-020 execution remains parked; TR-27C-01…07 remain UNEVALUATED; `2711xxx` remains UNGENERATED / UNEVALUATED; APP-3 remains PARKED / PROTECTED / WAIT.
+Status: STABLE
+Date: 2026-10-16
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -245,3 +250,4 @@ Date: 2026-10-16
 - RB-024: CORE Rigorous Enclosure & Interval First-Hit Certification Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 - RB-025: NUM-ENG RIFC-0.1 Interval Certification Freeze 0.4 — FROZEN / STABLE ENGINEERING CERTIFICATION LAYER — FINITE SOUNDNESS ONLY
 - RB-026: NUM-ENG IR-A4-R Qualification Result Freeze 0.5 — FROZEN / STABLE ENGINEERING NEGATIVE QUALIFICATION RESULT
+- RB-027: NUM-ENG RIFC Exact-Dyadic Serialization Repair Freeze 0.6 — FROZEN / STABLE ENGINEERING REPAIR BASELINE — FINITE SOUNDNESS PRESERVED / IR-A4-R NOT ESTABLISHED
