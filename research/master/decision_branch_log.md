@@ -197,6 +197,11 @@ Date: 2026-10-16
 Status: STABLE
 Date: 2026-10-16
 
+## DEC-039
+`CORE Rigorous Enclosure & Interval First-Hit Certification Theory Gate 0.1` returns candidate PASS and establishes a substantial constructive interval-certification theory, including directed-rounding/transcendental proof obligations, interval alpha propagation, threshold-safe response enclosures, interval Darboux phase-gain bounds, strict no-hit/regular-hit certificates, rigorous transversality and event-order logic, structural-zero interval semantics, a fail-closed taxonomy and the deterministic RIFC-0.1 algorithm. MASTER withholds the proposed theory freeze because two proof-closure issues remain. First, Section 18 uses an accumulated-rounding estimate of order C*2^n*2^(-p_n) with p_n=128+8n, while IR-A4 currently assumes only qualitative convergence of primitive interval overestimation; the stated rate is therefore not implied by the frozen assumptions and must be repaired by either a stronger uniform primitive-error-rate assumption or a deterministic precision schedule derived from a proved error bound. Second, Section 28 concludes preservation of the complete ordinary event chart from neighborhood-wide bounds on already indexed event times/transversality/boundary margins; those bounds alone do not exclude insertion of a previously absent event. MASTER therefore opens exactly one narrow `CORE Rigorous Interval Theory Proof-Closure Repair Gate 0.1`, requiring explicit no-new-event completeness conditions for any full-chart theorem or a weakening to indexed-event margin preservation. The candidate report remains audit history and all unrelated interval theory is retained. No RB-024 is established yet. RB-023 remains frozen, NUM-ENG remains FROZEN / WAIT, APP-3 remains parked, RB-020 execution remains parked, TR-27C-01…07 remain UNEVALUATED, `2711xxx` remains UNGENERATED / UNEVALUATED, and RB-015 remains immutable SCIENTIFIC FAIL.
+Status: STABLE
+Date: 2026-10-16
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
