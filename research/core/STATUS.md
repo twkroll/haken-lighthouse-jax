@@ -1,14 +1,10 @@
 # CORE STATUS
 
 Current Gate: CORE Rigorous Interval Theory Proof-Closure Repair Gate 0.1
-Status: READY
-Latest returned candidate: `research/core/rigorous_enclosure_interval_first_hit_theory_gate_0_1.md` — candidate PASS, but MASTER WITHHOLDS FREEZE pending proof-closure repair
-Latest frozen theory: RB-022 CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1
-Latest numerical validation: RB-023 NUM-ENG Theory-Derived Certification Validation Freeze 0.3
-Repair issues:
-1. Section 18 uses an O(2^-p) accumulated-rounding rate not implied by the current qualitative IR-A4 assumption.
-2. Section 28 preserves margins of indexed events but does not by itself rule out insertion of a previously absent event, so full-chart preservation needs an explicit no-new-event condition or must be weakened.
-Scientific state: RB-015 remains immutable SCIENTIFIC FAIL; RB-020 v0.27c execution remains parked; TR-27C-01…07 UNEVALUATED; `2711xxx` UNGENERATED / UNEVALUATED
-Next instruction: `research/master/prompts/core_rigorous_interval_theory_proof_closure_repair_gate_0_1.md`
-Execution command: `GO` in the current CORE chat; `RESUME` in a new/replacement CORE chat
-STOP boundary: return to MASTER after repair; no numerical execution, no interval-library benchmarking, no TR-27C execution, no protected RNG, no APP-3, no v0.28 effect-bearing science, no novelty/manuscript claims
+Status: RETURN TO MASTER
+Latest canonical file: `research/core/rigorous_enclosure_interval_first_hit_theory_proof_closure_repair_gate_0_1.md` — PASS; proof closure completed for the rigorous interval candidate. IR-A4 is superseded by explicit uniform bounded-domain arithmetic excess-rate assumption IR-A4-R, making the fixed `p_n=128+8n` schedule sufficient for the repaired convergence/eventual-certification proof. Candidate Section 28 is weakened to indexed-event margin preservation unless independent neighborhood-wide no-new-event segment completeness is certified; full chart preservation requires that additional condition. RIFC-0.1 finite certificate soundness remains valid independently of the convergence-rate assumption.
+Candidate theory: `research/core/rigorous_enclosure_interval_first_hit_theory_gate_0_1.md` remains audit history and is freeze-ready only together with the proof-closure repair
+Dependencies: Governance command protocol v0.2; RB-004; RB-012; RB-019; RB-020; RB-021; RB-022; RB-023; RB-015 remains immutable SCIENTIFIC FAIL
+Scientific state: RB-020 v0.27c execution remains parked; TR-27C-01…07 UNEVALUATED; `2711xxx` UNGENERATED / UNEVALUATED; APP-3 PARKED / PROTECTED / WAIT
+Next instruction: none in CORE — MASTER must review the rigorous interval candidate together with the proof-closure repair and decide whether to establish `CORE Rigorous Enclosure & Interval First-Hit Certification Theory Freeze 0.1`, request another repair, or change sequencing
+STOP boundary: STOP — RETURN TO MASTER; no interval numerical implementation/execution, no interval-library benchmark, no TR-27C execution, no `2711xxx` RNG, no v0.27c confirmatory execution, no APP-3, no v0.28 effect-bearing science, no novelty/manuscript claims until MASTER authorization
