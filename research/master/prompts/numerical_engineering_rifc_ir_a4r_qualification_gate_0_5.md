@@ -29,11 +29,11 @@ Read and obey:
 
 Work only on:
 
-\`engineering/numerics-v0.1\`.
+`engineering/numerics-v0.1`.
 
 The physical reference remains:
 
-\`NUMENG_PULSE_AWARE_REFERENCE_V1\`.
+`NUMENG_PULSE_AWARE_REFERENCE_V1`.
 
 The finite-soundness RIFC implementation frozen by RB-025 is the starting point.
 
@@ -41,7 +41,7 @@ The finite-soundness RIFC implementation frozen by RB-025 is the starting point.
 
 Before any new Gate-0.5 validation output, create and commit:
 
-\`research/numerical_engineering/rifc_ir_a4r_qualification_contract_0_5.md\`.
+`research/numerical_engineering/rifc_ir_a4r_qualification_contract_0_5.md`.
 
 The contract must prospectively freeze:
 
@@ -182,7 +182,7 @@ This is validation of the theorem implementation, not proof by experiment.
 
 Include deliberately small finite \(N_{\max}\) controls returning:
 
-\`RESOURCE_EXHAUSTED / UNCERTIFIED\`.
+`RESOURCE_EXHAUSTED / UNCERTIFIED`.
 
 ## Q9 — non-goals
 
@@ -220,7 +220,7 @@ Full PASS requires:
 7. deterministic eventual-certification validation fixtures pass;
 8. RB-025 finite-soundness tests remain compatible.
 
-A bounded result \`IR-A4-R NOT ESTABLISHED\` is acceptable as a truthful return but is not a PASS for eventual certification.
+A bounded result `IR-A4-R NOT ESTABLISHED` is acceptable as a truthful return but is not a PASS for eventual certification.
 
 ## Forbidden
 
@@ -236,10 +236,10 @@ A bounded result \`IR-A4-R NOT ESTABLISHED\` is acceptable as a truthful return 
 
 ## Required outputs
 
-On \`engineering/numerics-v0.1\` create:
+On `engineering/numerics-v0.1` create:
 
-1. \`research/numerical_engineering/rifc_ir_a4r_qualification_contract_0_5.md\`
-2. \`research/numerical_engineering/rifc_ir_a4r_qualification_gate_0_5.md\`
+1. `research/numerical_engineering/rifc_ir_a4r_qualification_contract_0_5.md`
+2. `research/numerical_engineering/rifc_ir_a4r_qualification_gate_0_5.md`
 3. versioned proof/calculation artifacts;
 4. deterministic validation logs if Q5 PASS;
 5. updated manifest/provenance.
@@ -250,7 +250,7 @@ Update NUM-ENG STATUS to RETURN TO MASTER or BLOCKED.
 
 If IR-A4-R is established, recommend a bounded:
 
-\`NUM-ENG RIFC Eventual-Certification Qualification Freeze 0.5\`.
+`NUM-ENG RIFC Eventual-Certification Qualification Freeze 0.5`.
 
 Do not fold full multi-event/NNE-A certification into that freeze.
 
