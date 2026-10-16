@@ -202,6 +202,11 @@ Date: 2026-10-16
 Status: STABLE
 Date: 2026-10-16
 
+## DEC-040
+`CORE Rigorous Interval Theory Proof-Closure Repair Gate 0.1` returns PASS. MASTER accepts the repaired rigorous-interval theory jointly with the original candidate and establishes `CORE Rigorous Enclosure & Interval First-Hit Certification Theory Freeze 0.1` / RB-024. The repair closes both previously identified proof gaps: (1) the fixed precision schedule `p_n=128+8n` is now supported by explicit bounded-domain IR-A4-R excess-width and propagation-rate proof obligations, while finite certificate soundness remains logically independent of the convergence-rate assumption; and (2) indexed-event margin preservation is explicitly separated from full ordinary-chart preservation, which additionally requires independent neighborhood-wide no-new-event completeness (NNE-A) on every inter-event segment. RB-024 freezes the constructive RIFC-0.1 theory: outward interval primitives, rigorous exponential inclusion obligations, interval alpha propagation, threshold-safe response enclosures, dyadic interval Darboux phase-gain bounds, strict no-hit/regular-hit certificates, transversality/event-order/boundary logic, structural-zero interval semantics, fail-closed taxonomy, indexed-event radius logic, and the explicit non-result for a universal automatic full parameter-box chart radius. No numerical interval implementation is promoted by RB-024. Under the Numerics + Theory priority, MASTER next opens `NUM-ENG RIFC-0.1 Outward-Interval Implementation & Validation Gate 0.4` on `engineering/numerics-v0.1`. Before any Gate-0.4 outputs, NUM-ENG must commit a finite contract fixing the interval backend, directed-rounding and exponential inclusion semantics, whether IR-A4-R is independently established, all fixtures/refinement limits/classification rules/negative controls, and certificate-artifact format. A bounded PASS for finite certificate soundness is permitted if outward inclusion is justified but IR-A4-R eventual-certification obligations are not; eventual-certification claims must then remain DEFERRED. If finite outward inclusion itself cannot be justified, the gate must return BLOCKED. APP-3 and v0.27c execution remain parked; TR-27C-01…07 remain UNEVALUATED; `2711xxx` remains UNGENERATED / UNEVALUATED; RB-015 remains immutable SCIENTIFIC FAIL.
+Status: STABLE
+Date: 2026-10-16
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -227,3 +232,4 @@ Date: 2026-10-16
 - RB-021: NUM-ENG Numerical Engineering Freeze 0.2 — FROZEN / STABLE ENGINEERING BASELINE EXTENSION
 - RB-022: CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 - RB-023: NUM-ENG Theory-Derived Certification Validation Freeze 0.3 — FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT
+- RB-024: CORE Rigorous Enclosure & Interval First-Hit Certification Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
