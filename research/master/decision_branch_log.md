@@ -227,6 +227,11 @@ Date: 2026-10-16
 Status: STABLE
 Date: 2026-10-16
 
+## DEC-045
+`CORE Parametric Compact-Domain RIFC Arithmetic Qualification Theory Gate 0.2` returns `PASS — PARAMETRIC COMPACT-DOMAIN IR-A4-R SUFFICIENT-CONDITION THEOREM ESTABLISHED`. MASTER accepts the result and establishes `CORE Parametric Compact-Domain RIFC Arithmetic Qualification Theory Freeze 0.2` / RB-029. The freeze generalizes RB-028 from a finite K01–K06 fixture union to a reusable sufficient-condition theorem for compact domains with finite branch cover, independently proved semantic hull, positive divisor/active-threshold separation, directed primitive (O(2^{-p})) endpoint rates, finite local DAG depth/count, finite endpoint-map Lipschitz constants, additive prefix accumulation, exact/finitely qualified serialization and fail-closed finite-source correspondence. The theorem constructs an explicit finite whole-expression constant, e.g. (B_K=2C_*(K)), such that (E_{arith}(n)<=B_KN_n2^{-p_n}). For (N_n<=a2^{\beta n}+b) and (p_n=p_0+\gamma n), the sufficient convergence condition is (\gamma>\beta); for dyadic RIFC this gives (\gamma>1), so the RB-024 schedule (128+8n) qualifies. RB-028 is recovered as a corollary without changing its domain or historical content. The theorem explicitly separates arithmetic excess from natural interval/Darboux range width and does not imply finite-machine unlimited eventual certification. Under the user's Numerics + Theory priority and Parallel Engineering Policy, MASTER next opens two independent actions that may proceed in parallel: (1) `CORE Sequential Event-Tape & NNE-A Certification Theory Gate 0.3`, to establish constructive finite-horizon sequential ordinary-tape completeness, explicit no-new-event conditions and RIFC-TAPE-0.1; and (2) `NUM-ENG Parametric Compact-Domain RIFC Qualification Gate 0.8`, to operationalize the RB-029 Q-RIFC-K recipe on prospectively frozen nontrivial compact parameter boxes without source modification or multi-event implementation. All prior freezes remain unchanged. RB-015 remains immutable SCIENTIFIC FAIL; RB-020 execution remains parked; TR-27C-01…07 remain UNEVALUATED; `2711xxx` remains UNGENERATED / UNEVALUATED; APP-3 remains PARKED / PROTECTED / WAIT.
+Status: STABLE
+Date: 2026-10-16
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -257,3 +262,4 @@ Date: 2026-10-16
 - RB-026: NUM-ENG IR-A4-R Qualification Result Freeze 0.5 — FROZEN / STABLE ENGINEERING NEGATIVE QUALIFICATION RESULT
 - RB-027: NUM-ENG RIFC Exact-Dyadic Serialization Repair Freeze 0.6 — FROZEN / STABLE ENGINEERING REPAIR BASELINE — FINITE SOUNDNESS PRESERVED / IR-A4-R NOT ESTABLISHED
 - RB-028: NUM-ENG RIFC Restricted Idealized IR-A4-R Qualification Freeze 0.7 — FROZEN / STABLE ENGINEERING ANALYTICAL QUALIFICATION — RESTRICTED K01–K06
+- RB-029: CORE Parametric Compact-Domain RIFC Arithmetic Qualification Theory Freeze 0.2 — FROZEN / STABLE SCIENTIFIC THEORY
