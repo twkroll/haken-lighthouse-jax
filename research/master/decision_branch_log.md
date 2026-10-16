@@ -207,6 +207,11 @@ Date: 2026-10-16
 Status: STABLE
 Date: 2026-10-16
 
+## DEC-041
+`NUM-ENG RIFC-0.1 Outward-Interval Implementation & Validation Gate 0.4` returns `PASS — ENGINEERING VALIDATION / FINITE CERTIFICATE SOUNDNESS ONLY` on `engineering/numerics-v0.1`. MASTER verifies that the finite validation contract was committed prospectively at `2aa95c77973fe63a82a7cf11472ee92273b5bb7c` before Gate-0.4 outputs and that IR-A4-R was explicitly declared NOT ESTABLISHED in that contract. The returned implementation uses GNU MPFR 4.2.2 with directed RNDD/RNDU operations and correctly-rounded directed exponential as its finite inclusion contract, exact-rational fixture loading and exact dyadic endpoint serialization. Gate-0.4 validates finite arrival-free alpha propagation, threshold-safe response enclosures, dyadic Darboux gain/prefix intervals, strict no-hit/regular-hit certificates, finite transversality, event/boundary/structural-zero logic, fail-closed outcome classes and independently replayable certificate artifacts. New tests report 26/26 PASS twice with clean exits; the frozen compatibility subset reports 28/28 PASS; six saved positive certificate objects replay/audit PASS without the physical simulator. MASTER establishes `NUM-ENG RIFC-0.1 Interval Certification Freeze 0.4` / RB-025 as a bounded stable engineering certification layer for finite certificate soundness only. RB-025 does not establish the IR-A4-R whole-expression rate, eventual certification, full sequential multi-event tape certification, general NNE-A or a full parameter-box chart radius. Under the Numerics + Theory priority, MASTER opens exactly one follow-up numerical action: `NUM-ENG MPFR IR-A4-R Qualification & Eventual-Certification Gate 0.5`. That gate must prospectively freeze the compact domain and proof strategy, derive primitive and whole-expression rate bounds without empirical fitting, prove source-expression correspondence and the operation-count/convergence bound under `p_n=128+8n`, and only then validate eventual certification on fixed strict-margin fixtures. A truthful IR-A4-R NOT ESTABLISHED return is valid and must not be rescued by post-output domain shrinking. Full multi-event/NNE-A remains separate. RB-015 remains immutable SCIENTIFIC FAIL; RB-020 execution remains parked; TR-27C-01…07 remain UNEVALUATED; `2711xxx` remains UNGENERATED / UNEVALUATED; APP-3 remains PARKED / PROTECTED / WAIT.
+Status: STABLE
+Date: 2026-10-16
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -233,3 +238,4 @@ Date: 2026-10-16
 - RB-022: CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 - RB-023: NUM-ENG Theory-Derived Certification Validation Freeze 0.3 — FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT
 - RB-024: CORE Rigorous Enclosure & Interval First-Hit Certification Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
+- RB-025: NUM-ENG RIFC-0.1 Interval Certification Freeze 0.4 — FROZEN / STABLE ENGINEERING CERTIFICATION LAYER — FINITE SOUNDNESS ONLY
