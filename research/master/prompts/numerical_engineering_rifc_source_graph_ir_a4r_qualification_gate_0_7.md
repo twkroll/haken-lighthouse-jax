@@ -19,9 +19,9 @@ No source repair, performance work, stochastic experiment, full multi-event/NNE-
 
 Read and obey:
 
-- \`PROJECT_GOVERNANCE.md\`
-- \`research/master/command_protocol_v0_2.md\`
-- \`research/master/parallel_engineering_policy_v0_1.md\`
+- `PROJECT_GOVERNANCE.md`
+- `research/master/command_protocol_v0_2.md`
+- `research/master/parallel_engineering_policy_v0_1.md`
 - RB-019
 - RB-021
 - RB-023
@@ -33,11 +33,11 @@ Read and obey:
 
 Work only on:
 
-\`engineering/numerics-v0.1\`.
+`engineering/numerics-v0.1`.
 
 The physical authority remains:
 
-\`NUMENG_PULSE_AWARE_REFERENCE_V1\`.
+`NUMENG_PULSE_AWARE_REFERENCE_V1`.
 
 No executable source modification is authorized in Gate 0.7.
 
@@ -45,7 +45,7 @@ No executable source modification is authorized in Gate 0.7.
 
 Before producing any new Gate-0.7 analytical result or validation output, create and commit:
 
-\`research/numerical_engineering/rifc_source_graph_ir_a4r_proof_contract_0_7.md\`.
+`research/numerical_engineering/rifc_source_graph_ir_a4r_proof_contract_0_7.md`.
 
 The contract must prospectively freeze:
 
@@ -72,7 +72,7 @@ No compact-domain shrinking, graph simplification, constant fitting or proof-tar
 
 Define one mathematical family, denoted for example \(\mathrm{RIFC}_\infty\), with:
 
-- the same positive-certificate arithmetic graph as Gate-0.6 \`rifc_mpfr_v0_2.py\`;
+- the same positive-certificate arithmetic graph as Gate-0.6 `rifc_mpfr_v0_2.py`;
 - arbitrary precision \(p\ge128\);
 - sufficiently wide exponent/integer resources for every finite level \(n\);
 - correct directed rounding matching MPFR semantics;
@@ -89,7 +89,7 @@ It must not alter the mathematical arithmetic graph or certificate logic.
 
 Prove a correspondence statement of the form:
 
-For every Gate-0.6 executable call that remains within its frozen precision/exponent/integer/\`nmax\` resource domain, the arithmetic/certificate result equals the corresponding finite member of \(\mathrm{RIFC}_\infty\) under the same directed backend semantics and exact inputs.
+For every Gate-0.6 executable call that remains within its frozen precision/exponent/integer/`nmax` resource domain, the arithmetic/certificate result equals the corresponding finite member of \(\mathrm{RIFC}_\infty\) under the same directed backend semantics and exact inputs.
 
 Any branch present in executable positive-certificate logic but absent from the idealized family is a BLOCKER.
 
@@ -203,7 +203,7 @@ Use only if the source/idealized-family correspondence cannot be established or 
 If G-PASS is established, state carefully:
 
 - RB-024 eventual certification applies to the idealized unbounded family under its strict-margin assumptions;
-- a finite resource-bounded production call remains permitted to return \`RESOURCE_EXHAUSTED / UNCERTIFIED\`;
+- a finite resource-bounded production call remains permitted to return `RESOURCE_EXHAUSTED / UNCERTIFIED`;
 - no finite hardware execution can be equated with the mathematical unbounded limit merely because the idealized theorem holds.
 
 Gate 0.7 must not claim an impossible finite-machine guarantee of unlimited resources.
@@ -214,7 +214,7 @@ Only if G-PASS is analytically established, run a prospectively frozen finite co
 
 - actual Gate-0.6 finite arithmetic widths are below the proved idealized bounds for selected levels/precisions within executable resources;
 - finite strict no-hit and regular-hit fixtures behave consistently with the idealized theorem;
-- deliberately insufficient \`nmax\` still returns \`RESOURCE_EXHAUSTED / UNCERTIFIED\`.
+- deliberately insufficient `nmax` still returns `RESOURCE_EXHAUSTED / UNCERTIFIED`.
 
 Observed values may check implementation correspondence but may not determine \(B_K\).
 
@@ -261,10 +261,10 @@ Full Gate-0.7 PASS requires:
 
 ## Required outputs
 
-On \`engineering/numerics-v0.1\`, create:
+On `engineering/numerics-v0.1`, create:
 
-1. \`research/numerical_engineering/rifc_source_graph_ir_a4r_proof_contract_0_7.md\`
-2. \`research/numerical_engineering/rifc_source_graph_ir_a4r_qualification_gate_0_7.md\`
+1. `research/numerical_engineering/rifc_source_graph_ir_a4r_proof_contract_0_7.md`
+2. `research/numerical_engineering/rifc_source_graph_ir_a4r_qualification_gate_0_7.md`
 3. a mathematical derivation artifact containing all constants and recurrences;
 4. source/idealized-family correspondence artifact;
 5. finite post-proof validation logs only if analytical PASS;
@@ -272,7 +272,7 @@ On \`engineering/numerics-v0.1\`, create:
 
 Update:
 
-\`research/numerical_engineering/STATUS.md\`
+`research/numerical_engineering/STATUS.md`
 
 to RETURN TO MASTER or BLOCKED.
 
