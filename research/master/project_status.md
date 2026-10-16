@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.10
+Version: 2.11
 Date: 2026-10-16
 
 ## Central research question
@@ -13,105 +13,93 @@ Canonical rule:
 
 `Reconstruct state, not frozen science.`
 
-The frozen chain now extends through RB-022.
+The frozen chain now extends through RB-023.
 
 Preserved boundaries:
 
 - RB-015 remains immutable `SCIENTIFIC FAIL`;
 - RB-019 and RB-021 are the accepted finite Numerical Engineering baselines;
-- RB-020 freezes the complete v0.27c trust-region pre-execution contract, but TR-27C-01…07 remain UNEVALUATED and `2711xxx` remains UNGENERATED / UNEVALUATED;
-- RB-022 freezes the repaired first-hit/event-chart theory;
+- RB-020 freezes the v0.27c trust-region pre-execution contract, but TR-27C-01…07 remain UNEVALUATED and `2711xxx` remains UNGENERATED / UNEVALUATED;
+- RB-022 freezes repaired first-hit/event-chart theory;
+- RB-023 freezes bounded finite theory-consistency engineering validation;
 - APP-3 remains PARKED / PROTECTED / WAIT.
 
-## CORE theory
+## RB-023 — theory-derived numerical validation
 
-The structural-zero semantic repair returned PASS.
+`NUM-ENG Theory-Derived First-Hit Certification Validation Gate 0.3` returned:
+
+`PASS — THEORY-CONSISTENT ENGINEERING VALIDATION (finite, non-formal)`.
 
 MASTER establishes:
 
-`CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1` / RB-022.
+`NUM-ENG Theory-Derived Certification Validation Freeze 0.3` / RB-023.
 
-Status:
+The finite pre-execution contract was committed before outputs at:
 
-`FROZEN / STABLE SCIENTIFIC THEORY`.
+`7a488ed6777d206313c512f437216b05b8e5eb6e`.
 
-RB-022 jointly uses the original candidate and the mandatory semantic-repair artifact. The repair supersedes the original candidate only where structural-zero statements conflict.
+All TV-01…TV-11 families pass under the frozen contract, including:
 
-### Frozen theory highlights
+- exact alpha-state propagation;
+- analytic arrival-free extrema;
+- strict no-hit and regular first-hit certificate cases;
+- response derivative bounds;
+- alpha-tail mass and omitted-history phase bounds;
+- regular-chart perturbation persistence;
+- event-time derivatives;
+- repaired structural-zero semantics;
+- TH-FH-01…TH-FH-08;
+- stale-tape / itinerary-change fail-closed controls.
 
-RB-022 includes:
+Important finite observations include:
 
-- sufficient strict-margin no-hit and unique-transversal first-hit conditions;
-- exact arrival-free alpha-state extrema;
-- finite first-hit/no-hit certification under convergent outward enclosures and strict margins;
-- global smoothness of the frozen response and explicit derivative bounds;
-- exact alpha-tail mass and phase-error bounds under stated summability assumptions;
-- finite-event ordinary event-chart regularity;
-- local event-time differentiability;
-- existence of a positive local chart-validity neighborhood;
-- explicit distinction between mathematical derivative existence, fixed-chart validity, JAX representation, and numerical certification;
-- TH-FH-01 through TH-FH-08 as frozen theory-derived future validation fixtures.
+- narrow-pulse physical vs independent segmented first-hit difference approximately `2.22e-16`;
+- finite omitted-history phase discrepancy `0.023643397381274` under theorem-derived upper bound `0.0325178946640312`;
+- maximum tested AD-vs-physically-rerecorded FD discrepancies below approximately `6.1e-10`;
+- fixed-chart JAX vs certified physical spike-time residual approximately `9.59e-14`;
+- structural-zero historical arrival delay derivative approximately `0.99999999999989`.
 
-### Structural-zero convention
+The result is finite float64 theory-consistency validation only.
 
-Fixed structural topology is independent of the numerical coupling value.
+It does **not** establish outward-rounded interval inclusion, global first-hit correctness, formal machine-verifiable certification, universal chart radii, universal scaling/speedup or AI performance.
 
-A structurally present edge with `w=0` retains its labelled launch/arrival event. Its alpha-state jump is the identity at exactly zero, but the topology-fixed event tape retains the event.
+A fresh rerun of the broader prior 250-case aggregate exceeded the external execution-time limit and did not produce a trustworthy final PASS/FAIL record. This is recorded as `NOT REPEATED IN GATE 0.3`; RB-021's independently frozen 250/250 result remains unchanged.
 
-Thus:
+NUM-ENG is now `FROZEN / WAIT`.
 
-- zero-weight edge present and edge omitted may have identical physical state/spike trajectories at the exact zero value but different labelled tapes;
-- topology is not changed when a weight passes through zero;
-- weight sensitivity at zero need not vanish;
-- a zero-weight arrival still participates in event-order, collision and boundary margins.
+## CORE next theory layer
 
-## NUM-ENG
+The main remaining theory gap is now explicit:
 
-RB-021 remains:
+RB-022 proves first-hit/no-hit certification under convergent outward-valid enclosures and strict margins, while RB-023 validates only finite float64 consistency.
 
-`FROZEN / STABLE ENGINEERING BASELINE EXTENSION`.
+MASTER therefore opens:
 
-MASTER now opens:
-
-`NUM-ENG Theory-Derived First-Hit Certification Validation Gate 0.3`.
+`CORE Rigorous Enclosure & Interval First-Hit Certification Theory Gate 0.1`.
 
 Status:
 
 `READY`.
 
-This is the direct bridge from RB-022 theory to RB-021 numerics.
+This gate must develop one constructive rigorous enclosure framework covering:
 
-Before any new Gate-0.3 result, NUM-ENG must commit a finite validation contract freezing fixtures, values, refinement schedules, tolerances, classifications and negative controls.
+- outward-valid interval representation and rounding assumptions;
+- interval alpha propagation;
+- rigorous response enclosures including threshold-straddling intervals;
+- rigorous accumulated phase-gain enclosure;
+- finite termination under strict margins;
+- certified transversality;
+- event-order and horizon-boundary certification;
+- structural-zero interval semantics;
+- a conservative chart-radius lower bound or an explicit non-result;
+- a fail-closed certification taxonomy;
+- one finite deterministic algorithm specification suitable for a later NUM-ENG implementation gate.
 
-The gate then validates:
-
-- exact alpha-state segment propagation;
-- analytic alpha-state extrema;
-- no-hit upper certificates;
-- unique regular first-hit certificates;
-- response derivative bounds;
-- alpha-tail mass and phase-error bounds;
-- regular-chart perturbation persistence;
-- local spike/arrival derivatives;
-- the repaired structural-zero TH-FH-06 semantics;
-- the full TH-FH-01…08 family;
-- stale-tape / itinerary-change fail-closed controls.
-
-Result classes are engineering/validation only:
-
-- THEORY-CONSISTENT ENGINEERING VALIDATION;
-- UNCERTIFIED;
-- ENGINEERING DEFECT;
-- THEORY/IMPLEMENTATION CONTRADICTION;
-- DEFERRED.
-
-No scientific effect PASS is possible in Gate 0.3.
-
-If a deterministic fixture contradicts RB-022 under all theorem assumptions, NUM-ENG must return BLOCKED without repairing/reinterpreting the theorem inside the same gate.
+No numerical execution is allowed in this CORE gate.
 
 ## CORE v0.27c
 
-RB-020 remains frozen and execution remains parked.
+RB-020 remains frozen and its execution remains parked.
 
 - TR-27C-01…07: UNEVALUATED.
 - `2711xxx`: UNGENERATED / UNEVALUATED.
@@ -119,21 +107,17 @@ RB-020 remains frozen and execution remains parked.
 
 ## APP-3
 
-APP-3 remains:
+APP-3 remains `PROTECTED / WAIT`.
 
-`PROTECTED / WAIT`.
-
-Its AI scope prompt is retained but PARKED / NOT EXECUTABLE.
-
-No training, benchmark or held-out inspection has occurred.
+Its AI scope prompt is retained but PARKED / NOT EXECUTABLE under the current Numerics + Theory priority.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | NUM-ENG Gate 0.3 oversight |
-| 10 CORE | FROZEN / WAIT | RB-022 first-hit/event-chart theory |
-| 20 NUM-ENG | READY | theory-derived first-hit certification validation |
+| 00 MASTER | FROZEN / WAIT | CORE rigorous interval theory oversight |
+| 10 CORE | READY | rigorous enclosure / interval first-hit certification theory |
+| 20 NUM-ENG | FROZEN / WAIT | RB-023 bounded theory-validation freeze |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | unchanged |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | later electronics/neuromorphics |
 | 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | AI prompt parked |
@@ -142,56 +126,35 @@ No training, benchmark or held-out inspection has occurred.
 
 ## Current rollback points
 
-1. RB-001 Governance Initialization 0.1 — STABLE
-2. RB-002 CORE Legacy Recovery Input Snapshot 0.1 — STABLE ADMINISTRATIVE / NON-CANONICAL SCIENCE
-3. RB-003 CORE Recovery Classification 0.1 — STABLE ADMINISTRATIVE / NO SCIENTIFIC FREEZE
-4. RB-004 CORE Mathematical Freeze 0.1 — FROZEN / STABLE SCIENTIFIC BASELINE
-5. RB-005 CORE Benchmark Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
-6. RB-006 CORE v0.2 Benchmark Result Freeze 0.1 — FROZEN / STABLE RESULT
-7. RB-007 CORE v0.3 Continuation Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
-8. RB-008 CORE v0.3 Continuation Validation Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
-9. RB-009 CORE v0.3 Continuation Validation Result Freeze 0.1 — FROZEN / STABLE RESULT
-10. RB-010 CORE v0.4 Floquet Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
-11. RB-011 CORE Legacy Verification Sweep Freeze 0.1 — FROZEN / STABLE VERIFICATION AUDIT
-12. RB-012 CORE Consolidated C1 Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
-13. RB-013 CORE v0.27 Hierarchical Repeated-Trial Scope Freeze 0.1 — FROZEN / STABLE NEW-SCIENCE SCOPE
-14. RB-014 CORE v0.27 Hierarchical Repeated-Trial Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
-15. RB-015 CORE v0.27 Hierarchical Repeated-Trial Result Freeze 0.1 — FROZEN / STABLE SCIENTIFIC RESULT — FAIL
-16. RB-016 CORE v0.27b Inference Failure Mechanism & Follow-up Scope Freeze 0.1 — FROZEN / STABLE DIAGNOSTIC + FOLLOW-UP SCOPE
-17. RB-017 Numerical Engineering v0.10 Intake Snapshot 0.1 — STABLE ADMINISTRATIVE / DEVELOPMENT EVIDENCE INPUT
-18. RB-018 NUM-ENG Numerical Engineering Audit Freeze 0.1 — FROZEN / STABLE ENGINEERING AUDIT — CONDITIONAL / BLOCKED
-19. RB-019 NUM-ENG Numerical Engineering Freeze 0.1 — FROZEN / STABLE ENGINEERING BASELINE
-20. RB-020 CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
-21. RB-021 NUM-ENG Numerical Engineering Freeze 0.2 — FROZEN / STABLE ENGINEERING BASELINE EXTENSION
-22. RB-022 CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
+RB-001 through RB-022 remain unchanged.
+
+23. RB-023 NUM-ENG Theory-Derived Certification Validation Freeze 0.3 — FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT
 
 ## Exact next step
 
-### NUM-ENG
+### CORE
 
-In the existing NUM-ENG chat:
+In the existing CORE chat:
 
 `GO`
 
-In a new/replacement NUM-ENG chat:
+In a new/replacement CORE chat:
 
 `RESUME`
 
 Execute only:
 
-`research/master/prompts/numerical_engineering_theory_derived_first_hit_certification_validation_gate_0_3.md`.
+`research/master/prompts/core_rigorous_enclosure_interval_first_hit_theory_gate_0_1.md`.
 
-The validation contract must be committed before execution.
+### NUM-ENG
 
-### CORE
-
-No CORE action is currently authorized. RB-022 is frozen.
+No NUM-ENG action is currently authorized. RB-023 is frozen.
 
 ### APP-3
 
 No APP-3 action is currently authorized.
 
-When NUM-ENG returns, go to MASTER and issue:
+When CORE returns, go to MASTER and issue:
 
 `Status?`
 
@@ -199,6 +162,7 @@ When NUM-ENG returns, go to MASTER and issue:
 
 Until explicit later authorization:
 
+- no numerical execution in the CORE interval-theory gate;
 - no TR-27C execution;
 - no `2711xxx` RNG creation;
 - no v0.27c confirmatory execution;
