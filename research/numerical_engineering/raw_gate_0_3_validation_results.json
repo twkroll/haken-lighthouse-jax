@@ -1,0 +1,141 @@
+{
+  "schema": "NUMENG_TV_RAW_RESULTS_0_3",
+  "classification": "ENGINEERING VALIDATION / DEVELOPMENT EVIDENCE",
+  "contract_commit": "7a488ed6777d206313c512f437216b05b8e5eb6e",
+  "physical_authority": "NUMENG_PULSE_AWARE_REFERENCE_V1",
+  "theoretical_authority": "RB-022 (structural-zero repaired)",
+  "runs": {
+    "first_split_01_06": {
+      "passed": 6,
+      "exit_code": 0
+    },
+    "first_split_07_11": {
+      "passed": 5,
+      "exit_code": 0
+    },
+    "repeated_joint_01_11": {
+      "passed": 11,
+      "exit_code": 0
+    },
+    "compatibility_prior_targeted": {
+      "passed": 28,
+      "exit_code": 0
+    },
+    "prior_250_aggregate": {
+      "status": "TIMEOUT",
+      "exit_code": null,
+      "passed": null,
+      "note": "progress dots only; not a completed result"
+    }
+  },
+  "families": [
+    {
+      "id": "TV-01",
+      "status": "PASS",
+      "cases": 4,
+      "sample_points": 24,
+      "category": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "id": "TV-02",
+      "status": "PASS",
+      "cases": 4,
+      "category": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "id": "TV-03",
+      "status": "PASS",
+      "cases": 3,
+      "category": "THEORY-CONSISTENT WITH UNCERTIFIED EQUALITY CONTROL"
+    },
+    {
+      "id": "TV-04",
+      "status": "PASS",
+      "regular_narrow_pulse_t": 0.5050005053634212,
+      "segmented_reference_t": 0.505000505363421,
+      "certifier_n": 64,
+      "zero_bracket_margin": "UNCERTIFIED"
+    },
+    {
+      "id": "TV-05",
+      "status": "PASS",
+      "r": [
+        0.25,
+        1,
+        4
+      ],
+      "category": "THEORY-CONSISTENT ENGINEERING VALIDATION"
+    },
+    {
+      "id": "TV-06",
+      "status": "PASS",
+      "finite_phase_error": 0.023643397381274033,
+      "finite_phase_upper_bound": 0.032517894664031245,
+      "infinite_local_finiteness_without_absolute_tail": "UNCERTIFIED"
+    },
+    {
+      "id": "TV-07",
+      "status": "PASS",
+      "count": 12,
+      "min_transversality_baseline": 0.3679009253757811,
+      "min_event_separation_baseline": 0.0029106906355558237,
+      "min_boundary_baseline": 0.19437326461905258
+    },
+    {
+      "id": "TV-08",
+      "status": "PASS",
+      "jax_reference_residual": 9.592326932761353e-14,
+      "ad_fd": {
+        "nonzero_weight": 6.089075910153952e-10,
+        "zero_weight": 5.419196202893772e-10,
+        "active_delay": 3.0200619782760896e-10,
+        "zero_edge_delay": 3.5526026564980384e-11,
+        "initial_phase": 1.8952128755245212e-10
+      },
+      "zero_edge_arrival_d_delay": 0.9999999999998899
+    },
+    {
+      "id": "TV-09",
+      "status": "PASS",
+      "zero_graph_arrivals": 8,
+      "omitted_graph_arrivals": 5,
+      "spikes": 5,
+      "physical_trajectories_equivalent_at_zero": true,
+      "tokens_equal": false,
+      "zero_weight_fd_discrepancy": 5.419196202893772e-10
+    },
+    {
+      "id": "TV-10",
+      "status": "PASS",
+      "TH_FH_01": "CERTIFIED REGULAR HIT",
+      "TH_FH_02": "CERTIFIED NO-HIT",
+      "TH_FH_03": "REGULAR DELTA 0.2; DELTA 0.01 UNCERTIFIED",
+      "TH_FH_04": "SEPARATED ±0.001 TWO OPPOSITE ORDERS; EXACT TIE CHART INVALID",
+      "TH_FH_05": "FINITE TAIL VALID; EQUALITY AND UNSUMMABLE UNCERTIFIED",
+      "TH_FH_06": "ZERO STRUCTURAL EDGE LABEL RETAINED",
+      "TH_FH_07": "INTERIOR HIT / EXACT HORIZON INVALID / OUTSIDE HORIZON NO HIT",
+      "TH_FH_08": "COMMUTING SIMULTANEOUS ARRIVALS; ORDINARY CHART INVALID"
+    },
+    {
+      "id": "TV-11",
+      "status": "PASS",
+      "negative_controls": [
+        "shifted event times with unchanged token",
+        "deleted zero-weight edge labelled arrival",
+        "uncertified tape",
+        "TH-FH-04 changed itinerary"
+      ]
+    }
+  ],
+  "limitations": [
+    "ordinary float64 not rigorously outward-rounded interval arithmetic",
+    "no global chart radius or global first-hit completeness",
+    "conceptual divergent-history negative control is not numerically simulated",
+    "full prior 250-case aggregate did not cleanly finish in this execution"
+  ],
+  "archive": {
+    "filename": "NUMENG_Theory_First_Hit_Gate_0_3.zip",
+    "sha256": "20e66a8a2b7ef30f0a94facfd94178acef2c4a0ee2b2d464251b188ae99df57f",
+    "contains": "full executable harness, full raw JSON, tests, environment, logs, original contract, report"
+  }
+}
