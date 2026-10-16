@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.16
+Version: 2.17
 Date: 2026-10-16
 
 ## Governance state
@@ -9,7 +9,7 @@ Canonical rule:
 
 `Reconstruct state, not frozen science.`
 
-The frozen chain now extends through RB-027.
+The frozen chain now extends through RB-028.
 
 Preserved boundaries:
 
@@ -20,119 +20,121 @@ Preserved boundaries:
 - RB-023 remains frozen finite theory-consistency engineering validation;
 - RB-024 remains frozen rigorous outward-interval first-hit certification theory;
 - RB-025 remains the immutable finite-soundness RIFC implementation freeze;
-- RB-026 remains the historical Gate-0.5 old-source IR-A4-R negative qualification result;
-- RB-027 freezes the separate exact-dyadic Gate-0.6 repair baseline;
+- RB-026 remains the historical old-source IR-A4-R no-go;
+- RB-027 remains the exact-dyadic repair baseline;
+- RB-028 freezes the restricted K01–K06 idealized source-graph IR-A4-R qualification;
 - APP-3 remains PARKED / PROTECTED / WAIT.
 
-## Gate 0.6 returned result
+## RB-028 — restricted idealized IR-A4-R qualification
 
-`NUM-ENG MPFR Exact-Dyadic Serialization Repair & IR-A4-R Requalification Gate 0.6` returned:
+`NUM-ENG RIFC Source-Graph Arithmetic Propagation & Idealized IR-A4-R Qualification Gate 0.7` returned:
 
-`SERIALIZATION REPAIR VALIDATED / FINITE SOUNDNESS PRESERVED / IR-A4-R NOT ESTABLISHED`.
+`PASS — RESTRICTED IDEALIZED IR-A4-R SOURCE-GRAPH QUALIFICATION K01–K06 / FINITE SOURCE CORRESPONDENCE`.
 
-MASTER verifies the complete Gate-0.6 contract was committed before source modification or validation outputs at:
+MASTER verifies the proof contract was committed before new analytical results at:
 
-`779c8f05256406c5684d4dec35ae123a418027fb`.
+`d6b76886663a911a85e4b684825b3047e517b754`.
 
-The contract prospectively fixed:
+No executable source modification occurred in Gate 0.7.
 
-- RB-025 source identity and immutability;
-- new Gate-0.6 source path;
-- MPFR/GMP backend identities;
-- exact `mpfr_get_z_2exp`-style dyadic serialization design;
-- finite resource guards;
-- compact requalification domain;
-- candidate arithmetic-rate proof strategy;
-- regression matrix;
-- rule that eventual-certification validation cannot execute unless the analytical whole-expression qualification first passes.
+The repaired Gate-0.6 source remains:
 
-## RB-027 — exact-dyadic repair baseline
+- blob `1b94cf36447f428a9968c90ac3c0e74c18494d1c`;
+- SHA-256 `a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202`.
 
-MASTER establishes:
-
-`NUM-ENG RIFC Exact-Dyadic Serialization Repair Freeze 0.6` / RB-027.
-
-Status:
-
-`FROZEN / STABLE ENGINEERING REPAIR BASELINE — FINITE SOUNDNESS PRESERVED / IR-A4-R NOT ESTABLISHED`.
-
-### RB-025 remains immutable
-
-The original RB-025 source remains byte-identical:
+The RB-025 source remains byte-identical:
 
 - blob `6df6740e86344628a2b9583f0a3f719f9d5817f8`;
 - SHA-256 `0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539`.
 
-RB-026 remains historically valid for that old source.
+MASTER establishes:
 
-No RB-025 history is rewritten.
+`NUM-ENG RIFC Restricted Idealized IR-A4-R Qualification Freeze 0.7` / RB-028.
 
-### Repaired Gate-0.6 source
+Status:
 
-New versioned source:
+`FROZEN / STABLE ENGINEERING ANALYTICAL QUALIFICATION — RESTRICTED K01–K06`.
 
-`software/numerical_engineering/rifc_interval_gate_0_6/source/rifc_mpfr_v0_2.py`.
+### Frozen restricted theorem instance
 
-SHA-256:
+For the prospectively frozen finite union K01–K06, Gate 0.7 establishes a noncircular compact-hull/divisor analysis for the idealized source family.
 
-`a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202`.
-
-The repaired serializer uses exact MPFR/GMP dyadic export of an already directed-rounded endpoint:
+Accepted symbolic constants include:
 
 \[
-y_p=z\,2^e.
+H=2^{18},
+\qquad
+\delta_{\rm gap}>1/400,
+\qquad
+\delta_{\rm div}>1/160000.
 \]
 
-This adds no new arithmetic approximation after MPFR rounding.
-
-The Gate-0.5 artificial \(2^{-2048}\) floor is absent in the repaired source.
-
-### Gate-0.6 finite QA
-
-Frozen finite Gate-0.6 evidence:
-
-- 19/19 new exact-serialization/resource tests PASS;
-- 26/26 original Gate-0.4 tests PASS on repaired source;
-- 26/26 original Gate-0.4 tests PASS on unchanged RB-025 source;
-- combined RIFC regression: 71/71 PASS, clean exit;
-- physical/reference/JAX compatibility subset: 28/28 PASS;
-- six original RB-025 certificate replays PASS;
-- repaired positive proof artifacts, including the tiny-response no-hit certificate, replay PASS.
-
-Finite resource excess fails closed.
-
-### Remaining analytical limitation
-
-The serializer repair removes the known fixed-rate obstruction.
-
-However Gate 0.6 does not establish a complete finite constant \(B_K\) satisfying
+A source-graph operation-count bound is established:
 
 \[
-E_{\rm arith}(n)\le B_KN_n2^{-p_n}
+N_n\le1024\,2^n+1024.
 \]
 
-for the full positive-certificate expression graph.
-
-The implementation also remains resource bounded:
+The prospectively frozen proof constant is:
 
 \[
-p\le8192,
+B_K=2^{65536}.
 \]
 
-and `certify` remains finite with `nmax<=16`.
+For
 
-Therefore:
+\[
+p_n=128+8n,
+\]
 
-- finite certificate soundness is preserved;
-- IR-A4-R is NOT ESTABLISHED;
-- production finite execution is not identified with an unbounded eventual-certification process;
-- Q6/Q7 rate/eventual-certification trials were correctly not executed.
+the restricted idealized family satisfies:
 
-## NUM-ENG Gate 0.7
+\[
+E_{\rm arith}(n)
+\le
+B_KN_n2^{-p_n}
+\to0.
+\]
 
-MASTER opens:
+The constant is a proof constant only and not a practical tolerance.
 
-`NUM-ENG RIFC Source-Graph Arithmetic Propagation & Idealized IR-A4-R Qualification Gate 0.7`.
+### Finite correspondence
+
+Within all finite Gate-0.6 resource caps, the executable source follows the same arithmetic/comparison graph as the corresponding finite member of the idealized family.
+
+Resource exhaustion remains fail-closed and does not imply a physical conclusion.
+
+### Post-proof validation
+
+After analytical G-PASS, the frozen post-proof suite reports:
+
+- 26/26 isolated fixed runs PASS;
+- mutated-prefix negative certificate rejected;
+- original certificate accepted;
+- initial monolithic timeout retained as NOT PASS and not promoted to evidence.
+
+No source or fixture retuning occurred.
+
+### Scope limitation
+
+RB-028 does NOT establish IR-A4-R for arbitrary Lighthouse parameter families.
+
+Deferred remain:
+
+- arbitrary near-threshold positive branches;
+- unbounded parameter/state domains;
+- full sequential multi-event tapes;
+- parameter-box NNE-A;
+- full chart radii;
+- finite-machine unconditional eventual certification.
+
+## Next CORE theory step
+
+The fixture-specific proof now provides a successful template but is too narrow to serve as a reusable theory layer.
+
+MASTER therefore opens:
+
+`CORE Parametric Compact-Domain RIFC Arithmetic Qualification Theory Gate 0.2`.
 
 Status:
 
@@ -140,77 +142,39 @@ Status:
 
 Prompt:
 
-`research/master/prompts/numerical_engineering_rifc_source_graph_ir_a4r_qualification_gate_0_7.md`.
+`research/master/prompts/core_parametric_compact_domain_rifc_arithmetic_qualification_theory_gate_0_2.md`.
 
-This gate performs no source modification.
+The goal is a symbolic theorem giving sufficient conditions on a compact domain \(K\) and fixed positive-certificate graph \(\mathcal G\) for existence of finite \(B_K\), rather than repeating a fixture-specific proof.
 
-Its purpose is to separate and analyze:
+The gate must generalize:
 
-1. the finite Gate-0.6 executable source; and
-2. an idealized unbounded-precision arithmetic family with the same positive-certificate expression graph, exact-dyadic serialization semantics and certificate logic.
+- compact semantic hull;
+- threshold/divisor separation;
+- primitive directed-rounding rate;
+- local graph depth/count;
+- nodewise arithmetic propagation;
+- additive prefix accumulation;
+- finite-source/ideal-family correspondence;
+- precision-growth condition for \(p_n=p_0+\gamma n\).
 
-Before new analytical results it must commit:
+It must recover RB-028 as a corollary.
 
-`research/numerical_engineering/rifc_source_graph_ir_a4r_proof_contract_0_7.md`.
+No numerical execution is authorized in CORE Gate 0.2.
 
-### Gate-0.7 target
+## NUM-ENG
 
-The gate must prospectively freeze a compact domain and then attempt to prove or refute:
-
-\[
-E_{\rm arith}(n)\le B_KN_n2^{-p_n},
-\]
-
-with finite \(B_K\), source-graph operation count
-
-\[
-N_n\le a2^n+b,
-\]
-
-and
-
-\[
-p_n=128+8n.
-\]
-
-If established for the idealized family:
-
-\[
-E_{\rm arith}(n)\to0.
-\]
-
-The gate must also prove finite-source correspondence: every finite Gate-0.6 execution inside its resource domain must correspond to the same finite idealized-family member.
-
-### Eventual-certification interpretation
-
-Even if the idealized IR-A4-R theorem is established:
-
-- the mathematical unbounded family may satisfy RB-024 eventual certification under strict margins;
-- a real finite resource-bounded invocation may still return `RESOURCE_EXHAUSTED / UNCERTIFIED`;
-- no finite-machine run is relabelled as possessing unlimited resources.
-
-This distinction is mandatory.
-
-### Non-goals
-
-Gate 0.7 does not:
-
-- modify Gate-0.6 source;
-- lift finite production resource caps;
-- implement full sequential multi-event RIFC;
-- implement NNE-A;
-- compute a full parameter-box chart radius;
-- perform scaling/performance experiments;
-- execute TR-27C;
-- execute APP-3.
-
-## CORE
-
-CORE remains:
+NUM-ENG is now:
 
 `FROZEN / WAIT`.
 
-RB-024 and every prior scientific freeze remain unchanged.
+Latest engineering/qualification chain:
+
+- RB-025 finite soundness;
+- RB-026 old-source no-go;
+- RB-027 exact-dyadic repair;
+- RB-028 restricted idealized IR-A4-R qualification.
+
+No NUM-ENG action is currently authorized.
 
 ## CORE v0.27c
 
@@ -225,15 +189,15 @@ APP-3 remains:
 
 `PROTECTED / WAIT`.
 
-AI work remains parked under the Numerics + Theory priority.
+AI work remains parked.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | NUM-ENG Gate 0.7 oversight |
-| 10 CORE | FROZEN / WAIT | RB-024 rigorous interval theory |
-| 20 NUM-ENG | READY | source-graph / idealized IR-A4-R qualification |
+| 00 MASTER | FROZEN / WAIT | CORE parametric arithmetic-theory oversight |
+| 10 CORE | READY | compact-domain RIFC arithmetic qualification theory |
+| 20 NUM-ENG | FROZEN / WAIT | RB-028 restricted qualification |
 | 50 APP-1 | PROTECTED / WAIT | unchanged |
 | 60 APP-2 | PROTECTED / WAIT | later electronics/neuromorphics |
 | 70 APP-3 | PROTECTED / WAIT | AI parked |
@@ -242,37 +206,35 @@ AI work remains parked under the Numerics + Theory priority.
 
 ## Current rollback points
 
-RB-001 through RB-026 remain unchanged.
+RB-001 through RB-027 remain unchanged.
 
-27. RB-027 NUM-ENG RIFC Exact-Dyadic Serialization Repair Freeze 0.6 — FROZEN / STABLE ENGINEERING REPAIR BASELINE — FINITE SOUNDNESS PRESERVED / IR-A4-R NOT ESTABLISHED
+28. RB-028 NUM-ENG RIFC Restricted Idealized IR-A4-R Qualification Freeze 0.7 — FROZEN / STABLE ENGINEERING ANALYTICAL QUALIFICATION — RESTRICTED K01–K06
 
 ## Exact next step
 
-### NUM-ENG
+### CORE
 
-In the existing NUM-ENG chat:
+In the existing CORE chat:
 
 `GO`
 
-In a new/replacement NUM-ENG chat:
+In a new/replacement CORE chat:
 
 `RESUME`
 
 Execute only:
 
-`research/master/prompts/numerical_engineering_rifc_source_graph_ir_a4r_qualification_gate_0_7.md`.
+`research/master/prompts/core_parametric_compact_domain_rifc_arithmetic_qualification_theory_gate_0_2.md`.
 
-The Gate-0.7 proof contract must be committed before analytical outputs.
+### NUM-ENG
 
-### CORE
-
-No CORE action is currently authorized.
+No NUM-ENG action is currently authorized.
 
 ### APP-3
 
 No APP-3 action is currently authorized.
 
-When Gate 0.7 returns, issue:
+When CORE returns, issue:
 
 `Status?`
 
@@ -282,14 +244,14 @@ in MASTER.
 
 Until explicit later authorization:
 
-- no source modification in Gate 0.7;
-- no full multi-event/NNE-A work;
+- no numerical execution in CORE Gate 0.2;
+- no NUM-ENG execution;
+- no full multi-event/NNE-A implementation;
 - no TR-27C execution;
 - no `2711xxx` RNG creation;
 - no v0.27c confirmatory execution;
 - no APP-3 execution;
 - no RB-015 relabelling;
 - no v0.28 effect-bearing science;
-- no APP-1/APP-2 execution;
 - no novelty positioning;
 - no manuscript claim freeze.
