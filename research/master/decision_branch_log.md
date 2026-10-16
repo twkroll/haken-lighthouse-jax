@@ -182,6 +182,11 @@ Following establishment of RB-019 Numerical Engineering Freeze 0.1 and RB-020 CO
 Status: STABLE
 Date: 2026-10-15
 
+## DEC-036
+Both Numerics + Theory lanes return to MASTER. `NUM-ENG Robustness, Scaling & Differentiable Kernel Gate 0.2` returns `PASS — ENGINEERING ONLY`; MASTER accepts the prospectively frozen deterministic stress matrix, the documented stale-base-tape defect/addendum, the strengthened high-level batch/tape guard overlay, the finite gradient/JAX checks, local sparse work/storage observations, and the complete regression record, and establishes `NUM-ENG Numerical Engineering Freeze 0.2` / RB-021 as a bounded stable engineering-baseline extension. The original RB-019 physical authority remains unchanged. All accelerated first-hit paths remain DEVELOPMENT COMPARATORS, and all timing/scaling outputs remain LOCAL ENGINEERING METRICS rather than scientific speedup/scaling claims. The patched aggregate reports 250/250 QA tests PASS with clean exit. Separately, `CORE Event-Chart Regularity & Certified First-Hit Theory Gate 0.1` returns a candidate PASS with substantial new first-hit, response-bound, alpha-tail, event-chart and local differentiability theory. MASTER withholds the proposed theory freeze because the candidate's EC-A4/TH-FH-06 treatment deletes structural zero-weight arrivals from the ordinary event chart, conflicting with the topology-fixed structural-coordinate convention already accepted in RB-019/RB-021, where a structurally present zero-weight edge retains its labelled delayed arrival and can have a nonzero weight derivative at zero. MASTER therefore opens exactly one narrow `CORE Event-Chart / Structural-Zero Semantic Repair Gate 0.1`; the original candidate report is preserved as audit history and unrelated theory is not reopened. APP-3 remains parked. RB-020 v0.27c execution remains parked, TR-27C-01…07 UNEVALUATED, `2711xxx` UNGENERATED / UNEVALUATED, and RB-015 remains immutable SCIENTIFIC FAIL.
+Status: STABLE
+Date: 2026-10-16
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -204,3 +209,4 @@ Date: 2026-10-15
 - RB-018: NUM-ENG Numerical Engineering Audit Freeze 0.1 — FROZEN / STABLE ENGINEERING AUDIT — CONDITIONAL / BLOCKED
 - RB-019: NUM-ENG Numerical Engineering Freeze 0.1 — FROZEN / STABLE ENGINEERING BASELINE
 - RB-020: CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
+- RB-021: NUM-ENG Numerical Engineering Freeze 0.2 — FROZEN / STABLE ENGINEERING BASELINE EXTENSION
