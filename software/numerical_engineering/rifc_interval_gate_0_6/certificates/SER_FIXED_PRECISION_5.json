@@ -1,0 +1,142 @@
+[
+  {
+    "precision": 128,
+    "exp_direct": [
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76862d63",
+        "binary_denominator_exponent": 14554,
+        "signed_numerator_bits": 128
+      },
+      {
+        "signed_numerator_hex": "0x211e7ca7e5150b38fb6ac7a31da18b59",
+        "binary_denominator_exponent": 14552,
+        "signed_numerator_bits": 126
+      }
+    ],
+    "response_composed": [
+      {
+        "signed_numerator_hex": "0x108f3e53f28a859c7db563d18ed0b941",
+        "binary_denominator_exponent": 14551,
+        "signed_numerator_bits": 125
+      },
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76864e83",
+        "binary_denominator_exponent": 14554,
+        "signed_numerator_bits": 128
+      }
+    ],
+    "old_fixed_floor_removed": true
+  },
+  {
+    "precision": 256,
+    "exp_direct": [
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76862d639bcc0cb6b38aa808d7174880ae78bf71",
+        "binary_denominator_exponent": 14682,
+        "signed_numerator_bits": 256
+      },
+      {
+        "signed_numerator_hex": "0x423cf94fca2a1671f6d58f463b4316b1cde6065b59c554046b8ba440573c5fb9",
+        "binary_denominator_exponent": 14681,
+        "signed_numerator_bits": 255
+      }
+    ],
+    "response_composed": [
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76862d639bcc0cb6b38aa808d7174880ae789e53",
+        "binary_denominator_exponent": 14682,
+        "signed_numerator_bits": 256
+      },
+      {
+        "signed_numerator_hex": "0x423cf94fca2a1671f6d58f463b4316b1cde6065b59c554046b8ba440573c9167",
+        "binary_denominator_exponent": 14681,
+        "signed_numerator_bits": 255
+      }
+    ],
+    "old_fixed_floor_removed": true
+  },
+  {
+    "precision": 512,
+    "exp_direct": [
+      {
+        "signed_numerator_hex": "0x423cf94fca2a1671f6d58f463b4316b1cde6065b59c554046b8ba440573c5fb8cde864f0d6a0ce1091996342efb12d051eb57505876abb1c3dc8893505abbf63",
+        "binary_denominator_exponent": 14937,
+        "signed_numerator_bits": 511
+      },
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76862d639bcc0cb6b38aa808d7174880ae78bf719bd0c9e1ad419c212332c685df625a0a3d6aea0b0ed576387b91126a0b577ec7",
+        "binary_denominator_exponent": 14938,
+        "signed_numerator_bits": 512
+      }
+    ],
+    "response_composed": [
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76862d639bcc0cb6b38aa808d7174880ae78bf719bd0c9e1ad419c212332c685df625a0a3d6aea0b0ed576387b91126a0b573c89",
+        "binary_denominator_exponent": 14938,
+        "signed_numerator_bits": 512
+      },
+      {
+        "signed_numerator_hex": "0x211e7ca7e5150b38fb6ac7a31da18b58e6f3032dace2aa0235c5d2202b9e2fdc66f432786b50670848ccb1a177d896828f5aba82c3b55d8e1ee4449a82d5f041",
+        "binary_denominator_exponent": 14936,
+        "signed_numerator_bits": 510
+      }
+    ],
+    "old_fixed_floor_removed": true
+  },
+  {
+    "precision": 2048,
+    "exp_direct": [
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76862d639bcc0cb6b38aa808d7174880ae78bf719bd0c9e1ad419c212332c685df625a0a3d6aea0b0ed576387b91126a0b577ec680b31897c68ef035cca8375752761038be274a95d94d8b7230d40f297349fda502b6664e474061937a796cf2e12698cc1c13fa83a0075bf181abd551c464333d0566252b8bc04c8a712bf8aa616ee91fd61a7497dc602d034549cd4b8481307a72aa5707b34e88525acedd7dcfcded3f412df1234c34c431c72ae702ed662d64cf8d802b8f47dcbb7916844a0b6ec1ebf4c0124301dc6f3dcd003aa8c4ab92b494365181b258b921b053f2451a687a63d79447dc5b1c11a788be6eb53caa9413",
+        "binary_denominator_exponent": 16474,
+        "signed_numerator_bits": 2048
+      },
+      {
+        "signed_numerator_hex": "0x211e7ca7e5150b38fb6ac7a31da18b58e6f3032dace2aa0235c5d2202b9e2fdc66f432786b50670848ccb1a177d896828f5aba82c3b55d8e1ee4449a82d5dfb1a02cc625f1a3bc0d732a0dd5d49d840e2f89d2a5765362dc8c3503ca5cd27f6940ad999391d01864de9e5b3cb849a6330704fea0e801d6fc606af55471190ccf4159894ae2f013229c4afe2a985bba47f5869d25f7180b40d1527352e1204c1e9caa95c1ecd3a21496b3b75f73f37b4fd04b7c48d30d310c71cab9c0bb598b5933e3600ae3d1f72ede45a11282dbb07afd300490c0771bcf73400eaa312ae4ad250d94606c962e486c14fc91469a1e98f5e511f716c70469e22f9bad4f2aa505",
+        "binary_denominator_exponent": 16472,
+        "signed_numerator_bits": 2046
+      }
+    ],
+    "response_composed": [
+      {
+        "signed_numerator_hex": "0x423cf94fca2a1671f6d58f463b4316b1cde6065b59c554046b8ba440573c5fb8cde864f0d6a0ce1091996342efb12d051eb57505876abb1c3dc8893505abbf6340598c4be347781ae6541baba93b081c5f13a54aeca6c5b9186a0794b9a4fed2815b332723a030c9bd3cb67970934c660e09fd41d003adf8c0d5eaa8e232199e82b31295c5e026453895fc5530b7748feb0d3a4bee301681a2a4e6a5c240983d39552b83d9a744292d676ebee7e6f69fa096f891a61a6218e395738176b316b267c6c015c7a3ee5dbc8b422505b760f5fa60092180ee379ee6801d546255c95a4a1b28c0d92c5c90d829f9228d343d31ebca23ee2d8e08d3c45f375a9e5528eb",
+        "binary_denominator_exponent": 16473,
+        "signed_numerator_bits": 2047
+      },
+      {
+        "signed_numerator_hex": "0x423cf94fca2a1671f6d58f463b4316b1cde6065b59c554046b8ba440573c5fb8cde864f0d6a0ce1091996342efb12d051eb57505876abb1c3dc8893505abbf6340598c4be347781ae6541baba93b081c5f13a54aeca6c5b9186a0794b9a4fed2815b332723a030c9bd3cb67970934c660e09fd41d003adf8c0d5eaa8e232199e82b31295c5e026453895fc5530b7748feb0d3a4bee301681a2a4e6a5c240983d39552b83d9a744292d676ebee7e6f69fa096f891a61a6218e395738176b316b267c6c015c7a3ee5dbc8b422505b760f5fa60092180ee379ee6801d546255c95a4a1b28c0d92c5c90d829f9228d343d31ebca23ee2d8e08d3c45f375a9e555a99",
+        "binary_denominator_exponent": 16473,
+        "signed_numerator_bits": 2047
+      }
+    ],
+    "old_fixed_floor_removed": true
+  },
+  {
+    "precision": 4096,
+    "exp_direct": [
+      {
+        "signed_numerator_hex": "0x423cf94fca2a1671f6d58f463b4316b1cde6065b59c554046b8ba440573c5fb8cde864f0d6a0ce1091996342efb12d051eb57505876abb1c3dc8893505abbf6340598c4be347781ae6541baba93b081c5f13a54aeca6c5b9186a0794b9a4fed2815b332723a030c9bd3cb67970934c660e09fd41d003adf8c0d5eaa8e232199e82b31295c5e026453895fc5530b7748feb0d3a4bee301681a2a4e6a5c240983d39552b83d9a744292d676ebee7e6f69fa096f891a61a6218e395738176b316b267c6c015c7a3ee5dbc8b422505b760f5fa60092180ee379ee6801d546255c95a4a1b28c0d92c5c90d829f9228d343d31ebca23ee2d8e08d3c45f375a9e554a09b6bc7b23e19c3772c3ed2496d87d7d91dba09afc0f092f6760c27edb6929dcbed23a7a466ce8547164f291a2f2ec7684fc91403ef28f818c3163cf0e04c1ac7def9b78260205c7b4c46ebedeb2c4c43edc7cbfbdb4524e9f7e7614820569d4ce6e4e6432b29bac561bfc057b5ba1b8242f00356851202e823ea2f3431158f3c68456a176dc825914da11c87297b6cc0be741d8f68d6cf861b634ea2abc95531fed3ef4c91d3596b9c84135cb3f95220f5f39da7805ae759e379d0fb73a0c01ceee055e2c2f1d13654ae0b26e06f53304034abc82b8c2c699e6d011bc30fb14c36a9990a969d849f105afca076a64263b92ce8462cc1f8e6a9496b33341b346c7",
+        "binary_denominator_exponent": 18521,
+        "signed_numerator_bits": 4095
+      },
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76862d639bcc0cb6b38aa808d7174880ae78bf719bd0c9e1ad419c212332c685df625a0a3d6aea0b0ed576387b91126a0b577ec680b31897c68ef035cca8375752761038be274a95d94d8b7230d40f297349fda502b6664e474061937a796cf2e12698cc1c13fa83a0075bf181abd551c464333d0566252b8bc04c8a712bf8aa616ee91fd61a7497dc602d034549cd4b8481307a72aa5707b34e88525acedd7dcfcded3f412df1234c34c431c72ae702ed662d64cf8d802b8f47dcbb7916844a0b6ec1ebf4c0124301dc6f3dcd003aa8c4ab92b494365181b258b921b053f2451a687a63d79447dc5b1c11a788be6eb53caa94136d78f647c3386ee587da492db0fafb23b74135f81e125ecec184fdb6d253b97da474f48cd9d0a8e2c9e52345e5d8ed09f922807de51f031862c79e1c098358fbdf36f04c040b8f6988dd7dbd6589887db8f97f7b68a49d3efcec29040ad3a99cdc9cc865653758ac37f80af6b74370485e006ad0a2405d047d45e68622b1e78d08ad42edb904b229b42390e52f6d9817ce83b1ed1ad9f0c36c69d455792aa63fda7de9923a6b2d7390826b967f2a441ebe73b4f00b5ceb3c6f3a1f6e7418039ddc0abc585e3a26ca95c164dc0dea66080695790571858d33cda0237861f62986d5332152d3b093e20b5f940ed4c84c77259d08c5983f1cd5292d666683668d8f",
+        "binary_denominator_exponent": 18522,
+        "signed_numerator_bits": 4096
+      }
+    ],
+    "response_composed": [
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76862d639bcc0cb6b38aa808d7174880ae78bf719bd0c9e1ad419c212332c685df625a0a3d6aea0b0ed576387b91126a0b577ec680b31897c68ef035cca8375752761038be274a95d94d8b7230d40f297349fda502b6664e474061937a796cf2e12698cc1c13fa83a0075bf181abd551c464333d0566252b8bc04c8a712bf8aa616ee91fd61a7497dc602d034549cd4b8481307a72aa5707b34e88525acedd7dcfcded3f412df1234c34c431c72ae702ed662d64cf8d802b8f47dcbb7916844a0b6ec1ebf4c0124301dc6f3dcd003aa8c4ab92b494365181b258b921b053f2451a687a63d79447dc5b1c11a788be6eb53caa94136d78f647c3386ee587da492db0fafb23b74135f81e125ecec184fdb6d253b97da474f48cd9d0a8e2c9e52345e5d8ed09f922807de51f031862c79e1c098358fbdf36f04c040b8f6988dd7dbd6589887db8f97f7b68a49d3efcec29040ad3a99cdc9cc865653758ac37f80af6b74370485e006ad0a2405d047d45e68622b1e78d08ad42edb904b229b42390e52f6d9817ce83b1ed1ad9f0c36c69d455792aa63fda7de9923a6b2d7390826b967f2a441ebe73b4f00b5ceb3c6f3a1f6e7418039ddc0abc585e3a26ca95c164dc0dea66080695790571858d33cda0237861f62986d5332152d3b093e20b5f940ed4c84c77259d08c5983f1cd5292d666683666c7",
+        "binary_denominator_exponent": 18518,
+        "signed_numerator_bits": 4092
+      },
+      {
+        "signed_numerator_hex": "0x8479f29f94542ce3edab1e8c76862d639bcc0cb6b38aa808d7174880ae78bf719bd0c9e1ad419c212332c685df625a0a3d6aea0b0ed576387b91126a0b577ec680b31897c68ef035cca8375752761038be274a95d94d8b7230d40f297349fda502b6664e474061937a796cf2e12698cc1c13fa83a0075bf181abd551c464333d0566252b8bc04c8a712bf8aa616ee91fd61a7497dc602d034549cd4b8481307a72aa5707b34e88525acedd7dcfcded3f412df1234c34c431c72ae702ed662d64cf8d802b8f47dcbb7916844a0b6ec1ebf4c0124301dc6f3dcd003aa8c4ab92b494365181b258b921b053f2451a687a63d79447dc5b1c11a788be6eb53caa94136d78f647c3386ee587da492db0fafb23b74135f81e125ecec184fdb6d253b97da474f48cd9d0a8e2c9e52345e5d8ed09f922807de51f031862c79e1c098358fbdf36f04c040b8f6988dd7dbd6589887db8f97f7b68a49d3efcec29040ad3a99cdc9cc865653758ac37f80af6b74370485e006ad0a2405d047d45e68622b1e78d08ad42edb904b229b42390e52f6d9817ce83b1ed1ad9f0c36c69d455792aa63fda7de9923a6b2d7390826b967f2a441ebe73b4f00b5ceb3c6f3a1f6e7418039ddc0abc585e3a26ca95c164dc0dea66080695790571858d33cda0237861f62986d5332152d3b093e20b5f940ed4c84c77259d08c5983f1cd5292d66668366f0eb",
+        "binary_denominator_exponent": 18522,
+        "signed_numerator_bits": 4096
+      }
+    ],
+    "old_fixed_floor_removed": true
+  }
+]

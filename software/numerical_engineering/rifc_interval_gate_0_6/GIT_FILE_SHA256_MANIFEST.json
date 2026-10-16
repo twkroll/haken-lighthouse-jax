@@ -1,0 +1,138 @@
+{
+  "classification": "ENGINEERING DEVELOPMENT ONLY",
+  "frozen_rb025_source_sha256": "0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539",
+  "files": [
+    {
+      "repository_path": "research/numerical_engineering/rifc_exact_dyadic_repair_requalification_gate_0_6.md",
+      "sha256": "2154ac9285b61f6083370bd6861fd92dbc8bfe6d042bc2bc6b021799d3b041c9",
+      "size_bytes": 7865,
+      "git_blob_sha1": "dd5f7207e63b3b70388659050bb9b3fde9d3401e"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/EXACT_DYADIC_AND_IR_A4R_PROOF_0_6.md",
+      "sha256": "377912825997f9a62bb5702e50c1f746ba2bf970b53671609553e5ea0862af6a",
+      "size_bytes": 7914,
+      "git_blob_sha1": "9e432e5abaeed3226a860c8baddcc3d2e72cb285"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/README.md",
+      "sha256": "de01e64f215b42723d8d5187acc21adddea511d9b17b400986927454fb3f90aa",
+      "size_bytes": 1979,
+      "git_blob_sha1": "e1dee5c0b9cb908950775f3342fb7278970b675f"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/tests/test_gate06_exact_dyadic.py",
+      "sha256": "1f37899dbce45fa08d9b9eac0fdfca5139244974b3a656873871ed3405c9bf6d",
+      "size_bytes": 5267,
+      "git_blob_sha1": "eb4f0ae02035943ff58458ef7ed436a116a5e70a"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/tests/test_rifc_gate04_repaired.py",
+      "sha256": "e48011f505da3913afd29ee53e2562c2894d6dfe4225c4a8b7af75691d84c5eb",
+      "size_bytes": 9584,
+      "git_blob_sha1": "d7acb9cd0b5b30d2f19ce87dc960b30c4774e329"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/scripts/produce_gate06_artifacts.py",
+      "sha256": "04975c4f5a0394a587688f476dd5c1b99693f172c43dab38a49b2f97d4d922a0",
+      "size_bytes": 3109,
+      "git_blob_sha1": "5a1ec71412585a65c2c2303b6fabde440d5b3aec"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/logs/RIFC_COMBINED_71.log",
+      "sha256": "3c3631282d84dd36f79fdca65585b8171eec43ee57e3fcaa2ded52ce8fc8a46b",
+      "size_bytes": 99,
+      "git_blob_sha1": "22ff67d8e36d7ec89a858c943b2c24aeee8cb9d3"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/logs/COMPAT_28.log",
+      "sha256": "eb5d3c04b3df2e8ff9f54a2e430cff3fe0ed7b6364116f6ccd8f827755e161ca",
+      "size_bytes": 100,
+      "git_blob_sha1": "b150838b3a214e784129ccd11ef3ec2663bcec55"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/logs/SER_TESTS.log",
+      "sha256": "368442f9d96808211014938c6662c1aac70f4bf59cf47f3a2fe53f05e60d8b55",
+      "size_bytes": 99,
+      "git_blob_sha1": "be57fe8b450114c606235836e5c8c98b791fb9d9"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/logs/RB025_REPAIRED_26.log",
+      "sha256": "9240020f2066f1d38464fb246c269e59b6890ac818f3e8ffef0448608e322613",
+      "size_bytes": 99,
+      "git_blob_sha1": "ac85fe5bfc4965c5e3d53d5a89b3dadd123a0cce"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/logs/ARTIFACT_GENERATION.log",
+      "sha256": "0bafd8f204458e34b11e4f987a89571a274a2eee4db9af9cd30f022da80f6772",
+      "size_bytes": 168,
+      "git_blob_sha1": "8ca1dc06004e5bc1499644fb03cac0f526e5288f"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/certificates/CERTIFICATE_MANIFEST.json",
+      "sha256": "8620e5b51093ac37d8d8caca384cd011c70c028fe2dd5b6aa6fe0adc3ca4c03a",
+      "size_bytes": 1299,
+      "git_blob_sha1": "d3b27161f475f762db626328010fcde30d0a8710"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/certificates/ENVIRONMENT.json",
+      "sha256": "96120b85fc634ff7d9a2203390c23f9884ea4212340a10d0a10637448db45a47",
+      "size_bytes": 662,
+      "git_blob_sha1": "e10c4becbaf675537facc4b457a7df23899f15d1"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/certificates/S01_strict_no_hit.json",
+      "sha256": "936ee5a75bfa3d9be0bfefa755511edcef990d0fb35ec80195f366f72bbef76b",
+      "size_bytes": 447,
+      "git_blob_sha1": "018d4ff7e7738ab1e5e90b90ccd4f1e86a7c00c0"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/certificates/S02_regular_hit.json",
+      "sha256": "14e1d52b681eaeb29f73648d2daa5a6f05c2851a130508c8f0b402fdf10956f5",
+      "size_bytes": 1131,
+      "git_blob_sha1": "eaa56b19c54677884e637f71094357edd02e48ab"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/certificates/S03_narrow_pulse_hit.json",
+      "sha256": "1df37a13e1cf804728219d7ed7cce46edea9fd737602ba9e3b4d4df28864894a",
+      "size_bytes": 6667,
+      "git_blob_sha1": "9b1400e26603b7ab47379e5a92efbdf8c2b8d85f"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/certificates/S10_order.json",
+      "sha256": "439716179aa5a9a85282c574d4c0bf273d72ef80f7979041cc57d65b70125fda",
+      "size_bytes": 176,
+      "git_blob_sha1": "1a1e51456be96835253eb497459692b15ca60f40"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/certificates/S13_crossing_arrival.json",
+      "sha256": "94d58784aed075148bdb91005035e0e149775e002a4f6bf97dd8834ef60f5de8",
+      "size_bytes": 260,
+      "git_blob_sha1": "7300fcede1fdb4a31a1ec55dc000af1e641c06de"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/certificates/S13_zero_arrival.json",
+      "sha256": "cd99c615d9520c49305533bb361ea3ab35409a150616896338d412405e79b443",
+      "size_bytes": 247,
+      "git_blob_sha1": "bf067310786d7b6ecdd6301f7a8b4cd228f2203a"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/certificates/SER_FIXED_PRECISION_5.json",
+      "sha256": "13ccb7a4243e925d9d6318156d079813eb15bc9183f40601ed172575c863dc9e",
+      "size_bytes": 10442,
+      "git_blob_sha1": "239cfd34c8ef90e54e7ecc24ec2eddac75a382bf"
+    },
+    {
+      "repository_path": "software/numerical_engineering/rifc_interval_gate_0_6/source/rifc_mpfr_v0_2.py",
+      "sha256": "a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202",
+      "size_bytes": 20374,
+      "git_blob_sha1": "1b94cf36447f428a9968c90ac3c0e74c18494d1c"
+    },
+    {
+      "local_only_artifact": "certificates/SER_tiny_nohit.json",
+      "sha256": "3d8a9a244cc844487a985394b4cce1f2682720b5912107e1c7eeb33719d00ff1",
+      "size_bytes": 120343,
+      "reproducible_by": "scripts/produce_gate06_artifacts.py"
+    }
+  ]
+}

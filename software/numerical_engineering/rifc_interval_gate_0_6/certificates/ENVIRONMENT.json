@@ -1,0 +1,14 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "os": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "mpfr": "4.2.2",
+  "gmp": "6.3.0",
+  "libmpfr_sha256": "4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c",
+  "libgmp_sha256": "d15e1585c6c267296459570c8ac217ca9123044bcd4e896d2f686b32333445d2",
+  "old_sha256": "0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539",
+  "new_sha256": "a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202",
+  "protected_rng": "none",
+  "ir_a4r": "NOT ESTABLISHED",
+  "q6_q7_rate_eventual_validation": "NOT EXECUTED due to Q4 analytical prerequisite"
+}
