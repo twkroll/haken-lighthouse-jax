@@ -8,45 +8,45 @@ Rollback point: RB-027
 
 MASTER reviews and accepts the returned:
 
-\`NUM-ENG MPFR Exact-Dyadic Serialization Repair & IR-A4-R Requalification Gate 0.6\`
+`NUM-ENG MPFR Exact-Dyadic Serialization Repair & IR-A4-R Requalification Gate 0.6`
 
 from branch:
 
-\`engineering/numerics-v0.1\`.
+`engineering/numerics-v0.1`.
 
 Frozen provenance:
 
 - Gate-0.6 pre-repair / pre-execution contract commit:
-  \`779c8f05256406c5684d4dec35ae123a418027fb\`;
+  `779c8f05256406c5684d4dec35ae123a418027fb`;
 - contract blob SHA:
-  \`efd03c296a58b35d4f4a193a93ed29a3b8dbbdf4\`;
+  `efd03c296a58b35d4f4a193a93ed29a3b8dbbdf4`;
 - returned gate blob SHA:
-  \`dd5f7207e63b3b70388659050bb9b3fde9d3401e\`;
+  `dd5f7207e63b3b70388659050bb9b3fde9d3401e`;
 - repaired source path:
-  \`software/numerical_engineering/rifc_interval_gate_0_6/source/rifc_mpfr_v0_2.py\`;
+  `software/numerical_engineering/rifc_interval_gate_0_6/source/rifc_mpfr_v0_2.py`;
 - repaired source SHA-256:
-  \`a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202\`;
+  `a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202`;
 - exact-dyadic / IR-A4-R proof artifact blob:
-  \`9e432e5abaeed3226a860c8baddcc3d2e72cb285\`;
+  `9e432e5abaeed3226a860c8baddcc3d2e72cb285`;
 - backend:
   GNU MPFR 4.2.2 + GNU GMP 6.3.0;
 - MPFR shared-library SHA-256:
-  \`4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c\`;
+  `4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c`;
 - GMP shared-library SHA-256:
-  \`d15e1585c6c267296459570c8ac217ca9123044bcd4e896d2f686b32333445d2\`.
+  `d15e1585c6c267296459570c8ac217ca9123044bcd4e896d2f686b32333445d2`.
 
 The RB-025 source remains immutable and byte-identical:
 
 - blob:
-  \`6df6740e86344628a2b9583f0a3f719f9d5817f8\`;
+  `6df6740e86344628a2b9583f0a3f719f9d5817f8`;
 - SHA-256:
-  \`0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539\`.
+  `0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539`.
 
 RB-026 remains historically valid for the old RB-025 serializer.
 
 ## Gate result
 
-\`SERIALIZATION REPAIR VALIDATED / FINITE SOUNDNESS PRESERVED / IR-A4-R NOT ESTABLISHED\`.
+`SERIALIZATION REPAIR VALIDATED / FINITE SOUNDNESS PRESERVED / IR-A4-R NOT ESTABLISHED`.
 
 This is a bounded engineering repair result.
 
@@ -66,19 +66,19 @@ for each already directed-rounded finite MPFR value \(y_p\).
 
 The accepted conversion path uses:
 
-- \`mpfr_get_z_2exp\` to obtain an exact integer significand and exponent;
+- `mpfr_get_z_2exp` to obtain an exact integer significand and exponent;
 - exact GMP integer serialization;
 - integer-only Python reconstruction;
-- exact \`Fraction\` construction.
+- exact `Fraction` construction.
 
 The conversion adds zero numerical rounding error beyond the already directed-rounded MPFR endpoint.
 
 No:
 
 - Python float;
-- \`math.exp\`;
+- `math.exp`;
 - decimal numerical roundtrip;
-- unproved \`nextafter\`;
+- unproved `nextafter`;
 - fixed underflow floor;
 - precision-independent widening
 
@@ -94,7 +94,7 @@ Frozen finite guards include:
 - \(|e|\le131072\);
 - significand bound approximately tied to \(p\);
 - exact rational numerator/denominator bit-length bounds;
-- finite \`certify\` refinement budget with \`nmax<=16\`.
+- finite `certify` refinement budget with `nmax<=16`.
 
 Unsupported resource cases fail closed.
 
@@ -145,7 +145,7 @@ These are finite engineering-validation results only.
 
 IR-A4-R remains:
 
-\`NOT ESTABLISHED\`.
+`NOT ESTABLISHED`.
 
 The exact serializer removes the previously proven fixed-rate obstruction, but Gate 0.6 does not prove a complete source-wide constant
 
@@ -176,7 +176,7 @@ The repaired source enforces finite resource caps.
 In particular:
 
 - \(p\le8192\);
-- \`certify\` rejects \`nmax>16\`.
+- `certify` rejects `nmax>16`.
 
 The RB-024 theoretical refinement schedule
 
@@ -193,7 +193,7 @@ This does not contradict RB-024.
 It means that:
 
 - finite positive certificates remain sound;
-- finite resource exhaustion remains \`RESOURCE_EXHAUSTED / UNCERTIFIED\`;
+- finite resource exhaustion remains `RESOURCE_EXHAUSTED / UNCERTIFIED`;
 - implementation-wide eventual certification is not frozen.
 
 ## Component classification
@@ -239,7 +239,7 @@ It does not authorize:
 - APP-3;
 - v0.28 effect-bearing science;
 - full multi-event/NNE-A work;
-- executable-source merge to \`main\`;
+- executable-source merge to `main`;
 - novelty/manuscript claims.
 
 ## STOP
