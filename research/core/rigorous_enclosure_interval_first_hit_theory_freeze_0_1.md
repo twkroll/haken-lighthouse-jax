@@ -8,10 +8,10 @@ Rollback point: RB-024
 
 MASTER jointly freezes:
 
-1. \`research/core/rigorous_enclosure_interval_first_hit_theory_gate_0_1.md\`
-   - candidate blob SHA: \`ca2773d3845f0a36053df21c23fa9af7b4ce8759\`
-2. \`research/core/rigorous_enclosure_interval_first_hit_theory_proof_closure_repair_gate_0_1.md\`
-   - repair blob SHA: \`a20937a65e77b4c16d6f140de30154b7f828aa62\`
+1. `research/core/rigorous_enclosure_interval_first_hit_theory_gate_0_1.md`
+   - candidate blob SHA: `ca2773d3845f0a36053df21c23fa9af7b4ce8759`
+2. `research/core/rigorous_enclosure_interval_first_hit_theory_proof_closure_repair_gate_0_1.md`
+   - repair blob SHA: `a20937a65e77b4c16d6f140de30154b7f828aa62`
 
 The repair is the mandatory superseding authority for every section listed as superseded in its Part VI.
 
@@ -171,7 +171,7 @@ then the represented trajectory family has no first hit on the certified segment
 
 Output:
 
-\`CERTIFIED_NO_HIT\`.
+`CERTIFIED_NO_HIT`.
 
 The positive certificate retains the strict margin
 
@@ -201,7 +201,7 @@ then every represented trajectory has a unique transversal first hit in the brac
 
 Output:
 
-\`CERTIFIED_REGULAR_HIT\`.
+`CERTIFIED_REGULAR_HIT`.
 
 The certificate includes the hit bracket and rigorous transversality lower bound.
 
@@ -216,7 +216,7 @@ A finite resource budget does not inherit this eventual guarantee.
 
 If \(N_{\max}\) is exhausted first, the required output remains:
 
-\`RESOURCE_EXHAUSTED / UNCERTIFIED\`.
+`RESOURCE_EXHAUSTED / UNCERTIFIED`.
 
 ## 10. Rigorous transversality
 
@@ -250,7 +250,7 @@ certifies the event order.
 
 Interval overlap alone means:
 
-\`UNCERTIFIED_EVENT_ORDER\`
+`UNCERTIFIED_EVENT_ORDER`
 
 and does not prove collision.
 
@@ -334,13 +334,13 @@ The frozen certification taxonomy includes:
 - UNSUPPORTED_CASE;
 - MATHEMATICAL_CONTRADICTION.
 
-For a parameter-family \`CERTIFIED_ORDINARY_CHART\`, explicit inter-event no-new-event completeness is mandatory.
+For a parameter-family `CERTIFIED_ORDINARY_CHART`, explicit inter-event no-new-event completeness is mandatory.
 
 ## 16. RIFC-0.1
 
 RB-024 freezes the deterministic constructive algorithm:
 
-\`RIFC-0.1 — Rigorous Interval First-Hit Certifier\`.
+`RIFC-0.1 — Rigorous Interval First-Hit Certifier`.
 
 Its core structure is:
 
@@ -407,7 +407,7 @@ RB-024 does not:
 
 - alter RB-015 SCIENTIFIC FAIL;
 - execute TR-27C;
-- create any \`2711xxx\` RNG object;
+- create any `2711xxx` RNG object;
 - authorize v0.27c confirmatory execution;
 - authorize APP-3;
 - authorize v0.28 effect-bearing science;
