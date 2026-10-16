@@ -187,6 +187,11 @@ Both Numerics + Theory lanes return to MASTER. `NUM-ENG Robustness, Scaling & Di
 Status: STABLE
 Date: 2026-10-16
 
+## DEC-037
+`CORE Event-Chart / Structural-Zero Semantic Repair Gate 0.1` returns PASS. MASTER accepts the repair as the mandatory superseding correction to the returned first-hit/event-chart candidate theory and establishes `CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1` / RB-022. The frozen theory includes strict-margin first-hit/no-hit conditions, exact arrival-free alpha-state extrema, finite certification under convergent outward enclosures, global response smoothness and derivative bounds, alpha-tail/phase-error bounds, finite-event ordinary chart regularity, local event-time differentiability, positive local chart-neighborhood existence and TH-FH-01…TH-FH-08 as theory-derived future validation fixtures. The mandatory repaired structural-zero rule is: fixed structural topology is independent of coupling value; a structurally present edge at w=0 retains its labelled delayed arrival, its alpha-state jump is the identity, topology is not deleted at zero, and the weight derivative at zero need not vanish. The original conflicting candidate statements remain audit history only. No numerical validation, TR-27C, protected RNG or effect-bearing science is executed by RB-022. Under the user's Numerics + Theory priority, MASTER next opens `NUM-ENG Theory-Derived First-Hit Certification Validation Gate 0.3` on `engineering/numerics-v0.1`. Before execution it must freeze a finite deterministic validation contract; it will test RB-022 alpha-segment formulas/extrema, first-hit/no-hit certificates, response/tail bounds, ordinary-chart persistence, event-time derivatives, repaired structural-zero semantics, TH-FH-01…08 and stale-tape/itinerary fail-closed behavior against the RB-021 engineering baseline. All Gate-0.3 outputs remain engineering/theory-validation evidence. If a deterministic fixture contradicts RB-022 under all theorem assumptions, the gate must return BLOCKED without repairing the theorem in-place. APP-3 and v0.27c execution remain parked; TR-27C-01…07 remain UNEVALUATED; `2711xxx` remains UNGENERATED / UNEVALUATED; RB-015 remains immutable SCIENTIFIC FAIL.
+Status: STABLE
+Date: 2026-10-16
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -210,3 +215,4 @@ Date: 2026-10-16
 - RB-019: NUM-ENG Numerical Engineering Freeze 0.1 — FROZEN / STABLE ENGINEERING BASELINE
 - RB-020: CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 - RB-021: NUM-ENG Numerical Engineering Freeze 0.2 — FROZEN / STABLE ENGINEERING BASELINE EXTENSION
+- RB-022: CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
