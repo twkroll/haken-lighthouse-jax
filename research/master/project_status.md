@@ -1,6 +1,6 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.12
+Version: 2.13
 Date: 2026-10-16
 
 ## Governance state
@@ -9,7 +9,7 @@ Canonical rule:
 
 `Reconstruct state, not frozen science.`
 
-The frozen chain remains through RB-023.
+The frozen chain now extends through RB-024.
 
 Preserved boundaries:
 
@@ -18,114 +18,168 @@ Preserved boundaries:
 - RB-020 remains a frozen but unexecuted v0.27c pre-execution contract;
 - RB-022 remains frozen first-hit/event-chart theory;
 - RB-023 remains frozen finite theory-consistency engineering validation;
+- RB-024 freezes rigorous outward-interval first-hit certification theory;
 - APP-3 remains PARKED / PROTECTED / WAIT.
 
-## Returned rigorous-interval theory candidate
+## RB-024 — rigorous interval theory
 
-`CORE Rigorous Enclosure & Interval First-Hit Certification Theory Gate 0.1` returned candidate PASS and produced:
+`CORE Rigorous Enclosure & Interval First-Hit Certification Theory Gate 0.1` returned candidate PASS.
 
-`research/core/rigorous_enclosure_interval_first_hit_theory_gate_0_1.md`.
+MASTER identified two freeze blockers and opened the narrow
+`CORE Rigorous Interval Theory Proof-Closure Repair Gate 0.1`.
 
-The candidate establishes a substantial constructive theory layer:
+That repair returned PASS and closes both issues:
 
-- finite outward-valid interval semantics;
-- directed-rounding and certified-transcendental proof obligations;
+1. the arithmetic-convergence proof now uses explicit IR-A4-R bounded-domain excess-width/rate obligations sufficient for the fixed schedule `p_n=128+8n`;
+2. complete ordinary-chart preservation is no longer inferred from indexed-event margins alone and now requires explicit neighborhood-wide no-new-event completeness (NNE-A).
+
+MASTER therefore establishes:
+
+`CORE Rigorous Enclosure & Interval First-Hit Certification Theory Freeze 0.1` / RB-024.
+
+Status:
+
+`FROZEN / STABLE SCIENTIFIC THEORY`.
+
+### Frozen constructive certification layer
+
+RB-024 includes:
+
+- outward-directed interval arithmetic proof obligations;
+- rigorous exponential inclusion requirement;
 - interval alpha-state propagation;
-- threshold-safe response enclosures;
-- dyadic interval Darboux phase-gain enclosures;
-- strict no-hit and regular-hit certificates;
-- transversality and event-order certificates;
 - structural-zero interval semantics;
-- fail-closed certification taxonomy;
-- one constructive algorithm `RIFC-0.1`;
-- conditional chart-radius analysis;
-- explicit open problems.
+- threshold-safe monotone response enclosures;
+- dyadic interval Darboux phase-gain enclosures;
+- `CERTIFIED_NO_HIT`;
+- `CERTIFIED_REGULAR_HIT`;
+- rigorous bracket transversality;
+- event-order / arrival / horizon certificates;
+- fail-closed inconclusive/resource/arithmetic taxonomy;
+- deterministic algorithm `RIFC-0.1`;
+- explicit distinction between finite certificate soundness and eventual certification;
+- indexed-event margin radius;
+- full-chart preservation only with separate NNE-A completeness;
+- explicit non-result for a universal automatic full parameter-box chart radius.
 
-No numerical execution occurred.
+### Arithmetic proof boundary
 
-## MASTER freeze review
+Finite positive certificate soundness requires outward inclusion but does not require the convergence-rate assumption once a strict certificate has already been obtained.
 
-MASTER does **not** yet establish the proposed rigorous-interval theory freeze.
-
-Two proof-closure issues must be repaired first.
-
-### A. precision/convergence assumption mismatch
-
-Section 18 bounds accumulated arithmetic overestimation by
+Eventual certification under refinement additionally requires IR-A4-R, including a bounded-domain rate of the form
 
 [
-C 2^n 2^{-p_n}
+operatorname{excwid}(mathcal O_p(x))
+le C_K2^{-p},
 ]
 
-with (p_n=128+8n).
+plus a fixed-expression propagation bound.
 
-But the current IR-A4 states only that primitive interval overestimation tends to zero with precision.
+Under the fixed schedule
 
-That qualitative assumption alone does not imply the explicit (O(2^{-p})) rate used in the proof.
+[
+p_n=128+8n
+]
 
-Therefore either:
+and operation count
 
-- IR-A4 must be strengthened to a uniform bounded-domain rate sufficient for the fixed precision schedule; or
-- the precision schedule must be replaced by a deterministic schedule derived from an explicit primitive-error bound.
+[
+N_n=O(2^n),
+]
 
-Until that is closed, the eventual-enclosure convergence / finite strict-margin certification proof is not freeze-ready as written.
+the repaired arithmetic excess bound tends to zero.
 
-### B. chart-radius overclaim
+### Chart-preservation boundary
 
-Section 28 proves preservation of positive margins for already indexed event functions under neighborhood-wide derivative bounds.
+For already-indexed events, rigorous neighborhood-wide derivative bounds provide a computable radius preserving indexed transversality, separation and boundary margins.
 
-That alone does not exclude insertion of a previously absent spike/event between existing events.
+This is not itself a full chart-radius theorem.
 
-Therefore the conclusion that the **same complete ordinary event chart** is preserved requires an additional rigorous no-new-event completeness hypothesis on all inter-event segments, or the theorem must be weakened to indexed-event margin preservation only.
+A full ordinary-chart radius additionally requires independent NNE-A segment-completeness certificates excluding event insertion/deletion across the entire finite tape.
 
-The report itself already recognizes circularity risk in obtaining neighborhood-wide derivative bounds; MASTER requires the theorem statement to become explicitly non-circular before freeze.
+No universal automatic `rho_NNE` construction is frozen.
 
-## Current CORE action
+## NUM-ENG next step
 
-MASTER opens exactly one narrow repair:
+MASTER opens:
 
-`CORE Rigorous Interval Theory Proof-Closure Repair Gate 0.1`.
+`NUM-ENG RIFC-0.1 Outward-Interval Implementation & Validation Gate 0.4`.
 
 Status:
 
 `READY`.
 
-Prompt:
+Development branch:
 
-`research/master/prompts/core_rigorous_interval_theory_proof_closure_repair_gate_0_1.md`.
+`engineering/numerics-v0.1`.
 
-The repair may modify only the arithmetic-convergence assumptions/proof and chart-radius/no-new-event claim plus logically dependent references.
+Before any Gate-0.4 validation output, NUM-ENG must commit a finite pre-execution contract fixing:
 
-The original candidate remains audit history.
+- interval backend and exact version;
+- directed-rounding semantics;
+- rigorous exponential inclusion contract;
+- which RB-024 arithmetic obligations are actually established;
+- compact admissible domains for any convergence claim;
+- exact fixtures/refinement limits/outcome classes;
+- negative controls and proof-artifact format.
 
-## NUM-ENG
+Gate 0.4 must implement and validate:
 
-RB-023 remains:
+- outward interval primitives;
+- RIFC alpha propagation;
+- threshold-safe response intervals;
+- Darboux phase-gain intervals;
+- strict no-hit certificates;
+- regular-hit brackets/transversality;
+- structural-zero arrivals;
+- event/horizon ordering;
+- fail-closed result taxonomy;
+- serializable/replayable certificate artifacts.
 
-`FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT`.
+If IR-A4-R cannot be independently established, a bounded engineering PASS may still be possible for **finite certificate soundness only**, but eventual-certification behavior must remain DEFERRED.
 
-No active NUM-ENG gate.
+If even finite outward inclusion cannot be justified, the gate must return BLOCKED.
 
-No interval implementation is authorized until the CORE proof-closure repair returns and MASTER decides whether to freeze the rigorous interval theory.
+## CORE
+
+CORE now has no active gate.
+
+RB-024 is the latest theory freeze.
+
+## NUM-ENG frozen dependencies
+
+- RB-019 — stable physical/reference engineering baseline;
+- RB-021 — robustness/scaling/JAX engineering baseline extension;
+- RB-023 — finite theory-derived validation result;
+- RB-024 — rigorous interval theory dependency.
+
+The physical reference authority remains:
+
+`NUMENG_PULSE_AWARE_REFERENCE_V1`.
 
 ## CORE v0.27c
 
-RB-020 remains frozen and execution parked.
+RB-020 remains frozen and execution remains parked.
 
 - TR-27C-01…07: UNEVALUATED.
 - `2711xxx`: UNGENERATED / UNEVALUATED.
+- no confirmatory v0.27c result exists.
 
 ## APP-3
 
-APP-3 remains PARKED / PROTECTED / WAIT.
+APP-3 remains:
+
+`PROTECTED / WAIT`.
+
+Its AI scope prompt remains PARKED / NOT EXECUTABLE under the Numerics + Theory priority.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | CORE proof-closure repair oversight |
-| 10 CORE | READY | rigorous interval theory proof closure |
-| 20 NUM-ENG | FROZEN / WAIT | RB-023 |
+| 00 MASTER | FROZEN / WAIT | NUM-ENG RIFC Gate 0.4 oversight |
+| 10 CORE | FROZEN / WAIT | RB-024 rigorous interval theory |
+| 20 NUM-ENG | READY | RIFC-0.1 outward-interval implementation/validation |
 | 50 APP-1 | PROTECTED / WAIT | unchanged |
 | 60 APP-2 | PROTECTED / WAIT | later electronics/neuromorphics |
 | 70 APP-3 | PROTECTED / WAIT | AI parked |
@@ -136,41 +190,46 @@ APP-3 remains PARKED / PROTECTED / WAIT.
 
 RB-001 through RB-023 remain unchanged.
 
-No RB-024 is established yet.
+24. RB-024 CORE Rigorous Enclosure & Interval First-Hit Certification Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 
 ## Exact next step
 
-### CORE
+### NUM-ENG
 
-In the existing CORE chat:
+In the existing NUM-ENG chat:
 
 `GO`
 
-In a new/replacement CORE chat:
+In a new/replacement NUM-ENG chat:
 
 `RESUME`
 
 Execute only:
 
-`research/master/prompts/core_rigorous_interval_theory_proof_closure_repair_gate_0_1.md`.
+`research/master/prompts/numerical_engineering_rifc_interval_implementation_validation_gate_0_4.md`.
 
-### NUM-ENG
+The pre-execution contract must be committed before Gate-0.4 validation outputs.
 
-No NUM-ENG action is currently authorized.
+### CORE
+
+No CORE action is currently authorized.
 
 ### APP-3
 
 No APP-3 action is currently authorized.
 
-After CORE returns, issue `Status?` in MASTER.
+When NUM-ENG returns, go to MASTER and issue:
+
+`Status?`
 
 ## Global STOP boundaries
 
-- no interval numerical implementation yet;
+Until explicit later authorization:
+
 - no TR-27C execution;
-- no `2711xxx` RNG;
+- no `2711xxx` RNG creation;
 - no v0.27c confirmatory execution;
-- no APP-3 execution;
+- no APP-3 scope/training/benchmark execution;
 - no RB-015 relabelling;
 - no v0.28 effect-bearing science;
 - no APP-1/APP-2 execution;
