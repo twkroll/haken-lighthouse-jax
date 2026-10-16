@@ -8,10 +8,10 @@ Rollback point: RB-022
 
 MASTER reviews and accepts, jointly:
 
-1. `research/core/event_chart_first_hit_theory_gate_0_1.md`
-   - candidate blob SHA: `a889d19d0679f61f75750db1cf8c51669857ade4`
-2. `research/core/event_chart_first_hit_theory_semantic_repair_gate_0_1.md`
-   - repair blob SHA: `53640bfd94b1bf24601710a81734c95fc24ff48b`
+1. \`research/core/event_chart_first_hit_theory_gate_0_1.md\`
+   - candidate blob SHA: \`a889d19d0679f61f75750db1cf8c51669857ade4\`
+2. \`research/core/event_chart_first_hit_theory_semantic_repair_gate_0_1.md\`
+   - repair blob SHA: \`53640bfd94b1bf24601710a81734c95fc24ff48b\`
 
 The semantic-repair artifact is mandatory and supersedes the original candidate wherever the two conflict.
 
@@ -23,16 +23,16 @@ RB-022 freezes the following theorem layer under the explicit assumptions stated
 
 ### 1. First-hit existence and exclusion
 
-On an arrival-free segment with remaining phase gap d and accumulated phase
+On an arrival-free segment with remaining phase gap \(d\) and accumulated phase
 
-[
-G(s)=int_0^s S(psi(u)),du,
-]
+\[
+G(s)=\int_0^s S(\psi(u))\,du,
+\]
 
 the frozen theory includes:
 
-- no-hit sufficiency from strict upper bounds with G(L)<d;
-- existence from G(L)>d;
+- no-hit sufficiency from strict upper bounds with \(G(L)<d\);
+- existence from \(G(L)>d\);
 - unique transversal first-hit brackets under strict phase and positive-response margins;
 - endpoint/equality cases as chart/boundary cases rather than ordinary strict-interior certificates.
 
@@ -40,9 +40,9 @@ the frozen theory includes:
 
 For
 
-[
-psi(s)=e^{-alpha s}(psi_0+s q_0),
-]
+\[
+\psi(s)=e^{-\alpha s}(\psi_0+s q_0),
+\]
 
 the derivative has at most one interior zero, giving a finite exact candidate set for extrema.
 
@@ -61,46 +61,46 @@ No theorem is frozen for zero-margin cases, exact tangencies, exact collisions, 
 
 The frozen response
 
-[
+\[
 S_{r,h}(x)=
-egin{cases}
-0,&xle h,\
-exp[-r/(x-h)^2],&x>h,
-end{cases}
-]
+\begin{cases}
+0,&x\le h,\\
+\exp[-r/(x-h)^2],&x>h,
+\end{cases}
+\]
 
-is globally (C^infty).
+is globally \(C^\infty\).
 
 RB-022 includes the explicit global first-derivative bound
 
-[
-|S'|_infty
+\[
+\|S'\|_\infty
 =
-rac{2}{sqrt r}
-left(rac32ight)^{3/2}e^{-3/2},
-]
+\frac{2}{\sqrt r}
+\left(\frac32\right)^{3/2}e^{-3/2},
+\]
 
 and the explicit second-derivative scaling
 
-[
-|S''|_infty=rac{c_2}{r},
-]
+\[
+\|S''\|_\infty=\frac{c_2}{r},
+\]
 
 with the constant identified in the authority artifact, plus the general scaling form
 
-[
-|S^{(k)}|_inftyle c_k r^{-k/2}.
-]
+\[
+\|S^{(k)}\|_\infty\le c_k r^{-k/2}.
+\]
 
-Threshold contact at (psi=h) is therefore not itself a loss of smoothness in the frozen baseline response.
+Threshold contact at \(\psi=h\) is therefore not itself a loss of smoothness in the frozen baseline response.
 
 ### 5. Alpha-tail and phase-error bounds
 
 RB-022 freezes:
 
-[
-M_eta(A)=e^{-alpha A}(1+alpha A)
-]
+\[
+M_\eta(A)=e^{-\alpha A}(1+\alpha A)
+\]
 
 for the remaining mass of the normalized alpha kernel, together with finite omitted-history input-tail and accumulated phase-error bounds under the stated absolute-tail / firing-density assumptions.
 
@@ -122,21 +122,21 @@ This is a local ordinary-chart theorem, not a global hybrid differentiability th
 
 The fixed structural topology is independent of coupling value.
 
-For every structural edge (e=(j	o i)), including (w_e=0),
+For every structural edge \(e=(j\to i)\), including \(w_e=0\),
 
-[
-A_e=T_{m launch}+	au_e
-]
+\[
+A_e=T_{\rm launch}+\tau_e
+\]
 
 remains a labelled delayed arrival.
 
 The alpha-state event map is
 
-[
-q_i^+=q_i^-+w_ealpha^2.
-]
+\[
+q_i^+=q_i^-+w_e\alpha^2.
+\]
 
-At (w_e=0), the state jump is the identity but the labelled structural arrival remains present in the topology-fixed event tape.
+At \(w_e=0\), the state jump is the identity but the labelled structural arrival remains present in the topology-fixed event tape.
 
 Therefore:
 
@@ -151,23 +151,23 @@ This repaired convention supersedes the conflicting original candidate text.
 
 The jump-map derivative satisfies
 
-[
-partial_{w_e}(q_i+w_ealpha^2)=alpha^2.
-]
+\[
+\partial_{w_e}(q_i+w_e\alpha^2)=\alpha^2.
+\]
 
 For a structural pulse contribution
 
-[
-psi_e(t;w)=w,eta_alpha(t-A_e(w)),
-]
+\[
+\psi_e(t;w)=w\,\eta_\alpha(t-A_e(w)),
+\]
 
-the derivative at (w=0) is
+the derivative at \(w=0\) is
 
-[
-left.partial_wpsi_e(t;w)ight|_{w=0}
+\[
+\left.\partial_w\psi_e(t;w)\right|_{w=0}
 =
-eta_alpha(t-A_e(0)).
-]
+\eta_\alpha(t-A_e(0)).
+\]
 
 Hence downstream sensitivity with respect to a structural weight at zero need not vanish.
 
@@ -175,9 +175,9 @@ No blanket nonzero claim is made for every observable.
 
 The labelled arrival-time derivative with respect to its delay coordinate remains
 
-[
-D_{	au_e}A_e=D_{	au_e}T_{m launch}+1.
-]
+\[
+D_{\tau_e}A_e=D_{\tau_e}T_{\rm launch}+1.
+\]
 
 At zero coupling, physical spike times may be locally insensitive to that delay while the labelled arrival moves and chart margins change.
 
@@ -185,12 +185,12 @@ At zero coupling, physical spike times may be locally insensitive to that delay 
 
 Within a regular fixed topology/event chart, spike times inherit the standard implicit-function sensitivity
 
-[
-D_lambda T
+\[
+D_\lambda T
 =
--rac{D_lambda 	heta(T)|_{t {m fixed}}}
-{S(psi(T^-))}
-]
+-\frac{D_\lambda \theta(T)|_{t\ {\rm fixed}}}
+{S(\psi(T^-))}
+\]
 
 under positive transversality.
 
@@ -248,7 +248,7 @@ RB-022 does not:
 
 - change RB-015 SCIENTIFIC FAIL;
 - execute RB-020/TR-27C;
-- create any `2711xxx` RNG object;
+- create any \`2711xxx\` RNG object;
 - authorize APP-3;
 - authorize v0.28 effect-bearing science;
 - create novelty/manuscript claims.
