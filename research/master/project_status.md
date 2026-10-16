@@ -1,7 +1,7 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.8
-Date: 2026-10-15
+Version: 2.9
+Date: 2026-10-16
 
 ## Central research question
 
@@ -13,89 +13,139 @@ Canonical rule:
 
 `Reconstruct state, not frozen science.`
 
-The frozen scientific/engineering chain now extends through RB-020.
+The current frozen chain extends through RB-021.
 
-Key preserved boundaries:
+Preserved boundaries:
 
 - RB-015 remains immutable `SCIENTIFIC FAIL`;
-- RB-019 is the accepted finite Numerical Engineering baseline;
-- RB-020 freezes the complete v0.27c Whitened Trust-Region Laplace pre-execution contract;
-- TR-27C-01 through TR-27C-07 remain UNEVALUATED;
-- every reserved `2711xxx` confirmatory stream remains UNGENERATED / UNEVALUATED;
-- no AI training or held-out benchmark has been executed.
+- RB-019 is the first stable Numerical Engineering baseline;
+- RB-020 freezes the complete v0.27c Whitened Trust-Region Laplace pre-execution contract, but TR-27C-01…07 remain UNEVALUATED and every `2711xxx` stream remains UNGENERATED / UNEVALUATED;
+- RB-021 extends the numerical engineering baseline with deterministic robustness, local scaling/work observations and stronger high-level tape/JAX guards;
+- APP-3 remains PARKED / PROTECTED / WAIT.
 
-## CORE
+## CORE theory lane
 
-`CORE v0.27c Whitened Trust-Region Laplace Execution Contract Canonicalization Gate 0.1` returned PASS.
+`CORE Event-Chart Regularity & Certified First-Hit Theory Gate 0.1` returned a candidate PASS and created:
+
+`research/core/event_chart_first_hit_theory_gate_0_1.md`.
+
+The candidate establishes substantial new mathematical material, including:
+
+- exact alpha-state extrema on arrival-free intervals;
+- sufficient no-hit and unique transversal first-hit conditions;
+- finite-certification logic under strict phase/transversality margins and convergent enclosures;
+- global smoothness of the frozen response with explicit derivative bounds;
+- alpha-tail and accumulated phase-error bounds;
+- finite-event ordinary event-chart regularity;
+- local event-time differentiability;
+- existence of a positive local chart neighborhood;
+- an explicit theorem-vs-engineering certification boundary;
+- theory-derived future fixtures TH-FH-01 through TH-FH-08.
+
+MASTER does **not** yet establish the proposed theory freeze.
+
+### Freeze blocker
+
+The returned candidate contains one canonical semantic conflict:
+
+it states that structural zero-weight edges are not physical arrival events in the ordinary chart and proposes TH-FH-06 accordingly.
+
+That conflicts with the topology-fixed structural-coordinate convention already frozen/accepted in the numerical lineage:
+
+- structural edge existence is independent of weight value;
+- a structurally present edge remains present at exactly zero weight;
+- its packet/arrival event remains labelled;
+- the state jump is zero at w=0;
+- perturbing the weight through zero must not change topology;
+- the weight derivative at zero may be nonzero.
+
+MASTER therefore opens only:
+
+`CORE Event-Chart / Structural-Zero Semantic Repair Gate 0.1`.
+
+Status: READY.
+
+The repair must preserve the original candidate as audit history and correct only the affected structural-zero/event-chart statements plus dependent consistency consequences. No numerical validation is allowed in this repair gate.
+
+## NUM-ENG lane
+
+`NUM-ENG Robustness, Scaling & Differentiable Kernel Gate 0.2` returned:
+
+`PASS — ENGINEERING ONLY`.
 
 MASTER establishes:
 
-`CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1` / RB-020.
+`NUM-ENG Numerical Engineering Freeze 0.2` / RB-021.
 
-RB-020 fixes the deterministic whitened dogleg trust-region Gauss-Newton route, trust-radius/ratio/update rules, invalid-step contraction, stationarity and operation budgets, exact final Hessian/logdet authority, bounded-Powell outer semantics, TR-27C-01 through TR-27C-07, the disjoint `2711xxx` seed mapping and the inherited scientific decision hierarchy.
+Status:
 
-The v0.27c execution remains parked. CORE is now `READY` only for the separate `CORE Event-Chart Regularity & Certified First-Hit Theory Gate 0.1`. No TR-27C validation or confirmatory science is authorized.
+`FROZEN / STABLE ENGINEERING BASELINE EXTENSION`.
 
-## NUM-ENG
+### Frozen Gate-0.2 findings
 
-`NUM-ENG Numerical Engineering Freeze 0.1` / RB-019 remains:
+Prospectively fixed robustness matrix:
 
-`FROZEN / STABLE ENGINEERING BASELINE`.
+- 17/17 dense-vs-sparse physical comparisons PASS;
+- physical invalid/fail-closed controls behave as preregistered;
+- 28/28 predeclared acceleration comparisons agree on the finite comparison set, but all accelerators remain DEVELOPMENT COMPARATORS;
+- regular-chart JAX replay and physically rerecorded finite-difference checks pass for weight, delay and initial phase;
+- JVP/VJP and JVP/Jacobian consistency pass at floating-point precision.
 
-Accepted development source:
+### Stale base-tape defect
 
-- branch: `engineering/numerics-v0.1`;
-- source integration commit: `aa8b4ac234a1c1960a5829fc3d24982e8002105d`;
-- subtree: `software/numerical_engineering/reference_repair_v0_1/`.
+Gate 0.2 discovered an additional high-level JAX batch-guard defect:
 
-Finite QA:
+a stale certified base event tape with shifted event times could preserve the event token and be silently accepted by the batch route.
 
-- original 180/180 tests PASS;
-- 14/14 RRI repair tests PASS;
-- aggregate 194/194 PASS under the captured environment.
+The defect was recorded before repair-output inspection in a prospective repair addendum. The resulting overlay strengthens high-level physical tape validation without changing the RB-019 physical authority.
 
-The baseline includes pulse-aware physical first-hit authority, fail-closed physical certification and high-level JAX/chart guards. Global first-hit correctness, interval-arithmetic rigor, general speedup/scaling and AI-performance claims remain deferred.
+Repair QA:
 
-NUM-ENG is now `READY` for `NUM-ENG Robustness, Scaling & Differentiable Kernel Gate 0.2`, restricted to deterministic engineering stress testing, local scaling/work metrics, JAX/gradient QA and acceleration classification.
+- dedicated new guard tests 8/8 PASS;
+- original RB-019 baseline 194/194 PASS;
+- Gate-0.2 stress suite 48/48 PASS twice;
+- patched targeted suite 56/56 PASS;
+- patched aggregate 250/250 PASS with clean exit.
 
-## APP-3 AI / temporal-learning lane
+### Local scaling observations
 
-RB-019 and RB-020 remain sufficient technical prerequisites for the previously prepared AI scope gate, but MASTER has changed sequencing in response to the user's current priority.
+A deterministic sparse family with approximately E=2N was profiled for N={5,12,24,48}.
 
-APP-3 is therefore:
+The two alpha-state float64 arrays use storage proportional to E in the sparse representation versus N^2 in the corresponding dense state representation.
+
+Event/work counts and CPU wall times are retained only as LOCAL ENGINEERING METRICS.
+
+No universal complexity exponent, speedup law, hardware-portability claim or scientific performance result is frozen.
+
+NUM-ENG now has no active gate.
+
+## CORE v0.27c lane
+
+RB-020 remains unchanged.
+
+The actual v0.27c execution is parked.
+
+- TR-27C-01…07: UNEVALUATED.
+- `2711xxx`: UNGENERATED / UNEVALUATED.
+- no confirmatory v0.27c performance exists.
+
+## APP-3
+
+APP-3 remains:
 
 `PROTECTED / WAIT`.
 
-The prompt
+The AI scope prompt is retained but PARKED / NOT EXECUTABLE under the current Numerics + Theory priority.
 
-`research/master/prompts/app3_ai_learning_scope_benchmark_preregistration_gate_0_1.md`
-
-is retained but explicitly PARKED / NOT EXECUTABLE.
-
-No APP-3 scope execution, training, benchmark or held-out test inspection has occurred.
-
-## Scientific sequencing decision
-
-User priority is now Numerics + Theory.
-
-MASTER therefore parks APP-3 and opens two parallel, non-conflicting lanes:
-
-- scientific/theoretical lane: `CORE Event-Chart Regularity & Certified First-Hit Theory Gate 0.1`;
-- engineering lane: `NUM-ENG Robustness, Scaling & Differentiable Kernel Gate 0.2`.
-
-The engineering lane remains non-effect-bearing DEVELOPMENT EVIDENCE / ENGINEERING METRICS under the Parallel Engineering Policy. The CORE lane is the single active scientific/theoretical action.
-
-CORE v0.27c execution remains parked after RB-020; no TR-27C or `2711xxx` execution is authorized.
-
-APP-3 remains technically prepared but is now explicitly `PROTECTED / WAIT` until MASTER later reactivates it.
+No APP-3 execution, training, benchmark or held-out inspection has occurred.
 
 ## Workstreams
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | CORE theory + NUM-ENG 0.2 oversight |
-| 10 CORE | READY | Event-chart / first-hit theory |
-| 20 NUM-ENG | READY | Robustness, scaling, differentiable-kernel engineering |
+| 00 MASTER | FROZEN / WAIT | CORE semantic-repair oversight |
+| 10 CORE | READY | structural-zero/event-chart semantic repair only |
+| 20 NUM-ENG | FROZEN / WAIT | RB-021 engineering baseline extension |
 | 50 APP-1 Computational Neuroscience | PROTECTED / WAIT | unchanged |
 | 60 APP-2 Neuromorphic Computing | PROTECTED / WAIT | later electronic/neuromorphic branch |
 | 70 APP-3 Differentiable Inference / Temporal Learning | PROTECTED / WAIT | AI prompt parked |
@@ -124,10 +174,11 @@ APP-3 remains technically prepared but is now explicitly `PROTECTED / WAIT` unti
 18. RB-018 NUM-ENG Numerical Engineering Audit Freeze 0.1 — FROZEN / STABLE ENGINEERING AUDIT — CONDITIONAL / BLOCKED
 19. RB-019 NUM-ENG Numerical Engineering Freeze 0.1 — FROZEN / STABLE ENGINEERING BASELINE
 20. RB-020 CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
+21. RB-021 NUM-ENG Numerical Engineering Freeze 0.2 — FROZEN / STABLE ENGINEERING BASELINE EXTENSION
 
-## Exact next steps
+## Exact next step
 
-### CORE theory
+### CORE
 
 In the existing CORE chat:
 
@@ -139,40 +190,38 @@ In a new/replacement CORE chat:
 
 Execute only:
 
-`research/master/prompts/core_event_chart_first_hit_theory_gate_0_1.md`.
+`research/master/prompts/core_event_chart_first_hit_theory_semantic_repair_gate_0_1.md`.
 
 ### NUM-ENG
 
-In the existing NUM-ENG chat:
-
-`GO`
-
-In a new/replacement NUM-ENG chat:
-
-`RESUME`
-
-Execute only:
-
-`research/master/prompts/numerical_engineering_robustness_scaling_differentiable_kernel_gate_0_2.md`.
-
-These two gates may proceed in parallel because NUM-ENG remains non-effect-bearing engineering.
+No NUM-ENG action is currently authorized. RB-021 is frozen.
 
 ### APP-3
 
 No APP-3 action is currently authorized.
 
-After either active gate returns, go to MASTER and issue:
+After CORE returns, go to MASTER and issue:
 
 `Status?`
+
+## Expected next decision after repair
+
+If the structural-zero semantic repair passes without exposing another material contradiction, MASTER can establish:
+
+`CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1`
+
+as the next theory rollback point.
+
+Only after that will MASTER decide whether to open a theory-derived numerical certification/validation gate, a further theory extension, or another Numerics + Theory step.
 
 ## Global STOP boundaries
 
 Until explicit later authorization:
 
-- no APP-3 scope execution, model training or benchmark execution;
-- no held-out APP-3 test inspection;
-- no `2711xxx` RNG creation outside a later governed CORE execution gate;
 - no TR-27C execution;
+- no `2711xxx` RNG creation;
+- no v0.27c confirmatory execution;
+- no APP-3 scope/training/benchmark execution;
 - no RB-015 relabelling;
 - no v0.28 effect-bearing science;
 - no APP-1/APP-2 execution;
