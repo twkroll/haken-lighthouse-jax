@@ -1,0 +1,39 @@
+F.......................                                                 [100%]
+=================================== FAILURES ===================================
+________________________ test_ri01_directed_primitives _________________________
+
+    def test_ri01_directed_primitives():
+        assert VERSION=='4.2.2'
+        a,b,c=F(-7,8),F(3,5),F(11,10)
+        for x in (a,b,c,F(1,100),F(1000),F(0)):
+            y=I.point(x,128);assert y.contains(x)
+        A,B=I.point(a,128),I.point(b,128)
+        for v,x in ((A+B,a+b),(A-B,a-b),(A*B,a*b),(A/B,a/b)):
+            assert v.contains(x)
+        assert I.bounds(a,b,128).contains(0)
+        assert A.hull(B).contains(a) and A.hull(B).contains(b)
+        assert I.bounds(a,c,128).intersect(I.bounds(b,2,128)).contains(b)
+        assert I.bounds(a,c,128).min_with(I.bounds(b,2,128)).contains(a)
+>       assert I.bounds(a,c,128).max_with(I.bounds(b,2,128)).contains(2) is False
+E       assert True is False
+E        +  where True = contains(2)
+E        +    where contains = I(lo=Fraction(204169420152563078078024764459060926873, 340282366920938463463374607431768211456), hi=Fraction(2, 1), p=128).contains
+E        +      where I(lo=Fraction(204169420152563078078024764459060926873, 340282366920938463463374607431768211456), hi=Fraction(2, 1), p=128) = max_with(I(lo=Fraction(204169420152563078078024764459060926873, 340282366920938463463374607431768211456), hi=Fraction(2, 1), p=128))
+E        +        where max_with = I(lo=Fraction(-7, 8), hi=Fraction(187155301806516154904856034087472516301, 170141183460469231731687303715884105728), p=128).max_with
+E        +          where I(lo=Fraction(-7, 8), hi=Fraction(187155301806516154904856034087472516301, 170141183460469231731687303715884105728), p=128) = <function I.bounds at 0x7f40992c1300>(Fraction(-7, 8), Fraction(11, 10), 128)
+E        +            where <function I.bounds at 0x7f40992c1300> = I.bounds
+E        +        and   I(lo=Fraction(204169420152563078078024764459060926873, 340282366920938463463374607431768211456), hi=Fraction(2, 1), p=128) = <function I.bounds at 0x7f40992c1300>(Fraction(3, 5), 2, 128)
+E        +          where <function I.bounds at 0x7f40992c1300> = I.bounds
+
+mnt/data/numeng_gate04/source/test_rifc_gate04.py:34: AssertionError
+=========================== short test summary info ============================
+FAILED mnt/data/numeng_gate04/source/test_rifc_gate04.py::test_ri01_directed_primitives - assert True is False
+ +  where True = contains(2)
+ +    where contains = I(lo=Fraction(204169420152563078078024764459060926873, 340282366920938463463374607431768211456), hi=Fraction(2, 1), p=128).contains
+ +      where I(lo=Fraction(204169420152563078078024764459060926873, 340282366920938463463374607431768211456), hi=Fraction(2, 1), p=128) = max_with(I(lo=Fraction(204169420152563078078024764459060926873, 340282366920938463463374607431768211456), hi=Fraction(2, 1), p=128))
+ +        where max_with = I(lo=Fraction(-7, 8), hi=Fraction(187155301806516154904856034087472516301, 170141183460469231731687303715884105728), p=128).max_with
+ +          where I(lo=Fraction(-7, 8), hi=Fraction(187155301806516154904856034087472516301, 170141183460469231731687303715884105728), p=128) = <function I.bounds at 0x7f40992c1300>(Fraction(-7, 8), Fraction(11, 10), 128)
+ +            where <function I.bounds at 0x7f40992c1300> = I.bounds
+ +        and   I(lo=Fraction(204169420152563078078024764459060926873, 340282366920938463463374607431768211456), hi=Fraction(2, 1), p=128) = <function I.bounds at 0x7f40992c1300>(Fraction(3, 5), 2, 128)
+ +          where <function I.bounds at 0x7f40992c1300> = I.bounds
+1 failed, 23 passed in 1.12s

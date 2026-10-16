@@ -1,0 +1,38 @@
+[
+  {
+    "bytes": 447,
+    "class": "CERTIFIED_NO_HIT",
+    "path": "S01_strict_no_hit.json",
+    "sha256": "936ee5a75bfa3d9be0bfefa755511edcef990d0fb35ec80195f366f72bbef76b"
+  },
+  {
+    "bytes": 1129,
+    "class": "CERTIFIED_REGULAR_HIT",
+    "path": "S02_regular_hit.json",
+    "sha256": "fab4938f7d7766f05769a9010eb0da7860baa34a7e5624d2e8ac5283fae5adb7"
+  },
+  {
+    "bytes": 6667,
+    "class": "CERTIFIED_REGULAR_HIT",
+    "path": "S03_narrow_pulse_hit.json",
+    "sha256": "1df37a13e1cf804728219d7ed7cce46edea9fd737602ba9e3b4d4df28864894a"
+  },
+  {
+    "bytes": 176,
+    "class": "CERTIFIED_EVENT_ORDER",
+    "path": "S10_strict_event_order.json",
+    "sha256": "439716179aa5a9a85282c574d4c0bf273d72ef80f7979041cc57d65b70125fda"
+  },
+  {
+    "bytes": 247,
+    "class": "CERTIFIED_STRUCTURAL_ARRIVAL",
+    "path": "S13_zero_weight_arrival.json",
+    "sha256": "cd99c615d9520c49305533bb361ea3ab35409a150616896338d412405e79b443"
+  },
+  {
+    "bytes": 260,
+    "class": "CERTIFIED_STRUCTURAL_ARRIVAL",
+    "path": "S13_cross_zero_weight_arrival.json",
+    "sha256": "94d58784aed075148bdb91005035e0e149775e002a4f6bf97dd8834ef60f5de8"
+  }
+]

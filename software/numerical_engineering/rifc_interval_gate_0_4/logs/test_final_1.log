@@ -1,0 +1,64 @@
+................F.......F.                                               [100%]
+=================================== FAILURES ===================================
+____________________ test_ri10_ordering_collision_boundary _____________________
+
+    def test_ri10_ordering_collision_boundary():
+        a=['1/4','1/3'];b=['1/2','2/3']
+        for x,y,first in ((a,b,'a'),(b,a,'b')):
+            result=event_order(x,y)
+            assert result['status']=='CERTIFIED_EVENT_ORDER' and result['first']==first
+            assert audit_certificate(result)
+        assert event_order(['2/5','3/5'],['1/2','7/10'])['status']=='ENCLOSURE_INCONCLUSIVE'
+        assert event_order(['1/2','1/2'],['1/2','1/2'])['status']=='ORDINARY_CHART_INVALID'
+>       assert event_order(['1/2','1/2'],['3/4','3/4'],horizon='1/2')['status']=='ORDINARY_CHART_INVALID'
+E       AssertionError: assert 'ENCLOSURE_INCONCLUSIVE' == 'ORDINARY_CHART_INVALID'
+E         
+E         - ORDINARY_CHART_INVALID
+E         + ENCLOSURE_INCONCLUSIVE
+
+mnt/data/numeng_gate04/source/test_rifc_gate04.py:131: AssertionError
+______________ test_ri06_narrow_high_precision_darboux_comparator ______________
+
+    def test_ri06_narrow_high_precision_darboux_comparator():
+>       p,cells,pref=darbouxs(1000,1,F(1,10),0,4000000,F(1,50),8)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+mnt/data/numeng_gate04/source/test_rifc_gate04.py:204: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+mnt/data/numeng_gate04/source/rifc_mpfr_v0_1.py:178: in darbouxs
+    gain=I.point(b-a,p)*S
+         ^^^^^^^^^^^^^^^^
+mnt/data/numeng_gate04/source/rifc_mpfr_v0_1.py:123: in __mul__
+    def __mul__(self,y):return self._op(y,'mul')
+                               ^^^^^^^^^^^^^^^^^
+mnt/data/numeng_gate04/source/rifc_mpfr_v0_1.py:119: in _op
+    return I(min(one(a,b,RNDD) for a,b in xy),max(one(a,b,RNDU) for a,b in xy),self.p)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+mnt/data/numeng_gate04/source/rifc_mpfr_v0_1.py:119: in <genexpr>
+    return I(min(one(a,b,RNDD) for a,b in xy),max(one(a,b,RNDU) for a,b in xy),self.p)
+                 ^^^^^^^^^^^^^
+mnt/data/numeng_gate04/source/rifc_mpfr_v0_1.py:115: in one
+    def one(a,b,rd):return _binary(kind,_fraction_round(a,self.p,rd),_fraction_round(b,self.p,rd),self.p,rd).val()
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+mnt/data/numeng_gate04/source/rifc_mpfr_v0_1.py:85: in _fraction_round
+    b=_integer(v.denominator,p,RNDU if rnd==RNDD else RNDD)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+v = <[ValueError('Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit') raised in repr()] int object at 0x142e03d0>
+p = 192, rnd = 2
+
+    def _integer(v,p,rnd):
+        m=M(p)
+>       if _dll.mpfr_set_str(C.byref(m.data),str(v).encode(),10,rnd)!=0:
+                                             ^^^^^^
+E       ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+
+mnt/data/numeng_gate04/source/rifc_mpfr_v0_1.py:70: ValueError
+=========================== short test summary info ============================
+FAILED mnt/data/numeng_gate04/source/test_rifc_gate04.py::test_ri10_ordering_collision_boundary - AssertionError: assert 'ENCLOSURE_INCONCLUSIVE' == 'ORDINARY_CHART_INVALID'
+  
+  - ORDINARY_CHART_INVALID
+  + ENCLOSURE_INCONCLUSIVE
+FAILED mnt/data/numeng_gate04/source/test_rifc_gate04.py::test_ri06_narrow_high_precision_darboux_comparator - ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+2 failed, 24 passed in 1.50s

@@ -1,0 +1,38 @@
+
+==================================== ERRORS ====================================
+___________________ ERROR collecting tests/test_reference.py ___________________
+ImportError while importing test module '/mnt/data/numeng_gate03/work/tests/test_reference.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_reference.py:4: in <module>
+    from lighthouse_dev import Parameters,alpha_kernel,propagate_alpha,physical_rerecord,validate_same_chart
+E   ModuleNotFoundError: No module named 'lighthouse_dev'
+________________ ERROR collecting tests/test_rri_repair_v01.py _________________
+ImportError while importing test module '/mnt/data/numeng_gate03/work/tests/test_rri_repair_v01.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_rri_repair_v01.py:12: in <module>
+    from lighthouse_dev.reference import Parameters, physical_rerecord, response
+E   ModuleNotFoundError: No module named 'lighthouse_dev'
+______________ ERROR collecting tests/test_gate02_batch_guard.py _______________
+ImportError while importing test module '/mnt/data/numeng_gate03/work/tests/test_gate02_batch_guard.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_gate02_batch_guard.py:7: in <module>
+    from lighthouse_dev.reference import Parameters
+E   ModuleNotFoundError: No module named 'lighthouse_dev'
+=========================== short test summary info ============================
+ERROR tests/test_reference.py
+ERROR tests/test_rri_repair_v01.py
+ERROR tests/test_gate02_batch_guard.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
+3 errors in 0.35s

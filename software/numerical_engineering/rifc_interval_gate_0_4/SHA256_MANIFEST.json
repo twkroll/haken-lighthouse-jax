@@ -1,0 +1,142 @@
+[
+  {
+    "bytes": 554,
+    "path": "ENVIRONMENT.json",
+    "sha256": "9eb29e6711dd53830bdbf66a7c72ae3349d19e06d07e03e6d050b8b5c419139d"
+  },
+  {
+    "bytes": 2937,
+    "path": "README.md",
+    "sha256": "365860abb16b4534c94b33c2f7388ff4634362349b8661dc14aeb04681bf9737"
+  },
+  {
+    "bytes": 1142,
+    "path": "certificates/CERTIFICATE_MANIFEST.json",
+    "sha256": "b6b3fee72e221f308f0e43957b0863c33932e7c2a7f96a64a8b85f3c8aad2ef2"
+  },
+  {
+    "bytes": 500,
+    "path": "certificates/ENVIRONMENT.json",
+    "sha256": "0b05da8a8327d174537206ff16b78f821db9c951b52e145ceac926adccacbd22"
+  },
+  {
+    "bytes": 447,
+    "path": "certificates/S01_strict_no_hit.json",
+    "sha256": "936ee5a75bfa3d9be0bfefa755511edcef990d0fb35ec80195f366f72bbef76b"
+  },
+  {
+    "bytes": 1129,
+    "path": "certificates/S02_regular_hit.json",
+    "sha256": "fab4938f7d7766f05769a9010eb0da7860baa34a7e5624d2e8ac5283fae5adb7"
+  },
+  {
+    "bytes": 6667,
+    "path": "certificates/S03_narrow_pulse_hit.json",
+    "sha256": "1df37a13e1cf804728219d7ed7cce46edea9fd737602ba9e3b4d4df28864894a"
+  },
+  {
+    "bytes": 176,
+    "path": "certificates/S10_strict_event_order.json",
+    "sha256": "439716179aa5a9a85282c574d4c0bf273d72ef80f7979041cc57d65b70125fda"
+  },
+  {
+    "bytes": 260,
+    "path": "certificates/S13_cross_zero_weight_arrival.json",
+    "sha256": "94d58784aed075148bdb91005035e0e149775e002a4f6bf97dd8834ef60f5de8"
+  },
+  {
+    "bytes": 247,
+    "path": "certificates/S13_zero_weight_arrival.json",
+    "sha256": "cd99c615d9520c49305533bb361ea3ab35409a150616896338d412405e79b443"
+  },
+  {
+    "bytes": 1782,
+    "path": "logs/certificate_generation.json",
+    "sha256": "9332c4e00404adb1aca3f5bc090b3ad1bf33eb5db7bfe8d6caeb6e70671d29cd"
+  },
+  {
+    "bytes": 74,
+    "path": "logs/certificate_replay.log",
+    "sha256": "23d51960531b0415bc8c31237a318ba3ad270fa268d9ca8e0aefb61682567cc0"
+  },
+  {
+    "bytes": 2269,
+    "path": "logs/compatibility.log",
+    "sha256": "5e30ebc5d797e1b45a45e15cff5b48564dd09e55def42a4cc43f3aad9b5b45d7"
+  },
+  {
+    "bytes": 100,
+    "path": "logs/compatibility_correct_env.log",
+    "sha256": "a4efc55c137e4ddb208ade1bd5d55f58cc30eab32f081068929704d509b60e44"
+  },
+  {
+    "bytes": 99,
+    "path": "logs/test_corrected_1.log",
+    "sha256": "ed3d64c58698fc444dab01f1f3ec24c82b616b42a5cd1f7f2a1c1aea197a2286"
+  },
+  {
+    "bytes": 3843,
+    "path": "logs/test_final_1.log",
+    "sha256": "1ffe30c6a89a9a60729a9b4f750fa9c246c5ebf84863d3ba5e8be8d05a5f74e9"
+  },
+  {
+    "bytes": 99,
+    "path": "logs/test_final_2.log",
+    "sha256": "2b834aeaa6c8a10500b0202f5e13a9828132dbeb7ca483b07cca060f685a1f5d"
+  },
+  {
+    "bytes": 3664,
+    "path": "logs/test_first.log",
+    "sha256": "3a2d7ffb7da782455830a575a0f77d090e9df0fcd2d7bddafc5e4f821040910d"
+  },
+  {
+    "bytes": 99,
+    "path": "logs/test_second_fix.log",
+    "sha256": "e546545c02bf15f0c96558a03d20ff257b1967a2012ac0bab549d11fcef5d17d"
+  },
+  {
+    "bytes": 37,
+    "path": "source/.pytest_cache/.gitignore",
+    "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+  },
+  {
+    "bytes": 191,
+    "path": "source/.pytest_cache/CACHEDIR.TAG",
+    "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+  },
+  {
+    "bytes": 302,
+    "path": "source/.pytest_cache/README.md",
+    "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+  },
+  {
+    "bytes": 2,
+    "path": "source/.pytest_cache/v/cache/lastfailed",
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  {
+    "bytes": 1523,
+    "path": "source/.pytest_cache/v/cache/nodeids",
+    "sha256": "a3f32c1b88b5bdd01aa8bd263bea1fc0bfa7854edd176cafe0ca567bf890642b"
+  },
+  {
+    "bytes": 625,
+    "path": "source/audit_saved_certificates.py",
+    "sha256": "df7066d09ea2cd7d07500a17c163f04b091a5f08684d6e2d243568e4e44a850a"
+  },
+  {
+    "bytes": 2435,
+    "path": "source/generate_certificate_artifacts.py",
+    "sha256": "9086a683e1674b749360c73afeae9a1e5a565d2ff3a3a381c188add9b2d3fe78"
+  },
+  {
+    "bytes": 17600,
+    "path": "source/rifc_mpfr_v0_1.py",
+    "sha256": "0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539"
+  },
+  {
+    "bytes": 9479,
+    "path": "source/test_rifc_gate04.py",
+    "sha256": "f951802e4b41b64b1f722a171a97715aa9cb08e5fd292a928c71c0beea1f3ca2"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "IR_A4_R": "NOT ESTABLISHED",
+  "cpu": "x86_64",
+  "mpfr_shared_realpath": "/usr/lib/x86_64-linux-gnu/libmpfr.so.6.2.2",
+  "mpfr_so_sha256": "4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c",
+  "mpfr_version": "4.2.2",
+  "physical_authority": "NUMENG_PULSE_AWARE_REFERENCE_V1 unchanged",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "precision_schedule": "p_n=128+8*n",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "random_seeds": "none",
+  "status": "FINITE CERTIFICATE SOUNDNESS ENGINEERING ONLY"
+}
