@@ -8,22 +8,22 @@ Rollback point: RB-025
 
 MASTER reviews and accepts the returned:
 
-\`NUM-ENG RIFC-0.1 Outward-Interval Implementation & Validation Gate 0.4\`
+`NUM-ENG RIFC-0.1 Outward-Interval Implementation & Validation Gate 0.4`
 
 from:
 
-\`engineering/numerics-v0.1\`.
+`engineering/numerics-v0.1`.
 
 Frozen provenance:
 
-- pre-execution contract commit: \`2aa95c77973fe63a82a7cf11472ee92273b5bb7c\`;
-- contract blob SHA: \`99e8e4a96607fd4663c33c8fefcc937bc506cb13\`;
-- returned gate blob SHA: \`b5512d38b9735012052984a7cc4ace7d8885c146\`;
-- implementation integration commit: \`e5b1c488aa6e03e706171902942377c210979a8f\`;
-- outcome-matrix commit: \`8b6d8455226d12489b08804d8915b28f2203df9b\`;
-- source blob SHA: \`6df6740e86344628a2b9583f0a3f719f9d5817f8\`;
-- source SHA-256: \`0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539\`;
-- physical authority: RB-019 / \`NUMENG_PULSE_AWARE_REFERENCE_V1\`;
+- pre-execution contract commit: `2aa95c77973fe63a82a7cf11472ee92273b5bb7c`;
+- contract blob SHA: `99e8e4a96607fd4663c33c8fefcc937bc506cb13`;
+- returned gate blob SHA: `b5512d38b9735012052984a7cc4ace7d8885c146`;
+- implementation integration commit: `e5b1c488aa6e03e706171902942377c210979a8f`;
+- outcome-matrix commit: `8b6d8455226d12489b08804d8915b28f2203df9b`;
+- source blob SHA: `6df6740e86344628a2b9583f0a3f719f9d5817f8`;
+- source SHA-256: `0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539`;
+- physical authority: RB-019 / `NUMENG_PULSE_AWARE_REFERENCE_V1`;
 - engineering baseline: RB-021;
 - theory-validation result: RB-023;
 - theory authority: RB-024.
@@ -34,7 +34,7 @@ No post-output change to the frozen fixture set, acceptance classes, backend cho
 
 ## Gate result
 
-\`PASS — ENGINEERING VALIDATION / FINITE CERTIFICATE SOUNDNESS ONLY\`
+`PASS — ENGINEERING VALIDATION / FINITE CERTIFICATE SOUNDNESS ONLY`
 
 RB-025 is explicitly bounded.
 
@@ -46,7 +46,7 @@ The accepted finite-soundness backend is:
 
 - GNU MPFR 4.2.2;
 - directed RNDD / RNDU operations;
-- rigorous exponential inclusion through MPFR's correctly-rounded directed \`mpfr_exp\` contract;
+- rigorous exponential inclusion through MPFR's correctly-rounded directed `mpfr_exp` contract;
 - exact-rational input loading by outward endpoint construction;
 - exact dyadic-rational serialization of certificate endpoints;
 - fail-closed behavior for unsupported/nonfinite/zero-denominator proof cases.
@@ -64,8 +64,8 @@ Within the tested finite deterministic domain, RB-025 accepts:
 3. threshold-safe monotone response enclosures;
 4. dyadic Darboux gain enclosures;
 5. outward prefix gain tapes;
-6. strict-margin \`CERTIFIED_NO_HIT\`;
-7. strict-bracket \`CERTIFIED_REGULAR_HIT\`;
+6. strict-margin `CERTIFIED_NO_HIT`;
+7. strict-bracket `CERTIFIED_REGULAR_HIT`;
 8. rigorous finite transversality lower bounds on certified brackets;
 9. exact-rational event-order/horizon/initial-boundary checks;
 10. topology-fixed structural-zero labelled arrivals and zero-crossing weight intervals;
@@ -75,7 +75,7 @@ Within the tested finite deterministic domain, RB-025 accepts:
 
 A positive regular-hit certificate applies to an individual arrival-free segment with known initial alpha state and phase gap.
 
-RB-025 does not emit a general \`CERTIFIED_ORDINARY_CHART\` for arbitrary parameter families.
+RB-025 does not emit a general `CERTIFIED_ORDINARY_CHART` for arbitrary parameter families.
 
 ## Validation freeze
 
@@ -86,7 +86,7 @@ The preregistered Gate-0.4 validation records:
 - RI-03 / IR-A4-R: DEFERRED / NOT ESTABLISHED;
 - RI-04 through RI-12: PASS within frozen finite scope;
 - RI-13 eventual-certification theorem validation: DEFERRED because IR-A4-R is not established;
-- RI-14 finite-budget behavior: PASS with \`RESOURCE_EXHAUSTED / UNCERTIFIED\`.
+- RI-14 finite-budget behavior: PASS with `RESOURCE_EXHAUSTED / UNCERTIFIED`.
 
 New Gate-0.4 test suite:
 
@@ -218,7 +218,7 @@ RB-025 does not establish:
 
 ### REJECTED
 
-- \`math.exp\` + unproved nextafter as rigorous exponential proof;
+- `math.exp` + unproved nextafter as rigorous exponential proof;
 - interval overlap interpreted as collision/order proof;
 - token equality alone as physical/tape authority;
 - global/eventual claims inferred from finite QA.
@@ -229,10 +229,10 @@ RB-025 does not:
 
 - alter RB-015 SCIENTIFIC FAIL;
 - execute RB-020/TR-27C;
-- create any \`2711xxx\` RNG object;
+- create any `2711xxx` RNG object;
 - authorize APP-3;
 - authorize v0.28 effect-bearing science;
-- merge executable source to \`main\`;
+- merge executable source to `main`;
 - create novelty/manuscript claims.
 
 ## STOP
