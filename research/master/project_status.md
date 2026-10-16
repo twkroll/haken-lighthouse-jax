@@ -50,45 +50,45 @@ The prospectively frozen contract fixed:
 
 - unchanged RB-025 source identity;
 - GNU MPFR 4.2.2 backend identity;
-- compact domain (K=[-100000,100000]);
+- compact domain \(K=[-100000,100000]\);
 - the exact source expression graph;
-- the exact counterexample candidate (S(1/100)=exp(-10000));
-- precision set ({128,256,512,2048,4096});
+- the exact counterexample candidate \(S(1/100)=\exp(-10000)\);
+- precision set \(\{128,256,512,2048,4096\}\);
 - Q7/Q8 as forbidden unless the analytical rate qualification first passed.
 
-No source repair, domain shrinking, empirical (B_K) fitting or post-output fixture change occurred in Gate 0.5.
+No source repair, domain shrinking, empirical \(B_K\) fitting or post-output fixture change occurred in Gate 0.5.
 
 ### Source-level blocker
 
-The unchanged RB-025 `M.val` serializer contains a fixed small-value widening branch at MPFR exponent below (-2048).
+The unchanged RB-025 `M.val` serializer contains a fixed small-value widening branch at MPFR exponent below \(-2048\).
 
 For the frozen exact point:
 
-[
-x=rac1{100},quad r=1,quad h=0,
-]
+\[
+x=\frac1{100},\qquad r=1,\qquad h=0,
+\]
 
 the exact response is
 
-[
-S(x)=exp(-10000).
-]
+\[
+S(x)=\exp(-10000).
+\]
 
 The serializer returns
 
-[
+\[
 [0,2^{-2048}]
-]
+\]
 
 through the fixed tiny-value branch, independent of precision.
 
-Therefore the arithmetic excess has a nonvanishing floor (2^{-2048}), so no finite compact-domain constant can satisfy
+Therefore the arithmetic excess has a nonvanishing floor \(2^{-2048}\), so no finite compact-domain constant can satisfy
 
-[
-operatorname{excwid}le C_K2^{-p}
-]
+\[
+\operatorname{excwid}\le C_K2^{-p}
+\]
 
-for all (p) in the implemented graph.
+for all \(p\) in the implemented graph.
 
 This is a source-level no-go for the unchanged Python+MPFR serialization layer.
 
@@ -142,11 +142,11 @@ The sole initial repair target is the MPFR-to-exact-dyadic serialization path re
 
 The repaired path must exactly serialize an already rounded MPFR value as a dyadic rational:
 
-[
-y_p=z,2^e
-]
+\[
+y_p=z\,2^e
+\]
 
-with exact integer (z) and exponent (e), without a fixed underflow floor or ordinary floating-point conversion.
+with exact integer \(z\) and exponent \(e\), without a fixed underflow floor or ordinary floating-point conversion.
 
 A route such as exact `mpfr_get_z_2exp` / GMP integer extraction is preferred, or another provably equivalent exact conversion.
 
@@ -175,7 +175,7 @@ The repair must first demonstrate:
 
 1. RB-025 remains byte-identical;
 2. new exact-dyadic serializer is inclusion-preserving and exact with respect to the directed MPFR endpoint;
-3. the fixed (2^{-2048}) serialization floor is removed;
+3. the fixed \(2^{-2048}\) serialization floor is removed;
 4. finite-soundness/fail-closed behavior remains intact;
 5. Gate-0.4 compatibility/replay expectations remain satisfied.
 
@@ -183,27 +183,27 @@ Only then may the gate requalify IR-A4-R.
 
 For a full PASS it must analytically establish on the frozen Gate-0.6 domain:
 
-[
-E_{m arith}(n)le B_KN_n2^{-p_n},
-]
+\[
+E_{\rm arith}(n)\le B_KN_n2^{-p_n},
+\]
 
-with finite (B_K), explicit
+with finite \(B_K\), explicit
 
-[
-N_nle a2^n+b,
-]
+\[
+N_n\le a2^n+b,
+\]
 
 and
 
-[
+\[
 p_n=128+8n,
-]
+\]
 
 so that
 
-[
-E_{m arith}(n)	o0.
-]
+\[
+E_{\rm arith}(n)\to0.
+\]
 
 Only after the analytical qualification passes may eventual-certification fixtures be executed.
 
