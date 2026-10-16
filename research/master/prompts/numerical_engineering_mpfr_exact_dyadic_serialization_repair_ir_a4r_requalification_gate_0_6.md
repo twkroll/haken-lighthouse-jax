@@ -14,9 +14,9 @@ It must create a new versioned repair implementation and validate it separately.
 
 Read and obey:
 
-- \`PROJECT_GOVERNANCE.md\`
-- \`research/master/command_protocol_v0_2.md\`
-- \`research/master/parallel_engineering_policy_v0_1.md\`
+- `PROJECT_GOVERNANCE.md`
+- `research/master/command_protocol_v0_2.md`
+- `research/master/parallel_engineering_policy_v0_1.md`
 - RB-019
 - RB-021
 - RB-023
@@ -27,11 +27,11 @@ Read and obey:
 
 Work only on:
 
-\`engineering/numerics-v0.1\`.
+`engineering/numerics-v0.1`.
 
 The physical authority remains:
 
-\`NUMENG_PULSE_AWARE_REFERENCE_V1\`.
+`NUMENG_PULSE_AWARE_REFERENCE_V1`.
 
 ## Immutable baseline rule
 
@@ -39,7 +39,7 @@ The RB-025 subtree/source must remain byte-identical.
 
 In particular, do not overwrite:
 
-\`software/numerical_engineering/rifc_interval_gate_0_4/source/rifc_mpfr_v0_1.py\`.
+`software/numerical_engineering/rifc_interval_gate_0_4/source/rifc_mpfr_v0_1.py`.
 
 Create a new versioned Gate-0.6 repair subtree.
 
@@ -49,7 +49,7 @@ Any source hash change to the RB-025 file itself is an automatic governance fail
 
 Before modifying source or producing Gate-0.6 validation outputs, create and commit:
 
-\`research/numerical_engineering/rifc_exact_dyadic_repair_requalification_contract_0_6.md\`.
+`research/numerical_engineering/rifc_exact_dyadic_repair_requalification_contract_0_6.md`.
 
 The contract must freeze:
 
@@ -79,7 +79,7 @@ Replace the Gate-0.5 fixed-floor behavior in the **new versioned implementation*
 
 Preferred route:
 
-- use MPFR/GMP primitives such as an exact significand/exponent extraction (for example \`mpfr_get_z_2exp\`) and exact GMP integer export;
+- use MPFR/GMP primitives such as an exact significand/exponent extraction (for example `mpfr_get_z_2exp`) and exact GMP integer export;
 
 or another route only if it is proven equivalent.
 
@@ -99,8 +99,8 @@ Do not use:
 
 - Python float;
 - decimal round-trip;
-- \`math.exp\`;
-- unproved \`nextafter\`;
+- `math.exp`;
+- unproved `nextafter`;
 - fixed underflow clamps;
 - precision-independent widening.
 
@@ -255,7 +255,7 @@ Require eventual positive certification within the fixture-specific predeclared 
 
 Also include deliberately insufficient finite \(N_{\max}\) controls returning:
 
-\`RESOURCE_EXHAUSTED / UNCERTIFIED\`.
+`RESOURCE_EXHAUSTED / UNCERTIFIED`.
 
 This validates the implementation of the RB-024 theorem; it does not replace the analytical proof.
 
@@ -268,7 +268,7 @@ The Gate-0.6 report must distinguish:
 - mathematical eventual certification under unbounded theoretical refinement;
 - a finite software budget that can still return RESOURCE_EXHAUSTED.
 
-Do not claim that finite \`nmax\` itself proves eventual certification.
+Do not claim that finite `nmax` itself proves eventual certification.
 
 ## Q9 — unchanged non-goals
 
@@ -317,7 +317,7 @@ If exact-dyadic repair and finite-soundness preservation PASS but IR-A4-R still 
 
 return
 
-\`SERIALIZATION REPAIR VALIDATED / IR-A4-R NOT ESTABLISHED\`
+`SERIALIZATION REPAIR VALIDATED / IR-A4-R NOT ESTABLISHED`
 
 and do not claim eventual certification.
 
@@ -327,12 +327,12 @@ If exact finite outward inclusion cannot be preserved, RB-025 is not altered; Ga
 
 ## Required outputs
 
-On \`engineering/numerics-v0.1\`, create:
+On `engineering/numerics-v0.1`, create:
 
-1. \`research/numerical_engineering/rifc_exact_dyadic_repair_requalification_contract_0_6.md\`
-2. \`research/numerical_engineering/rifc_exact_dyadic_repair_requalification_gate_0_6.md\`
+1. `research/numerical_engineering/rifc_exact_dyadic_repair_requalification_contract_0_6.md`
+2. `research/numerical_engineering/rifc_exact_dyadic_repair_requalification_gate_0_6.md`
 3. a new versioned implementation subtree, e.g.
-   \`software/numerical_engineering/rifc_interval_gate_0_6/\`
+   `software/numerical_engineering/rifc_interval_gate_0_6/`
 4. exact serialization proof/derivation artifact;
 5. IR-A4-R derivation artifact;
 6. deterministic regression/rate/eventual-certification logs as permitted by the analytical prerequisites;
@@ -340,7 +340,7 @@ On \`engineering/numerics-v0.1\`, create:
 
 Update:
 
-\`research/numerical_engineering/STATUS.md\`
+`research/numerical_engineering/STATUS.md`
 
 to RETURN TO MASTER or BLOCKED.
 
@@ -364,7 +364,7 @@ Do not modify or replace RB-025.
 - no APP-3;
 - no stochastic benchmark;
 - no scientific speedup/scaling claim;
-- no executable source merge to \`main\`;
+- no executable source merge to `main`;
 - no novelty/manuscript claims.
 
 ## STOP
