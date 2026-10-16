@@ -8,20 +8,20 @@ Rollback point: RB-023
 
 MASTER reviews and accepts the returned:
 
-\`NUM-ENG Theory-Derived First-Hit Certification Validation Gate 0.3\`
+`NUM-ENG Theory-Derived First-Hit Certification Validation Gate 0.3`
 
 from branch:
 
-\`engineering/numerics-v0.1\`.
+`engineering/numerics-v0.1`.
 
 Frozen provenance:
 
-- finite pre-execution contract commit: \`7a488ed6777d206313c512f437216b05b8e5eb6e\`;
-- contract blob SHA: \`5e3abad7975d912def807d1e41feac6a9bda319e\`;
-- returned gate blob SHA: \`abc32fb5bd9005d2c71040a963b3541a13e5967a\`;
-- raw result blob SHA: \`eb903139f27d4f2cf522ae89635a645221afca21\`;
-- execution-log blob SHA: \`3f576b9e7dfa933036d3161eb49a64fd13cc46b6\`;
-- physical authority: RB-019 / \`NUMENG_PULSE_AWARE_REFERENCE_V1\`;
+- finite pre-execution contract commit: `7a488ed6777d206313c512f437216b05b8e5eb6e`;
+- contract blob SHA: `5e3abad7975d912def807d1e41feac6a9bda319e`;
+- returned gate blob SHA: `abc32fb5bd9005d2c71040a963b3541a13e5967a`;
+- raw result blob SHA: `eb903139f27d4f2cf522ae89635a645221afca21`;
+- execution-log blob SHA: `3f576b9e7dfa933036d3161eb49a64fd13cc46b6`;
+- physical authority: RB-019 / `NUMENG_PULSE_AWARE_REFERENCE_V1`;
 - numerical baseline extension: RB-021;
 - frozen theory authority: RB-022.
 
@@ -31,7 +31,7 @@ No fixture/tolerance retuning after output is accepted into RB-023.
 
 ## Gate result
 
-\`PASS — THEORY-CONSISTENT ENGINEERING VALIDATION (finite, non-formal)\`
+`PASS — THEORY-CONSISTENT ENGINEERING VALIDATION (finite, non-formal)`
 
 RB-023 is not a scientific effect result and does not establish formal interval arithmetic, global first-hit correctness, universal chart certification, scaling/speedup or AI performance.
 
@@ -53,7 +53,7 @@ This includes:
 - TH-FH-01 through TH-FH-08;
 - stale-tape / itinerary-change fail-closed controls.
 
-Zero/equality-margin controls remain classified \`UNCERTIFIED\` rather than being mislabelled as physical failure.
+Zero/equality-margin controls remain classified `UNCERTIFIED` rather than being mislabelled as physical failure.
 
 Exact collision/boundary fixtures remain distinguished as physically meaningful but ordinary-chart invalid where appropriate.
 
@@ -99,7 +99,7 @@ with frozen theorem-derived upper bound:
 0.0325178946640312.
 \]
 
-Equality-margin and missing-summability controls remain \`UNCERTIFIED\`.
+Equality-margin and missing-summability controls remain `UNCERTIFIED`.
 
 ### Regular-chart empirical margins
 
@@ -154,9 +154,9 @@ In particular:
 
 - TH-FH-01: certified regular narrow-pulse hit;
 - TH-FH-02: certified no-hit;
-- TH-FH-03: regular positive-velocity case plus under-resolved \`UNCERTIFIED\` control;
+- TH-FH-03: regular positive-velocity case plus under-resolved `UNCERTIFIED` control;
 - TH-FH-04: opposite event orders across perturbations; exact tie physically valid but ordinary-chart invalid;
-- TH-FH-05: finite tail certificate plus equality/summability \`UNCERTIFIED\` controls;
+- TH-FH-05: finite tail certificate plus equality/summability `UNCERTIFIED` controls;
 - TH-FH-06: topology-fixed structural-zero semantics validated;
 - TH-FH-07: interior/horizon-boundary/no-hit trichotomy;
 - TH-FH-08: commuting simultaneous arrivals physically valid but sequential ordinary chart invalid.
@@ -167,13 +167,13 @@ Gate-0.3 validation itself completed twice with clean exit code 0.
 
 Three targeted previously frozen modules completed:
 
-\`28 tests PASS / exit 0\`.
+`28 tests PASS / exit 0`.
 
 A fresh attempt to rerun the broader previously frozen 250-case aggregate exceeded the external execution-time limit and produced no trustworthy final exit/PASS summary.
 
 RB-023 records this as:
 
-\`NOT REPEATED IN GATE 0.3 — NO NEW PASS/FAIL CLASSIFICATION\`.
+`NOT REPEATED IN GATE 0.3 — NO NEW PASS/FAIL CLASSIFICATION`.
 
 This does not invalidate RB-021's independently frozen 250/250 QA result and is not converted into a new implementation failure.
 
@@ -226,11 +226,11 @@ RB-023 does not:
 
 - alter RB-015 SCIENTIFIC FAIL;
 - execute RB-020/TR-27C;
-- create any \`2711xxx\` RNG object;
+- create any `2711xxx` RNG object;
 - authorize APP-3;
 - authorize v0.28 effect-bearing science;
 - create universal numerical-performance claims;
-- merge executable engineering source into \`main\`;
+- merge executable engineering source into `main`;
 - authorize novelty/manuscript claims.
 
 ## STOP
