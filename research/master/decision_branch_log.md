@@ -192,6 +192,11 @@ Date: 2026-10-16
 Status: STABLE
 Date: 2026-10-16
 
+## DEC-038
+`NUM-ENG Theory-Derived First-Hit Certification Validation Gate 0.3` returns `PASS — THEORY-CONSISTENT ENGINEERING VALIDATION (finite, non-formal)` on `engineering/numerics-v0.1`. MASTER verifies that the complete finite pre-execution contract was committed before Gate-0.3 outputs at `7a488ed6777d206313c512f437216b05b8e5eb6e`, with no post-output fixture/tolerance retuning accepted. TV-01 through TV-11 all pass under that contract, including TH-FH-01…TH-FH-08, strict no-hit/first-hit cases, response/tail bounds, regular-chart perturbations, local event-time derivatives, repaired structural-zero semantics and stale-tape/itinerary fail-closed controls. MASTER establishes `NUM-ENG Theory-Derived Certification Validation Freeze 0.3` / RB-023 as a bounded finite engineering theory-validation result. The freeze explicitly preserves `UNCERTIFIED` for zero/equality-margin and under-resolved cases and does not promote finite float64 enclosure calculations to outward-rounded interval arithmetic or global first-hit certification. A fresh broader 250-case aggregate rerun timed out without a trustworthy final classification and is recorded only as NOT REPEATED IN GATE 0.3; RB-021's independently frozen 250/250 evidence remains unchanged. No RB-019/RB-021 source change was required. Under the user's Numerics + Theory priority, MASTER identifies the principal remaining gap as rigorous outward-valid interval certification and opens `CORE Rigorous Enclosure & Interval First-Hit Certification Theory Gate 0.1` as the single next scientific/theoretical action. That gate must specify one constructive deterministic interval/enclosure algorithm with explicit rounding assumptions, inclusion proofs, finite strict-margin termination, transversality/event-order/boundary handling, structural-zero semantics and chart-radius result or non-result, but may perform no numerical execution. APP-3 and v0.27c execution remain parked; TR-27C-01…07 remain UNEVALUATED; `2711xxx` remains UNGENERATED / UNEVALUATED; RB-015 remains immutable SCIENTIFIC FAIL.
+Status: STABLE
+Date: 2026-10-16
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -216,3 +221,4 @@ Date: 2026-10-16
 - RB-020: CORE v0.27c Whitened Trust-Region Laplace Execution Contract Freeze 0.1 — FROZEN / STABLE PRE-EXECUTION CONTRACT
 - RB-021: NUM-ENG Numerical Engineering Freeze 0.2 — FROZEN / STABLE ENGINEERING BASELINE EXTENSION
 - RB-022: CORE Event-Chart Regularity & Certified First-Hit Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
+- RB-023: NUM-ENG Theory-Derived Certification Validation Freeze 0.3 — FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT
