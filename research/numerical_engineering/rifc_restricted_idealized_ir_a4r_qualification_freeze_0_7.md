@@ -27,7 +27,7 @@ Frozen provenance:
 - repaired Gate-0.6 source SHA-256:
   `a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202`;
 - RB-025 source blob:
-  `6df6740e86344628a9968c90ac3c0e74c18494d1c` is NOT authoritative here; the authoritative RB-025 source identity remains the separately frozen blob/SHA in RB-025/RB-027;
+  `6df6740e86344628a2b9583f0a3f719f9d5817f8`; RB-025 remains byte-identical and authoritative for its finite-soundness baseline;
 - derivation artifact:
   `research/numerical_engineering/rifc_source_graph_ir_a4r_derivation_0_7.md`;
 - finite-correspondence artifact:
