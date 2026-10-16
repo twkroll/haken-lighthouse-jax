@@ -1,13 +1,13 @@
 # NUMERICAL ENGINEERING STATUS
 
-Current Gate: none
-Status: FROZEN / WAIT
+Current Gate: NUM-ENG RIFC-0.1 Outward-Interval Implementation & Validation Gate 0.4
+Status: READY
 Development branch: `engineering/numerics-v0.1`
-Latest canonical validation result: `research/numerical_engineering/theory_derived_certification_validation_freeze_0_3.md` — RB-023 FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT
+Latest canonical validation result: RB-023 FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT
 Latest engineering baseline: RB-021 FROZEN / STABLE ENGINEERING BASELINE EXTENSION
-Latest theory dependency: RB-022 FROZEN / STABLE SCIENTIFIC THEORY
+Latest theory dependency: `research/core/rigorous_enclosure_interval_first_hit_theory_freeze_0_1.md` — RB-024 FROZEN / STABLE SCIENTIFIC THEORY
 Frozen physical authority: `NUMENG_PULSE_AWARE_REFERENCE_V1`
-Gate-0.3 result: TV-01…TV-11 PASS under the prospectively frozen finite contract; TH-FH-01…08 covered; finite/non-formal float64 validation only
-Outstanding limitation: no outward-rounded interval arithmetic/global certificate; attempted fresh legacy 250-case aggregate rerun timed out without a trustworthy final classification, while RB-021's prior 250/250 result remains frozen
-Next instruction: none until MASTER opens a new numerical engineering gate
-STOP boundary: no further NUM-ENG execution, no protected seeds, no TR-27C execution, no APP-3 benchmark/training, no scientific speedup/scaling claim, no executable main merge, no novelty/manuscript claims
+Next instruction: `research/master/prompts/numerical_engineering_rifc_interval_implementation_validation_gate_0_4.md`
+Execution command: `GO` in the existing NUM-ENG chat; `RESUME` in a new/replacement NUM-ENG chat
+Scope: implement/validate RIFC-0.1 outward interval certification only; deterministic engineering/theory-validation evidence
+STOP boundary: return to MASTER after one consolidated gate; no protected seeds, no TR-27C execution, no APP-3, no scientific speedup/scaling claim, no executable main merge, no novelty/manuscript claims
