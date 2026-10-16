@@ -8,28 +8,28 @@ Rollback point: RB-026
 
 MASTER reviews and accepts the returned:
 
-\`NUM-ENG MPFR IR-A4-R Qualification & Eventual-Certification Gate 0.5\`
+`NUM-ENG MPFR IR-A4-R Qualification & Eventual-Certification Gate 0.5`
 
 from branch:
 
-\`engineering/numerics-v0.1\`.
+`engineering/numerics-v0.1`.
 
 Frozen provenance:
 
 - pre-execution Gate-0.5 contract commit:
-  \`20d9ae3c5973b5226387c5f679c9ae03c1e58973\`;
+  `20d9ae3c5973b5226387c5f679c9ae03c1e58973`;
 - contract blob SHA:
-  \`4e0ab6963c0c84e023c7e94fc4080a0456e7bc1e\`;
+  `4e0ab6963c0c84e023c7e94fc4080a0456e7bc1e`;
 - returned gate blob SHA:
-  \`faab42ba63400a0a9b8f7603c05251ec8f6c2f98\`;
+  `faab42ba63400a0a9b8f7603c05251ec8f6c2f98`;
 - frozen RB-025 source blob:
-  \`6df6740e86344628a2b9583f0a3f719f9d5817f8\`;
+  `6df6740e86344628a2b9583f0a3f719f9d5817f8`;
 - frozen RB-025 source SHA-256:
-  \`0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539\`;
+  `0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539`;
 - MPFR runtime:
   GNU MPFR 4.2.2;
 - MPFR shared-library SHA-256:
-  \`4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c\`.
+  `4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c`.
 
 RB-025 remains unchanged and authoritative for finite certificate soundness.
 
@@ -37,7 +37,7 @@ RB-024 remains unchanged and authoritative for the rigorous interval theory.
 
 ## Frozen Gate-0.5 result
 
-\`IR-A4-R NOT ESTABLISHED — SOURCE-LEVEL ANALYTICAL NO-GO\`.
+`IR-A4-R NOT ESTABLISHED — SOURCE-LEVEL ANALYTICAL NO-GO`.
 
 This is an engineering qualification result.
 
@@ -66,7 +66,7 @@ No source repair, domain shrinking, empirical rate fitting or post-output fixtur
 
 ## Analytical blocker
 
-The frozen RB-025 serializer \`M.val\` contains an algorithm-level small-value branch:
+The frozen RB-025 serializer `M.val` contains an algorithm-level small-value branch:
 
 - if the MPFR binary exponent is below \(-2048\),
 - the directed lower/upper conversion is widened to a dyadic floor involving \(2^{-2048}\),
@@ -153,13 +153,13 @@ Because the analytical prerequisite failed:
 - no Q7 empirical rate-fitting exercise was performed;
 - no Q8 eventual-certification fixture was used as a substitute for proof.
 
-The hard finite \`nmax<=16\` implementation budget remains correctly separated from any mathematical eventual-certification statement.
+The hard finite `nmax<=16` implementation budget remains correctly separated from any mathematical eventual-certification statement.
 
 ## RB-025 preservation
 
 RB-025 remains:
 
-\`FROZEN / STABLE ENGINEERING CERTIFICATION LAYER — FINITE SOUNDNESS ONLY\`.
+`FROZEN / STABLE ENGINEERING CERTIFICATION LAYER — FINITE SOUNDNESS ONLY`.
 
 Its source is not modified by RB-026.
 
@@ -181,7 +181,7 @@ The fixed serialization floor is inclusion-widening and therefore compatible wit
 
 ### REPAIR-REQUIRED
 
-- exact-dyadic serialization path used by \`M.val\` for very small nonzero MPFR values.
+- exact-dyadic serialization path used by `M.val` for very small nonzero MPFR values.
 
 ### IR-A4-R NOT ESTABLISHED
 
@@ -210,7 +210,7 @@ It does not authorize:
 - TR-27C execution;
 - APP-3;
 - v0.28 effect-bearing science;
-- executable-source merge to \`main\`;
+- executable-source merge to `main`;
 - novelty/manuscript claims.
 
 ## STOP
