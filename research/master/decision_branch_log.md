@@ -212,6 +212,11 @@ Date: 2026-10-16
 Status: STABLE
 Date: 2026-10-16
 
+## DEC-042
+`NUM-ENG MPFR IR-A4-R Qualification & Eventual-Certification Gate 0.5` returns the prospectively admissible negative result `IR-A4-R NOT ESTABLISHED — SOURCE-LEVEL ANALYTICAL NO-GO`. MASTER verifies that the complete Gate-0.5 contract was committed before diagnosis at `20d9ae3c5973b5226387c5f679c9ae03c1e58973`, fixing the unchanged RB-025 source identity, GNU MPFR 4.2.2 backend identity, compact domain (K=[-100000,100000]), the exact expression graph, the `exp(-10000)` negative-control candidate, precisions 128/256/512/2048/4096, and the rule that Q7/Q8 must not execute unless the analytical rate qualification first passes. The returned proof identifies a precision-independent (2^{-2048}) tiny-value widening branch in the RB-025 Python serializer `M.val`. For the frozen exact response (S(1/100)=exp(-10000)), the serializer returns ([0,2^{-2048}]) independent of precision once that branch is taken, so no finite (C_K) can satisfy the required (C_K2^{-p}) arithmetic-excess rate for all (p). This is a source-level no-go for the unchanged Python+MPFR expression graph, not a failure of MPFR correct rounding and not a contradiction of RB-024. Gate 0.5 correctly executes no empirical rate fitting and no eventual-certification fixtures after the analytical prerequisite fails. RB-025 remains byte-identical and in force for finite certificate soundness; its 26/26 targeted tests and 6/6 stored certificate replays remain preserved. MASTER establishes `NUM-ENG IR-A4-R Qualification Result Freeze 0.5` / RB-026 as a stable negative engineering qualification result. MASTER then authorizes exactly one prospective follow-up: `NUM-ENG MPFR Exact-Dyadic Serialization Repair & IR-A4-R Requalification Gate 0.6`. Gate 0.6 must not modify RB-025; it must create a new versioned exact MPFR-to-dyadic serialization implementation, commit a pre-repair/pre-execution contract before source modification or validation output, preserve finite-soundness semantics, close the fixed-floor counterexample, and then requalify IR-A4-R analytically before any eventual-certification validation. Full multi-event/NNE-A work remains outside Gate 0.6. All prior scientific freezes remain unchanged. RB-015 remains immutable SCIENTIFIC FAIL; RB-020 execution remains parked; TR-27C-01…07 remain UNEVALUATED; `2711xxx` remains UNGENERATED / UNEVALUATED; APP-3 remains PARKED / PROTECTED / WAIT.
+Status: STABLE
+Date: 2026-10-16
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -239,3 +244,4 @@ Date: 2026-10-16
 - RB-023: NUM-ENG Theory-Derived Certification Validation Freeze 0.3 — FROZEN / STABLE ENGINEERING THEORY-VALIDATION RESULT
 - RB-024: CORE Rigorous Enclosure & Interval First-Hit Certification Theory Freeze 0.1 — FROZEN / STABLE SCIENTIFIC THEORY
 - RB-025: NUM-ENG RIFC-0.1 Interval Certification Freeze 0.4 — FROZEN / STABLE ENGINEERING CERTIFICATION LAYER — FINITE SOUNDNESS ONLY
+- RB-026: NUM-ENG IR-A4-R Qualification Result Freeze 0.5 — FROZEN / STABLE ENGINEERING NEGATIVE QUALIFICATION RESULT
