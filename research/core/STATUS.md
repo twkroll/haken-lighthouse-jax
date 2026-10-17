@@ -1,9 +1,9 @@
 # CORE STATUS
 
-Current Gate: CORE Sequential Event-Tape & NNE-A Certification Theory Gate 0.3
-Status: RETURN TO MASTER
-Latest canonical file: `research/core/sequential_event_tape_nne_a_certification_theory_gate_0_3.md` — PASS; constructive finite-horizon sequential ordinary-tape theory established. The result proves finite spike/arrival/event counts under the frozen Lighthouse phase-rate/topology assumptions and finite horizon-relevant pending history; defines certified sequential state/queue/tape semantics; establishes strict next-spike, next-arrival and horizon rules; gives constructive segment-level NNE-A covering every neuron and every structural arrival; proves no unlisted event can be inserted when NNE-A holds; gives post-event spike/arrival updates preserving structural-zero semantics; proves whole-tape completeness by induction; separates mathematical no-Zeno from finite software resources; gives a compact parameter-family identical-tape theorem under uniform recursive NNE-A/post-event closure; composes with RB-029 via global or per-segment qualified compact domains; and specifies deterministic `RIFC-TAPE-0.1` plus TT-01…TT-10 future fixtures. No numerical execution occurred.
-Dependencies: Governance command protocol v0.2; RB-004; RB-012; RB-022; RB-024; RB-029; RB-019/RB-021/RB-023/RB-025/RB-027/RB-028 engineering evidence only; RB-015 remains immutable SCIENTIFIC FAIL
-Scientific state: RB-020 v0.27c execution remains parked; TR-27C-01…07 UNEVALUATED; `2711xxx` UNGENERATED / UNEVALUATED; APP-3 PARKED / PROTECTED / WAIT
-Next instruction: none in CORE — MASTER must review `research/core/sequential_event_tape_nne_a_certification_theory_gate_0_3.md` and decide whether to establish `CORE Sequential Event-Tape & NNE-A Certification Theory Freeze 0.3`, request repair, or change sequencing
-STOP boundary: STOP — RETURN TO MASTER; no numerical execution, no source modification, no TR-27C execution, no protected RNG, no APP-3, no effect-bearing science, no performance/scaling claim, no novelty/manuscript claims until MASTER authorization
+Current Gate: none
+Status: FROZEN / WAIT
+Latest canonical theory: `research/core/sequential_event_tape_nne_a_certification_theory_freeze_0_3.md` — RB-030 FROZEN / STABLE SCIENTIFIC THEORY
+Prior canonical theory: RB-029 CORE Parametric Compact-Domain RIFC Arithmetic Qualification Theory Freeze 0.2
+Scientific state: RB-015 remains immutable SCIENTIFIC FAIL; RB-020 v0.27c execution remains parked; TR-27C-01…07 UNEVALUATED; `2711xxx` UNGENERATED / UNEVALUATED
+Next instruction: none until MASTER opens a further CORE gate
+STOP boundary: no numerical execution, no source modification, no TR-27C execution, no protected RNG, no APP-3, no effect-bearing science, no novelty/manuscript claims without MASTER authorization
