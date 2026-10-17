@@ -1,0 +1,51 @@
+{
+  "gate": "NUM-ENG Parametric Compact-Domain RIFC Qualification Gate 0.8",
+  "date": "2026-10-17",
+  "authority": {
+    "main_at_intake": "4609953bbdbe190f6dbc159a7e113502db391d39",
+    "branch_at_intake": "f7ad6a1b0307f505e44027defe47e089e6feddbf",
+    "master_version": "2.19",
+    "theory": "RB-029 Q-RIFC-K; RB-030 NNE-A deferred",
+    "prompt_blob_sha": "4ebfa4b2bfe8336b64a8baa688c40bdef45e0357",
+    "contract_commit": "32ec665ffe2ba1d3dae243725aaca9e630e3d0e0",
+    "analytical_proof_commit": "9a15b2ea80c9189cfe3a362549103895584e3d56"
+  },
+  "immutable_sources": {
+    "RB027_path": "software/numerical_engineering/rifc_interval_gate_0_6/source/rifc_mpfr_v0_2.py",
+    "RB027_sha256": "a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202",
+    "RB027_blob": "1b94cf36447f428a9968c90ac3c0e74c18494d1c",
+    "RB025_blob": "6df6740e86344628a2b9583f0a3f719f9d5817f8",
+    "RB025_sha256": "0b33f0e1049025048b219a7355692bbb95dc2c62ca8aa6d74781ebff1f1e6539",
+    "modified": false
+  },
+  "environment": {
+    "python": "3.13.5",
+    "mpfr": "4.2.2",
+    "gmp": "6.3.0",
+    "mpfr_so_sha256": "4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c",
+    "gmp_so_sha256": "d15e1585c6c267296459570c8ac217ca9123044bcd4e896d2f686b32333445d2",
+    "platform": "Linux x86_64 CPU"
+  },
+  "validation": {
+    "outcome": "37/37 PASS; process exit zero",
+    "finite_positive_calls": 27,
+    "high_precision_comparators": 6,
+    "negative_controls": 4,
+    "reproducer_sha256": "8be95420bb9ecfc14646b72b968ef2d1f23277ddb7978b8ef049097a575edee3",
+    "raw_ndjson_sha256": "86f19c7a995b9c60f484f82c3f88f1c3b703e5e3bc89a800a5310010df04a471",
+    "raw_stdout_sha256": "b8d87e56748e611ab13b72a85398e008a3653e25bfc5f70a0a9d25ed972e8e0c",
+    "summary_sha256": "f04a9c07e4b1b656dc6aea30ee64004aa86fc14969249abbb2382accfd1ae771",
+    "manifest_sha256": "472e24585a659b0f8da5245bf0fbf605c9beab924e0bd967121d226aff8b0ed8",
+    "bundle_filename": "NUMENG_Gate_0_8_Parametric_Compact_Domain_Audit.zip",
+    "bundle_sha256": "803dd405146685745ee424b28cbfa0306e8451ef322bf8832a6bf632946a58f0"
+  },
+  "status": "CANDIDATE PASS — ENGINEERING ONLY, RETURN TO MASTER",
+  "no_claims": [
+    "global domain IR-A4-R",
+    "full sequential RIFC-TAPE",
+    "NNE-A parameter box",
+    "finite unlimited-resource eventual certification",
+    "scientific effect",
+    "novelty or AI speedup"
+  ]
+}
