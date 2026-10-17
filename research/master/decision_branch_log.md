@@ -232,6 +232,11 @@ Date: 2026-10-16
 Status: STABLE
 Date: 2026-10-16
 
+## DEC-046
+`CORE Sequential Event-Tape & NNE-A Certification Theory Gate 0.3` returns `PASS — CONSTRUCTIVE FINITE-HORIZON SEQUENTIAL ORDINARY-TAPE / NNE-A THEORY ESTABLISHED`. MASTER accepts the result and establishes `CORE Sequential Event-Tape & NNE-A Certification Theory Freeze 0.3` / RB-030. The freeze derives finite spike/arrival/event counts on finite horizons from the frozen phase-rate bound, finite graph and finite horizon-relevant pending history; defines certified sequential state/queue/tape semantics; freezes strict next-spike, next-arrival and horizon rules; establishes constructive NNE-A-SEG covering every neuron and every structural arrival; proves that NNE-A-SEG excludes insertion of unlisted events without assuming tape completeness; freezes post-event spike/arrival updates including structural-zero semantics; proves whole-tape completeness by induction; separates mathematical finite/no-Zeno termination from finite software resources; gives a compact parameter-family identical-tape theorem under recursive uniform NNE-A/post-event closure; composes sequential certification with RB-029 via global or per-segment compact arithmetic qualifications; and freezes the deterministic future implementation specification `RIFC-TAPE-0.1` plus TT-01…TT-10 as unexecuted theory-derived fixtures. Grouped/simultaneous event charts, arbitrary infinite-prehistory queue completeness, automatic broad parameter-box NNE-A and finite-machine unconditional termination remain open/non-results. NUM-ENG Gate 0.8 has not begun: no Gate-0.8 contract or result artifact exists on `engineering/numerics-v0.1`, so MASTER leaves it as the sole READY engineering action and does not open a second same-branch RIFC-TAPE implementation gate yet. All prior freezes remain unchanged. RB-015 remains immutable SCIENTIFIC FAIL; RB-020 execution remains parked; TR-27C-01…07 remain UNEVALUATED; `2711xxx` remains UNGENERATED / UNEVALUATED; APP-3 remains PARKED / PROTECTED / WAIT.
+Status: STABLE
+Date: 2026-10-17
+
 ## Rollback points
 
 - RB-001: Governance Initialization 0.1 — STABLE
@@ -263,3 +268,4 @@ Date: 2026-10-16
 - RB-027: NUM-ENG RIFC Exact-Dyadic Serialization Repair Freeze 0.6 — FROZEN / STABLE ENGINEERING REPAIR BASELINE — FINITE SOUNDNESS PRESERVED / IR-A4-R NOT ESTABLISHED
 - RB-028: NUM-ENG RIFC Restricted Idealized IR-A4-R Qualification Freeze 0.7 — FROZEN / STABLE ENGINEERING ANALYTICAL QUALIFICATION — RESTRICTED K01–K06
 - RB-029: CORE Parametric Compact-Domain RIFC Arithmetic Qualification Theory Freeze 0.2 — FROZEN / STABLE SCIENTIFIC THEORY
+- RB-030: CORE Sequential Event-Tape & NNE-A Certification Theory Freeze 0.3 — FROZEN / STABLE SCIENTIFIC THEORY
