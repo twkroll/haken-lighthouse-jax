@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "gate": "NUM-ENG 0.8",
+    "date": "2026-10-17",
+    "contract": "32ec665ffe2ba1d3dae243725aaca9e630e3d0e0",
+    "preproof": "9a15b2ea80c9189cfe3a362549103895584e3d56",
+    "source_sha256": "a447f9a4d9d2be80243a21f4a47cb04d0c5ca2e9dd360b78de4b99cb68067202",
+    "scope": "Parametric compact real boxes, ideal correct-directed endpoint graph; finite source accepts rational point representations"
+  },
+  "symbolic_constants": {
+    "H": "2^18",
+    "u": "2^(1-p)",
+    "rK": "2^24",
+    "LK": "2^80",
+    "D": 512,
+    "Nmin": "2^n",
+    "Nmax": "1024*2^n+1024",
+    "Ccell": "2^24*sum(j=0..512, (2^80)^j)",
+    "Cgain": "Ccell",
+    "Cprefix": "Cgain+2^24",
+    "Cwrap": "Ccell",
+    "Cstar": "max(Ccell,Cprefix,Cwrap)",
+    "BK": "2*Cstar",
+    "pn": "128+8*n",
+    "beta": 1,
+    "gamma": 8
+  },
+  "boxes": [
+    {
+      "id": "B1",
+      "class": "PARAMETRIC DOMAIN QUALIFIED",
+      "coords": {
+        "alpha": [
+          "1",
+          "3/2"
+        ],
+        "r": [
+          "1",
+          "5/4"
+        ],
+        "h": [
+          "1",
+          "5/4"
+        ],
+        "psi0": [
+          "-1/16",
+          "0"
+        ],
+        "q0": [
+          "-1/16",
+          "0"
+        ],
+        "L": [
+          "1/2",
+          "1"
+        ],
+        "gap": [
+          "1/4",
+          "1/2"
+        ]
+      },
+      "proof": "psi(s) in [-1/8,0]<h; zero response, phase gain zero, no-hit gap at least 1/4",
+      "active_reciprocal": false,
+      "delta": null,
+      "samples": 3,
+      "cert_calls": 9
+    },
+    {
+      "id": "B2",
+      "class": "PARAMETRIC DOMAIN QUALIFIED",
+      "coords": {
+        "alpha": [
+          "1",
+          "3/2"
+        ],
+        "r": [
+          "1",
+          "9/8"
+        ],
+        "h": [
+          "-1",
+          "-7/8"
+        ],
+        "psi0": [
+          "0",
+          "1/16"
+        ],
+        "q0": [
+          "0",
+          "1/16"
+        ],
+        "L": [
+          "4",
+          "5"
+        ],
+        "gap": [
+          "1/2",
+          "3/4"
+        ]
+      },
+      "proof": "psi in [0,3/8]; exact gap >=7/8; computed active gap >1/2 for p>=128; S>1/5; G(L)>4/5>3/4; transversal first-hit strictly interior",
+      "active_reciprocal": true,
+      "delta_gap": "1/2",
+      "delta_divisor": "1/4",
+      "samples": 3,
+      "cert_calls": 9
+    },
+    {
+      "id": "B3",
+      "class": "PARAMETRIC DOMAIN QUALIFIED",
+      "coords": {
+        "alpha": [
+          "1",
+          "5/4"
+        ],
+        "weight": [
+          "-1/8",
+          "1/8"
+        ],
+        "h": [
+          "1",
+          "9/8"
+        ],
+        "psi0": [
+          "-1/16",
+          "0"
+        ],
+        "r": [
+          "1",
+          "1"
+        ],
+        "q0": [
+          "0",
+          "0"
+        ],
+        "L": [
+          "1",
+          "1"
+        ],
+        "gap": [
+          "1/4",
+          "1/4"
+        ]
+      },
+      "proof": "label e0 always retained; arrival=1/2 before competitor=3/4; jump |w*alpha²|<=25/128; separate pre-arrival segment subthreshold; no postarrival chart claim",
+      "active_reciprocal": false,
+      "delta": null,
+      "samples": 3,
+      "cert_calls": 9
+    }
+  ],
+  "negative": [
+    {
+      "id": "X1",
+      "class": "THEOREM ASSUMPTION FAILED",
+      "reason": "straddling positive top b→0+, no uniform active reciprocal gap"
+    },
+    {
+      "id": "X2",
+      "class": "RESOURCE-LIMITED / QUALIFIED IDEALLY",
+      "observed": "RESOURCE_EXHAUSTED"
+    },
+    {
+      "id": "X3",
+      "class": "IMPLEMENTATION/GRAPH MISMATCH",
+      "reason": "hypothetical removal of e0 at weight zero"
+    },
+    {
+      "id": "X4",
+      "class": "REJECTED_MUTATION",
+      "observed": "stored prefix corruption fails proof audit"
+    }
+  ],
+  "validation": {
+    "total_checks": 37,
+    "positive_certification_calls": 27,
+    "independent_high_precision_comparisons": 6,
+    "negative_controls": 4,
+    "exit": 0,
+    "raw_ndjson_sha256": "86f19c7a995b9c60f484f82c3f88f1c3b703e5e3bc89a800a5310010df04a471",
+    "raw_process_log_sha256": "b8d87e56748e611ab13b72a85398e008a3653e25bfc5f70a0a9d25ed972e8e0c",
+    "harness_sha256": "8be95420bb9ecfc14646b72b968ef2d1f23277ddb7978b8ef049097a575edee3"
+  },
+  "decision": "Candidate PASS ENGINEERING ONLY; MASTER freeze not yet authorized",
+  "exclusions": "No full tape/NNE-A, no change to source, no protected RNG/APP-3/TR-27C, no scientific claim"
+}
