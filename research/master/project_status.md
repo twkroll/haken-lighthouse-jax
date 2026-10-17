@@ -1,7 +1,7 @@
 # Lighthouse-JAX — Canonical Project Status
 
-Version: 2.18
-Date: 2026-10-16
+Version: 2.19
+Date: 2026-10-17
 
 ## Governance state
 
@@ -9,7 +9,7 @@ Canonical rule:
 
 `Reconstruct state, not frozen science.`
 
-The frozen chain now extends through RB-029.
+The frozen chain now extends through RB-030.
 
 Preserved boundaries:
 
@@ -23,132 +23,147 @@ Preserved boundaries:
 - RB-026 remains the historical old-source IR-A4-R no-go;
 - RB-027 remains the exact-dyadic repair baseline;
 - RB-028 remains the restricted K01–K06 idealized IR-A4-R qualification;
-- RB-029 freezes the parametric compact-domain RIFC arithmetic qualification theorem;
+- RB-029 remains the parametric compact-domain RIFC arithmetic theorem;
+- RB-030 freezes sequential event-tape / NNE-A theory;
 - APP-3 remains PARKED / PROTECTED / WAIT.
 
-## RB-029 — parametric compact-domain arithmetic theory
+## RB-030 — sequential event-tape / NNE-A theory
 
-CORE Gate 0.2 returned:
+CORE Gate 0.3 returned:
 
-`PASS — PARAMETRIC COMPACT-DOMAIN IR-A4-R SUFFICIENT-CONDITION THEOREM ESTABLISHED`.
+`PASS — CONSTRUCTIVE FINITE-HORIZON SEQUENTIAL ORDINARY-TAPE / NNE-A THEORY ESTABLISHED`.
 
 MASTER establishes:
 
-`CORE Parametric Compact-Domain RIFC Arithmetic Qualification Theory Freeze 0.2` / RB-029.
+`CORE Sequential Event-Tape & NNE-A Certification Theory Freeze 0.3` / RB-030.
 
 Status:
 
 `FROZEN / STABLE SCIENTIFIC THEORY`.
 
-The theorem genuinely generalizes RB-028.
+### Finite-horizon event-count result
 
-It provides reusable sufficient assumptions:
-
-1. finite branch cover;
-2. noncircular compact semantic hull;
-3. positive divisor/active-threshold separation;
-4. primitive directed-rounding endpoint rate \(O(2^{-p})\);
-5. finite local DAG depth/count;
-6. finite endpoint-map Lipschitz constants;
-7. additive prefix accumulation;
-8. exact/finitely qualified serialization;
-9. fail-closed finite-source correspondence.
-
-With
+Under finite graph, finite horizon, fixed nonnegative delays, finite horizon-relevant pending history, and the frozen phase-rate bound
 
 \[
-C_{\rm cell}(K)=r_K\sum_{j=0}^{D_K}L_K^j
+0\le S(\psi)<1,
 \]
 
-and suitable finite prefix/wrapper constants, an explicit sufficient whole-expression constant is
+same-neuron spikes satisfy
 
 \[
-B_K=2C_*(K).
+T_i^{k+1}-T_i^k>2\pi.
 \]
 
-Then
+Hence spike count is finite on every finite horizon.
 
-\[
-E_{\rm arith}(n)\le B_KN_n2^{-p_n}.
-\]
+Finite graph fan-out then yields a finite labelled-arrival count and finite total event count.
 
-If
+Zero-delay arrivals remain finite but are simultaneous/grouped-event boundaries, not ordinary sequential events.
 
-\[
-N_n\le a2^{\beta n}+b,
-\qquad
-p_n=p_0+\gamma n,
-\]
+### Constructive next-event theory
 
-then the frozen sufficient convergence condition is
+At each sequential step, the complete candidate set is:
 
-\[
-\gamma>\beta.
-\]
+- one next possible first hit per neuron;
+- every pending labelled structural arrival;
+- horizon.
 
-For dyadic RIFC, \(\beta=1\), hence
+RB-030 freezes strict outward sufficient rules for:
 
-\[
-\gamma>1.
-\]
+- unique next spike;
+- unique next arrival;
+- horizon termination.
 
-The RB-024 schedule
+No point estimate or arbitrary tie-breaking is authoritative.
 
-\[
-p_n=128+8n
-\]
+### NNE-A-SEG
 
-therefore satisfies the arithmetic convergence condition.
+The frozen segment-level no-new-event condition explicitly requires:
 
-RB-028 K01–K06 is recovered as a corollary; RB-028 itself is not broadened or modified.
+- complete pending-arrival inventory;
+- fixed structural topology including zero-weight edges;
+- coverage of every neuron;
+- one strict designated next event;
+- exclusion of any future unlisted arrival through exclusion of its required earlier source spike;
+- complete post-spike launch bookkeeping;
+- fail-closed zero-delay collision handling.
 
-The theorem explicitly separates arithmetic excess from natural interval/Darboux range width and preserves finite-machine resource limits as distinct from idealized eventual certification.
+The no-new-event theorem proves that under NNE-A-SEG no unlisted physical event can occur before the designated event.
 
-## Parallel next steps
+### Whole-tape completeness
 
-Under the Numerics + Theory priority and the Parallel Engineering Policy, MASTER opens two independent next gates.
+If the initial state/history is certified, every segment satisfies its strict next-event/NNE-A obligations, and every post-event state/queue update is outward-valid and complete, induction yields a complete ordinary labelled tape through the certified horizon.
 
-### CORE Gate 0.3
+RB-030 freezes the deterministic future implementation specification:
 
-`CORE Sequential Event-Tape & NNE-A Certification Theory Gate 0.3`
+`RIFC-TAPE-0.1 — Sequential Certified Ordinary Event-Tape Builder`.
 
-Status:
+### Parameter-family result
 
-`READY`.
+For a compact parameter family, one identical ordinary labelled tape is guaranteed under recursive uniform:
 
-Purpose:
+- fixed topology;
+- initial-history completeness;
+- segment arithmetic qualification;
+- positive spike transversality;
+- strict event separation;
+- boundary margin;
+- NNE-A;
+- post-event closure.
 
-- extend single-segment RB-024 certification into a finite-horizon sequential ordinary event-tape theorem;
-- construct explicit NNE-A/no-new-event completeness conditions;
-- prove finite event-count/termination conditions;
-- specify deterministic `RIFC-TAPE-0.1`;
-- retain structural-zero labelled arrivals and fail-closed collision/order semantics.
+A general automatic broad parameter-box NNE-A method remains OPEN.
 
-No numerical execution is allowed.
+### Relationship to RB-029
 
-### NUM-ENG Gate 0.8
+Sequential certification may use:
+
+- one invariant globally qualified compact domain; or
+- prospectively qualified segment-specific compact domains.
+
+A post-event enclosure that escapes every available qualified domain stops fail-closed.
+
+### Theory-derived future fixtures
+
+TT-01 through TT-10 are frozen but unexecuted, covering:
+
+- spike-before-arrival;
+- arrival-before-spike;
+- competing spikes;
+- structural-zero arrival;
+- near/exact collision;
+- horizon boundary;
+- multiple sequential events;
+- causally generated delayed feedback arrival;
+- resource exhaustion on a physically ordinary case.
+
+## NUM-ENG Gate 0.8
 
 `NUM-ENG Parametric Compact-Domain RIFC Qualification Gate 0.8`
 
-Status:
+remains:
 
 `READY`.
 
-Development branch:
+The branch `engineering/numerics-v0.1` still contains no Gate-0.8 contract or result artifact, so Gate 0.8 has not begun.
 
-`engineering/numerics-v0.1`.
+Its purpose remains to operationalize RB-029 Q-RIFC-K on prospectively frozen nontrivial compact parameter boxes.
 
-Purpose:
+No source modification is authorized.
 
-- operationalize RB-029's Q-RIFC-K methodology on prospectively fixed nontrivial compact parameter boxes;
-- qualify at least a subthreshold/no-hit box, a regular positive-response/first-hit-capable box, and a structural-zero weight-crossing box;
-- derive semantic hulls, margins, branch cover, graph constants and symbolic \(B_K\) before finite validation;
-- preserve Gate-0.6 source unchanged;
-- perform only post-proof deterministic finite checks.
+## Sequencing after Gate 0.8
 
-Sequential multi-event/NNE-A implementation remains outside NUM-ENG Gate 0.8.
+A later NUM-ENG implementation gate for RB-030 / RIFC-TAPE-0.1 is expected to be the next natural engineering step, but it is not yet authorized.
 
-These two gates may proceed in parallel because Gate 0.8 is non-effect-bearing engineering validation and does not depend on the result of CORE Gate 0.3.
+MASTER will sequence that only after Gate 0.8 returns, so that one engineering branch does not carry two active gates simultaneously.
+
+## CORE
+
+CORE is now:
+
+`FROZEN / WAIT`.
+
+No active CORE gate.
 
 ## CORE v0.27c
 
@@ -159,7 +174,9 @@ RB-020 remains frozen and unexecuted.
 
 ## APP-3
 
-APP-3 remains `PROTECTED / WAIT`.
+APP-3 remains:
+
+`PROTECTED / WAIT`.
 
 AI work remains parked.
 
@@ -167,8 +184,8 @@ AI work remains parked.
 
 | Workstream | Status | Current role |
 |---|---|---|
-| 00 MASTER | FROZEN / WAIT | parallel CORE 0.3 + NUM-ENG 0.8 oversight |
-| 10 CORE | READY | sequential event-tape / NNE-A theory |
+| 00 MASTER | FROZEN / WAIT | NUM-ENG Gate 0.8 oversight |
+| 10 CORE | FROZEN / WAIT | RB-030 sequential NNE-A theory |
 | 20 NUM-ENG | READY | compact parameter-box Q-RIFC-K qualification |
 | 50 APP-1 | PROTECTED / WAIT | unchanged |
 | 60 APP-2 | PROTECTED / WAIT | later electronics/neuromorphics |
@@ -178,33 +195,19 @@ AI work remains parked.
 
 ## Current rollback points
 
-RB-001 through RB-028 remain unchanged.
+RB-001 through RB-029 remain unchanged.
 
-29. RB-029 CORE Parametric Compact-Domain RIFC Arithmetic Qualification Theory Freeze 0.2 — FROZEN / STABLE SCIENTIFIC THEORY
+30. RB-030 CORE Sequential Event-Tape & NNE-A Certification Theory Freeze 0.3 — FROZEN / STABLE SCIENTIFIC THEORY
 
-## Exact next steps
-
-### CORE
-
-Existing CORE chat:
-
-`GO`
-
-New/replacement CORE chat:
-
-`RESUME`
-
-Execute only:
-
-`research/master/prompts/core_sequential_event_tape_nne_a_certification_theory_gate_0_3.md`.
+## Exact next step
 
 ### NUM-ENG
 
-Existing NUM-ENG chat:
+In the existing NUM-ENG chat:
 
 `GO`
 
-New/replacement NUM-ENG chat:
+In a new/replacement NUM-ENG chat:
 
 `RESUME`
 
@@ -212,9 +215,15 @@ Execute only:
 
 `research/master/prompts/numerical_engineering_parametric_compact_domain_rifc_qualification_gate_0_8.md`.
 
-The Gate-0.8 compact-domain qualification contract must be committed before qualification outputs or validation results.
+Before any qualification or validation result, first commit:
 
-When either/both return, issue:
+`research/numerical_engineering/rifc_parametric_compact_domain_qualification_contract_0_8.md`.
+
+### CORE
+
+No CORE action is currently authorized.
+
+When NUM-ENG Gate 0.8 returns, issue:
 
 `Status?`
 
@@ -224,11 +233,13 @@ in MASTER.
 
 Until explicit later authorization:
 
-- no effect-bearing science;
+- no sequential RIFC-TAPE numerical implementation yet;
+- no full multi-event/grouped-event implementation;
 - no TR-27C execution;
 - no `2711xxx` RNG creation;
 - no APP-3 execution;
 - no RB-015 relabelling;
+- no effect-bearing science;
 - no executable source merge to main;
-- no performance/scaling claims;
+- no performance/scaling claim;
 - no novelty/manuscript claim freeze.
